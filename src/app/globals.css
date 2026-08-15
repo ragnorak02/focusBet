@@ -34,6 +34,17 @@ body {
   font-family: var(--font-sans);
 }
 
+/* Phones reserve room for the bottom tab bar / bet-slip sheet; desktop has
+   neither, so the reservation is dropped once the top nav takes over. */
+.page-main {
+  padding-bottom: var(--main-pb, 5rem);
+}
+@media (min-width: 768px) {
+  .page-main {
+    padding-bottom: 1.25rem;
+  }
+}
+
 /* Tabular figures everywhere money or odds appear, so columns don't jitter. */
 .nums {
   font-variant-numeric: tabular-nums;

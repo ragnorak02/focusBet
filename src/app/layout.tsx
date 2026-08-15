@@ -14,6 +14,8 @@ export const viewport: Viewport = {
   themeColor: '#07090c',
   width: 'device-width',
   initialScale: 1,
+  // Draw under the gesture bar; padding below uses the safe-area insets.
+  viewportFit: 'cover',
 };
 
 export const dynamic = 'force-dynamic';

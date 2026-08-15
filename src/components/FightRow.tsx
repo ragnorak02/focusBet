@@ -193,6 +193,7 @@ export function FightRow({
               </button>
             ) : (
               <>
+                {/* Niche toggle — hidden on phones to keep the row uncluttered. */}
                 <button
                   onClick={() =>
                     act('setFightStatus', {
@@ -203,7 +204,7 @@ export function FightRow({
                   }
                   disabled={busy}
                   className={cx(
-                    'rounded px-1.5 py-0.5 text-[10px] font-semibold',
+                    'hidden rounded px-1.5 py-0.5 text-[10px] font-semibold sm:block',
                     live
                       ? 'text-live-500 hover:bg-ink-700'
                       : 'text-ink-500 hover:bg-ink-700 hover:text-ink-300',
@@ -213,7 +214,7 @@ export function FightRow({
                 </button>
                 <button
                   onClick={() => setGrading(true)}
-                  className="rounded px-1.5 py-0.5 text-[10px] font-semibold text-ink-500 hover:bg-ink-700 hover:text-brand-500"
+                  className="rounded px-2 py-1 text-[11px] font-semibold text-ink-500 hover:bg-ink-700 hover:text-brand-500 sm:px-1.5 sm:py-0.5 sm:text-[10px]"
                 >
                   Set result
                 </button>

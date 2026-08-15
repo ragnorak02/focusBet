@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "description": "Personal play-money UFC sportsbook",
   "scripts": {
-    "dev": "next dev -p 3777",
+    "dev": "next dev -H 0.0.0.0 -p 3777",
     "build": "next build",
-    "start": "next start -p 3777"
+    "start": "next start -H 0.0.0.0 -p 3777"
   },
   "dependencies": {
     "next": "^15.5.0",
