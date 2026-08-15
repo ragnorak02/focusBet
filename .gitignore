@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Your bankroll / bets / events live here — local only.
+data/db.json
+
+*.tsbuildinfo
+next-env.d.ts
+.env*
+!.env.example
+.DS_Store
+Thumbs.db

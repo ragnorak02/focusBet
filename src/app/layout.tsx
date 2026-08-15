@@ -1,0 +1,38 @@
+import type { Metadata, Viewport } from 'next';
+import './globals.css';
+import { readDb } from '@/lib/db';
+import { buildAppState } from '@/lib/appState';
+import { Store } from '@/components/Store';
+import { Shell } from '@/components/Shell';
+
+export const metadata: Metadata = {
+  title: 'focusBet — UFC play-money book',
+  description: 'Personal play-money sportsbook for UFC cards.',
+};
+
+export const viewport: Viewport = {
+  themeColor: '#07090c',
+  width: 'device-width',
+  initialScale: 1,
+};
+
+export const dynamic = 'force-dynamic';
+
+export default async function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const db = await readDb();
+  const initial = buildAppState(db);
+
+  return (
+    <html lang="en">
+      <body>
+        <Store initial={initial}>
+          <Shell>{children}</Shell>
+        </Store>
+      </body>
+    </html>
+  );
+}
