@@ -11,10 +11,22 @@ import { nameScore } from './espn';
 export interface OddsLine {
   fighter: string;
   moneyline?: number;
-  /** Method-of-victory prices. Double chances are derived from these. */
+  /** Method of victory. `ko` is the book's KO/TKO/DQ bucket. */
   ko?: number;
   sub?: number;
   dec?: number;
+  /** The book's own double-chance prices. */
+  koSub?: number;
+  koDec?: number;
+  subDec?: number;
+  /** Signed handicap for this fighter on the judges' cards, e.g. -9.5. */
+  spread?: number;
+  spreadOdds?: number;
+  /** Fight-level markets, accepted on whichever fighter's line carries them. */
+  draw?: number;
+  totalLine?: number;
+  over?: number;
+  under?: number;
 }
 
 export interface OddsEventFeed {
@@ -100,17 +112,18 @@ export function applyOddsFeed(ev: MmaEvent, feed: OddsFeed): string[] {
 
     // Method prices are replaced wholesale rather than merged, so a line the
     // book has pulled disappears here too.
-    const hasMethods =
-      line.ko !== undefined || line.sub !== undefined || line.dec !== undefined;
-    if (hasMethods) {
+    const METHOD_KEYS = ['ko', 'sub', 'dec', 'koSub', 'koDec', 'subDec'] as const;
+    if (METHOD_KEYS.some((k) => line[k] !== undefined)) {
       const next: MethodOdds = {
         ko: line.ko ?? null,
         sub: line.sub ?? null,
         dec: line.dec ?? null,
+        koSub: line.koSub ?? null,
+        koDec: line.koDec ?? null,
+        subDec: line.subDec ?? null,
       };
       const prev = best.corner === 'a' ? fight.methodA : fight.methodB;
-      const changed =
-        !prev || prev.ko !== next.ko || prev.sub !== next.sub || prev.dec !== next.dec;
+      const changed = !prev || METHOD_KEYS.some((k) => (prev[k] ?? null) !== next[k]);
       if (changed) {
         if (best.corner === 'a') fight.methodA = next;
         else fight.methodB = next;
@@ -118,6 +131,56 @@ export function applyOddsFeed(ev: MmaEvent, feed: OddsFeed): string[] {
           .filter((k) => next[k] !== null)
           .map((k) => `${k.toUpperCase()} ${sign(next[k] as number)}`);
         changes.push(`${who} method: ${parts.join(', ')}`);
+      }
+    }
+
+    if (line.spread !== undefined && line.spreadOdds !== undefined) {
+      const magnitude = Math.abs(line.spread);
+      const favorite: 'a' | 'b' =
+        line.spread < 0 ? best.corner : best.corner === 'a' ? 'b' : 'a';
+      const prev = fight.spread;
+      const next = {
+        line: magnitude,
+        favorite,
+        oddsA: best.corner === 'a' ? line.spreadOdds : (prev?.oddsA ?? null),
+        oddsB: best.corner === 'b' ? line.spreadOdds : (prev?.oddsB ?? null),
+      };
+      const changed =
+        !prev ||
+        prev.line !== next.line ||
+        prev.favorite !== next.favorite ||
+        prev.oddsA !== next.oddsA ||
+        prev.oddsB !== next.oddsB;
+      fight.spread = next;
+      if (changed) {
+        changes.push(
+          `${who} spread ${line.spread > 0 ? '+' : ''}${line.spread} ${sign(line.spreadOdds)}`,
+        );
+      }
+    }
+
+    // Draw and totals belong to the fight, not a corner, so they're accepted
+    // from whichever line happens to carry them.
+    if (line.draw !== undefined && fight.drawOdds !== line.draw) {
+      fight.drawOdds = line.draw;
+      changes.push(`${fight.a.name} vs ${fight.b.name} draw ${sign(line.draw)}`);
+    }
+
+    if (line.totalLine !== undefined) {
+      const prev = fight.totalRounds;
+      const next = {
+        line: line.totalLine,
+        over: line.over ?? prev?.over ?? null,
+        under: line.under ?? prev?.under ?? null,
+      };
+      const changed =
+        !prev || prev.line !== next.line || prev.over !== next.over || prev.under !== next.under;
+      fight.totalRounds = next;
+      if (changed) {
+        changes.push(
+          `${fight.a.name} vs ${fight.b.name} total ${next.line} ` +
+            `(O ${next.over === null ? '—' : sign(next.over)} / U ${next.under === null ? '—' : sign(next.under)})`,
+        );
       }
     }
   }

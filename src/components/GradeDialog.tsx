@@ -32,6 +32,8 @@ export function GradeDialog({
   const [method, setMethod] = useState(METHODS[0]);
   const [round, setRound] = useState('');
   const [time, setTime] = useState('');
+  const [scoreA, setScoreA] = useState('');
+  const [scoreB, setScoreB] = useState('');
 
   useEffect(() => {
     if (open) {
@@ -39,10 +41,15 @@ export function GradeDialog({
       setMethod(fight.result?.method ?? METHODS[0]);
       setRound(fight.result?.round ? String(fight.result.round) : '');
       setTime(fight.result?.time ?? '');
+      setScoreA(fight.result?.scoreA != null ? String(fight.result.scoreA) : '');
+      setScoreB(fight.result?.scoreB != null ? String(fight.result.scoreB) : '');
     }
   }, [open, fight]);
 
   const isDecision = method.startsWith('Decision');
+  // Scorecards only exist on a decision, and only the spread market needs them.
+  const needsScores =
+    isDecision && (outcome === 'a' || outcome === 'b' || outcome === 'draw');
 
   async function save() {
     if (!outcome) return;
@@ -53,6 +60,8 @@ export function GradeDialog({
       method: outcome === 'draw' || outcome === 'nc' ? undefined : method,
       round: isDecision ? fight.rounds : round ? Number(round) : undefined,
       time: isDecision ? '5:00' : time || undefined,
+      scoreA: needsScores ? scoreA : undefined,
+      scoreB: needsScores ? scoreB : undefined,
     });
     if (res.ok) onClose();
   }
@@ -133,6 +142,43 @@ export function GradeDialog({
             </div>
           ) : null}
         </>
+      ) : null}
+
+      {needsScores ? (
+        <div className="mt-4 rounded-lg border border-ink-700 bg-ink-900/60 p-3">
+          <Label>Judges&apos; totals</Label>
+          <div className="grid grid-cols-2 gap-2">
+            <div>
+              <span className="mb-1 block truncate text-[10px] text-ink-500">
+                {fight.a.name}
+              </span>
+              <Input
+                type="number"
+                placeholder="87"
+                value={scoreA}
+                onChange={(e) => setScoreA(e.target.value)}
+                className="nums"
+              />
+            </div>
+            <div>
+              <span className="mb-1 block truncate text-[10px] text-ink-500">
+                {fight.b.name}
+              </span>
+              <Input
+                type="number"
+                placeholder="84"
+                value={scoreB}
+                onChange={(e) => setScoreB(e.target.value)}
+                className="nums"
+              />
+            </div>
+          </div>
+          <p className="mt-2 text-[11px] leading-relaxed text-ink-500">
+            All three judges&apos; scores added together (a 29-28 sweep is 87). Only
+            needed for the point spread — leave blank and spread bets stay open
+            until you fill them in.
+          </p>
+        </div>
       ) : null}
 
       <div className="mt-5 flex gap-2">

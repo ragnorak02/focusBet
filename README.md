@@ -20,8 +20,10 @@ do is sent to a server, because there isn't one.
   title fights and card segments (main / prelims).
 - **Betting board** — tap a price to add it to the slip. Place it as a straight
   bet or roll several picks into a parlay. Implied win % is shown under every line.
-- **Winning method** — a fighter to win specifically by KO/TKO, submission or
-  decision, plus the double chances (KO or Sub, KO or Dec, Sub or Dec).
+- **Point spread** — a handicap on the judges' total scorecard points.
+- **Total rounds** — over/under on how long the fight lasts.
+- **Winning method** — KO/TKO/DQ, submission or decision, the three double
+  chances, and the draw.
 - **Cash out** — settle an open ticket early; the offer is shown on the button.
 - **Automatic grading** — hit **Refresh results** and finished fights are pulled
   from a live feed, then every ticket touching them settles itself.
@@ -85,9 +87,20 @@ to re-enter on the phone.
   ] }
 ```
 
-`ko`/`sub`/`dec` are optional and come from a book's *Winning Method* market.
-Leave them out and the fight simply offers no method lines. You can also enter
-them per fight in the app, under **+ Winning method lines**.
+Every field past `fighter` is optional:
+
+| field | market |
+|---|---|
+| `moneyline` | straight win |
+| `spread`, `spreadOdds` | signed handicap on the judges' cards |
+| `totalLine`, `over`, `under` | total rounds |
+| `ko`, `sub`, `dec` | method of victory (`ko` = KO/TKO/DQ) |
+| `koSub`, `koDec`, `subDec` | the book's double-chance prices |
+| `draw` | draw |
+
+`draw` and the totals belong to the fight rather than a corner, so they're
+accepted on whichever fighter's line carries them. You can also enter any of it
+per fight in the app under **Edit lines**.
 
 Matching is on fighter name and ignores accents, so a book's "Kaue Fernandes"
 lands on "Kauê Fernandes". Fights that already have a result are skipped, and
@@ -111,16 +124,28 @@ You can also enter lines yourself:
 
 Fights without a price show *No line* and can't be bet until you add one.
 
-## How the method markets price
+## How each market settles
 
-Single methods are the book's own numbers. **Double chances are derived**, by
-adding the implied probabilities of the two finishes and converting back to
-American odds — the same way a book builds them, vig included. So KO +210 and
-Sub +260 (32.3% + 27.8% = 60.1%) gives "KO or Sub" at −150.
+**Method of victory** needs the right fighter *and* the right finish. `KO`
+is the book's **KO/TKO/DQ** bucket, so a disqualification cashes a KO ticket;
+doctor stoppages and corner retirements count there too. Double chance is any
+two of the three. Books price these as their own market, so a book price is
+always used when present — the derived fallback (adding the two implied
+probabilities) is only a stand-in, and the board marks it with a dot.
 
-A method leg needs the right fighter *and* the right finish. Doctor stoppages
-count as TKOs. A win by disqualification fits no category, so those legs are
-voided and the stake refunded rather than taken.
+**Total rounds** settles on elapsed fight time, regardless of who won. A line of
+1.5 is 7:30, so a finish at R2 3:20 (8:20) goes over. A decision is the full
+scheduled distance.
+
+**Point spread** is a handicap on the judges' total points, added across all
+three cards. It therefore needs a decision *and* the scorecards: enter them when
+you set the result. Bets stay open until you do, and **void on any finish**,
+since there are no cards to settle against.
+
+**Draw** cashes on a draw, and voids nothing else — a draw still voids the
+moneyline and method markets as usual.
+
+A no contest voids every market on the fight.
 
 ## How cash out is valued
 

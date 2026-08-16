@@ -14,7 +14,7 @@ import { ActionError, applyAction } from '@/lib/actions';
 import { loadDb, saveDb } from '@/lib/storage';
 import { seedDb } from '@/lib/seed';
 import { methodOddsFor, priceForMethods } from '@/lib/markets';
-import type { Corner, DB, Market, Method } from '@/lib/types';
+import type { Corner, DB, Fight, Market, Method } from '@/lib/types';
 
 export interface Selection {
   eventId: string;
@@ -23,20 +23,41 @@ export interface Selection {
   market: Market;
   /** Present for method markets; one finish, or two for a double chance. */
   methods?: Method[];
+  /** Which way, for totals. */
+  side?: 'over' | 'under';
+  /** The handicap or total this pick is against. */
+  line?: number;
   fighterName: string;
   opponentName: string;
   eventName: string;
   odds: number;
 }
 
-/** Two selections are the same pick only if corner, market and finishes match. */
+/** Two selections are the same pick only if every dimension matches. */
 export function sameSelection(a: Selection, b: Selection): boolean {
   return (
     a.fightId === b.fightId &&
     a.pick === b.pick &&
     a.market === b.market &&
+    a.side === b.side &&
     (a.methods ?? []).join('/') === (b.methods ?? []).join('/')
   );
+}
+
+/** Current price for a selection, so a slip tracks the board as lines move. */
+function livePrice(fight: Fight, s: Selection): number | null | undefined {
+  switch (s.market) {
+    case 'method':
+      return priceForMethods(methodOddsFor(fight, s.pick), s.methods ?? []);
+    case 'draw':
+      return fight.drawOdds;
+    case 'total':
+      return s.side === 'under' ? fight.totalRounds?.under : fight.totalRounds?.over;
+    case 'spread':
+      return s.pick === 'a' ? fight.spread?.oddsA : fight.spread?.oddsB;
+    default:
+      return s.pick === 'a' ? fight.oddsA : fight.oddsB;
+  }
 }
 
 export interface Toast {
@@ -200,12 +221,7 @@ export function Store({ children }: { children: React.ReactNode }) {
           dirty = true;
           continue;
         }
-        const price =
-          s.market === 'method'
-            ? priceForMethods(methodOddsFor(f, s.pick), s.methods ?? [])
-            : s.pick === 'a'
-              ? f.oddsA
-              : f.oddsB;
+        const price = livePrice(f, s);
         if (price === null || price === undefined) {
           dirty = true;
           continue;

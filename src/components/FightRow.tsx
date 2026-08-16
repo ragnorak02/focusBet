@@ -5,13 +5,96 @@ import { useStore } from './Store';
 import { Badge } from './ui';
 import { GradeDialog } from './GradeDialog';
 import { MethodMarkets } from './MethodMarkets';
-import { MethodOddsDialog } from './MethodOddsDialog';
-import { hasMethodMarkets } from '@/lib/markets';
-import { formatAmerican, impliedProbability } from '@/lib/odds';
-import { cx, fmtPct } from '@/lib/format';
+import { LinesDialog } from './LinesDialog';
+import {
+  formatSpread,
+  formatTotalLine,
+  hasAnyExtraMarket,
+  hasMethodMarkets,
+  spreadFor,
+} from '@/lib/markets';
+import { formatAmerican } from '@/lib/odds';
+import { cx } from '@/lib/format';
 import type { Corner, Fight, MmaEvent } from '@/lib/types';
 
-function OddsButton({
+/** A price button with an optional line above it, DraftKings style. */
+export function PriceButton({
+  line,
+  price,
+  selected,
+  disabled,
+  onClick,
+  size = 'md',
+}: {
+  line?: string;
+  price: number | null;
+  selected: boolean;
+  disabled: boolean;
+  onClick: () => void;
+  size?: 'sm' | 'md';
+}) {
+  const height = size === 'sm' ? 'h-9' : 'h-[46px]';
+
+  if (price === null) {
+    return (
+      <div
+        className={cx(
+          'grid w-full place-items-center rounded-md border border-dashed border-ink-700 text-[11px] text-ink-600',
+          height,
+        )}
+      >
+        —
+      </div>
+    );
+  }
+
+  if (disabled) {
+    return (
+      <div
+        className={cx(
+          'nums grid w-full place-items-center rounded-md border border-ink-700 bg-ink-900/60 text-[13px] font-bold text-ink-600',
+          height,
+        )}
+      >
+        {price === null ? '—' : formatAmerican(price)}
+      </div>
+    );
+  }
+
+  return (
+    <button
+      onClick={onClick}
+      className={cx(
+        'w-full rounded-md border leading-tight transition-all active:scale-[0.98]',
+        height,
+        selected
+          ? 'border-brand-500 bg-brand-500'
+          : 'border-ink-600 bg-ink-800 hover:border-brand-500/60 hover:bg-ink-700',
+      )}
+    >
+      {line ? (
+        <div
+          className={cx(
+            'nums text-[11px] font-semibold',
+            selected ? 'text-ink-950/70' : 'text-ink-300',
+          )}
+        >
+          {line}
+        </div>
+      ) : null}
+      <div
+        className={cx(
+          'nums text-[14px] font-black',
+          selected ? 'text-ink-950' : 'text-brand-500',
+        )}
+      >
+        {formatAmerican(price)}
+      </div>
+    </button>
+  );
+}
+
+function CornerRow({
   event,
   fight,
   corner,
@@ -23,102 +106,95 @@ function OddsButton({
   disabled: boolean;
 }) {
   const { isSelected, toggleSelection } = useStore();
-  const odds = corner === 'a' ? fight.oddsA : fight.oddsB;
-  const selected = isSelected(fight.id, corner);
   const fighter = corner === 'a' ? fight.a : fight.b;
   const opponent = corner === 'a' ? fight.b : fight.a;
-
-  if (odds === null) {
-    return (
-      <div className="grid h-[52px] w-full place-items-center rounded-lg border border-dashed border-ink-700 text-xs text-ink-600">
-        No line
-      </div>
-    );
-  }
-
-  if (disabled) {
-    return (
-      <div className="nums grid h-[52px] w-full place-items-center rounded-lg border border-ink-700 bg-ink-900/60 text-sm font-bold text-ink-600">
-        {formatAmerican(odds)}
-      </div>
-    );
-  }
-
-  return (
-    <button
-      onClick={() =>
-        toggleSelection({
-          eventId: event.id,
-          fightId: fight.id,
-          pick: corner,
-          market: 'moneyline',
-          fighterName: fighter.name,
-          opponentName: opponent.name,
-          eventName: event.name,
-          odds,
-        })
-      }
-      className={cx(
-        'group h-[52px] w-full rounded-lg border transition-all active:scale-[0.98]',
-        selected
-          ? 'border-brand-500 bg-brand-500 text-ink-950'
-          : 'border-ink-600 bg-ink-800 text-ink-200 hover:border-brand-500/60 hover:bg-ink-700',
-      )}
-    >
-      <div
-        className={cx(
-          'nums text-base font-black leading-none',
-          selected ? 'text-ink-950' : 'text-brand-500',
-        )}
-      >
-        {formatAmerican(odds)}
-      </div>
-      <div
-        className={cx(
-          'nums mt-0.5 text-[10px] font-semibold leading-none',
-          selected ? 'text-ink-950/70' : 'text-ink-500',
-        )}
-      >
-        {fmtPct(impliedProbability(odds), 0)}
-      </div>
-    </button>
-  );
-}
-
-function CornerName({
-  fight,
-  corner,
-  align = 'left',
-}: {
-  fight: Fight;
-  corner: Corner;
-  align?: 'left' | 'right';
-}) {
-  const fighter = corner === 'a' ? fight.a : fight.b;
   const r = fight.result;
   const won = r && r.outcome === corner;
   const lost = r && (r.outcome === 'a' || r.outcome === 'b') && r.outcome !== corner;
 
+  const base = {
+    eventId: event.id,
+    fightId: fight.id,
+    pick: corner,
+    fighterName: fighter.name,
+    opponentName: opponent.name,
+    eventName: event.name,
+  };
+
+  const ml = corner === 'a' ? fight.oddsA : fight.oddsB;
+  const spreadValue = spreadFor(fight, corner);
+  const spreadOdds = fight.spread
+    ? corner === 'a'
+      ? fight.spread.oddsA
+      : fight.spread.oddsB
+    : null;
+
+  // DraftKings puts the over on the top fighter's row and the under below it.
+  const side = corner === 'a' ? 'over' : 'under';
+  const total = fight.totalRounds;
+  const totalOdds = total ? (side === 'over' ? total.over : total.under) : null;
+
   return (
-    <div className={cx('min-w-0', align === 'right' && 'text-right')}>
-      <div
-        className={cx(
-          'truncate text-[15px] font-bold leading-tight',
-          won ? 'text-brand-500' : lost ? 'text-ink-500 line-through decoration-ink-600' : 'text-ink-200',
-        )}
-      >
-        {fighter.name}
+    <div className="grid grid-cols-[1fr_repeat(3,minmax(0,72px))] items-center gap-1.5 sm:grid-cols-[1fr_repeat(3,minmax(0,92px))] sm:gap-2">
+      <div className="min-w-0">
+        <div
+          className={cx(
+            'truncate text-[14px] font-bold leading-tight',
+            won
+              ? 'text-brand-500'
+              : lost
+                ? 'text-ink-500 line-through decoration-ink-600'
+                : 'text-ink-200',
+          )}
+        >
+          {fighter.name}
+        </div>
+        <div className="nums mt-0.5 flex items-center gap-1.5 text-[11px] text-ink-500">
+          {fighter.record ? <span>{fighter.record}</span> : null}
+          {won ? <Badge tone="win">W</Badge> : null}
+          {lost ? <Badge tone="loss">L</Badge> : null}
+        </div>
       </div>
-      <div
-        className={cx(
-          'nums mt-0.5 flex items-center gap-1.5 text-[11px] text-ink-500',
-          align === 'right' && 'justify-end',
-        )}
-      >
-        {fighter.record ? <span>{fighter.record}</span> : null}
-        {won ? <Badge tone="win">W</Badge> : null}
-        {lost ? <Badge tone="loss">L</Badge> : null}
-      </div>
+
+      <PriceButton
+        line={spreadValue !== null ? formatSpread(spreadValue) : undefined}
+        price={spreadOdds}
+        disabled={disabled}
+        selected={isSelected(fight.id, corner, 'spread')}
+        onClick={() =>
+          toggleSelection({
+            ...base,
+            market: 'spread',
+            line: spreadValue ?? undefined,
+            odds: spreadOdds as number,
+          })
+        }
+      />
+
+      <PriceButton
+        line={total ? formatTotalLine(total.line, side) : undefined}
+        price={totalOdds}
+        disabled={disabled}
+        selected={isSelected(fight.id, corner, 'total')}
+        onClick={() =>
+          toggleSelection({
+            ...base,
+            market: 'total',
+            side,
+            line: total?.line,
+            odds: totalOdds as number,
+          })
+        }
+      />
+
+      <PriceButton
+        price={ml}
+        disabled={disabled}
+        selected={isSelected(fight.id, corner, 'moneyline')}
+        onClick={() =>
+          toggleSelection({ ...base, market: 'moneyline', odds: ml as number })
+        }
+      />
     </div>
   );
 }
@@ -135,23 +211,19 @@ export function FightRow({
   const { act, busy } = useStore();
   const [grading, setGrading] = useState(false);
   const [showMethods, setShowMethods] = useState(false);
-  const [editingMethods, setEditingMethods] = useState(false);
+  const [editingLines, setEditingLines] = useState(false);
 
-  const methodMarkets = hasMethodMarkets(fight);
   const settled = Boolean(fight.result);
   const live = fight.status === 'live' && !settled;
   const r = fight.result;
+  const methods = hasMethodMarkets(fight);
 
   const resultLine = r
     ? r.outcome === 'draw'
       ? 'Draw'
       : r.outcome === 'nc'
         ? 'No Contest'
-        : [
-            r.method,
-            r.round ? `R${r.round}` : null,
-            r.time && r.round ? r.time : null,
-          ]
+        : [r.method, r.round ? `R${r.round}` : null, r.time && r.round ? r.time : null]
             .filter(Boolean)
             .join(' · ')
     : null;
@@ -182,6 +254,11 @@ export function FightRow({
         {settled ? (
           <span className="text-[11px] font-semibold text-ink-400">{resultLine}</span>
         ) : null}
+        {settled && r?.scoreA != null && r?.scoreB != null ? (
+          <span className="nums text-[11px] text-ink-500">
+            {r.scoreA}–{r.scoreB}
+          </span>
+        ) : null}
         {r?.source === 'espn' ? (
           <span className="text-[10px] text-ink-600">auto</span>
         ) : null}
@@ -189,18 +266,23 @@ export function FightRow({
         {editable ? (
           <div className="ml-auto flex items-center gap-1">
             {settled ? (
-              <button
-                onClick={() =>
-                  act('clearResult', { eventId: event.id, fightId: fight.id })
-                }
-                disabled={busy}
-                className="rounded px-1.5 py-0.5 text-[10px] font-semibold text-ink-500 hover:bg-ink-700 hover:text-ink-300"
-              >
-                Undo
-              </button>
+              <>
+                <button
+                  onClick={() => setGrading(true)}
+                  className="rounded px-2 py-1 text-[11px] font-semibold text-ink-500 hover:bg-ink-700 hover:text-brand-500 sm:px-1.5 sm:py-0.5 sm:text-[10px]"
+                >
+                  Edit result
+                </button>
+                <button
+                  onClick={() => act('clearResult', { eventId: event.id, fightId: fight.id })}
+                  disabled={busy}
+                  className="rounded px-1.5 py-0.5 text-[10px] font-semibold text-ink-500 hover:bg-ink-700 hover:text-ink-300"
+                >
+                  Undo
+                </button>
+              </>
             ) : (
               <>
-                {/* Niche toggle — hidden on phones to keep the row uncluttered. */}
                 <button
                   onClick={() =>
                     act('setFightStatus', {
@@ -231,29 +313,25 @@ export function FightRow({
         ) : null}
       </div>
 
-      {/* Narrow: one stacked row per corner. Wide: name | odds | vs | odds | name. */}
-      <div className="hidden items-center gap-3 sm:grid sm:grid-cols-[1fr_92px_28px_92px_1fr]">
-        <CornerName fight={fight} corner="a" />
-        <OddsButton event={event} fight={fight} corner="a" disabled={settled} />
-        <div className="text-center text-[10px] font-bold uppercase tracking-wider text-ink-600">
-          vs
-        </div>
-        <OddsButton event={event} fight={fight} corner="b" disabled={settled} />
-        <CornerName fight={fight} corner="b" align="right" />
+      {/* column headers */}
+      <div className="mb-1 grid grid-cols-[1fr_repeat(3,minmax(0,72px))] gap-1.5 sm:grid-cols-[1fr_repeat(3,minmax(0,92px))] sm:gap-2">
+        <div />
+        {['Spread', 'Rounds', 'Money'].map((h) => (
+          <div
+            key={h}
+            className="text-center text-[9px] font-bold uppercase tracking-wider text-ink-600"
+          >
+            {h}
+          </div>
+        ))}
       </div>
 
-      <div className="space-y-1.5 sm:hidden">
-        <div className="grid grid-cols-[1fr_88px] items-center gap-2">
-          <CornerName fight={fight} corner="a" />
-          <OddsButton event={event} fight={fight} corner="a" disabled={settled} />
-        </div>
-        <div className="grid grid-cols-[1fr_88px] items-center gap-2">
-          <CornerName fight={fight} corner="b" />
-          <OddsButton event={event} fight={fight} corner="b" disabled={settled} />
-        </div>
+      <div className="space-y-1.5">
+        <CornerRow event={event} fight={fight} corner="a" disabled={settled} />
+        <CornerRow event={event} fight={fight} corner="b" disabled={settled} />
       </div>
 
-      {methodMarkets ? (
+      {methods ? (
         <>
           <button
             onClick={() => setShowMethods((v) => !v)}
@@ -276,39 +354,33 @@ export function FightRow({
               />
             </svg>
           </button>
-          {showMethods ? (
-            <>
-              <MethodMarkets event={event} fight={fight} />
-              {editable ? (
-                <button
-                  onClick={() => setEditingMethods(true)}
-                  className="mt-1.5 w-full text-center text-[10px] font-semibold uppercase tracking-wider text-ink-600 hover:text-ink-300"
-                >
-                  Edit method lines
-                </button>
-              ) : null}
-            </>
-          ) : null}
+          {showMethods ? <MethodMarkets event={event} fight={fight} /> : null}
         </>
-      ) : editable && !settled ? (
-        <button
-          onClick={() => setEditingMethods(true)}
-          className="mt-2.5 w-full rounded-lg border border-dashed border-ink-700 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-ink-600 transition-colors hover:border-ink-600 hover:text-ink-400"
-        >
-          + Winning method lines
-        </button>
       ) : null}
 
-      <MethodOddsDialog
-        open={editingMethods}
-        onClose={() => setEditingMethods(false)}
-        event={event}
-        fight={fight}
-      />
+      {editable ? (
+        <button
+          onClick={() => setEditingLines(true)}
+          className={cx(
+            'mt-1.5 w-full text-center text-[10px] font-semibold uppercase tracking-wider text-ink-600 hover:text-ink-300',
+            !hasAnyExtraMarket(fight) &&
+              !settled &&
+              'rounded-lg border border-dashed border-ink-700 py-1.5 hover:border-ink-600',
+          )}
+        >
+          {hasAnyExtraMarket(fight) ? 'Edit lines' : '+ Add spread, rounds & method lines'}
+        </button>
+      ) : null}
 
       <GradeDialog
         open={grading}
         onClose={() => setGrading(false)}
+        event={event}
+        fight={fight}
+      />
+      <LinesDialog
+        open={editingLines}
+        onClose={() => setEditingLines(false)}
         event={event}
         fight={fight}
       />

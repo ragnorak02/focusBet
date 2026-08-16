@@ -10,7 +10,7 @@ import {
   round2,
   toAmerican,
 } from '@/lib/odds';
-import { methodsLabel } from '@/lib/markets';
+import { legLabel, legTitle } from '@/lib/markets';
 import { cx } from '@/lib/format';
 
 const QUICK = [1, 5, 10, 25];
@@ -62,6 +62,7 @@ export function BetSlip({ compact = false }: { compact?: boolean }) {
         pick: s.pick,
         market: s.market,
         methods: s.methods,
+        side: s.side,
       })),
     });
     if (res.ok) clearSlip();
@@ -82,6 +83,7 @@ export function BetSlip({ compact = false }: { compact?: boolean }) {
             pick: s.pick,
             market: s.market,
             methods: s.methods,
+            side: s.side,
           },
         ],
       });
@@ -173,11 +175,11 @@ export function BetSlip({ compact = false }: { compact?: boolean }) {
                 <div className="flex items-start justify-between gap-2">
                   <div className="min-w-0">
                     <div className="truncate text-sm font-bold text-ink-200">
-                      {s.fighterName}
+                      {legTitle(s as never)}
                     </div>
-                    {s.market === 'method' && s.methods?.length ? (
+                    {legLabel(s as never) ? (
                       <div className="truncate text-[11px] font-semibold text-warn-500">
-                        by {methodsLabel(s.methods)}
+                        {legLabel(s as never)}
                       </div>
                     ) : null}
                     <div className="truncate text-[11px] text-ink-500">

@@ -7,16 +7,45 @@ export type Outcome = 'a' | 'b' | 'draw' | 'nc';
 
 export type Corner = 'a' | 'b';
 
-/** How a fight can end, for method-of-victory markets. */
+/**
+ * How a fight can end. `ko` covers KO/TKO **and disqualification**, which is
+ * how books group it ("KO/TKO/DQ").
+ */
 export type Method = 'ko' | 'sub' | 'dec';
 
-export type Market = 'moneyline' | 'method';
+export type Market = 'moneyline' | 'method' | 'draw' | 'total' | 'spread';
 
-/** Price for each way a given fighter can win. null = no line offered. */
+/**
+ * Prices for one fighter's ways to win. The `koSub`/`koDec`/`subDec` fields are
+ * the book's own double-chance numbers; when absent they're derived from the
+ * three singles instead.
+ */
 export interface MethodOdds {
   ko: number | null;
   sub: number | null;
   dec: number | null;
+  koSub?: number | null;
+  koDec?: number | null;
+  subDec?: number | null;
+}
+
+/** Over/under on how long the fight lasts, in rounds (e.g. 1.5, 4.5). */
+export interface TotalRounds {
+  line: number;
+  over: number | null;
+  under: number | null;
+}
+
+/**
+ * Handicap on the judges' total scorecard points. `line` is the absolute
+ * number and `favorite` is the corner giving it away, so a line of 9.5 with
+ * favorite 'a' means A −9.5 / B +9.5.
+ */
+export interface Spread {
+  line: number;
+  favorite: Corner;
+  oddsA: number | null;
+  oddsB: number | null;
 }
 
 export interface Fighter {
@@ -32,6 +61,12 @@ export interface FightResult {
   round?: number;
   /** "3:20" */
   time?: string;
+  /**
+   * Judges' total scorecard points, summed across all three judges. Only a
+   * decision has these, and the spread market can't settle without them.
+   */
+  scoreA?: number;
+  scoreB?: number;
   gradedAt: string;
   source: 'manual' | 'espn';
 }
@@ -52,6 +87,10 @@ export interface Fight {
   /** Method-of-victory prices. Absent until a book's numbers are entered. */
   methodA?: MethodOdds | null;
   methodB?: MethodOdds | null;
+  /** Price on the fight being scored a draw. */
+  drawOdds?: number | null;
+  totalRounds?: TotalRounds | null;
+  spread?: Spread | null;
   status: FightStatus;
   result: FightResult | null;
   espnId?: string;
@@ -82,6 +121,10 @@ export interface Leg {
    * straight method bet; two is a double chance (e.g. KO or Submission).
    */
   methods?: Method[];
+  /** Which way, for `market: 'total'`. */
+  side?: 'over' | 'under';
+  /** The handicap or total this leg was struck against. */
+  line?: number;
   /** American odds locked in at placement — never re-read from the fight. */
   odds: number;
   fighterName: string;

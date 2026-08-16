@@ -10,7 +10,12 @@ import type {
   MmaEvent,
 } from './types';
 import { parlayDecimal, round2 } from './odds';
-import { classifyMethod } from './markets';
+import {
+  classifyMethod,
+  elapsedSeconds,
+  isDecision,
+  totalLineSeconds,
+} from './markets';
 
 /**
  * Nothing about settlement is stored. Bet status, payouts and the bankroll are
@@ -36,19 +41,44 @@ export function gradeLeg(leg: Leg, fight: Fight | null): LegStatus {
   if (!fight) return 'void';
   const r = fight.result;
   if (!r) return 'open';
-  if (r.outcome === 'draw' || r.outcome === 'nc') return 'void';
-  if (r.outcome !== leg.pick) return 'lost';
 
-  // Right fighter. Moneyline is already home; a method leg also needs the
-  // finish to match. Legs saved before method markets existed have no
-  // `market` field and are moneyline by definition.
-  if ((leg.market ?? 'moneyline') === 'moneyline') return 'won';
-  if (!leg.methods?.length) return 'won';
+  // Legs saved before these markets existed have no `market` field and are
+  // moneyline by definition.
+  const market = leg.market ?? 'moneyline';
+
+  // A no contest wipes every market on the fight.
+  if (r.outcome === 'nc') return 'void';
+
+  if (market === 'draw') return r.outcome === 'draw' ? 'won' : 'lost';
+
+  if (market === 'total') {
+    const elapsed = elapsedSeconds(fight, r);
+    if (elapsed === null || leg.line == null) return 'void';
+    const target = totalLineSeconds(leg.line);
+    if (elapsed === target) return 'void'; // exact push, only on whole lines
+    const wentOver = elapsed > target;
+    return (leg.side === 'over') === wentOver ? 'won' : 'lost';
+  }
+
+  if (market === 'spread') {
+    // Nothing to handicap without judges' scorecards.
+    if (!isDecision(r)) return 'void';
+    if (r.scoreA == null || r.scoreB == null || leg.line == null) return 'open';
+    const margin =
+      leg.pick === 'a' ? r.scoreA - r.scoreB : r.scoreB - r.scoreA;
+    const adjusted = margin + leg.line;
+    if (adjusted === 0) return 'void';
+    return adjusted > 0 ? 'won' : 'lost';
+  }
+
+  // Everything below is a bet on one fighter winning.
+  if (r.outcome === 'draw') return 'void';
+  if (r.outcome !== leg.pick) return 'lost';
+  if (market === 'moneyline' || !leg.methods?.length) return 'won';
 
   const actual = classifyMethod(r.method);
-  // Won by a method the book didn't categorise (a DQ) — nothing to grade
-  // against, so refund rather than take the stake.
-  if (actual === 'other') return 'void';
+  // Finished in a way we can't categorise — refund rather than take the stake.
+  if (actual === 'unknown') return 'void';
   return leg.methods.includes(actual) ? 'won' : 'lost';
 }
 

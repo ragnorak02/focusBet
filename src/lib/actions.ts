@@ -9,7 +9,9 @@ import type {
   Outcome,
   Segment,
 } from './types';
-import { methodOddsFor, methodsLabel, priceForMethods } from './markets';
+import { methodOddsFor, methodsLabel, priceForMethods, spreadFor } from './markets';
+
+const MARKETS: Market[] = ['moneyline', 'method', 'draw', 'total', 'spread'];
 import { computeBankroll, gradeAll, gradeBet } from './engine';
 import { round2 } from './odds';
 import { fetchEvent, fetchScoreboard, matchBout, type EspnEvent } from './espn';
@@ -232,6 +234,7 @@ export async function applyAction(
           pick?: Corner;
           market?: Market;
           methods?: Method[];
+          side?: 'over' | 'under';
         };
         const ev = requireEvent(db, l.eventId);
         const fight = requireFight(ev, l.fightId);
@@ -239,10 +242,16 @@ export async function applyAction(
         if (fight.result) bad(`${fight.a.name} vs ${fight.b.name} has already finished`);
 
         const who = l.pick === 'a' ? fight.a.name : fight.b.name;
-        const market: Market = l.market === 'method' ? 'method' : 'moneyline';
+        const market: Market = MARKETS.includes(l.market as Market)
+          ? (l.market as Market)
+          : 'moneyline';
 
+        // Prices are always recomputed from the card, never trusted from the
+        // caller, so a stale slip can't lock in a line that has since moved.
         let odds: number | null | undefined;
         let methods: Method[] | undefined;
+        let side: 'over' | 'under' | undefined;
+        let line: number | undefined;
 
         if (market === 'method') {
           methods = (l.methods ?? []).filter((m): m is Method =>
@@ -250,11 +259,28 @@ export async function applyAction(
           );
           if (methods.length === 0) bad('No finish selected');
           if (methods.length > 2) bad('A double chance covers at most two finishes');
-          // Recomputed from the card, never trusted from the caller.
           odds = priceForMethods(methodOddsFor(fight, l.pick), methods);
           if (odds === null || odds === undefined) {
             bad(`No line for ${who} by ${methodsLabel(methods)}`);
           }
+        } else if (market === 'draw') {
+          odds = fight.drawOdds;
+          if (odds === null || odds === undefined) bad('No draw price on this fight');
+        } else if (market === 'total') {
+          side = l.side === 'under' ? 'under' : 'over';
+          const t = fight.totalRounds;
+          if (!t) bad('No total on this fight');
+          odds = side === 'over' ? t.over : t.under;
+          line = t.line;
+          if (odds === null || odds === undefined) {
+            bad(`No ${side} price on ${fight.a.name} vs ${fight.b.name}`);
+          }
+        } else if (market === 'spread') {
+          const s = fight.spread;
+          if (!s) bad('No spread on this fight');
+          odds = l.pick === 'a' ? s.oddsA : s.oddsB;
+          line = spreadFor(fight, l.pick) ?? undefined;
+          if (odds === null || odds === undefined) bad(`No spread price for ${who}`);
         } else {
           odds = l.pick === 'a' ? fight.oddsA : fight.oddsB;
           if (odds === null || odds === undefined) bad(`No odds entered for ${who}`);
@@ -266,6 +292,8 @@ export async function applyAction(
           pick: l.pick,
           market,
           methods,
+          side,
+          line,
           odds,
           fighterName: who,
           opponentName: l.pick === 'a' ? fight.b.name : fight.a.name,
@@ -323,6 +351,14 @@ export async function applyAction(
         method: typeof p.method === 'string' && p.method ? p.method : undefined,
         round: p.round ? num(p.round, 'Round') : undefined,
         time: typeof p.time === 'string' && p.time ? p.time : undefined,
+        scoreA:
+          p.scoreA === '' || p.scoreA === undefined || p.scoreA === null
+            ? undefined
+            : num(p.scoreA, 'Scorecard'),
+        scoreB:
+          p.scoreB === '' || p.scoreB === undefined || p.scoreB === null
+            ? undefined
+            : num(p.scoreB, 'Scorecard'),
         gradedAt: new Date().toISOString(),
         source: 'manual',
       };
@@ -371,13 +407,50 @@ export async function applyAction(
         ko: parse(p.ko, 'KO price'),
         sub: parse(p.sub, 'Submission price'),
         dec: parse(p.dec, 'Decision price'),
+        koSub: parse(p.koSub, 'KO or Sub price'),
+        koDec: parse(p.koDec, 'KO or Dec price'),
+        subDec: parse(p.subDec, 'Sub or Dec price'),
       };
-      const empty = next.ko === null && next.sub === null && next.dec === null;
+      const empty = Object.values(next).every((v) => v === null);
 
       if (corner === 'a') fight.methodA = empty ? null : next;
       else fight.methodB = empty ? null : next;
 
       message = empty ? 'Method lines cleared' : 'Method lines updated';
+      break;
+    }
+
+    case 'setFightLines': {
+      const ev = requireEvent(db, p.eventId);
+      const fight = requireFight(ev, p.fightId);
+
+      const parse = (v: unknown, field: string): number | null =>
+        v === null || v === undefined || v === '' ? null : num(v, field);
+
+      if ('drawOdds' in p) fight.drawOdds = parse(p.drawOdds, 'Draw price');
+
+      if ('totalLine' in p) {
+        const line = parse(p.totalLine, 'Total rounds');
+        const over = parse(p.over, 'Over price');
+        const under = parse(p.under, 'Under price');
+        fight.totalRounds =
+          line === null || (over === null && under === null)
+            ? null
+            : { line, over, under };
+      }
+
+      if ('spreadLine' in p) {
+        const line = parse(p.spreadLine, 'Spread');
+        const favorite = p.spreadFavorite === 'b' ? 'b' : 'a';
+        const oddsA = parse(p.spreadOddsA, 'Spread price');
+        const oddsB = parse(p.spreadOddsB, 'Spread price');
+        fight.spread =
+          line === null || (oddsA === null && oddsB === null)
+            ? null
+            : { line: Math.abs(line), favorite, oddsA, oddsB };
+      }
+
+      message = 'Lines updated';
       break;
     }
 
