@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useStore } from './Store';
 import { BetSlip } from './BetSlip';
-import { formatMoney } from '@/lib/odds';
+import { formatAmerican, formatMoney, parlayDecimal, toAmerican } from '@/lib/odds';
 import { cx } from '@/lib/format';
 
 type IconProps = { active: boolean };
@@ -95,16 +95,16 @@ function useActive() {
 }
 
 function Toasts() {
-  const { toasts, dismissToast, slip } = useStore();
+  const { toasts, dismissToast, slip, slipOpen } = useStore();
   if (!toasts.length) return null;
   return (
     <div
       className={cx(
         'toast-stack pointer-events-none fixed left-1/2 z-[60] flex w-full max-w-sm -translate-x-1/2 flex-col gap-2 px-4',
       )}
-      // Clear the tab bar, and the slip sheet too when it's open.
+      // Clear the tab bar, plus the slip — the open sheet or the thin tab.
       style={{
-        bottom: `calc(${slip.length ? 268 : 68}px + env(safe-area-inset-bottom))`,
+        bottom: `calc(${slip.length ? (slipOpen ? 268 : 116) : 68}px + env(safe-area-inset-bottom))`,
       }}
     >
       {toasts.map((t) => (
@@ -154,6 +154,52 @@ function BottomNav() {
         })}
       </div>
     </nav>
+  );
+}
+
+const SHEET_BOTTOM = 'calc(56px + env(safe-area-inset-bottom))';
+
+function SlipSheet() {
+  const { slip, slipOpen, setSlipOpen } = useStore();
+
+  if (!slipOpen) {
+    const price = formatAmerican(toAmerican(parlayDecimal(slip.map((s) => s.odds))));
+    return (
+      <button
+        onClick={() => setSlipOpen(true)}
+        style={{ bottom: `calc(8px + ${SHEET_BOTTOM})` }}
+        className="sheet-up slip-glow fixed inset-x-3 z-40 flex items-center gap-2.5 rounded-xl border-2 border-slip-500 bg-ink-900 px-3 py-2 text-left active:bg-ink-850 xl:hidden"
+      >
+        <span className="grid h-5 min-w-5 place-items-center rounded bg-slip-500 px-1 text-[11px] font-black text-ink-950">
+          {slip.length}
+        </span>
+        <span className="text-xs font-bold text-ink-200">
+          {slip.length === 1 ? 'Bet Slip' : `Bet Slip · ${slip.length} legs`}
+        </span>
+        <span className="nums ml-auto text-xs font-black text-slip-500">{price}</span>
+      </button>
+    );
+  }
+
+  return (
+    <>
+      <div
+        onClick={() => setSlipOpen(false)}
+        // Above the tab bar as well, so a tap down there dismisses the sheet
+        // rather than navigating out from under it.
+        className="scrim-in fixed inset-0 z-[45] bg-ink-950/70 backdrop-blur-[2px] xl:hidden"
+        aria-hidden
+      />
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-label="Bet slip"
+        style={{ bottom: SHEET_BOTTOM }}
+        className="sheet-up fixed inset-x-0 z-50 max-h-[70vh] overflow-y-auto rounded-t-2xl border-t-2 border-slip-500 bg-ink-900 p-3 shadow-2xl xl:hidden"
+      >
+        <BetSlip compact />
+      </div>
+    </>
   );
 }
 
@@ -210,11 +256,12 @@ export function Shell({ children }: { children: React.ReactNode }) {
       <div className="mx-auto flex max-w-[1400px] gap-5 px-4 py-5">
         <main
           className="page-main min-w-0 flex-1"
-          // Room for the bottom tab bar, plus the slip sheet when it's open.
+          // Room for the bottom tab bar, plus the slip. The open sheet floats
+          // over the page so it only needs the collapsed tab's height here.
           // Zeroed out again at md+ in globals.css, where there is no tab bar.
           style={
             {
-              '--main-pb': `calc(${slip.length ? 320 : 76}px + env(safe-area-inset-bottom))`,
+              '--main-pb': `calc(${slip.length ? 124 : 76}px + env(safe-area-inset-bottom))`,
             } as React.CSSProperties
           }
         >
@@ -227,15 +274,9 @@ export function Shell({ children }: { children: React.ReactNode }) {
         </aside>
       </div>
 
-      {/* Narrow screens: the slip rides above the tab bar as a sheet. */}
-      {slip.length > 0 ? (
-        <div
-          className="fixed inset-x-0 z-40 max-h-[62vh] overflow-y-auto border-t border-ink-700 bg-ink-900/98 p-3 backdrop-blur xl:hidden"
-          style={{ bottom: 'calc(56px + env(safe-area-inset-bottom))' }}
-        >
-          <BetSlip compact />
-        </div>
-      ) : null}
+      {/* Narrow screens: the slip is a sheet over the card, or a tab above
+          the nav once it's been dismissed. */}
+      {slip.length > 0 ? <SlipSheet /> : null}
 
       <BottomNav />
       <Toasts />

@@ -94,6 +94,9 @@ interface StoreValue {
   dismissToast: (id: number) => void;
 
   slip: Selection[];
+  /** Whether the phone sheet is expanded. Desktop's sidebar ignores this. */
+  slipOpen: boolean;
+  setSlipOpen: (open: boolean) => void;
   toggleSelection: (sel: Selection) => void;
   removeSelection: (fightId: string) => void;
   clearSlip: () => void;
@@ -120,6 +123,7 @@ export function Store({ children }: { children: React.ReactNode }) {
   const [ready, setReady] = useState(false);
   const [busy, setBusy] = useState(false);
   const [slip, setSlip] = useState<Selection[]>([]);
+  const [slipOpen, setSlipOpen] = useState(false);
   const [toasts, setToasts] = useState<Toast[]>([]);
   const toastId = useRef(0);
 
@@ -203,6 +207,17 @@ export function Store({ children }: { children: React.ReactNode }) {
 
   const clearSlip = useCallback(() => setSlip([]), []);
 
+  // The first pick pops the sheet open. Everything after it drops in behind
+  // the collapsed tab instead — once the sheet has been dismissed the user is
+  // reading the card, and throwing it back over the odds would fight them.
+  const lastCount = useRef(0);
+  useEffect(() => {
+    const was = lastCount.current;
+    lastCount.current = slip.length;
+    if (slip.length === 0) setSlipOpen(false);
+    else if (was === 0) setSlipOpen(true);
+  }, [slip.length]);
+
   const isSelected = useCallback(
     (fightId: string, pick: Corner, market: Market = 'moneyline', methods?: Method[]) =>
       slip.some(
@@ -257,6 +272,8 @@ export function Store({ children }: { children: React.ReactNode }) {
       toasts,
       dismissToast,
       slip,
+      slipOpen,
+      setSlipOpen,
       toggleSelection,
       removeSelection,
       clearSlip,
@@ -272,6 +289,7 @@ export function Store({ children }: { children: React.ReactNode }) {
       toasts,
       dismissToast,
       slip,
+      slipOpen,
       toggleSelection,
       removeSelection,
       clearSlip,

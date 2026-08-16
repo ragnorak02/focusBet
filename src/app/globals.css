@@ -20,6 +20,10 @@
   --color-warn-500: #f5a524;
   --color-live-500: #ff4757;
 
+  /* Reserved for the bet slip, so the collapsed tab reads as the one live
+     thing on screen against a board that is otherwise green and grey. */
+  --color-slip-500: #2f9bff;
+
   --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
@@ -91,6 +95,37 @@ body {
 }
 .slip-in {
   animation: slip-in 0.16s ease-out;
+}
+
+/* The collapsed slip has to be findable at a glance against a dark board. */
+.slip-glow {
+  box-shadow: 0 0 18px rgba(47, 155, 255, 0.35);
+}
+
+@keyframes sheet-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.sheet-up {
+  animation: sheet-up 0.18s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+@keyframes scrim-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.scrim-in {
+  animation: scrim-in 0.18s ease-out;
 }
 
 @keyframes toast-in {
