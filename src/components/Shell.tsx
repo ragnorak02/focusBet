@@ -82,10 +82,10 @@ const Icon = {
 
 const NAV = [
   { href: '/', label: 'Home', icon: Icon.home },
-  { href: '/events', label: 'Cards', icon: Icon.events },
-  { href: '/bets', label: 'My Bets', icon: Icon.bets },
-  { href: '/stats', label: 'Stats', icon: Icon.stats },
-  { href: '/bank', label: 'Bank', icon: Icon.bank },
+  { href: '/events/', label: 'Cards', icon: Icon.events },
+  { href: '/bets/', label: 'My Bets', icon: Icon.bets },
+  { href: '/stats/', label: 'Stats', icon: Icon.stats },
+  { href: '/bank/', label: 'Bank', icon: Icon.bank },
 ] as const;
 
 function useActive() {
@@ -194,7 +194,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
           </nav>
 
           <Link
-            href="/bank"
+            href="/bank/"
             className="ml-auto shrink-0 rounded-lg border border-ink-600 bg-ink-800 px-3 py-1.5 text-right transition-colors hover:border-brand-500/50 md:ml-0"
           >
             <div className="text-[9px] font-bold uppercase tracking-wider text-ink-400">

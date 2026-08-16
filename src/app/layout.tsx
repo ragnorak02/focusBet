@@ -1,7 +1,5 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
-import { readDb } from '@/lib/db';
-import { buildAppState } from '@/lib/appState';
 import { Store } from '@/components/Store';
 import { Shell } from '@/components/Shell';
 
@@ -18,20 +16,15 @@ export const viewport: Viewport = {
   viewportFit: 'cover',
 };
 
-export const dynamic = 'force-dynamic';
-
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const db = await readDb();
-  const initial = buildAppState(db);
-
   return (
     <html lang="en">
       <body>
-        <Store initial={initial}>
+        <Store>
           <Shell>{children}</Shell>
         </Store>
       </body>

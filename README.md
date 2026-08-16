@@ -1,8 +1,13 @@
 # focusBet
 
 A personal, play-money sportsbook for UFC cards. Single user, no real money, no
-accounts, no other people — it runs on your machine and stores everything in one
-JSON file.
+accounts, no other people.
+
+**Live: https://ragnorak02.github.io/focusBet/**
+
+It's a static site with no backend. Your bankroll, bets and cards live in your
+browser's `localStorage`; results come straight from a public feed. Nothing you
+do is sent to a server, because there isn't one.
 
 <p align="center">
   <em>DraftKings-style board · American moneylines · straights &amp; parlays ·
@@ -24,24 +29,23 @@ JSON file.
 - **Stats** — bankroll curve over time, ROI, record, straights vs parlays,
   per-event P&L, win streaks, biggest win and biggest loss.
 
-## Running it
+## Using it
+
+Just open the link above — on a phone, add it to your home screen and it behaves
+like an app. It ships seeded with **UFC 330: Makhachev vs. Machado Garry** and a
+$50 bankroll, so there's something to bet on immediately.
+
+## Running it locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Then open <http://localhost:3777>.
+Then open <http://localhost:3777>. The dev server binds to `0.0.0.0`, so a phone
+on the same network can reach it at `http://<your-ip>:3777`.
 
-It ships seeded with **UFC 330: Makhachev vs. Machado Garry** and a $50 bankroll,
-so there's something to bet on immediately.
-
-To run it as a normal app rather than in dev mode:
-
-```bash
-npm run build
-npm start
-```
+`npm run build` produces the static site in `out/`.
 
 ## Where results come from
 
@@ -104,15 +108,26 @@ balance = deposits − withdrawals − stakes + returns
 
 ## Data
 
-Everything lives in `data/db.json`, which is gitignored — your bankroll and bet
-history stay on your machine. Deleting the file resets the app to its seeded state,
-as does **Bank → Reset everything**.
+Everything is stored under one `localStorage` key in whichever browser you use.
+That has two consequences worth knowing:
+
+- **It's per-browser.** Betting on your phone and on your laptop gives you two
+  separate bankrolls; they don't sync.
+- **Clearing site data wipes it.** So **Bank → Backup** can download a JSON file
+  and restore from one. Worth doing occasionally if you care about the history.
+
+**Bank → Reset everything** returns to the seeded state.
 
 ## Stack
 
-Next.js 15 (App Router) · React 19 · TypeScript · Tailwind v4. No database, no
-auth, no external services beyond the results feed. The bankroll chart is
-hand-rolled inline SVG, so there's no charting dependency.
+Next.js 15 (App Router, static export) · React 19 · TypeScript · Tailwind v4.
+No database, no auth, no server. The bankroll chart is hand-rolled inline SVG, so
+there's no charting dependency either.
+
+Deployed by GitHub Actions to Pages on every push to `main`.
+
+The results feed sends `access-control-allow-origin: *`, which is what makes a
+backend unnecessary — the browser can call it directly.
 
 ---
 

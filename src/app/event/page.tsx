@@ -1,14 +1,14 @@
 'use client';
 
-import { use, useMemo, useState } from 'react';
+import { Suspense, useMemo, useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { useStore } from '@/components/Store';
 import { FightRow } from '@/components/FightRow';
 import { OddsPasteDialog } from '@/components/OddsPasteDialog';
 import { EditCardDialog } from '@/components/EditCardDialog';
 import { BetCard } from '@/components/BetCard';
-import { Badge, Button, Empty, Panel, PanelHeader } from '@/components/ui';
+import { Button, Empty, Panel, PanelHeader } from '@/components/ui';
 import { formatMoney } from '@/lib/odds';
 import { cx, fmtDate } from '@/lib/format';
 import type { Segment } from '@/lib/types';
@@ -19,13 +19,10 @@ const SEGMENTS: { key: Segment; label: string }[] = [
   { key: 'early', label: 'Early Prelims' },
 ];
 
-export default function EventPage({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
-  const { id } = use(params);
-  const { state, act, busy } = useStore();
+function EventView() {
+  const params = useSearchParams();
+  const id = params.get('id') ?? '';
+  const { state, act, busy, ready } = useStore();
   const router = useRouter();
   const [pasting, setPasting] = useState(false);
   const [editing, setEditing] = useState(false);
@@ -45,12 +42,14 @@ export default function EventPage({
     return (
       <Panel>
         <Empty
-          title="Card not found"
-          body="It may have been deleted."
+          title={ready ? 'Card not found' : 'Loading…'}
+          body={ready ? 'It may have been deleted.' : undefined}
           action={
-            <Link href="/events">
-              <Button variant="primary">Back to cards</Button>
-            </Link>
+            ready ? (
+              <Link href="/events/">
+                <Button variant="primary">Back to cards</Button>
+              </Link>
+            ) : undefined
           }
         />
       </Panel>
@@ -74,13 +73,12 @@ export default function EventPage({
 
   return (
     <div className="space-y-5">
-      {/* header */}
       <Panel className="overflow-hidden">
         <div className="relative px-4 py-4 sm:px-5">
           <div className="absolute inset-0 bg-gradient-to-r from-brand-500/[0.06] to-transparent" />
           <div className="relative">
             <Link
-              href="/events"
+              href="/events/"
               className="text-[11px] font-semibold uppercase tracking-wider text-ink-500 hover:text-ink-300"
             >
               ← All cards
@@ -102,9 +100,7 @@ export default function EventPage({
                   {missingOdds > 0 ? (
                     <>
                       <span className="text-ink-700">•</span>
-                      <span className="text-warn-500">
-                        {missingOdds} without a line
-                      </span>
+                      <span className="text-warn-500">{missingOdds} without a line</span>
                     </>
                   ) : null}
                   {pnl ? (
@@ -120,24 +116,24 @@ export default function EventPage({
                               : 'text-ink-400',
                         )}
                       >
-                        {formatMoney(pnl.profit, { sign: pnl.profit !== 0 })} on this
-                        card
+                        {formatMoney(pnl.profit, { sign: pnl.profit !== 0 })} on this card
                       </span>
                     </>
                   ) : null}
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-2">
-                <Button size="sm" onClick={() => setPasting(true)}>
+              <div className="flex w-full flex-wrap gap-2 sm:w-auto">
+                <Button size="sm" className="flex-1 sm:flex-none" onClick={() => setPasting(true)}>
                   Paste odds
                 </Button>
-                <Button size="sm" onClick={() => setEditing(true)}>
+                <Button size="sm" className="flex-1 sm:flex-none" onClick={() => setEditing(true)}>
                   Edit card
                 </Button>
                 <Button
                   size="sm"
                   variant="primary"
+                  className="flex-1 sm:flex-none"
                   disabled={busy}
                   onClick={refresh}
                 >
@@ -179,7 +175,6 @@ export default function EventPage({
         </Panel>
       ) : null}
 
-      {/* filters */}
       <div className="flex items-center gap-1">
         {(['all', 'open', 'final'] as const).map((f) => (
           <button
@@ -197,7 +192,6 @@ export default function EventPage({
         ))}
       </div>
 
-      {/* card */}
       {SEGMENTS.map(({ key, label }) => {
         const rows = visible.filter((f) => f.segment === key);
         if (!rows.length) return null;
@@ -230,11 +224,7 @@ export default function EventPage({
                   ? 'Nothing has finished yet'
                   : 'No fights on this card'
             }
-            body={
-              filter === 'all'
-                ? 'Add bouts from the Edit card panel.'
-                : undefined
-            }
+            body={filter === 'all' ? 'Add bouts from the Edit card panel.' : undefined}
             action={
               filter === 'all' ? (
                 <Button variant="primary" onClick={() => setEditing(true)}>
@@ -260,17 +250,27 @@ export default function EventPage({
         </Panel>
       ) : null}
 
-      <OddsPasteDialog
-        open={pasting}
-        onClose={() => setPasting(false)}
-        event={event}
-      />
+      <OddsPasteDialog open={pasting} onClose={() => setPasting(false)} event={event} />
       <EditCardDialog
         open={editing}
         onClose={() => setEditing(false)}
         event={event}
-        onDeleted={() => router.push('/events')}
+        onDeleted={() => router.push('/events/')}
       />
     </div>
+  );
+}
+
+export default function EventPage() {
+  return (
+    <Suspense
+      fallback={
+        <Panel>
+          <Empty title="Loading…" />
+        </Panel>
+      }
+    >
+      <EventView />
+    </Suspense>
   );
 }

@@ -9,8 +9,11 @@ import {
   useRef,
   useState,
 } from 'react';
-import type { AppState } from '@/lib/appState';
-import type { Corner } from '@/lib/types';
+import { buildAppState, type AppState } from '@/lib/appState';
+import { ActionError, applyAction } from '@/lib/actions';
+import { loadDb, saveDb } from '@/lib/storage';
+import { seedDb } from '@/lib/seed';
+import type { Corner, DB } from '@/lib/types';
 
 export interface Selection {
   eventId: string;
@@ -28,30 +31,30 @@ export interface Toast {
   tone: 'ok' | 'err';
 }
 
-interface StoreValue {
-  state: AppState;
-  busy: boolean;
-  /** Fires an action against /api/action and swaps in the returned state. */
-  act: (type: string, payload?: Record<string, unknown>) => Promise<ActResult>;
-  refresh: () => Promise<void>;
-  toast: (text: string, tone?: 'ok' | 'err') => void;
-  toasts: Toast[];
-  dismissToast: (id: number) => void;
-
-  // bet slip
-  slip: Selection[];
-  toggleSelection: (sel: Selection) => void;
-  removeSelection: (fightId: string) => void;
-  clearSlip: () => void;
-  isSelected: (fightId: string, pick: Corner) => boolean;
-}
-
 export interface ActResult {
   ok: boolean;
   error?: string;
   message?: string;
   eventId?: string;
   changes?: string[];
+}
+
+interface StoreValue {
+  db: DB;
+  state: AppState;
+  /** False until localStorage has been read on the client. */
+  ready: boolean;
+  busy: boolean;
+  act: (type: string, payload?: Record<string, unknown>) => Promise<ActResult>;
+  toast: (text: string, tone?: 'ok' | 'err') => void;
+  toasts: Toast[];
+  dismissToast: (id: number) => void;
+
+  slip: Selection[];
+  toggleSelection: (sel: Selection) => void;
+  removeSelection: (fightId: string) => void;
+  clearSlip: () => void;
+  isSelected: (fightId: string, pick: Corner) => boolean;
 }
 
 const Ctx = createContext<StoreValue | null>(null);
@@ -62,18 +65,27 @@ export function useStore(): StoreValue {
   return v;
 }
 
-export function Store({
-  initial,
-  children,
-}: {
-  initial: AppState;
-  children: React.ReactNode;
-}) {
-  const [state, setState] = useState<AppState>(initial);
+export function Store({ children }: { children: React.ReactNode }) {
+  // Server render and first client render must agree, so both start from the
+  // seed; the real DB is swapped in from localStorage right after mount.
+  const [db, setDb] = useState<DB>(() => seedDb());
+  const [ready, setReady] = useState(false);
   const [busy, setBusy] = useState(false);
   const [slip, setSlip] = useState<Selection[]>([]);
   const [toasts, setToasts] = useState<Toast[]>([]);
   const toastId = useRef(0);
+
+  useEffect(() => {
+    setDb(loadDb());
+    setReady(true);
+  }, []);
+
+  // Persist after every change, but not the placeholder before the load lands.
+  useEffect(() => {
+    if (ready) saveDb(db);
+  }, [db, ready]);
+
+  const state = useMemo(() => buildAppState(db), [db]);
 
   const toast = useCallback((text: string, tone: 'ok' | 'err' = 'ok') => {
     const id = ++toastId.current;
@@ -89,27 +101,31 @@ export function Store({
     async (type, payload = {}) => {
       setBusy(true);
       try {
-        const res = await fetch('/api/action', {
-          method: 'POST',
-          headers: { 'content-type': 'application/json' },
-          body: JSON.stringify({ type, payload }),
+        // Read through a setter so concurrent actions can't work off stale state.
+        const current = await new Promise<DB>((resolve) => {
+          setDb((cur) => {
+            resolve(cur);
+            return cur;
+          });
         });
-        const json = await res.json();
-        // The server returns fresh state even on a rejected action.
-        if (json.state) setState(json.state);
-        if (!res.ok) {
-          toast(json.error ?? 'Something went wrong', 'err');
-          return { ok: false, error: json.error };
-        }
-        if (json.message) toast(json.message);
+
+        const out = await applyAction(current, type, payload);
+        setDb(out.db);
+        if (out.message) toast(out.message);
         return {
           ok: true,
-          message: json.message,
-          eventId: json.eventId,
-          changes: json.changes,
+          message: out.message,
+          eventId: out.eventId,
+          changes: out.changes,
         };
       } catch (err) {
-        const msg = err instanceof Error ? err.message : 'Network error';
+        const msg =
+          err instanceof ActionError
+            ? err.message
+            : err instanceof Error
+              ? `Something went wrong: ${err.message}`
+              : 'Something went wrong';
+        if (!(err instanceof ActionError)) console.error('[action]', type, err);
         toast(msg, 'err');
         return { ok: false, error: msg };
       } finally {
@@ -119,21 +135,11 @@ export function Store({
     [toast],
   );
 
-  const refresh = useCallback(async () => {
-    try {
-      const res = await fetch('/api/state', { cache: 'no-store' });
-      if (res.ok) setState(await res.json());
-    } catch {
-      /* offline; keep showing what we have */
-    }
-  }, []);
-
   const toggleSelection = useCallback((sel: Selection) => {
     setSlip((cur) => {
       const existing = cur.find((s) => s.fightId === sel.fightId);
       if (!existing) return [...cur, sel];
-      // Clicking the other side of a fight swaps the pick rather than adding a
-      // second leg — you can't parlay both corners of one fight.
+      // Tapping the other side swaps the pick — you can't parlay both corners.
       if (existing.pick !== sel.pick) {
         return cur.map((s) => (s.fightId === sel.fightId ? sel : s));
       }
@@ -153,23 +159,25 @@ export function Store({
     [slip],
   );
 
-  // Drop selections that stopped being bettable (fight graded elsewhere, odds pulled).
+  // Drop selections that stopped being bettable (graded elsewhere, line pulled).
   useEffect(() => {
-    setSlip((cur) =>
-      cur.filter((s) => {
-        const ev = state.events.find((e) => e.id === s.eventId);
+    setSlip((cur) => {
+      const next = cur.filter((s) => {
+        const ev = db.events.find((e) => e.id === s.eventId);
         const f = ev?.fights.find((x) => x.id === s.fightId);
         return f && !f.result && (s.pick === 'a' ? f.oddsA : f.oddsB) !== null;
-      }),
-    );
-  }, [state.events]);
+      });
+      return next.length === cur.length ? cur : next;
+    });
+  }, [db.events]);
 
   const value = useMemo<StoreValue>(
     () => ({
+      db,
       state,
+      ready,
       busy,
       act,
-      refresh,
       toast,
       toasts,
       dismissToast,
@@ -180,10 +188,11 @@ export function Store({
       isSelected,
     }),
     [
+      db,
       state,
+      ready,
       busy,
       act,
-      refresh,
       toast,
       toasts,
       dismissToast,

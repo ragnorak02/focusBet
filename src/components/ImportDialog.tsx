@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useStore } from './Store';
 import { Badge, Button, Empty, Modal } from './ui';
-import { cx, fmtDate } from '@/lib/format';
+import { fetchScoreboard } from '@/lib/espn';
+import { fmtDate } from '@/lib/format';
 
 interface Row {
   espnId: string;
@@ -31,23 +32,58 @@ export function ImportDialog({
 
   useEffect(() => {
     if (!open) return;
+    let cancelled = false;
     setLoading(true);
     setError(null);
-    fetch('/api/espn')
-      .then((r) => r.json())
-      .then((j) => {
-        if (j.error) setError(j.error);
-        setRows(j.events ?? []);
+
+    // Roughly three weeks back to two months ahead, plus whatever the plain
+    // scoreboard is showing right now.
+    const fmt = (d: Date) =>
+      `${d.getUTCFullYear()}${String(d.getUTCMonth() + 1).padStart(2, '0')}${String(
+        d.getUTCDate(),
+      ).padStart(2, '0')}`;
+    const now = new Date();
+    const range = `${fmt(new Date(now.getTime() - 21 * 864e5))}-${fmt(
+      new Date(now.getTime() + 60 * 864e5),
+    )}`;
+
+    Promise.all([
+      fetchScoreboard(range).catch(() => []),
+      fetchScoreboard().catch(() => []),
+    ])
+      .then(([ranged, current]) => {
+        if (cancelled) return;
+        const byId = new Map<string, Row>();
+        for (const e of [...current, ...ranged]) {
+          byId.set(e.espnId, {
+            espnId: e.espnId,
+            name: e.name,
+            date: e.date,
+            venue: e.venue,
+            location: e.location,
+            boutCount: e.bouts.length,
+            finished: e.bouts.filter((b) => b.status === 'final').length,
+          });
+        }
+        setRows([...byId.values()].sort((a, b) => a.date.localeCompare(b.date)));
       })
-      .catch((e) => setError(e instanceof Error ? e.message : 'Request failed'))
-      .finally(() => setLoading(false));
+      .catch((e) => {
+        if (!cancelled) setError(e instanceof Error ? e.message : 'Request failed');
+      })
+      .finally(() => {
+        if (!cancelled) setLoading(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
   }, [open]);
 
   async function importEvent(espnId: string) {
     const res = await act('importEspnEvent', { espnId });
     if (res.ok) {
       onClose();
-      if (res.eventId) router.push(`/events/${res.eventId}`);
+      if (res.eventId) router.push(`/event/?id=${res.eventId}`);
     }
   }
 

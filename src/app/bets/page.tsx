@@ -122,7 +122,7 @@ export default function BetsPage() {
             }
             action={
               filter === 'all' ? (
-                <Link href="/events">
+                <Link href="/events/">
                   <Button variant="primary">Browse fight cards</Button>
                 </Link>
               ) : undefined

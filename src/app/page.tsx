@@ -66,10 +66,10 @@ export default function Home() {
               </div>
             </div>
             <div className="flex gap-2">
-              <Link href="/bank">
+              <Link href="/bank/">
                 <Button variant="primary">Deposit</Button>
               </Link>
-              <Link href="/events">
+              <Link href="/events/">
                 <Button>Fight cards</Button>
               </Link>
             </div>
@@ -118,7 +118,7 @@ export default function Home() {
             title="Next up"
             subtitle={`${fmtDate(featured.date)}${featured.location ? ` · ${featured.location}` : ''}`}
             right={
-              <Link href={`/events/${featured.id}`}>
+              <Link href={`/event/?id=${featured.id}`}>
                 <Button size="sm" variant="primary">
                   Open card
                 </Button>
@@ -165,7 +165,7 @@ export default function Home() {
             title="No events yet"
             body="Import a UFC card from the live feed, or build one by hand."
             action={
-              <Link href="/events">
+              <Link href="/events/">
                 <Button variant="primary">Add an event</Button>
               </Link>
             }
@@ -180,7 +180,7 @@ export default function Home() {
             subtitle={openBets.length ? `${openBets.length} live` : undefined}
             right={
               <Link
-                href="/bets"
+                href="/bets/"
                 className="text-xs font-semibold text-ink-400 hover:text-ink-200"
               >
                 View all

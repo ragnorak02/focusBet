@@ -4,8 +4,6 @@ out/
 build/
 dist/
 
-# Your bankroll / bets / events live here — local only.
-data/db.json
 
 *.tsbuildinfo
 next-env.d.ts

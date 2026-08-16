@@ -156,7 +156,7 @@ export default function StatsPage() {
               {eventPnl.map((e) => (
                 <Link
                   key={e.eventId}
-                  href={`/events/${e.eventId}`}
+                  href={`/event/?id=${e.eventId}`}
                   className="flex items-center justify-between gap-3 px-4 py-2.5 hover:bg-ink-800/50"
                 >
                   <div className="min-w-0">

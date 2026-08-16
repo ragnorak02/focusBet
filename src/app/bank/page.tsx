@@ -1,15 +1,17 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { useStore } from '@/components/Store';
 import { Button, Empty, Input, Label, Modal, Panel, PanelHeader, Stat } from '@/components/ui';
 import { formatMoney } from '@/lib/odds';
+import { exportDb, readFileAsJson } from '@/lib/storage';
 import { cx, fmtDateTime } from '@/lib/format';
 
 const PRESETS = [10, 25, 50, 100];
 
 export default function BankPage() {
-  const { state, act, busy } = useStore();
+  const { state, db, act, busy, toast } = useStore();
+  const fileRef = useRef<HTMLInputElement>(null);
   const { bankroll, stats } = state;
 
   const [amount, setAmount] = useState('');
@@ -209,6 +211,34 @@ export default function BankPage() {
           )}
         </Panel>
       </div>
+
+      <Panel>
+        <PanelHeader
+          title="Backup"
+          subtitle="Everything is stored in this browser only — clearing site data wipes it"
+        />
+        <div className="flex flex-wrap gap-2 p-4">
+          <Button onClick={() => exportDb(db)}>Download backup</Button>
+          <Button onClick={() => fileRef.current?.click()}>Restore from file</Button>
+          <input
+            ref={fileRef}
+            type="file"
+            accept="application/json,.json"
+            className="hidden"
+            onChange={async (e) => {
+              const file = e.target.files?.[0];
+              e.target.value = '';
+              if (!file) return;
+              try {
+                const parsed = await readFileAsJson(file);
+                await act('replaceAll', { db: parsed });
+              } catch (err) {
+                toast(err instanceof Error ? err.message : 'Could not read that file', 'err');
+              }
+            }}
+          />
+        </div>
+      </Panel>
 
       <Panel className="border-loss-500/20">
         <PanelHeader

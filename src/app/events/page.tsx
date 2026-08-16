@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { useStore } from '@/components/Store';
 import { ImportDialog } from '@/components/ImportDialog';
 import { Badge, Button, Empty, Input, Label, Modal, Panel, PanelHeader } from '@/components/ui';
@@ -10,6 +11,7 @@ import { daysUntil, fmtDate } from '@/lib/format';
 
 export default function EventsPage() {
   const { state, act, busy } = useStore();
+  const router = useRouter();
   const [importing, setImporting] = useState(false);
   const [creating, setCreating] = useState(false);
   const [name, setName] = useState('');
@@ -29,7 +31,7 @@ export default function EventsPage() {
       setName('');
       setDate('');
       setLocation('');
-      if (res.eventId) window.location.href = `/events/${res.eventId}`;
+      if (res.eventId) router.push(`/event/?id=${res.eventId}`);
     }
   }
 
@@ -73,7 +75,7 @@ export default function EventsPage() {
             const pnl = pnlByEvent.get(ev.id);
 
             return (
-              <Link key={ev.id} href={`/events/${ev.id}`}>
+              <Link key={ev.id} href={`/event/?id=${ev.id}`}>
                 <Panel className="h-full transition-colors hover:border-brand-500/40">
                   <div className="p-4">
                     <div className="flex items-start justify-between gap-2">

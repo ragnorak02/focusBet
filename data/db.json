@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "id": "ufc-330",
+      "name": "UFC 330: Makhachev vs. Machado Garry",
+      "date": "2026-08-15T21:30:00.000Z",
+      "venue": "Xfinity Mobile Arena",
+      "location": "Philadelphia, PA",
+      "espnId": "600059185",
+      "createdAt": "1970-01-01T00:00:00.000Z",
+      "fights": [
+        {
+          "id": "f12",
+          "order": 12,
+          "segment": "main",
+          "weightClass": "Welterweight",
+          "titleFight": true,
+          "rounds": 5,
+          "a": {
+            "name": "Islam Makhachev",
+            "record": "28-1"
+          },
+          "b": {
+            "name": "Ian Machado Garry",
+            "record": "17-1"
+          },
+          "oddsA": -285,
+          "oddsB": 270,
+          "status": "scheduled",
+          "result": null
+        },
+        {
+          "id": "f11",
+          "order": 11,
+          "segment": "main",
+          "weightClass": "Women's Strawweight",
+          "titleFight": true,
+          "rounds": 5,
+          "a": {
+            "name": "Mackenzie Dern",
+            "record": "16-5"
+          },
+          "b": {
+            "name": "Gillian Robertson",
+            "record": "17-8"
+          },
+          "oddsA": -186,
+          "oddsB": 178,
+          "status": "scheduled",
+          "result": null
+        },
+        {
+          "id": "f10",
+          "order": 10,
+          "segment": "main",
+          "weightClass": "Lightweight",
+          "titleFight": false,
+          "rounds": 3,
+          "a": {
+            "name": "Jalin Turner",
+            "record": "15-9"
+          },
+          "b": {
+            "name": "Kauê Fernandes",
+            "record": "11-2"
+          },
+          "oddsA": -104,
+          "oddsB": -100,
+          "status": "scheduled",
+          "result": null
+        },
+        {
+          "id": "f9",
+          "order": 9,
+          "segment": "main",
+          "weightClass": "Middleweight",
+          "titleFight": false,
+          "rounds": 3,
+          "a": {
+            "name": "Mansur Abdul-Malik",
+            "record": "9-1-1"
+          },
+          "b": {
+            "name": "Dustin Stoltzfus",
+            "record": "16-8"
+          },
+          "oddsA": -614,
+          "oddsB": 567,
+          "status": "scheduled",
+          "result": null
+        },
+        {
+          "id": "f8",
+          "order": 8,
+          "segment": "main",
+          "weightClass": "Lightweight",
+          "titleFight": false,
+          "rounds": 3,
+          "a": {
+            "name": "Edson Barboza",
+            "record": "24-14"
+          },
+          "b": {
+            "name": "Esteban Ribovics",
+            "record": "15-3"
+          },
+          "oddsA": 567,
+          "oddsB": -614,
+          "status": "scheduled",
+          "result": null
+        },
+        {
+          "id": "f7",
+          "order": 7,
+          "segment": "prelim",
+          "weightClass": "Welterweight",
+          "titleFight": false,
+          "rounds": 3,
+          "a": {
+            "name": "Chidi Njokuani",
+            "record": "25-12"
+          },
+          "b": {
+            "name": "Joel Álvarez",
+            "record": "23-4"
+          },
+          "oddsA": null,
+          "oddsB": null,
+          "status": "scheduled",
+          "result": null
+        },
+        {
+          "id": "f6",
+          "order": 6,
+          "segment": "prelim",
+          "weightClass": "Catchweight",
+          "titleFight": false,
+          "rounds": 3,
+          "a": {
+            "name": "Charles Johnson",
+            "record": "19-9"
+          },
+          "b": {
+            "name": "Eduardo Chapolin",
+            "record": "15-2"
+          },
+          "oddsA": null,
+          "oddsB": null,
+          "status": "scheduled",
+          "result": null
+        },
+        {
+          "id": "f5",
+          "order": 5,
+          "segment": "prelim",
+          "weightClass": "Middleweight",
+          "titleFight": false,
+          "rounds": 3,
+          "a": {
+            "name": "Donte Johnson",
+            "record": "8-0"
+          },
+          "b": {
+            "name": "Eric McConico",
+            "record": "11-4-1"
+          },
+          "oddsA": null,
+          "oddsB": null,
+          "status": "scheduled",
+          "result": null
+        },
+        {
+          "id": "f4",
+          "order": 4,
+          "segment": "prelim",
+          "weightClass": "Middleweight",
+          "titleFight": false,
+          "rounds": 3,
+          "a": {
+            "name": "Vicente Luque",
+            "record": "24-12-1"
+          },
+          "b": {
+            "name": "Tresean Gore",
+            "record": "7-4"
+          },
+          "oddsA": -104,
+          "oddsB": -100,
+          "status": "scheduled",
+          "result": null
+        },
+        {
+          "id": "f3",
+          "order": 3,
+          "segment": "prelim",
+          "weightClass": "Light Heavyweight",
+          "titleFight": false,
+          "rounds": 3,
+          "a": {
+            "name": "Rafael Tobias",
+            "record": "14-2"
+          },
+          "b": {
+            "name": "Lucas Fernando",
+            "record": "13-3"
+          },
+          "oddsA": null,
+          "oddsB": null,
+          "status": "scheduled",
+          "result": null
+        },
+        {
+          "id": "f2",
+          "order": 2,
+          "segment": "prelim",
+          "weightClass": "Welterweight",
+          "titleFight": false,
+          "rounds": 3,
+          "a": {
+            "name": "Neil Magny",
+            "record": "32-14"
+          },
+          "b": {
+            "name": "Ramiz Brahimaj",
+            "record": "13-6"
+          },
+          "oddsA": 488,
+          "oddsB": -525,
+          "status": "scheduled",
+          "result": null
+        },
+        {
+          "id": "f1",
+          "order": 1,
+          "segment": "prelim",
+          "weightClass": "Welterweight",
+          "titleFight": false,
+          "rounds": 3,
+          "a": {
+            "name": "Jeremiah Wells",
+            "record": "13-4-1"
+          },
+          "b": {
+            "name": "Myktybek Orolbai",
+            "record": "16-2-1"
+          },
+          "oddsA": 567,
+          "oddsB": -733,
+          "status": "scheduled",
+          "result": null
+        }
+      ]
+    }
+  ],
+  "bets": [],
+  "cash": [
+    {
+      "id": "seed-deposit",
+      "at": "2026-08-15T23:29:06.000Z",
+      "type": "deposit",
+      "amount": 50,
+      "note": "Starting bankroll"
+    }
+  ]
+}
