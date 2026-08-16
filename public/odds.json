@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-16T21:38:00Z",
+  "updatedAt": "2026-08-16T21:58:00Z",
   "events": [
     {
       "espnId": "600060493",
       "name": "UFC Fight Night: Hernandez vs. Rodrigues",
-      "source": "DraftKings",
-      "capturedAt": "2026-08-16T21:32:00Z",
+      "source": "DraftKings, with Kalshi filling the bouts DK has not priced",
+      "capturedAt": "2026-08-16T21:55:00Z",
       "lines": [
         {
           "fighter": "Anthony Hernandez",
@@ -34,6 +34,24 @@
         },
 
         {
+          "fighter": "Reinier de Ridder",
+          "moneyline": -361
+        },
+        {
+          "fighter": "Roman Dolidze",
+          "moneyline": 295
+        },
+
+        {
+          "fighter": "MarQuel Mederos",
+          "moneyline": 228
+        },
+        {
+          "fighter": "Mason Jones",
+          "moneyline": -291
+        },
+
+        {
           "fighter": "Carli Judice",
           "moneyline": -500
         },
@@ -56,6 +74,33 @@
         },
 
         {
+          "fighter": "Chris Padilla",
+          "moneyline": 101
+        },
+        {
+          "fighter": "Nasrat Haqparast",
+          "moneyline": -121
+        },
+
+        {
+          "fighter": "Gauge Young",
+          "moneyline": -183
+        },
+        {
+          "fighter": "Stan Dorsainvil",
+          "moneyline": 128
+        },
+
+        {
+          "fighter": "Jamall Emmers",
+          "moneyline": 312
+        },
+        {
+          "fighter": "Lerryan Douglas",
+          "moneyline": -382
+        },
+
+        {
           "fighter": "Wes Schultz",
           "moneyline": 154
         },
@@ -65,12 +110,30 @@
         },
 
         {
+          "fighter": "Marcio Barbosa",
+          "moneyline": -791
+        },
+        {
+          "fighter": "Ryan Kuse",
+          "moneyline": 623
+        },
+
+        {
           "fighter": "Shanelle Dyer",
           "moneyline": -675
         },
         {
           "fighter": "Elise Reed",
           "moneyline": 490
+        },
+
+        {
+          "fighter": "Terrance Chatman",
+          "moneyline": 572
+        },
+        {
+          "fighter": "Anthony Wint",
+          "moneyline": -1090
         }
       ]
     },
