@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import { useStore } from './Store';
 import { Badge, Button, Input, Modal } from './ui';
-import { formatAmerican, formatMoney, round2, toAmerican } from '@/lib/odds';
+import { formatAmerican, formatMoney, round2, toAmerican, toDecimal } from '@/lib/odds';
+import { legLabel } from '@/lib/markets';
 import { cx, fmtDateTime } from '@/lib/format';
 import type { GradedBet } from '@/lib/types';
 
@@ -49,6 +50,11 @@ function LegRow({ leg }: { leg: GradedBet['legs'][number] }) {
         >
           {leg.fighterName}
         </div>
+        {legLabel(leg) ? (
+          <div className="truncate text-[11px] font-semibold text-warn-500">
+            {legLabel(leg)}
+          </div>
+        ) : null}
         <div className="truncate text-[11px] text-ink-500">
           vs {leg.opponentName}
           {leg.status === 'void' ? ' · voided' : ''}
@@ -69,11 +75,20 @@ export function BetCard({ bet }: { bet: GradedBet }) {
   const won = bet.status === 'won' || bet.status === 'cashed';
   const lost = bet.status === 'lost';
 
-  // A rough live value: stake weighted by how much of the ticket is already good.
-  const settledLegs = bet.legs.filter((l) => l.status === 'won').length;
-  const suggested = round2(
-    bet.stake *
-      (1 + (bet.decimal - 1) * (settledLegs / Math.max(1, bet.legs.length)) * 0.7),
+  /**
+   * A ticket is worth its stake times whatever multiplier is already banked.
+   * That falls out of the maths: American odds are exactly 1/decimal implied
+   * probability, so every still-open leg contributes decimal × (1/decimal) = 1
+   * to the expected value, and only legs already won move the number. The
+   * house keeps a slice on top, same as a real cash-out.
+   */
+  const CASH_OUT_MARGIN = 0.05;
+  const banked = bet.legs
+    .filter((l) => l.status === 'won')
+    .reduce((d, l) => d * toDecimal(l.odds), 1);
+  const suggested = Math.min(
+    bet.potentialReturn,
+    round2(bet.stake * banked * (1 - CASH_OUT_MARGIN)),
   );
 
   function openCashOut() {
@@ -150,28 +165,22 @@ export function BetCard({ bet }: { bet: GradedBet }) {
         </div>
       </div>
 
-      <div className="mt-2.5 flex items-center justify-between gap-2 border-t border-ink-700/50 pt-2">
+      {bet.status === 'open' ? (
+        <button
+          onClick={openCashOut}
+          disabled={busy}
+          className="mt-2.5 flex w-full items-center justify-center gap-2 rounded-lg border border-warn-500/45 bg-warn-500/10 py-2 text-[12px] font-bold text-warn-500 transition-colors hover:bg-warn-500/20 disabled:opacity-50"
+        >
+          <span className="uppercase tracking-wide">Cash out</span>
+          <span className="nums text-[13px]">{formatMoney(suggested)}</span>
+        </button>
+      ) : null}
+
+      <div className="mt-2.5 border-t border-ink-700/50 pt-2">
         <span className="text-[10px] text-ink-600">
           {fmtDateTime(bet.placedAt)}
           {bet.legs[0]?.eventName ? ` · ${bet.legs[0].eventName}` : ''}
         </span>
-        <div className="flex gap-1">
-          {bet.status === 'open' ? (
-            <button
-              onClick={openCashOut}
-              className="rounded px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-warn-500 hover:bg-ink-700"
-            >
-              Cash out
-            </button>
-          ) : null}
-          <button
-            onClick={() => act('deleteBet', { betId: bet.id })}
-            disabled={busy}
-            className="rounded px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-ink-600 hover:bg-ink-700 hover:text-loss-500"
-          >
-            Delete
-          </button>
-        </div>
       </div>
 
       <Modal open={cashing} onClose={() => setCashing(false)} title="Cash out">

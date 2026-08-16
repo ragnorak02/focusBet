@@ -13,16 +13,30 @@ import { buildAppState, type AppState } from '@/lib/appState';
 import { ActionError, applyAction } from '@/lib/actions';
 import { loadDb, saveDb } from '@/lib/storage';
 import { seedDb } from '@/lib/seed';
-import type { Corner, DB } from '@/lib/types';
+import { methodOddsFor, priceForMethods } from '@/lib/markets';
+import type { Corner, DB, Market, Method } from '@/lib/types';
 
 export interface Selection {
   eventId: string;
   fightId: string;
   pick: Corner;
+  market: Market;
+  /** Present for method markets; one finish, or two for a double chance. */
+  methods?: Method[];
   fighterName: string;
   opponentName: string;
   eventName: string;
   odds: number;
+}
+
+/** Two selections are the same pick only if corner, market and finishes match. */
+export function sameSelection(a: Selection, b: Selection): boolean {
+  return (
+    a.fightId === b.fightId &&
+    a.pick === b.pick &&
+    a.market === b.market &&
+    (a.methods ?? []).join('/') === (b.methods ?? []).join('/')
+  );
 }
 
 export interface Toast {
@@ -54,7 +68,12 @@ interface StoreValue {
   toggleSelection: (sel: Selection) => void;
   removeSelection: (fightId: string) => void;
   clearSlip: () => void;
-  isSelected: (fightId: string, pick: Corner) => boolean;
+  isSelected: (
+    fightId: string,
+    pick: Corner,
+    market?: Market,
+    methods?: Method[],
+  ) => boolean;
 }
 
 const Ctx = createContext<StoreValue | null>(null);
@@ -139,11 +158,13 @@ export function Store({ children }: { children: React.ReactNode }) {
     setSlip((cur) => {
       const existing = cur.find((s) => s.fightId === sel.fightId);
       if (!existing) return [...cur, sel];
-      // Tapping the other side swaps the pick — you can't parlay both corners.
-      if (existing.pick !== sel.pick) {
-        return cur.map((s) => (s.fightId === sel.fightId ? sel : s));
+      // Tapping the same price again clears it.
+      if (sameSelection(existing, sel)) {
+        return cur.filter((s) => s.fightId !== sel.fightId);
       }
-      return cur.filter((s) => s.fightId !== sel.fightId);
+      // Any other pick on the same fight replaces it — one fight, one leg,
+      // since correlated picks can't share a parlay.
+      return cur.map((s) => (s.fightId === sel.fightId ? sel : s));
     });
   }, []);
 
@@ -154,20 +175,50 @@ export function Store({ children }: { children: React.ReactNode }) {
   const clearSlip = useCallback(() => setSlip([]), []);
 
   const isSelected = useCallback(
-    (fightId: string, pick: Corner) =>
-      slip.some((s) => s.fightId === fightId && s.pick === pick),
+    (fightId: string, pick: Corner, market: Market = 'moneyline', methods?: Method[]) =>
+      slip.some(
+        (s) =>
+          s.fightId === fightId &&
+          s.pick === pick &&
+          s.market === market &&
+          (s.methods ?? []).join('/') === (methods ?? []).join('/'),
+      ),
     [slip],
   );
 
-  // Drop selections that stopped being bettable (graded elsewhere, line pulled).
+  // Drop selections that stopped being bettable (graded elsewhere, line pulled),
+  // and keep prices in step with the card as odds move.
   useEffect(() => {
     setSlip((cur) => {
-      const next = cur.filter((s) => {
+      let dirty = false;
+      const next: Selection[] = [];
+
+      for (const s of cur) {
         const ev = db.events.find((e) => e.id === s.eventId);
         const f = ev?.fights.find((x) => x.id === s.fightId);
-        return f && !f.result && (s.pick === 'a' ? f.oddsA : f.oddsB) !== null;
-      });
-      return next.length === cur.length ? cur : next;
+        if (!f || f.result) {
+          dirty = true;
+          continue;
+        }
+        const price =
+          s.market === 'method'
+            ? priceForMethods(methodOddsFor(f, s.pick), s.methods ?? [])
+            : s.pick === 'a'
+              ? f.oddsA
+              : f.oddsB;
+        if (price === null || price === undefined) {
+          dirty = true;
+          continue;
+        }
+        if (price !== s.odds) {
+          dirty = true;
+          next.push({ ...s, odds: price });
+        } else {
+          next.push(s);
+        }
+      }
+
+      return dirty ? next : cur;
     });
   }, [db.events]);
 

@@ -20,6 +20,9 @@ do is sent to a server, because there isn't one.
   title fights and card segments (main / prelims).
 - **Betting board** — tap a price to add it to the slip. Place it as a straight
   bet or roll several picks into a parlay. Implied win % is shown under every line.
+- **Winning method** — a fighter to win specifically by KO/TKO, submission or
+  decision, plus the double chances (KO or Sub, KO or Dec, Sub or Dec).
+- **Cash out** — settle an open ticket early; the offer is shown on the button.
 - **Automatic grading** — hit **Refresh results** and finished fights are pulled
   from a live feed, then every ticket touching them settles itself.
 - **Manual grading** — set any result by hand (winner, method, round, time), and
@@ -76,8 +79,15 @@ to re-enter on the phone.
 
 ```json
 { "espnId": "600059185",
-  "lines": [ { "fighter": "Islam Makhachev", "moneyline": -340 } ] }
+  "lines": [
+    { "fighter": "Islam Makhachev", "moneyline": -340,
+      "ko": 210, "sub": 260, "dec": 105 }
+  ] }
 ```
+
+`ko`/`sub`/`dec` are optional and come from a book's *Winning Method* market.
+Leave them out and the fight simply offers no method lines. You can also enter
+them per fight in the app, under **+ Winning method lines**.
 
 Matching is on fighter name and ignores accents, so a book's "Kaue Fernandes"
 lands on "Kauê Fernandes". Fights that already have a result are skipped, and
@@ -101,6 +111,26 @@ You can also enter lines yourself:
 
 Fights without a price show *No line* and can't be bet until you add one.
 
+## How the method markets price
+
+Single methods are the book's own numbers. **Double chances are derived**, by
+adding the implied probabilities of the two finishes and converting back to
+American odds — the same way a book builds them, vig included. So KO +210 and
+Sub +260 (32.3% + 27.8% = 60.1%) gives "KO or Sub" at −150.
+
+A method leg needs the right fighter *and* the right finish. Doctor stoppages
+count as TKOs. A win by disqualification fits no category, so those legs are
+voided and the stake refunded rather than taken.
+
+## How cash out is valued
+
+A ticket is worth its stake times whatever multiplier is already banked, less a
+5% margin. That falls out of the maths rather than being a guess: American odds
+are exactly `1/decimal` implied probability, so every still-open leg contributes
+`decimal × (1/decimal) = 1` to the expected value. Only legs already won move
+the number — which is why a fresh single offers back slightly under its stake,
+and a parlay's offer climbs as legs land.
+
 ## How settlement works
 
 Bet status is never stored. It's recomputed from the fight results every time the
@@ -113,6 +143,7 @@ app reads state, which means:
   stake is refunded.
 - Deleting a fight or an event voids bets on it and refunds the stake rather than
   silently losing it.
+- There is no way to delete a placed bet. Cash out is the way out of one.
 
 Balance is derived the same way:
 

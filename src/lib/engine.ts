@@ -10,6 +10,7 @@ import type {
   MmaEvent,
 } from './types';
 import { parlayDecimal, round2 } from './odds';
+import { classifyMethod } from './markets';
 
 /**
  * Nothing about settlement is stored. Bet status, payouts and the bankroll are
@@ -36,7 +37,19 @@ export function gradeLeg(leg: Leg, fight: Fight | null): LegStatus {
   const r = fight.result;
   if (!r) return 'open';
   if (r.outcome === 'draw' || r.outcome === 'nc') return 'void';
-  return r.outcome === leg.pick ? 'won' : 'lost';
+  if (r.outcome !== leg.pick) return 'lost';
+
+  // Right fighter. Moneyline is already home; a method leg also needs the
+  // finish to match. Legs saved before method markets existed have no
+  // `market` field and are moneyline by definition.
+  if ((leg.market ?? 'moneyline') === 'moneyline') return 'won';
+  if (!leg.methods?.length) return 'won';
+
+  const actual = classifyMethod(r.method);
+  // Won by a method the book didn't categorise (a DQ) — nothing to grade
+  // against, so refund rather than take the stake.
+  if (actual === 'other') return 'void';
+  return leg.methods.includes(actual) ? 'won' : 'lost';
 }
 
 export function gradeBet(bet: Bet, events: MmaEvent[]): GradedBet {

@@ -1,4 +1,4 @@
-import type { MmaEvent } from './types';
+import type { MethodOdds, MmaEvent } from './types';
 import { nameScore } from './espn';
 
 /**
@@ -10,7 +10,11 @@ import { nameScore } from './espn';
 
 export interface OddsLine {
   fighter: string;
-  moneyline: number;
+  moneyline?: number;
+  /** Method-of-victory prices. Double chances are derived from these. */
+  ko?: number;
+  sub?: number;
+  dec?: number;
 }
 
 export interface OddsEventFeed {
@@ -76,23 +80,46 @@ export function applyOddsFeed(ev: MmaEvent, feed: OddsFeed): string[] {
     if (!best || best.score < 0.7) continue;
 
     const fight = ev.fights.find((f) => f.id === best!.fightId)!;
-    const prev = best.corner === 'a' ? fight.oddsA : fight.oddsB;
-    if (prev === line.moneyline) {
-      taken.add(`${best.fightId}:${best.corner}`);
-      continue;
-    }
-
-    if (best.corner === 'a') fight.oddsA = line.moneyline;
-    else fight.oddsB = line.moneyline;
     taken.add(`${best.fightId}:${best.corner}`);
 
     const who = best.corner === 'a' ? fight.a.name : fight.b.name;
     const sign = (n: number) => (n > 0 ? `+${n}` : `${n}`);
-    changes.push(
-      prev === null
-        ? `${who} opened at ${sign(line.moneyline)}`
-        : `${who} ${sign(prev)} → ${sign(line.moneyline)}`,
-    );
+
+    if (line.moneyline !== undefined) {
+      const prev = best.corner === 'a' ? fight.oddsA : fight.oddsB;
+      if (prev !== line.moneyline) {
+        if (best.corner === 'a') fight.oddsA = line.moneyline;
+        else fight.oddsB = line.moneyline;
+        changes.push(
+          prev === null
+            ? `${who} opened at ${sign(line.moneyline)}`
+            : `${who} ${sign(prev)} → ${sign(line.moneyline)}`,
+        );
+      }
+    }
+
+    // Method prices are replaced wholesale rather than merged, so a line the
+    // book has pulled disappears here too.
+    const hasMethods =
+      line.ko !== undefined || line.sub !== undefined || line.dec !== undefined;
+    if (hasMethods) {
+      const next: MethodOdds = {
+        ko: line.ko ?? null,
+        sub: line.sub ?? null,
+        dec: line.dec ?? null,
+      };
+      const prev = best.corner === 'a' ? fight.methodA : fight.methodB;
+      const changed =
+        !prev || prev.ko !== next.ko || prev.sub !== next.sub || prev.dec !== next.dec;
+      if (changed) {
+        if (best.corner === 'a') fight.methodA = next;
+        else fight.methodB = next;
+        const parts = (['ko', 'sub', 'dec'] as const)
+          .filter((k) => next[k] !== null)
+          .map((k) => `${k.toUpperCase()} ${sign(next[k] as number)}`);
+        changes.push(`${who} method: ${parts.join(', ')}`);
+      }
+    }
   }
 
   return changes;

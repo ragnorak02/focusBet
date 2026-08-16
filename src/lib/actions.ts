@@ -1,4 +1,15 @@
-import type { Corner, DB, Fight, MmaEvent, Outcome, Segment } from './types';
+import type {
+  Corner,
+  DB,
+  Fight,
+  Market,
+  Method,
+  MethodOdds,
+  MmaEvent,
+  Outcome,
+  Segment,
+} from './types';
+import { methodOddsFor, methodsLabel, priceForMethods } from './markets';
 import { computeBankroll, gradeAll, gradeBet } from './engine';
 import { round2 } from './odds';
 import { fetchEvent, fetchScoreboard, matchBout, type EspnEvent } from './espn';
@@ -215,21 +226,48 @@ export async function applyAction(
       if (rawLegs.length === 0) bad('No selections');
 
       const legs = rawLegs.map((raw) => {
-        const l = raw as { eventId?: string; fightId?: string; pick?: Corner };
+        const l = raw as {
+          eventId?: string;
+          fightId?: string;
+          pick?: Corner;
+          market?: Market;
+          methods?: Method[];
+        };
         const ev = requireEvent(db, l.eventId);
         const fight = requireFight(ev, l.fightId);
         if (l.pick !== 'a' && l.pick !== 'b') bad('Invalid selection');
         if (fight.result) bad(`${fight.a.name} vs ${fight.b.name} has already finished`);
-        const odds = l.pick === 'a' ? fight.oddsA : fight.oddsB;
-        if (odds === null || odds === undefined) {
-          bad(`No odds entered for ${l.pick === 'a' ? fight.a.name : fight.b.name}`);
+
+        const who = l.pick === 'a' ? fight.a.name : fight.b.name;
+        const market: Market = l.market === 'method' ? 'method' : 'moneyline';
+
+        let odds: number | null | undefined;
+        let methods: Method[] | undefined;
+
+        if (market === 'method') {
+          methods = (l.methods ?? []).filter((m): m is Method =>
+            m === 'ko' || m === 'sub' || m === 'dec',
+          );
+          if (methods.length === 0) bad('No finish selected');
+          if (methods.length > 2) bad('A double chance covers at most two finishes');
+          // Recomputed from the card, never trusted from the caller.
+          odds = priceForMethods(methodOddsFor(fight, l.pick), methods);
+          if (odds === null || odds === undefined) {
+            bad(`No line for ${who} by ${methodsLabel(methods)}`);
+          }
+        } else {
+          odds = l.pick === 'a' ? fight.oddsA : fight.oddsB;
+          if (odds === null || odds === undefined) bad(`No odds entered for ${who}`);
         }
+
         return {
           eventId: ev.id,
           fightId: fight.id,
           pick: l.pick,
+          market,
+          methods,
           odds,
-          fighterName: l.pick === 'a' ? fight.a.name : fight.b.name,
+          fighterName: who,
           opponentName: l.pick === 'a' ? fight.b.name : fight.a.name,
           eventName: ev.name,
         };
@@ -317,6 +355,29 @@ export async function applyAction(
       fight.oddsA = p.oddsA === null || p.oddsA === '' ? null : num(p.oddsA, 'Odds');
       fight.oddsB = p.oddsB === null || p.oddsB === '' ? null : num(p.oddsB, 'Odds');
       message = 'Odds updated';
+      break;
+    }
+
+    case 'setMethodOdds': {
+      const ev = requireEvent(db, p.eventId);
+      const fight = requireFight(ev, p.fightId);
+      const corner = p.corner;
+      if (corner !== 'a' && corner !== 'b') bad('Invalid corner');
+
+      const parse = (v: unknown, field: string): number | null =>
+        v === null || v === undefined || v === '' ? null : num(v, field);
+
+      const next: MethodOdds = {
+        ko: parse(p.ko, 'KO price'),
+        sub: parse(p.sub, 'Submission price'),
+        dec: parse(p.dec, 'Decision price'),
+      };
+      const empty = next.ko === null && next.sub === null && next.dec === null;
+
+      if (corner === 'a') fight.methodA = empty ? null : next;
+      else fight.methodB = empty ? null : next;
+
+      message = empty ? 'Method lines cleared' : 'Method lines updated';
       break;
     }
 

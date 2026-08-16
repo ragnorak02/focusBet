@@ -25,6 +25,12 @@ export function impliedProbability(american: number): number {
     : Math.abs(american) / (Math.abs(american) + 100);
 }
 
+/** Inverse of impliedProbability. Returns null for impossible probabilities. */
+export function probabilityToAmerican(p: number): number | null {
+  if (!Number.isFinite(p) || p <= 0 || p >= 1) return null;
+  return toAmerican(1 / p);
+}
+
 export function formatAmerican(american: number | null | undefined): string {
   if (american === null || american === undefined || Number.isNaN(american)) return '—';
   return american > 0 ? `+${american}` : `${american}`;

@@ -10,6 +10,7 @@ import {
   round2,
   toAmerican,
 } from '@/lib/odds';
+import { methodsLabel } from '@/lib/markets';
 import { cx } from '@/lib/format';
 
 const QUICK = [1, 5, 10, 25];
@@ -59,6 +60,8 @@ export function BetSlip({ compact = false }: { compact?: boolean }) {
         eventId: s.eventId,
         fightId: s.fightId,
         pick: s.pick,
+        market: s.market,
+        methods: s.methods,
       })),
     });
     if (res.ok) clearSlip();
@@ -72,7 +75,15 @@ export function BetSlip({ compact = false }: { compact?: boolean }) {
     for (const s of toPlace) {
       const res = await act('placeBet', {
         stake: Number(singleStakes[s.fightId]),
-        legs: [{ eventId: s.eventId, fightId: s.fightId, pick: s.pick }],
+        legs: [
+          {
+            eventId: s.eventId,
+            fightId: s.fightId,
+            pick: s.pick,
+            market: s.market,
+            methods: s.methods,
+          },
+        ],
       });
       if (res.ok) {
         placed++;
@@ -164,6 +175,11 @@ export function BetSlip({ compact = false }: { compact?: boolean }) {
                     <div className="truncate text-sm font-bold text-ink-200">
                       {s.fighterName}
                     </div>
+                    {s.market === 'method' && s.methods?.length ? (
+                      <div className="truncate text-[11px] font-semibold text-warn-500">
+                        by {methodsLabel(s.methods)}
+                      </div>
+                    ) : null}
                     <div className="truncate text-[11px] text-ink-500">
                       vs {s.opponentName}
                     </div>

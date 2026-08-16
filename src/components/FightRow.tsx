@@ -2,8 +2,11 @@
 
 import { useState } from 'react';
 import { useStore } from './Store';
-import { Badge, Button } from './ui';
+import { Badge } from './ui';
 import { GradeDialog } from './GradeDialog';
+import { MethodMarkets } from './MethodMarkets';
+import { MethodOddsDialog } from './MethodOddsDialog';
+import { hasMethodMarkets } from '@/lib/markets';
 import { formatAmerican, impliedProbability } from '@/lib/odds';
 import { cx, fmtPct } from '@/lib/format';
 import type { Corner, Fight, MmaEvent } from '@/lib/types';
@@ -48,6 +51,7 @@ function OddsButton({
           eventId: event.id,
           fightId: fight.id,
           pick: corner,
+          market: 'moneyline',
           fighterName: fighter.name,
           opponentName: opponent.name,
           eventName: event.name,
@@ -130,7 +134,10 @@ export function FightRow({
 }) {
   const { act, busy } = useStore();
   const [grading, setGrading] = useState(false);
+  const [showMethods, setShowMethods] = useState(false);
+  const [editingMethods, setEditingMethods] = useState(false);
 
+  const methodMarkets = hasMethodMarkets(fight);
   const settled = Boolean(fight.result);
   const live = fight.status === 'live' && !settled;
   const r = fight.result;
@@ -245,6 +252,59 @@ export function FightRow({
           <OddsButton event={event} fight={fight} corner="b" disabled={settled} />
         </div>
       </div>
+
+      {methodMarkets ? (
+        <>
+          <button
+            onClick={() => setShowMethods((v) => !v)}
+            className="mt-2.5 flex w-full items-center justify-center gap-1.5 rounded-lg border border-ink-700 bg-ink-800/60 py-2 text-[11px] font-bold uppercase tracking-wider text-ink-400 transition-colors hover:border-ink-600 hover:text-ink-200"
+          >
+            {showMethods ? 'Hide' : 'Winning method'}
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 16 16"
+              fill="none"
+              className={cx('transition-transform', showMethods && 'rotate-180')}
+            >
+              <path
+                d="M4 6l4 4 4-4"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+          {showMethods ? (
+            <>
+              <MethodMarkets event={event} fight={fight} />
+              {editable ? (
+                <button
+                  onClick={() => setEditingMethods(true)}
+                  className="mt-1.5 w-full text-center text-[10px] font-semibold uppercase tracking-wider text-ink-600 hover:text-ink-300"
+                >
+                  Edit method lines
+                </button>
+              ) : null}
+            </>
+          ) : null}
+        </>
+      ) : editable && !settled ? (
+        <button
+          onClick={() => setEditingMethods(true)}
+          className="mt-2.5 w-full rounded-lg border border-dashed border-ink-700 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-ink-600 transition-colors hover:border-ink-600 hover:text-ink-400"
+        >
+          + Winning method lines
+        </button>
+      ) : null}
+
+      <MethodOddsDialog
+        open={editingMethods}
+        onClose={() => setEditingMethods(false)}
+        event={event}
+        fight={fight}
+      />
 
       <GradeDialog
         open={grading}

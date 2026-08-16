@@ -7,6 +7,18 @@ export type Outcome = 'a' | 'b' | 'draw' | 'nc';
 
 export type Corner = 'a' | 'b';
 
+/** How a fight can end, for method-of-victory markets. */
+export type Method = 'ko' | 'sub' | 'dec';
+
+export type Market = 'moneyline' | 'method';
+
+/** Price for each way a given fighter can win. null = no line offered. */
+export interface MethodOdds {
+  ko: number | null;
+  sub: number | null;
+  dec: number | null;
+}
+
 export interface Fighter {
   name: string;
   record?: string;
@@ -37,6 +49,9 @@ export interface Fight {
   /** American moneyline, e.g. -285 / +270. null = odds not entered yet. */
   oddsA: number | null;
   oddsB: number | null;
+  /** Method-of-victory prices. Absent until a book's numbers are entered. */
+  methodA?: MethodOdds | null;
+  methodB?: MethodOdds | null;
   status: FightStatus;
   result: FightResult | null;
   espnId?: string;
@@ -60,6 +75,13 @@ export interface Leg {
   eventId: string;
   fightId: string;
   pick: Corner;
+  /** Absent on tickets placed before method markets existed — treat as moneyline. */
+  market?: Market;
+  /**
+   * Which finishes cash this leg, for `market: 'method'`. One entry is a
+   * straight method bet; two is a double chance (e.g. KO or Submission).
+   */
+  methods?: Method[];
   /** American odds locked in at placement — never re-read from the fight. */
   odds: number;
   fighterName: string;
