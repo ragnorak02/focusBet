@@ -2,6 +2,7 @@ import type { Corner, DB, Fight, MmaEvent, Outcome, Segment } from './types';
 import { computeBankroll, gradeAll, gradeBet } from './engine';
 import { round2 } from './odds';
 import { fetchEvent, fetchScoreboard, matchBout, type EspnEvent } from './espn';
+import { applyOddsFeed, fetchOddsFeed } from './oddsFeed';
 import { seedDb } from './seed';
 
 /**
@@ -452,26 +453,49 @@ export async function applyAction(
     case 'refreshResults': {
       const ev = requireEvent(db, p.eventId);
 
-      let remote: EspnEvent | null = null;
-      if (ev.espnId) remote = await fetchEvent(ev.espnId);
-      if (!remote) {
-        const board = await fetchScoreboard();
-        remote =
-          board.find((r) => r.name.toLowerCase() === ev.name.toLowerCase()) ??
-          board.find((r) => r.date.slice(0, 10) === ev.date.slice(0, 10)) ??
-          null;
-        if (remote) ev.espnId = remote.espnId;
-      }
-      if (!remote) {
+      // Published odds and live results are independent — fetch both, and let
+      // one fail without taking the other down.
+      const [remoteResult, feed] = await Promise.all([
+        (async () => {
+          let remote: EspnEvent | null = null;
+          if (ev.espnId) remote = await fetchEvent(ev.espnId);
+          if (!remote) {
+            const board = await fetchScoreboard();
+            remote =
+              board.find((r) => r.name.toLowerCase() === ev.name.toLowerCase()) ??
+              board.find((r) => r.date.slice(0, 10) === ev.date.slice(0, 10)) ??
+              null;
+          }
+          return remote;
+        })().catch(() => null),
+        fetchOddsFeed(),
+      ]);
+
+      const oddsChanges = feed ? applyOddsFeed(ev, feed) : [];
+
+      if (!remoteResult) {
+        if (oddsChanges.length) {
+          changes = oddsChanges;
+          message = `${oddsChanges.length} line${oddsChanges.length === 1 ? '' : 's'} updated`;
+          break;
+        }
         bad(
-          'Could not find this card on the ESPN feed. Link it by ESPN id in Edit card, or grade the fights by hand.',
+          'Could not reach the results feed. Check your connection, or grade the fights by hand.',
         );
       }
 
-      changes = applyEspnToEvent(ev, remote);
-      message = changes.length
-        ? `${changes.length} update${changes.length === 1 ? '' : 's'}`
-        : 'No new results yet';
+      if (remoteResult.espnId) ev.espnId = remoteResult.espnId;
+      const resultChanges = applyEspnToEvent(ev, remoteResult);
+
+      changes = [...resultChanges, ...oddsChanges];
+      const parts: string[] = [];
+      if (resultChanges.length) {
+        parts.push(`${resultChanges.length} result${resultChanges.length === 1 ? '' : 's'}`);
+      }
+      if (oddsChanges.length) {
+        parts.push(`${oddsChanges.length} line${oddsChanges.length === 1 ? '' : 's'}`);
+      }
+      message = parts.length ? `Updated ${parts.join(' and ')}` : 'Nothing new yet';
       break;
     }
 

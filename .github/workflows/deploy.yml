@@ -28,10 +28,11 @@ jobs:
 
       - run: npm ci
 
-      # Served from https://<user>.github.io/<repo>, so assets need that prefix.
+      # Served from https://<user>.github.io/<repo>, so assets and the runtime
+      # odds.json fetch both need that prefix.
       - run: npm run build
         env:
-          BASE_PATH: /${{ github.event.repository.name }}
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
 
       # Without this, Pages runs the output through Jekyll and drops _next/.
       - run: touch out/.nojekyll

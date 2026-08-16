@@ -1,0 +1,25 @@
+{
+  "updatedAt": "2026-08-16T00:33:00Z",
+  "events": [
+    {
+      "espnId": "600059185",
+      "name": "UFC 330: Makhachev vs. Machado Garry",
+      "source": "DraftKings",
+      "capturedAt": "2026-08-16T00:33:00Z",
+      "lines": [
+        { "fighter": "Islam Makhachev", "moneyline": -340 },
+        { "fighter": "Ian Machado Garry", "moneyline": 270 },
+        { "fighter": "Mackenzie Dern", "moneyline": -198 },
+        { "fighter": "Gillian Robertson", "moneyline": 164 },
+        { "fighter": "Jalin Turner", "moneyline": -118 },
+        { "fighter": "Kaue Fernandes", "moneyline": -102 },
+        { "fighter": "Mansur Abdul-Malik", "moneyline": -750 },
+        { "fighter": "Dustin Stoltzfus", "moneyline": 525 },
+        { "fighter": "Edson Barboza", "moneyline": 525 },
+        { "fighter": "Esteban Ribovics", "moneyline": -750 },
+        { "fighter": "Chidi Njokuani", "moneyline": 285 },
+        { "fighter": "Joel Alvarez", "moneyline": -360 }
+      ]
+    }
+  ]
+}

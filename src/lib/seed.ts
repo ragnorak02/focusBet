@@ -2,7 +2,7 @@ import type { DB, MmaEvent } from './types';
 
 /**
  * UFC 330 — Makhachev vs. Machado Garry (Xfinity Mobile Arena, Philadelphia).
- * Card + records from Tapology, moneylines from the Polymarket column.
+ * Card + records from Tapology, moneylines from DraftKings.
  * Bouts left without a price simply have no line entered yet.
  */
 function ufc330(): MmaEvent {
@@ -40,12 +40,12 @@ function ufc330(): MmaEvent {
     espnId: '600059185',
     createdAt: new Date(0).toISOString(),
     fights: [
-      f(12, 'main', 'Welterweight', 5, true, ['Islam Makhachev', '28-1'], ['Ian Machado Garry', '17-1'], -285, 270),
-      f(11, 'main', "Women's Strawweight", 5, true, ['Mackenzie Dern', '16-5'], ['Gillian Robertson', '17-8'], -186, 178),
-      f(10, 'main', 'Lightweight', 3, false, ['Jalin Turner', '15-9'], ['Kauê Fernandes', '11-2'], -104, -100),
-      f(9, 'main', 'Middleweight', 3, false, ['Mansur Abdul-Malik', '9-1-1'], ['Dustin Stoltzfus', '16-8'], -614, 567),
-      f(8, 'main', 'Lightweight', 3, false, ['Edson Barboza', '24-14'], ['Esteban Ribovics', '15-3'], 567, -614),
-      f(7, 'prelim', 'Welterweight', 3, false, ['Chidi Njokuani', '25-12'], ['Joel Álvarez', '23-4'], null, null),
+      f(12, 'main', 'Welterweight', 5, true, ['Islam Makhachev', '28-1'], ['Ian Machado Garry', '17-1'], -340, 270),
+      f(11, 'main', "Women's Strawweight", 5, true, ['Mackenzie Dern', '16-5'], ['Gillian Robertson', '17-8'], -198, 164),
+      f(10, 'main', 'Lightweight', 3, false, ['Jalin Turner', '15-9'], ['Kauê Fernandes', '11-2'], -118, -102),
+      f(9, 'main', 'Middleweight', 3, false, ['Mansur Abdul-Malik', '9-1-1'], ['Dustin Stoltzfus', '16-8'], -750, 525),
+      f(8, 'main', 'Lightweight', 3, false, ['Edson Barboza', '24-14'], ['Esteban Ribovics', '15-3'], 525, -750),
+      f(7, 'prelim', 'Welterweight', 3, false, ['Chidi Njokuani', '25-12'], ['Joel Álvarez', '23-4'], 285, -360),
       f(6, 'prelim', 'Catchweight', 3, false, ['Charles Johnson', '19-9'], ['Eduardo Chapolin', '15-2'], null, null),
       f(5, 'prelim', 'Middleweight', 3, false, ['Donte Johnson', '8-0'], ['Eric McConico', '11-4-1'], null, null),
       f(4, 'prelim', 'Middleweight', 3, false, ['Vicente Luque', '24-12-1'], ['Tresean Gore', '7-4'], -104, -100),

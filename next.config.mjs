@@ -3,8 +3,11 @@
 // from ESPN's public feed, which sends `access-control-allow-origin: *`.
 //
 // A project page is served from /<repo>, so asset and route URLs need that
-// prefix. Set BASE_PATH='' to build for a root domain instead.
-const basePath = process.env.BASE_PATH ?? '';
+// prefix. NEXT_PUBLIC_BASE_PATH is used (rather than a plain BASE_PATH) because
+// client code has to build the same prefix at runtime to fetch odds.json, and
+// only NEXT_PUBLIC_* vars get inlined into the browser bundle.
+// Leave it unset to build for a root domain.
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {

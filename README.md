@@ -69,7 +69,21 @@ sets this automatically; you only need it for cards you built by hand.
 
 ## Entering odds
 
-The feed doesn't carry moneylines, so those come from you. Two ways:
+No free feed carries moneylines, so they're committed to this repo as
+`public/odds.json` and published with the site. **Refresh results** pulls that
+file alongside the live results, so shipping new lines is just a commit — nothing
+to re-enter on the phone.
+
+```json
+{ "espnId": "600059185",
+  "lines": [ { "fighter": "Islam Makhachev", "moneyline": -340 } ] }
+```
+
+Matching is on fighter name and ignores accents, so a book's "Kaue Fernandes"
+lands on "Kauê Fernandes". Fights that already have a result are skipped, and
+bets keep the price they were struck at, so re-running it can't rewrite history.
+
+You can also enter lines yourself:
 
 - **Paste odds** on a card — one fighter per line with the price after the name:
 
