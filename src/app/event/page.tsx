@@ -24,7 +24,6 @@ function EventView() {
   const id = params.get('id') ?? '';
   const { state, act, ready } = useStore();
   const [filter, setFilter] = useState<'all' | 'open' | 'final'>('all');
-  const [syncNote, setSyncNote] = useState<string[] | null>(null);
   const [sync, setSync] = useState<Sync>({ phase: 'loading' });
 
   const event = state.events.find((e) => e.id === id);
@@ -54,12 +53,7 @@ function EventView() {
     // view (or every time the phone is offline) would just be noise.
     act('refreshResults', { eventId }, { silent: true }).then((res) => {
       if (cancelled) return;
-      if (res.ok) {
-        if (res.changes?.length) setSyncNote(res.changes);
-        setSync({ phase: 'ok', at: new Date().toISOString() });
-      } else {
-        setSync({ phase: 'error' });
-      }
+      setSync(res.ok ? { phase: 'ok', at: new Date().toISOString() } : { phase: 'error' });
     });
 
     return () => {
@@ -165,31 +159,6 @@ function EventView() {
           </div>
         </div>
       </Panel>
-
-      {syncNote?.length ? (
-        <Panel className="border-brand-500/30">
-          <div className="flex items-start justify-between gap-3 p-3">
-            <div className="min-w-0">
-              <div className="text-xs font-bold uppercase tracking-wider text-brand-500">
-                What changed
-              </div>
-              <ul className="mt-1.5 space-y-0.5">
-                {syncNote.map((c, i) => (
-                  <li key={i} className="text-xs text-ink-300">
-                    {c}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <button
-              onClick={() => setSyncNote(null)}
-              className="shrink-0 rounded px-2 py-1 text-[11px] font-semibold text-ink-500 hover:bg-ink-700"
-            >
-              Dismiss
-            </button>
-          </div>
-        </Panel>
-      ) : null}
 
       <div className="flex items-center gap-1">
         {(['all', 'open', 'final'] as const).map((f) => (
