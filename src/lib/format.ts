@@ -20,6 +20,12 @@ export function fmtDateTime(iso: string): string {
   });
 }
 
+export function fmtTime(iso: string): string {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '—';
+  return d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+}
+
 export function fmtTimeAgo(iso: string): string {
   const then = new Date(iso).getTime();
   if (Number.isNaN(then)) return '';

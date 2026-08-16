@@ -80,7 +80,15 @@ interface StoreValue {
   /** False until localStorage has been read on the client. */
   ready: boolean;
   busy: boolean;
-  act: (type: string, payload?: Record<string, unknown>) => Promise<ActResult>;
+  /**
+   * `silent` skips the toast on both outcomes — for work the user didn't press
+   * a button for, where the page reports the result in place instead.
+   */
+  act: (
+    type: string,
+    payload?: Record<string, unknown>,
+    opts?: { silent?: boolean },
+  ) => Promise<ActResult>;
   toast: (text: string, tone?: 'ok' | 'err') => void;
   toasts: Toast[];
   dismissToast: (id: number) => void;
@@ -138,7 +146,7 @@ export function Store({ children }: { children: React.ReactNode }) {
   }, []);
 
   const act = useCallback<StoreValue['act']>(
-    async (type, payload = {}) => {
+    async (type, payload = {}, opts = {}) => {
       setBusy(true);
       try {
         // Read through a setter so concurrent actions can't work off stale state.
@@ -151,7 +159,7 @@ export function Store({ children }: { children: React.ReactNode }) {
 
         const out = await applyAction(current, type, payload);
         setDb(out.db);
-        if (out.message) toast(out.message);
+        if (out.message && !opts.silent) toast(out.message);
         return {
           ok: true,
           message: out.message,
@@ -166,7 +174,7 @@ export function Store({ children }: { children: React.ReactNode }) {
               ? `Something went wrong: ${err.message}`
               : 'Something went wrong';
         if (!(err instanceof ActionError)) console.error('[action]', type, err);
-        toast(msg, 'err');
+        if (!opts.silent) toast(msg, 'err');
         return { ok: false, error: msg };
       } finally {
         setBusy(false);

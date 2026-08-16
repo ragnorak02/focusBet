@@ -1,16 +1,14 @@
 'use client';
 
-import { Suspense, useMemo, useState } from 'react';
+import { Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 import { useStore } from '@/components/Store';
 import { FightRow } from '@/components/FightRow';
-import { OddsPasteDialog } from '@/components/OddsPasteDialog';
-import { EditCardDialog } from '@/components/EditCardDialog';
 import { BetCard } from '@/components/BetCard';
 import { Button, Empty, Panel, PanelHeader } from '@/components/ui';
 import { formatMoney } from '@/lib/odds';
-import { cx, fmtDate } from '@/lib/format';
+import { cx, fmtDate, fmtTime } from '@/lib/format';
 import type { Segment } from '@/lib/types';
 
 const SEGMENTS: { key: Segment; label: string }[] = [
@@ -19,17 +17,18 @@ const SEGMENTS: { key: Segment; label: string }[] = [
   { key: 'early', label: 'Early Prelims' },
 ];
 
+type Sync = { phase: 'loading' } | { phase: 'ok'; at: string } | { phase: 'error' };
+
 function EventView() {
   const params = useSearchParams();
   const id = params.get('id') ?? '';
-  const { state, act, busy, ready } = useStore();
-  const router = useRouter();
-  const [pasting, setPasting] = useState(false);
-  const [editing, setEditing] = useState(false);
+  const { state, act, ready } = useStore();
   const [filter, setFilter] = useState<'all' | 'open' | 'final'>('all');
   const [syncNote, setSyncNote] = useState<string[] | null>(null);
+  const [sync, setSync] = useState<Sync>({ phase: 'loading' });
 
   const event = state.events.find((e) => e.id === id);
+  const eventId = event?.id;
 
   const eventBets = useMemo(
     () => state.bets.filter((b) => b.legs.some((l) => l.eventId === id)),
@@ -37,6 +36,36 @@ function EventView() {
   );
 
   const pnl = state.eventPnl.find((p) => p.eventId === id);
+
+  // Odds and results are pulled on load, so a pull-to-refresh is the whole
+  // update gesture. Guarded by a ref because `act` swaps the db in, which
+  // re-runs this effect — without it the fetch would loop.
+  const pulledFor = useRef<string | null>(null);
+
+  useEffect(() => {
+    if (!ready || !eventId) return;
+    if (pulledFor.current === eventId) return;
+    pulledFor.current = eventId;
+
+    let cancelled = false;
+    setSync({ phase: 'loading' });
+
+    // Silent: nothing here was triggered by a tap, so a toast on every page
+    // view (or every time the phone is offline) would just be noise.
+    act('refreshResults', { eventId }, { silent: true }).then((res) => {
+      if (cancelled) return;
+      if (res.ok) {
+        if (res.changes?.length) setSyncNote(res.changes);
+        setSync({ phase: 'ok', at: new Date().toISOString() });
+      } else {
+        setSync({ phase: 'error' });
+      }
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [ready, eventId, act]);
 
   if (!event) {
     return (
@@ -65,11 +94,6 @@ function EventView() {
   const missingOdds = fights.filter(
     (f) => !f.result && (f.oddsA === null || f.oddsB === null),
   ).length;
-
-  async function refresh() {
-    const res = await act('refreshResults', { eventId: event!.id });
-    setSyncNote(res.ok ? (res.changes ?? []) : null);
-  }
 
   return (
     <div className="space-y-5">
@@ -123,34 +147,31 @@ function EventView() {
                 </div>
               </div>
 
-              <div className="flex w-full flex-wrap gap-2 sm:w-auto">
-                <Button size="sm" className="flex-1 sm:flex-none" onClick={() => setPasting(true)}>
-                  Paste odds
-                </Button>
-                <Button size="sm" className="flex-1 sm:flex-none" onClick={() => setEditing(true)}>
-                  Edit card
-                </Button>
-                <Button
-                  size="sm"
-                  variant="primary"
-                  className="flex-1 sm:flex-none"
-                  disabled={busy}
-                  onClick={refresh}
-                >
-                  {busy ? 'Checking…' : 'Refresh results'}
-                </Button>
+              <div className="shrink-0 text-xs sm:text-right">
+                {sync.phase === 'loading' ? (
+                  <span className="flex items-center gap-1.5 text-ink-400 sm:justify-end">
+                    <span className="live-dot inline-block h-1.5 w-1.5 rounded-full bg-brand-500" />
+                    Checking odds &amp; results…
+                  </span>
+                ) : sync.phase === 'error' ? (
+                  <span className="text-warn-500">Feed unreachable — pull down to retry</span>
+                ) : (
+                  <span className="text-ink-500">
+                    Updated {fmtTime(sync.at)} · pull down to refresh
+                  </span>
+                )}
               </div>
             </div>
           </div>
         </div>
       </Panel>
 
-      {syncNote ? (
+      {syncNote?.length ? (
         <Panel className="border-brand-500/30">
           <div className="flex items-start justify-between gap-3 p-3">
             <div className="min-w-0">
               <div className="text-xs font-bold uppercase tracking-wider text-brand-500">
-                {syncNote.length ? 'Results synced' : 'No new results'}
+                What changed
               </div>
               <ul className="mt-1.5 space-y-0.5">
                 {syncNote.map((c, i) => (
@@ -159,11 +180,6 @@ function EventView() {
                   </li>
                 ))}
               </ul>
-              {!syncNote.length ? (
-                <div className="mt-1 text-xs text-ink-500">
-                  Nothing has been called since the last check.
-                </div>
-              ) : null}
             </div>
             <button
               onClick={() => setSyncNote(null)}
@@ -224,12 +240,16 @@ function EventView() {
                   ? 'Nothing has finished yet'
                   : 'No fights on this card'
             }
-            body={filter === 'all' ? 'Add bouts from the Edit card panel.' : undefined}
+            body={
+              filter === 'all'
+                ? 'Re-import the card from the fight cards page to pull its bouts.'
+                : undefined
+            }
             action={
               filter === 'all' ? (
-                <Button variant="primary" onClick={() => setEditing(true)}>
-                  Edit card
-                </Button>
+                <Link href="/events/">
+                  <Button variant="primary">Back to cards</Button>
+                </Link>
               ) : undefined
             }
           />
@@ -249,14 +269,6 @@ function EventView() {
           </div>
         </Panel>
       ) : null}
-
-      <OddsPasteDialog open={pasting} onClose={() => setPasting(false)} event={event} />
-      <EditCardDialog
-        open={editing}
-        onClose={() => setEditing(false)}
-        event={event}
-        onDeleted={() => router.push('/events/')}
-      />
     </div>
   );
 }
