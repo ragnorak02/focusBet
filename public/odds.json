@@ -1,6 +1,79 @@
 {
-  "updatedAt": "2026-08-16T01:17:00Z",
+  "updatedAt": "2026-08-16T21:38:00Z",
   "events": [
+    {
+      "espnId": "600060493",
+      "name": "UFC Fight Night: Hernandez vs. Rodrigues",
+      "source": "DraftKings",
+      "capturedAt": "2026-08-16T21:32:00Z",
+      "lines": [
+        {
+          "fighter": "Anthony Hernandez",
+          "moneyline": -175,
+          "totalLine": 3.5,
+          "over": 135
+        },
+        {
+          "fighter": "Gregory Rodrigues",
+          "moneyline": 145,
+          "totalLine": 3.5,
+          "under": -175
+        },
+
+        {
+          "fighter": "Serghei Spivac",
+          "moneyline": 142,
+          "totalLine": 1.5,
+          "over": -188
+        },
+        {
+          "fighter": "Vitor Petrino",
+          "moneyline": -170,
+          "totalLine": 1.5,
+          "under": 145
+        },
+
+        {
+          "fighter": "Carli Judice",
+          "moneyline": -500
+        },
+        {
+          "fighter": "Jeisla Chaves",
+          "moneyline": 380
+        },
+
+        {
+          "fighter": "Kennedy Nzechukwu",
+          "moneyline": 114,
+          "totalLine": 1.5,
+          "over": -115
+        },
+        {
+          "fighter": "Shamil Gaziev",
+          "moneyline": -135,
+          "totalLine": 1.5,
+          "under": -115
+        },
+
+        {
+          "fighter": "Wes Schultz",
+          "moneyline": 154
+        },
+        {
+          "fighter": "Jackson McVey",
+          "moneyline": -185
+        },
+
+        {
+          "fighter": "Shanelle Dyer",
+          "moneyline": -675
+        },
+        {
+          "fighter": "Elise Reed",
+          "moneyline": 490
+        }
+      ]
+    },
     {
       "espnId": "600059185",
       "name": "UFC 330: Makhachev vs. Machado Garry",
