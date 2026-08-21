@@ -24,6 +24,10 @@ function EventView() {
   const id = params.get('id') ?? '';
   const { state, act, ready } = useStore();
   const [filter, setFilter] = useState<'all' | 'open' | 'final'>('all');
+  // Results and lines both arrive from the feed, so the board is read-only by
+  // default and every bout is two rows shorter for it. This is the way back in
+  // when the feed is behind, or when a spread needs its scorecards.
+  const [editing, setEditing] = useState(false);
   const [sync, setSync] = useState<Sync>({ phase: 'loading' });
 
   const event = state.events.find((e) => e.id === id);
@@ -175,6 +179,17 @@ function EventView() {
             {f === 'all' ? 'All' : f === 'open' ? 'Bettable' : 'Final'}
           </button>
         ))}
+        <button
+          onClick={() => setEditing((v) => !v)}
+          className={cx(
+            'ml-auto rounded-lg px-3 py-1.5 text-xs font-bold uppercase tracking-wide transition-colors',
+            editing
+              ? 'bg-ink-700 text-ink-200'
+              : 'text-ink-600 hover:bg-ink-800 hover:text-ink-300',
+          )}
+        >
+          {editing ? 'Done' : 'Edit'}
+        </button>
       </div>
 
       {SEGMENTS.map(({ key, label }) => {
@@ -192,7 +207,7 @@ function EventView() {
             />
             <div className="divide-y divide-ink-700/50">
               {rows.map((f) => (
-                <FightRow key={f.id} event={event} fight={f} />
+                <FightRow key={f.id} event={event} fight={f} editable={editing} />
               ))}
             </div>
           </Panel>

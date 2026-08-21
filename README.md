@@ -29,8 +29,10 @@ do is sent to a server, because there isn't one.
   to do afterwards.
 - **Automatic grading** — hit **Refresh results** and finished fights are pulled
   from a live feed, then every ticket touching them settles itself.
-- **Manual grading** — set any result by hand (winner, method, round, time), and
-  undo it just as easily if you got ahead of the official call.
+- **Manual grading** — tap **Edit** on a card to set a result by hand (winner,
+  method, round, time), and undo it just as easily if you got ahead of the
+  official call. The board is read-only until you do, since results and lines
+  both arrive on their own.
 - **Bankroll** — deposit and cash out play money, with a full ledger of every
   stake, payout and refund.
 - **Stats** — bankroll curve over time, ROI, record, straights vs parlays,
@@ -166,7 +168,7 @@ bets keep the price they were struck at, so re-running it can't rewrite history.
   Order doesn't matter and surnames alone usually match. This is shaped to accept
   an odds column copied straight off a book or prediction market.
 
-- **Edit lines** on a bout to set its prices by hand.
+- **Edit** on a card, then **Edit lines** on a bout, to set its prices by hand.
 
 Fights without a price show *No line* and can't be bet until you add one.
 

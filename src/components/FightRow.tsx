@@ -14,7 +14,7 @@ import {
   spreadFor,
 } from '@/lib/markets';
 import { formatAmerican } from '@/lib/odds';
-import { cx, surname } from '@/lib/format';
+import { cx, surname, weightAbbrev } from '@/lib/format';
 import type { Corner, Fight, MmaEvent } from '@/lib/types';
 
 /** A price button with an optional line above it, DraftKings style. */
@@ -236,16 +236,27 @@ export function FightRow({
         settled ? 'bg-ink-900/40' : live ? 'bg-live-500/[0.06]' : 'hover:bg-ink-800/40',
       )}
     >
-      {/* meta strip */}
-      <div className="mb-2 flex flex-wrap items-center gap-1.5">
-        <span className="nums rounded bg-ink-700 px-1.5 py-0.5 text-[10px] font-bold text-ink-400">
-          #{fight.order}
+      {/* One line per bout: division, both names in full, and how it ended.
+          The bout number, the rounds label and the editing controls used to sit
+          on a row of their own above this — two rows of chrome per fight, and
+          thirteen fights of scrolling on a phone. */}
+      <div className="mb-2 flex flex-wrap items-center gap-x-2 gap-y-1">
+        <span className="shrink-0 rounded bg-ink-700 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-ink-400">
+          {weightAbbrev(fight.weightClass)}
         </span>
         {fight.titleFight ? <Badge tone="gold">Title</Badge> : null}
-        <span className="text-[11px] font-semibold uppercase tracking-wide text-ink-500">
-          {fight.weightClass}
+        {/* Only worth saying when it isn't the usual three, since the rounds
+            market prices off it. */}
+        {fight.rounds !== 3 ? (
+          <span className="nums text-[10px] font-bold text-ink-500">{fight.rounds}R</span>
+        ) : null}
+
+        <span className="min-w-0 text-[13px] font-bold leading-snug text-ink-300">
+          {fight.a.name}
+          <span className="px-1.5 text-[11px] font-semibold uppercase text-ink-600">vs</span>
+          {fight.b.name}
         </span>
-        <span className="nums text-[11px] text-ink-600">{fight.rounds}×5</span>
+
         {live ? (
           <Badge tone="live">
             <span className="live-dot mr-0.5 inline-block h-1.5 w-1.5 rounded-full bg-live-500" />
@@ -259,9 +270,6 @@ export function FightRow({
           <span className="nums text-[11px] text-ink-500">
             {r.scoreA}–{r.scoreB}
           </span>
-        ) : null}
-        {r?.source === 'espn' ? (
-          <span className="text-[10px] text-ink-600">auto</span>
         ) : null}
 
         {editable ? (
@@ -294,7 +302,7 @@ export function FightRow({
                   }
                   disabled={busy}
                   className={cx(
-                    'hidden rounded px-1.5 py-0.5 text-[10px] font-semibold sm:block',
+                    'rounded px-1.5 py-0.5 text-[10px] font-semibold',
                     live
                       ? 'text-live-500 hover:bg-ink-700'
                       : 'text-ink-500 hover:bg-ink-700 hover:text-ink-300',
@@ -312,14 +320,6 @@ export function FightRow({
             )}
           </div>
         ) : null}
-      </div>
-
-      {/* Both names in full, since the rows beside the prices only have room
-          for a surname. */}
-      <div className="mb-2 text-[13px] font-bold leading-snug text-ink-300">
-        {fight.a.name}
-        <span className="px-1.5 text-[11px] font-semibold uppercase text-ink-600">vs</span>
-        {fight.b.name}
       </div>
 
       {/* column headers */}

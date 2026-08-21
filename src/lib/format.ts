@@ -51,6 +51,41 @@ export function surname(name: string): string {
   return parts.length > 1 ? parts.slice(1).join(' ') : name;
 }
 
+const WEIGHT_ABBREV: [string, string][] = [
+  ['strawweight', 'SW'],
+  ['flyweight', 'FLY'],
+  ['bantamweight', 'BW'],
+  ['featherweight', 'FW'],
+  ['lightweight', 'LW'],
+  ['welterweight', 'WW'],
+  ['middleweight', 'MW'],
+  ['light heavyweight', 'LHW'],
+  ['heavyweight', 'HW'],
+  ['catchweight', 'CW'],
+];
+
+/**
+ * "Light Heavyweight" → "LHW", "Women's Flyweight" → "WFLY". Spelt out, the
+ * division needed a row of its own; abbreviated, it fits beside the names.
+ */
+export function weightAbbrev(weightClass: string): string {
+  const raw = weightClass.trim().toLowerCase();
+  const women = /^(women'?s)\s+/.test(raw);
+  const base = raw.replace(/^(women'?s)\s+/, '');
+
+  const hit = WEIGHT_ABBREV.find(([name]) => base.startsWith(name))?.[1];
+  const abbr =
+    hit ??
+    base
+      .split(/\s+/)
+      .map((w) => w[0] ?? '')
+      .join('')
+      .toUpperCase()
+      .slice(0, 3);
+
+  return abbr ? (women ? `W${abbr}` : abbr) : '—';
+}
+
 export function fmtPct(n: number, digits = 1): string {
   return `${(n * 100).toFixed(digits)}%`;
 }
