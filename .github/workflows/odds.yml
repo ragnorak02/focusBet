@@ -1,0 +1,50 @@
+name: Pull odds
+
+# The board reads public/odds.json, so keeping lines current is a commit. This
+# is what makes that commit, every two hours, without anyone opening a book.
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+    inputs:
+      books:
+        description: 'Book preference, highest first'
+        required: false
+        default: 'FanDuel,Kalshi,DraftKings,BetRivers,Caesars,BetMGM,BetWay,Unibet,Polymarket'
+
+# Pushing here is what redeploys the site — deploy.yml runs on push to main.
+permissions:
+  contents: write
+
+concurrency:
+  group: odds
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # No install step: the scraper is dependency-free on purpose.
+      - run: node scripts/pull-odds.mjs
+        env:
+          ODDS_BOOKS: ${{ github.event.inputs.books }}
+
+      # The script leaves the file untouched when no line moved, so an
+      # unchanged tree here means there is genuinely nothing to publish.
+      - name: Commit if anything moved
+        run: |
+          if [ -z "$(git status --porcelain public/odds.json)" ]; then
+            echo "No line moved."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/odds.json
+          git commit -m "Refresh odds from BestFightOdds"
+          git push

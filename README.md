@@ -72,12 +72,53 @@ in opposite order so results still land on the right fighter.
 Open **Edit card → Event details** and paste the ESPN event id. Importing a card
 sets this automatically; you only need it for cards you built by hand.
 
-## Entering odds
+## Where odds come from
 
-No free feed carries moneylines, so they're committed to this repo as
-`public/odds.json` and published with the site. **Refresh results** pulls that
-file alongside the live results, so shipping new lines is just a commit — nothing
-to re-enter on the phone.
+Odds are pulled from **BestFightOdds**, which puts every book's price for a
+whole card in one server-rendered page: moneylines, totals, the draw, and
+method of victory per fighter. `scripts/pull-odds.mjs` scrapes it, picks a
+price per market, and writes `public/odds.json`. The app fetches that file on
+load, so shipping new lines is a commit rather than an evening of typing.
+
+```bash
+npm run odds                       # rebuild public/odds.json
+npm run odds -- --dry-run          # print it instead of writing
+npm run odds -- --books=Kalshi,FanDuel
+npm run odds -- --event=sacramento
+```
+
+`.github/workflows/odds.yml` runs it **every two hours** and commits when a
+line has actually moved. That push is also what redeploys the site, so the
+board on your phone tracks the market with nothing to do by hand.
+
+### Which book you get
+
+Books disagree, and a moneyline taken from two of them can price both corners
+as the favourite. So each market is filled from the first book in the
+preference order that quotes *the whole* market — both corners of a moneyline,
+both sides of a total, all three ways to win. The order defaults to
+
+```
+FanDuel, Kalshi, DraftKings, BetRivers, Caesars, BetMGM, BetWay, Unibet, Polymarket
+```
+
+and is overridden with `--books=` or the `ODDS_BOOKS` env var. Books that don't
+post a market are skipped rather than mixed in, so a card usually comes from
+one or two books and the feed's `source` field names them.
+
+Two BestFightOdds conventions worth knowing: **"wins inside distance"** is the
+KO-or-submission double chance, and every total a book has posted is listed, so
+the one that lands on the board is the one closest to a coin flip — which is
+what a book means by its main line.
+
+### Hand-entered lines
+
+`data/odds-manual.json` is laid over the scrape, **field by field, and wins**.
+It exists for the two things the scrape can't do: BestFightOdds carries no
+handicap on the judges' scorecards, and it doesn't list every card. Delete a
+field — or a whole event — to hand that market back to the automated feed.
+
+Both files have the same shape:
 
 ```json
 { "espnId": "600059185",
@@ -99,14 +140,14 @@ Every field past `fighter` is optional:
 | `draw` | draw |
 
 `draw` and the totals belong to the fight rather than a corner, so they're
-accepted on whichever fighter's line carries them. You can also enter any of it
-per fight in the app under **Edit lines**.
+accepted on whichever fighter's line carries them — but enter a total on *both*
+corners, since the two sources can list a bout's corners in opposite order.
 
 Matching is on fighter name and ignores accents, so a book's "Kaue Fernandes"
 lands on "Kauê Fernandes". Fights that already have a result are skipped, and
 bets keep the price they were struck at, so re-running it can't rewrite history.
 
-You can also enter lines yourself:
+### Entering odds in the app
 
 - **Paste odds** on a card — one fighter per line with the price after the name:
 
@@ -120,7 +161,7 @@ You can also enter lines yourself:
   Order doesn't matter and surnames alone usually match. This is shaped to accept
   an odds column copied straight off a book or prediction market.
 
-- **Edit card** to set a single bout's prices by hand.
+- **Edit lines** on a bout to set its prices by hand.
 
 Fights without a price show *No line* and can't be bet until you add one.
 
