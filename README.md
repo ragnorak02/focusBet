@@ -25,6 +25,8 @@ do is sent to a server, because there isn't one.
 - **Winning method** — KO/TKO/DQ, submission or decision, the three double
   chances, and the draw.
 - **Cash out** — settle an open ticket early; the offer is shown on the button.
+  Every one is kept score of: how often you take it, and what the ticket went on
+  to do afterwards.
 - **Automatic grading** — hit **Refresh results** and finished fights are pulled
   from a live feed, then every ticket touching them settles itself.
 - **Manual grading** — set any result by hand (winner, method, round, time), and
@@ -33,6 +35,9 @@ do is sent to a server, because there isn't one.
   stake, payout and refund.
 - **Stats** — bankroll curve over time, ROI, record, straights vs parlays,
   per-event P&L, win streaks, biggest win and biggest loss.
+- **Tracking periods** — reset the stats to start counting from now, so a change
+  in how you bet gets judged on its own record. Nothing is deleted, and one tap
+  puts the whole history back.
 
 ## Using it
 
@@ -196,6 +201,31 @@ are exactly `1/decimal` implied probability, so every still-open leg contributes
 `decimal × (1/decimal) = 1` to the expected value. Only legs already won move
 the number — which is why a fresh single offers back slightly under its stake,
 and a parlay's offer climbs as legs land.
+
+### Keeping score of it
+
+Cashing out hides how the ticket would have gone, and that's exactly what makes
+the habit hard to judge. So every cashed ticket is *also* graded as if it had
+been left alone. The ticket itself says which way it went — "would have returned
+$14.44, cashing out cost $2.04", or "went on to lose, cashing out saved $5.20" —
+and **Stats → Cash out** adds them up: how many, what share of your settled
+tickets, and whether the offers you took have beaten riding them out. Tickets
+whose fights haven't happened yet are counted but left out of the comparison.
+
+## Resetting the stats
+
+**Stats → Reset stats** starts a tracking period. Record, ROI, streaks, the
+bankroll curve, per-event P&L and the cash-out numbers all begin counting from
+that moment, and the header keeps the all-time figure alongside so you can see
+both at once.
+
+Nothing is deleted — it moves a line the page measures from, stored as one
+timestamp. **Show all time** clears it and the full record is back. The curve
+picks up at the balance the period opened at rather than restarting from zero,
+so break-even means "up on this period", not "up on everything you deposited".
+
+For the destructive version — wiping every bet, event and cash entry back to the
+seeded state — there's still **Bank → Reset everything**.
 
 ## How settlement works
 

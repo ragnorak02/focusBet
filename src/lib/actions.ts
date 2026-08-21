@@ -183,6 +183,7 @@ export async function applyAction(
         events: next.events,
         bets: next.bets,
         cash: next.cash ?? [],
+        statsResetAt: next.statsResetAt ?? null,
       },
       message: 'Backup restored',
     };
@@ -330,6 +331,22 @@ export async function applyAction(
       const amount = money(p.amount, 'Amount');
       bet.cashOut = { at: new Date().toISOString(), amount };
       message = `Cashed out for $${amount.toFixed(2)}`;
+      break;
+    }
+
+    // Starting a tracking period deletes nothing — it moves the line the stats
+    // page measures from, so a change in how you bet can be judged on its own
+    // record. Clearing it puts every bet back in the numbers.
+    case 'resetStats': {
+      db.statsResetAt = new Date().toISOString();
+      message = 'Tracking period started — stats now count from here';
+      break;
+    }
+
+    case 'clearStatsReset': {
+      if (!db.statsResetAt) bad('Stats already cover everything');
+      db.statsResetAt = null;
+      message = 'Stats cover everything again';
       break;
     }
 

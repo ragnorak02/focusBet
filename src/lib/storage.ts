@@ -20,6 +20,7 @@ export function loadDb(): DB {
       events: parsed.events ?? [],
       bets: parsed.bets ?? [],
       cash: parsed.cash ?? [],
+      statsResetAt: parsed.statsResetAt ?? null,
     };
   } catch {
     // Corrupt or unreadable — start clean rather than crashing the app.

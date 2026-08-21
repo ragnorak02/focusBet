@@ -156,6 +156,13 @@ export interface DB {
   events: MmaEvent[];
   bets: Bet[];
   cash: CashTxn[];
+  /**
+   * Start of the current tracking period. Stats are measured from here, so
+   * changing how you bet can be measured against the change rather than
+   * against everything you've ever done. Nothing is deleted when it moves —
+   * clearing it puts the whole history back.
+   */
+  statsResetAt?: string | null;
 }
 
 /* ---------- derived (never persisted) ---------- */
@@ -179,6 +186,13 @@ export interface GradedBet extends Bet {
   potentialProfit: number;
   /** returned - stake once settled, else 0. */
   profit: number;
+  /**
+   * What the ticket would have done had it been left alone — the same grading
+   * with the cash out ignored. On anything not cashed out this is just
+   * `status` / `returned`.
+   */
+  naturalStatus: BetStatus;
+  naturalReturn: number;
   /** Combined decimal odds of all non-void legs. */
   decimal: number;
   settledAt: string | null;

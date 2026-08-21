@@ -165,6 +165,25 @@ export function BetCard({ bet }: { bet: GradedBet }) {
         </div>
       </div>
 
+      {/* What the ticket did after the money was taken. Left off while its
+          fights are still to come — there's nothing to compare against yet. */}
+      {bet.status === 'cashed' && bet.naturalStatus !== 'open' ? (
+        <div
+          className={cx(
+            'nums mt-2.5 rounded-lg px-2.5 py-1.5 text-[11px] font-semibold',
+            bet.returned >= bet.naturalReturn
+              ? 'bg-brand-500/10 text-brand-500'
+              : 'bg-loss-500/10 text-loss-500',
+          )}
+        >
+          {bet.naturalStatus === 'lost'
+            ? `Went on to lose — cashing out saved ${formatMoney(bet.returned)}`
+            : bet.returned >= bet.naturalReturn
+              ? `Would have returned ${formatMoney(bet.naturalReturn)} — you took ${formatMoney(bet.returned - bet.naturalReturn)} more`
+              : `Would have returned ${formatMoney(bet.naturalReturn)} — cashing out cost ${formatMoney(bet.naturalReturn - bet.returned)}`}
+        </div>
+      ) : null}
+
       {bet.status === 'open' ? (
         <button
           onClick={openCashOut}

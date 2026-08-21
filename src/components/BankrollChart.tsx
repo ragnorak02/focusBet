@@ -17,11 +17,11 @@ interface Point {
  */
 export function BankrollChart({
   history,
-  deposited,
+  baseline,
   height = 200,
 }: {
   history: Point[];
-  deposited: number;
+  baseline: number;
   height?: number;
 }) {
   const wrapRef = useRef<HTMLDivElement>(null);
@@ -53,7 +53,7 @@ export function BankrollChart({
     // Duplicate a lone point so the line has something to draw.
     const pts = history.length === 1 ? [history[0], history[0]] : history;
 
-    const values = pts.map((p) => p.balance).concat(deposited, 0);
+    const values = pts.map((p) => p.balance).concat(baseline, 0);
     const rawMin = Math.min(...values);
     const rawMax = Math.max(...values);
     const span = rawMax - rawMin || 1;
@@ -74,8 +74,8 @@ export function BankrollChart({
 
     const ticks = [max, (max + min) / 2, min].map((v) => ({ v, y: y(v) }));
 
-    return { pts, x, y, line, area, ticks, breakEvenY: y(deposited) };
-  }, [history, deposited, width, H, PAD.left, PAD.right, PAD.top, PAD.bottom]);
+    return { pts, x, y, line, area, ticks, breakEvenY: y(baseline) };
+  }, [history, baseline, width, H, PAD.left, PAD.right, PAD.top, PAD.bottom]);
 
   if (!geom) {
     return (
@@ -86,7 +86,7 @@ export function BankrollChart({
   }
 
   const last = geom.pts[geom.pts.length - 1];
-  const up = last.balance >= deposited;
+  const up = last.balance >= baseline;
   const stroke = up ? 'var(--color-brand-500)' : 'var(--color-loss-500)';
   const active = hover !== null ? geom.pts[hover] : null;
 
@@ -140,7 +140,7 @@ export function BankrollChart({
           </g>
         ))}
 
-        {/* break-even against everything deposited */}
+        {/* break-even against the baseline */}
         <line
           x1={PAD.left}
           x2={width - PAD.right}
