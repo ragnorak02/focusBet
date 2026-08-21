@@ -40,6 +40,17 @@ export function fmtTimeAgo(iso: string): string {
   return fmtDate(iso);
 }
 
+/**
+ * Everything after the first name — "Reinier de Ridder" → "de Ridder". Used
+ * beside the price buttons, where a full name has nowhere near enough room on
+ * a phone and truncates mid-word. The bout header above carries both names in
+ * full, so nothing is actually lost.
+ */
+export function surname(name: string): string {
+  const parts = name.trim().split(/\s+/);
+  return parts.length > 1 ? parts.slice(1).join(' ') : name;
+}
+
 export function fmtPct(n: number, digits = 1): string {
   return `${(n * 100).toFixed(digits)}%`;
 }

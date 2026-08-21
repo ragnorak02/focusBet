@@ -14,7 +14,7 @@ import {
   spreadFor,
 } from '@/lib/markets';
 import { formatAmerican } from '@/lib/odds';
-import { cx } from '@/lib/format';
+import { cx, surname } from '@/lib/format';
 import type { Corner, Fight, MmaEvent } from '@/lib/types';
 
 /** A price button with an optional line above it, DraftKings style. */
@@ -135,11 +135,12 @@ function CornerRow({
   const totalOdds = total ? (side === 'over' ? total.over : total.under) : null;
 
   return (
-    <div className="grid grid-cols-[1fr_repeat(3,minmax(0,72px))] items-center gap-1.5 sm:grid-cols-[1fr_repeat(3,minmax(0,92px))] sm:gap-2">
+    <div className="grid grid-cols-[1fr_repeat(3,minmax(0,62px))] items-center gap-1 min-[400px]:grid-cols-[1fr_repeat(3,minmax(0,72px))] min-[400px]:gap-1.5 sm:grid-cols-[1fr_repeat(3,minmax(0,92px))] sm:gap-2">
       <div className="min-w-0">
         <div
+          title={fighter.name}
           className={cx(
-            'truncate text-[14px] font-bold leading-tight',
+            'truncate text-[15px] font-bold leading-tight',
             won
               ? 'text-brand-500'
               : lost
@@ -147,7 +148,7 @@ function CornerRow({
                 : 'text-ink-200',
           )}
         >
-          {fighter.name}
+          {surname(fighter.name)}
         </div>
         <div className="nums mt-0.5 flex items-center gap-1.5 text-[11px] text-ink-500">
           {fighter.record ? <span>{fighter.record}</span> : null}
@@ -313,8 +314,16 @@ export function FightRow({
         ) : null}
       </div>
 
+      {/* Both names in full, since the rows beside the prices only have room
+          for a surname. */}
+      <div className="mb-2 text-[13px] font-bold leading-snug text-ink-300">
+        {fight.a.name}
+        <span className="px-1.5 text-[11px] font-semibold uppercase text-ink-600">vs</span>
+        {fight.b.name}
+      </div>
+
       {/* column headers */}
-      <div className="mb-1 grid grid-cols-[1fr_repeat(3,minmax(0,72px))] gap-1.5 sm:grid-cols-[1fr_repeat(3,minmax(0,92px))] sm:gap-2">
+      <div className="mb-1 grid grid-cols-[1fr_repeat(3,minmax(0,62px))] gap-1 min-[400px]:grid-cols-[1fr_repeat(3,minmax(0,72px))] min-[400px]:gap-1.5 sm:grid-cols-[1fr_repeat(3,minmax(0,92px))] sm:gap-2">
         <div />
         {['Spread', 'Rounds', 'Money'].map((h) => (
           <div
