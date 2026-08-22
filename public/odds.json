@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-22T06:27:28.977Z",
+  "updatedAt": "2026-08-22T08:20:23.116Z",
   "events": [
     {
       "espnId": "600060493",
       "name": "UFC Fight Night: Hernandez vs. Rodrigues",
       "source": "DraftKings app, 21 Aug 2026, over BestFightOdds (FanDuel, BetWay, BetRivers)",
-      "capturedAt": "2026-08-22T06:27:28.977Z",
+      "capturedAt": "2026-08-22T08:20:23.116Z",
       "lines": [
         {
           "fighter": "Anthony Hernandez",
@@ -337,44 +337,55 @@
       "espnId": "600060446",
       "name": "PFL Tampa: Cyborg vs. Vieira",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-08-22T06:27:28.977Z",
+      "capturedAt": "2026-08-22T08:20:23.116Z",
       "lines": [
         {
           "fighter": "Cristiane Justino",
-          "moneyline": -420,
-          "totalLine": 4.5,
-          "over": 110,
-          "draw": 6600,
-          "ko": -125,
-          "sub": 1800,
-          "dec": 200,
+          "moneyline": -450,
+          "totalLine": 3.5,
+          "over": -106,
+          "draw": 5000,
+          "ko": -110,
+          "sub": 2000,
+          "dec": 230,
           "koSub": -138
         },
         {
           "fighter": "Ketlen Vieira",
-          "moneyline": 330,
-          "totalLine": 4.5,
-          "under": -150,
-          "ko": 1000,
-          "sub": 900,
+          "moneyline": 350,
+          "totalLine": 3.5,
+          "under": -126,
+          "ko": 1100,
+          "sub": 950,
           "dec": 900,
           "koSub": 450
         },
         {
           "fighter": "Gadzhi Rabadanov",
-          "moneyline": -2200
+          "moneyline": -3500
         },
         {
           "fighter": "Tracy Reeder",
-          "moneyline": 1100
+          "moneyline": 1400
         },
         {
           "fighter": "Sabrinna de Sousa",
-          "moneyline": 148
+          "moneyline": 126,
+          "totalLine": 2.5,
+          "over": -270,
+          "draw": 5000,
+          "ko": 500,
+          "sub": 2700,
+          "dec": 250
         },
         {
           "fighter": "Taila Santos",
-          "moneyline": -176
+          "moneyline": -148,
+          "totalLine": 2.5,
+          "under": 192,
+          "ko": 460,
+          "sub": 2000,
+          "dec": 135
         },
         {
           "fighter": "Luke Trainer",
@@ -394,13 +405,13 @@
         },
         {
           "fighter": "Daniel Marcos",
-          "moneyline": -154,
+          "moneyline": -162,
           "totalLine": 2.5,
           "over": -210
         },
         {
           "fighter": "Magomed Magomedov",
-          "moneyline": 132,
+          "moneyline": 136,
           "totalLine": 2.5,
           "under": 152
         },
@@ -478,7 +489,7 @@
       "espnId": "600060620",
       "name": "UFC Fight Night: Nurmagomedov vs. Song",
       "source": "BestFightOdds (Caesars, FanDuel, BetRivers, BetWay)",
-      "capturedAt": "2026-08-22T06:27:28.977Z",
+      "capturedAt": "2026-08-22T08:20:23.116Z",
       "lines": [
         {
           "fighter": "Levi Rodrigues Jr",
@@ -598,7 +609,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-22T06:27:28.977Z",
+      "capturedAt": "2026-08-22T08:20:23.116Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
