@@ -4,6 +4,16 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Called by odds.yml. A commit pushed with GITHUB_TOKEN deliberately does not
+  # start another workflow run, so the odds job can't rely on its own push to
+  # trigger the deploy above — it calls this instead.
+  workflow_call:
+    inputs:
+      ref:
+        description: 'Branch or commit to build. Defaults to whatever triggered the run.'
+        type: string
+        required: false
+        default: ''
 
 permissions:
   contents: read
@@ -20,6 +30,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Empty means "the SHA that triggered this run", which is what every
+          # trigger but workflow_call wants. The odds job passes the branch so
+          # the build picks up the commit it has just pushed.
+          ref: ${{ inputs.ref }}
 
       - uses: actions/setup-node@v4
         with:

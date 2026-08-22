@@ -12,7 +12,6 @@ on:
         required: false
         default: 'FanDuel,Kalshi,DraftKings,BetRivers,Caesars,BetMGM,BetWay,Unibet,Polymarket'
 
-# Pushing here is what redeploys the site — deploy.yml runs on push to main.
 permissions:
   contents: write
 
@@ -23,6 +22,8 @@ concurrency:
 jobs:
   pull:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
 
@@ -38,6 +39,7 @@ jobs:
       # The script leaves the file untouched when no line moved, so an
       # unchanged tree here means there is genuinely nothing to publish.
       - name: Commit if anything moved
+        id: commit
         run: |
           if [ -z "$(git status --porcelain public/odds.json)" ]; then
             echo "No line moved."
@@ -48,3 +50,18 @@ jobs:
           git add public/odds.json
           git commit -m "Refresh odds from BestFightOdds"
           git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+  # The commit above is pushed with GITHUB_TOKEN, and GitHub deliberately does
+  # not start a workflow run from those — otherwise new lines would sit in the
+  # repo unpublished until a person happened to push something.
+  deploy:
+    needs: pull
+    if: needs.pull.outputs.changed == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy.yml
+    with:
+      ref: ${{ github.ref_name }}
