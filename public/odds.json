@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-22T04:25:29.073Z",
+  "updatedAt": "2026-08-22T06:27:28.977Z",
   "events": [
     {
       "espnId": "600060493",
       "name": "UFC Fight Night: Hernandez vs. Rodrigues",
       "source": "DraftKings app, 21 Aug 2026, over BestFightOdds (FanDuel, BetWay, BetRivers)",
-      "capturedAt": "2026-08-22T04:25:29.073Z",
+      "capturedAt": "2026-08-22T06:27:28.977Z",
       "lines": [
         {
           "fighter": "Anthony Hernandez",
@@ -337,15 +337,28 @@
       "espnId": "600060446",
       "name": "PFL Tampa: Cyborg vs. Vieira",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-08-22T04:25:29.073Z",
+      "capturedAt": "2026-08-22T06:27:28.977Z",
       "lines": [
         {
           "fighter": "Cristiane Justino",
-          "moneyline": -420
+          "moneyline": -420,
+          "totalLine": 4.5,
+          "over": 110,
+          "draw": 6600,
+          "ko": -125,
+          "sub": 1800,
+          "dec": 200,
+          "koSub": -138
         },
         {
           "fighter": "Ketlen Vieira",
-          "moneyline": 330
+          "moneyline": 330,
+          "totalLine": 4.5,
+          "under": -150,
+          "ko": 1000,
+          "sub": 900,
+          "dec": 900,
+          "koSub": 450
         },
         {
           "fighter": "Gadzhi Rabadanov",
@@ -425,13 +438,13 @@
         },
         {
           "fighter": "Makkasharip Zaynukov",
-          "moneyline": -176,
+          "moneyline": -172,
           "totalLine": 2.5,
           "over": -260
         },
         {
           "fighter": "Natan Schulte",
-          "moneyline": 148,
+          "moneyline": 144,
           "totalLine": 2.5,
           "under": 188
         },
@@ -465,7 +478,7 @@
       "espnId": "600060620",
       "name": "UFC Fight Night: Nurmagomedov vs. Song",
       "source": "BestFightOdds (Caesars, FanDuel, BetRivers, BetWay)",
-      "capturedAt": "2026-08-22T04:25:29.073Z",
+      "capturedAt": "2026-08-22T06:27:28.977Z",
       "lines": [
         {
           "fighter": "Levi Rodrigues Jr",
@@ -557,11 +570,11 @@
         },
         {
           "fighter": "Ce Liu",
-          "moneyline": -225
+          "moneyline": -200
         },
         {
           "fighter": "Levi Rodrigues",
-          "moneyline": 163
+          "moneyline": 150
         },
         {
           "fighter": "Jack Jenkins",
@@ -585,7 +598,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-22T04:25:29.073Z",
+      "capturedAt": "2026-08-22T06:27:28.977Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
