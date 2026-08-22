@@ -43,13 +43,13 @@ export default function EventsPage() {
             Fight cards
           </h1>
           <p className="mt-0.5 text-sm text-ink-400">
-            Import a UFC card from the live feed, or build one from a screenshot.
+            Import a UFC or PFL card from the live feed, or build one from a screenshot.
           </p>
         </div>
         <div className="flex gap-2">
           <Button onClick={() => setCreating(true)}>Blank card</Button>
           <Button variant="primary" onClick={() => setImporting(true)}>
-            Import UFC card
+            Import card
           </Button>
         </div>
       </div>
@@ -58,10 +58,10 @@ export default function EventsPage() {
         <Panel>
           <Empty
             title="No cards yet"
-            body="Pull the current UFC schedule straight from the live feed — fighters, records and bout order come with it. You just add the moneylines."
+            body="Pull the UFC and PFL schedules straight from the live feed — fighters, records and bout order come with it. Odds land on their own."
             action={
               <Button variant="primary" onClick={() => setImporting(true)}>
-                Import UFC card
+                Import card
               </Button>
             }
           />

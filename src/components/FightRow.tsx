@@ -105,12 +105,21 @@ function CornerRow({
   corner: Corner;
   disabled: boolean;
 }) {
-  const { isSelected, toggleSelection } = useStore();
+  const { isSelected, toggleSelection, state, act } = useStore();
   const fighter = corner === 'a' ? fight.a : fight.b;
   const opponent = corner === 'a' ? fight.b : fight.a;
   const r = fight.result;
   const won = r && r.outcome === corner;
   const lost = r && (r.outcome === 'a' || r.outcome === 'b') && r.outcome !== corner;
+
+  // A call on the fight, with no money on it. Tapping the name makes it, and
+  // tapping again takes it back — but only until the fight starts, after which
+  // the answer is on its way and a changed call would mean nothing.
+  const prediction = state.predictions.find(
+    (p) => p.eventId === event.id && p.fightId === fight.id,
+  );
+  const picked = prediction?.pick === corner;
+  const pickLocked = Boolean(r) || fight.status === 'live';
 
   const base = {
     eventId: event.id,
@@ -136,9 +145,24 @@ function CornerRow({
 
   return (
     <div className="grid grid-cols-[1fr_repeat(3,minmax(0,62px))] items-center gap-1 min-[400px]:grid-cols-[1fr_repeat(3,minmax(0,72px))] min-[400px]:gap-1.5 sm:grid-cols-[1fr_repeat(3,minmax(0,92px))] sm:gap-2">
-      <div className="min-w-0">
+      <button
+        type="button"
+        disabled={pickLocked}
+        title={pickLocked ? fighter.name : `${fighter.name} — tap to call it`}
+        onClick={() =>
+          act(
+            'setPrediction',
+            { eventId: event.id, fightId: fight.id, pick: corner },
+            { silent: true },
+          )
+        }
+        className={cx(
+          'min-w-0 rounded-md py-0.5 text-left transition-colors disabled:cursor-default',
+          picked ? 'border-l-2 border-brand-500 pl-1.5' : 'pl-0',
+          !pickLocked && 'hover:bg-ink-800/60',
+        )}
+      >
         <div
-          title={fighter.name}
           className={cx(
             'truncate text-[15px] font-bold leading-tight',
             won
@@ -154,8 +178,25 @@ function CornerRow({
           {fighter.record ? <span>{fighter.record}</span> : null}
           {won ? <Badge tone="win">W</Badge> : null}
           {lost ? <Badge tone="loss">L</Badge> : null}
+          {picked ? (
+            <span
+              className={cx(
+                'font-bold',
+                won
+                  ? 'text-brand-500'
+                  : lost
+                    ? 'text-loss-500'
+                    : // A draw or no contest scores neither way.
+                      r
+                      ? 'text-ink-500'
+                      : 'text-brand-500',
+              )}
+            >
+              {won ? '✓' : lost ? '✗' : r ? '–' : '●'} Pick
+            </span>
+          ) : null}
         </div>
-      </div>
+      </button>
 
       <PriceButton
         line={spreadValue !== null ? formatSpread(spreadValue) : undefined}
@@ -324,7 +365,10 @@ export function FightRow({
 
       {/* column headers */}
       <div className="mb-1 grid grid-cols-[1fr_repeat(3,minmax(0,62px))] gap-1 min-[400px]:grid-cols-[1fr_repeat(3,minmax(0,72px))] min-[400px]:gap-1.5 sm:grid-cols-[1fr_repeat(3,minmax(0,92px))] sm:gap-2">
-        <div />
+        {/* The names are the pick control, so the column says so. */}
+        <div className="text-[9px] font-bold uppercase tracking-wider text-ink-600">
+          Pick
+        </div>
         {['Spread', 'Rounds', 'Money'].map((h) => (
           <div
             key={h}

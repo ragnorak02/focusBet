@@ -130,8 +130,11 @@ function mergeManual(scraped, manual) {
 
 /* ---------- run ---------- */
 
-function isUfc(ev) {
-  return /^ufc\b/i.test(ev.name) || /^ufc-/.test(ev.slug ?? '');
+/** The promotions ESPN carries results for, which is all the app can grade. */
+const PROMOTIONS = /^(ufc|pfl)\b/i;
+
+function isSupported(ev) {
+  return PROMOTIONS.test(ev.name) || PROMOTIONS.test((ev.slug ?? '').replace(/-/g, ' '));
 }
 
 /**
@@ -155,11 +158,11 @@ function dedupe(events) {
 }
 
 async function main() {
-  const index = parseEventIndex(await fetchHtml(`${BFO_ORIGIN}/`)).filter(isUfc);
+  const index = parseEventIndex(await fetchHtml(`${BFO_ORIGIN}/`)).filter(isSupported);
   const wanted = only ? index.filter((e) => e.slug.includes(only)) : index;
 
   if (!wanted.length) {
-    console.error(only ? `No BestFightOdds event matching "${only}"` : 'No UFC events listed');
+    console.error(only ? `No BestFightOdds event matching "${only}"` : 'No cards listed');
     process.exitCode = 1;
     return;
   }

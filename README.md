@@ -1,7 +1,7 @@
 # focusBet
 
-A personal, play-money sportsbook for UFC cards. Single user, no real money, no
-accounts, no other people.
+A personal, play-money sportsbook for UFC and PFL cards. Single user, no real
+money, no accounts, no other people.
 
 **Live: https://ragnorak02.github.io/focusBet/**
 
@@ -16,14 +16,17 @@ do is sent to a server, because there isn't one.
 
 ## What it does
 
-- **Fight cards** — a UFC event with its full bout order, weight classes, records,
-  title fights and card segments (main / prelims).
+- **Fight cards** — a UFC or PFL event with its full bout order, weight classes,
+  records, title fights and card segments (main / prelims).
 - **Betting board** — tap a price to add it to the slip. Place it as a straight
   bet or roll several picks into a parlay. Implied win % is shown under every line.
 - **Point spread** — a handicap on the judges' total scorecard points.
 - **Total rounds** — over/under on how long the fight lasts.
 - **Winning method** — KO/TKO/DQ, submission or decision, the three double
   chances, and the draw.
+- **Predictions** — tap a fighter's name to call the fight with no money on it,
+  and change the call right up until it starts. Kept apart from your bets, and
+  scored the moment the result lands.
 - **Cash out** — settle an open ticket early; the offer is shown on the button.
   Every one is kept score of: how often you take it, and what the ticket went on
   to do afterwards.
@@ -61,9 +64,14 @@ on the same network can reach it at `http://<your-ip>:3777`.
 
 ## Where results come from
 
-The results button reads ESPN's public MMA feed, which carries UFC cards with
-per-fight winners, finish method, round and time, and updates within a couple of
-minutes of the official call.
+Results come from ESPN's public MMA feed, which carries per-fight winners,
+finish method, round and time, and updates within a couple of minutes of the
+official call.
+
+ESPN keys that feed by promotion, and two of them are asked for: **UFC** and
+**PFL**, the second-largest organisation. Both are pulled on every refresh and
+merged, so a PFL card imports, prices and grades exactly like a UFC one.
+Bellator and ONE are left out because the same endpoints come back empty.
 
 **Tapology is not used, deliberately.** It sits behind Cloudflare and returns
 `403 Forbidden` to any server-side request regardless of headers, so a refresh
@@ -194,6 +202,24 @@ since there are no cards to settle against.
 moneyline and method markets as usual.
 
 A no contest voids every market on the fight.
+
+## Predictions
+
+Tap a fighter's name on a card and you've called the fight. No stake, no slip —
+just a record of how you read it, kept deliberately apart from your bets so the
+money doesn't colour the call.
+
+- **One per fight.** Tapping the other corner switches the call; tapping your
+  own pick again takes it back.
+- **Changeable until the fight starts.** Once a bout is live or final the call
+  locks, because after that a changed pick would mean nothing.
+- **Scored automatically.** When the result lands the pick shows ✓ or ✗ beside
+  the fighter's record. A draw or no contest voids it rather than counting
+  against you.
+
+The card header keeps that event's running record, and **Stats → Predictions**
+keeps the whole picture: accuracy, favourites against underdogs, and how many
+of your right calls you had no money on.
 
 ## How cash out is valued
 

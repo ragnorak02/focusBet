@@ -141,6 +141,20 @@ export interface Bet {
   cashOut?: { at: string; amount: number };
 }
 
+/**
+ * A called fight with no money on it. Kept apart from bets on purpose: the
+ * point is to see how well you read a card without the stake changing what you
+ * pick. One per fight, changeable right up until the fight starts.
+ */
+export interface Prediction {
+  eventId: string;
+  fightId: string;
+  pick: Corner;
+  at: string;
+  /** Set when the call was changed before the fight went off. */
+  updatedAt?: string;
+}
+
 export type CashType = 'deposit' | 'withdraw';
 
 export interface CashTxn {
@@ -156,6 +170,7 @@ export interface DB {
   events: MmaEvent[];
   bets: Bet[];
   cash: CashTxn[];
+  predictions?: Prediction[];
   /**
    * Start of the current tracking period. Stats are measured from here, so
    * changing how you bet can be measured against the change rather than
@@ -168,6 +183,22 @@ export interface DB {
 /* ---------- derived (never persisted) ---------- */
 
 export type BetStatus = 'open' | 'won' | 'lost' | 'push' | 'cashed';
+
+/** 'void' is a draw, a no contest, or a fight that no longer exists. */
+export type PredictionStatus = 'open' | 'correct' | 'wrong' | 'void';
+
+export interface GradedPrediction extends Prediction {
+  status: PredictionStatus;
+  fight: Fight | null;
+  eventName: string;
+  fighterName: string;
+  opponentName: string;
+  /** The pick's moneyline, so a call on an underdog can be told apart. */
+  odds: number | null;
+  settledAt: string | null;
+  /** Whether a bet was also placed on this fight. */
+  backed: boolean;
+}
 
 export interface GradedLeg extends Leg {
   status: LegStatus;

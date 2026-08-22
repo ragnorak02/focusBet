@@ -79,7 +79,7 @@ function Cell({
 
 export default function StatsPage() {
   const { state, act, busy } = useStore();
-  const { stats, allTime, bankroll, eventPnl } = state;
+  const { stats, allTime, bankroll, eventPnl, predictionStats: pk } = state;
   const [resetting, setResetting] = useState(false);
 
   const netTone = stats.netProfit > 0 ? 'win' : stats.netProfit < 0 ? 'loss' : 'neutral';
@@ -256,6 +256,71 @@ export default function StatsPage() {
           )}
         </Panel>
       </div>
+
+      <Panel>
+        <PanelHeader
+          title="Predictions"
+          subtitle="Fights you called, with nothing riding on them"
+          right={
+            pk.settled ? (
+              <span className="nums text-xs font-semibold text-ink-400">
+                {fmtPct(pk.accuracy, 0)} right
+              </span>
+            ) : null
+          }
+        />
+        {pk.total ? (
+          <div className="space-y-4 p-4">
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+              <Cell
+                label="Record"
+                value={`${pk.correct}-${pk.wrong}`}
+                sub={
+                  pk.open
+                    ? `${pk.open} still to come`
+                    : pk.void
+                      ? `${pk.void} voided`
+                      : `${pk.settled} called`
+                }
+                tone={pk.correct > pk.wrong ? 'win' : pk.wrong > pk.correct ? 'loss' : 'neutral'}
+              />
+              <Cell
+                label="Favourites"
+                value={pk.favorites.total ? `${pk.favorites.correct}/${pk.favorites.total}` : '—'}
+                sub="Called the chalk"
+              />
+              <Cell
+                label="Underdogs"
+                value={pk.underdogs.total ? `${pk.underdogs.correct}/${pk.underdogs.total}` : '—'}
+                sub="Called against the book"
+              />
+              <Cell
+                label="Backed with money"
+                value={pk.settled ? `${pk.backed}/${pk.settled}` : '—'}
+                sub={
+                  pk.missedWinners
+                    ? `${pk.missedWinners} right call${pk.missedWinners === 1 ? '' : 's'} you skipped`
+                    : 'Calls you also bet'
+                }
+              />
+            </div>
+            {pk.currentStreak.type ? (
+              <p className="border-t border-ink-700/60 pt-3 text-xs text-ink-400">
+                {pk.currentStreak.count} call{pk.currentStreak.count === 1 ? '' : 's'} in a row{' '}
+                {pk.currentStreak.type === 'W' ? 'right' : 'wrong'}.
+                {pk.underdogs.total && pk.favorites.total
+                  ? ` The book's favourite came in ${pk.favorites.correct} of ${pk.favorites.total} times you called it.`
+                  : ''}
+              </p>
+            ) : null}
+          </div>
+        ) : (
+          <Empty
+            title="No calls yet"
+            body="Tap a fighter's name on a card to call the fight. No stake, no slip — just a record of how you read it."
+          />
+        )}
+      </Panel>
 
       <Panel>
         <PanelHeader

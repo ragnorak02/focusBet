@@ -6,7 +6,15 @@ import type { Outcome, Segment } from './types';
  * and it updates within a minute or two of the official call.
  */
 
-const SCOREBOARD = 'https://site.api.espn.com/apis/site/v2/sports/mma/ufc/scoreboard';
+/**
+ * ESPN keys its MMA feed by promotion. UFC and PFL are the two it carries with
+ * full cards, per-bout results and records; Bellator and ONE return nothing
+ * usable, so they aren't asked for.
+ */
+const LEAGUES = ['ufc', 'pfl'] as const;
+
+const scoreboard = (league: string) =>
+  `https://site.api.espn.com/apis/site/v2/sports/mma/${league}/scoreboard`;
 
 export interface EspnBout {
   espnId: string;
@@ -133,7 +141,7 @@ function mapEvent(ev: RawEvent): EspnEvent {
       order: i + 1,
       weightClass: c.type?.abbreviation ?? 'Catchweight',
       rounds,
-      // 5-round non-main-event bouts are title fights on a UFC card.
+      // 5-round non-main-event bouts are title fights.
       titleFight: rounds === 5,
       segment: segmentFor(i, comps.length),
       a: mapCompetitor(a),
@@ -148,7 +156,7 @@ function mapEvent(ev: RawEvent): EspnEvent {
 
   return {
     espnId: String(ev.id ?? ''),
-    name: ev.name ?? 'UFC Event',
+    name: ev.name ?? 'MMA Event',
     date: ev.date ?? new Date().toISOString(),
     venue: venue?.fullName,
     location: [addr?.city, addr?.state ?? addr?.country].filter(Boolean).join(', ') || undefined,
@@ -169,11 +177,27 @@ async function getJson(url: string): Promise<unknown> {
   return res.json();
 }
 
-/** Events on ESPN's current scoreboard (today / this week). */
+/**
+ * Events on ESPN's current scoreboard (today / this week), across every
+ * promotion. One promotion failing doesn't take the others down.
+ */
 export async function fetchScoreboard(dates?: string): Promise<EspnEvent[]> {
-  const url = dates ? `${SCOREBOARD}?dates=${encodeURIComponent(dates)}` : SCOREBOARD;
-  const json = (await getJson(url)) as { events?: RawEvent[] };
-  return (json.events ?? []).map(mapEvent);
+  const perLeague = await Promise.all(
+    LEAGUES.map(async (league) => {
+      const base = scoreboard(league);
+      const url = dates ? `${base}?dates=${encodeURIComponent(dates)}` : base;
+      try {
+        const json = (await getJson(url)) as { events?: RawEvent[] };
+        return (json.events ?? []).map(mapEvent);
+      } catch {
+        return [];
+      }
+    }),
+  );
+
+  const byId = new Map<string, EspnEvent>();
+  for (const ev of perLeague.flat()) byId.set(ev.espnId, ev);
+  return [...byId.values()].sort((a, b) => a.date.localeCompare(b.date));
 }
 
 /** One event by ESPN id, searched across a window of recent/upcoming dates. */

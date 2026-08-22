@@ -40,6 +40,16 @@ function EventView() {
 
   const pnl = state.eventPnl.find((p) => p.eventId === id);
 
+  const picks = useMemo(() => {
+    const mine = state.predictions.filter((p) => p.eventId === id);
+    return {
+      total: mine.length,
+      correct: mine.filter((p) => p.status === 'correct').length,
+      wrong: mine.filter((p) => p.status === 'wrong').length,
+      open: mine.filter((p) => p.status === 'open').length,
+    };
+  }, [state.predictions, id]);
+
   // Odds and results are pulled on load, so a pull-to-refresh is the whole
   // update gesture. Guarded by a ref because `act` swaps the db in, which
   // re-runs this effect — without it the fetch would loop.
@@ -123,6 +133,18 @@ function EventView() {
                     <>
                       <span className="text-ink-700">•</span>
                       <span className="text-warn-500">{missingOdds} without a line</span>
+                    </>
+                  ) : null}
+                  {picks.total ? (
+                    <>
+                      <span className="text-ink-700">•</span>
+                      <span>
+                        Picks{' '}
+                        <span className="font-bold text-ink-300">
+                          {picks.correct}-{picks.wrong}
+                        </span>
+                        {picks.open ? ` · ${picks.open} to come` : ''}
+                      </span>
                     </>
                   ) : null}
                   {pnl ? (

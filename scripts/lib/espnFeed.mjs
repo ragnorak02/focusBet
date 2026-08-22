@@ -4,7 +4,11 @@
  * `src/lib/espn.ts`; this is the build-time half.
  */
 
-const SCOREBOARD = 'https://site.api.espn.com/apis/site/v2/sports/mma/ufc/scoreboard';
+/** Kept in step with LEAGUES in src/lib/espn.ts. */
+const LEAGUES = ['ufc', 'pfl'];
+
+const scoreboard = (league) =>
+  `https://site.api.espn.com/apis/site/v2/sports/mma/${league}/scoreboard`;
 
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
@@ -31,14 +35,21 @@ function mapEvent(ev) {
   };
 }
 
-/** Every UFC card ESPN knows about within `days` either side of today. */
+/** Every card ESPN knows about within `days` either side of today. */
 export async function fetchEvents(days = 45) {
   const now = Date.now();
   const range = `${stamp(new Date(now - days * 864e5))}-${stamp(new Date(now + days * 864e5))}`;
-  const res = await fetch(`${SCOREBOARD}?dates=${range}`, {
-    headers: { 'user-agent': UA, accept: 'application/json' },
-  });
-  if (!res.ok) throw new Error(`ESPN returned ${res.status}`);
-  const json = await res.json();
-  return (json.events ?? []).map(mapEvent).filter((e) => e.bouts.length);
+
+  const perLeague = await Promise.all(
+    LEAGUES.map(async (league) => {
+      const res = await fetch(`${scoreboard(league)}?dates=${range}`, {
+        headers: { 'user-agent': UA, accept: 'application/json' },
+      });
+      if (!res.ok) throw new Error(`ESPN ${league} returned ${res.status}`);
+      const json = await res.json();
+      return (json.events ?? []).map(mapEvent);
+    }),
+  );
+
+  return perLeague.flat().filter((e) => e.bouts.length);
 }

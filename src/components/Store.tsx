@@ -149,40 +149,55 @@ export function Store({ children }: { children: React.ReactNode }) {
     setToasts((t) => t.filter((x) => x.id !== id));
   }, []);
 
-  const act = useCallback<StoreValue['act']>(
-    async (type, payload = {}, opts = {}) => {
-      setBusy(true);
-      try {
-        // Read through a setter so concurrent actions can't work off stale state.
-        const current = await new Promise<DB>((resolve) => {
-          setDb((cur) => {
-            resolve(cur);
-            return cur;
-          });
-        });
+  // Actions run one at a time. Each one reads the db through a setter to get
+  // the latest state, but two started in the same tick would both read it
+  // before either had written — which is exactly what tapping several picks
+  // down a card does, and the second tap would land on top of the first.
+  const queue = useRef<Promise<unknown>>(Promise.resolve());
 
-        const out = await applyAction(current, type, payload);
-        setDb(out.db);
-        if (out.message && !opts.silent) toast(out.message);
-        return {
-          ok: true,
-          message: out.message,
-          eventId: out.eventId,
-          changes: out.changes,
-        };
-      } catch (err) {
-        const msg =
-          err instanceof ActionError
-            ? err.message
-            : err instanceof Error
-              ? `Something went wrong: ${err.message}`
-              : 'Something went wrong';
-        if (!(err instanceof ActionError)) console.error('[action]', type, err);
-        if (!opts.silent) toast(msg, 'err');
-        return { ok: false, error: msg };
-      } finally {
-        setBusy(false);
-      }
+  const act = useCallback<StoreValue['act']>(
+    (type, payload = {}, opts = {}) => {
+      const run = queue.current.then(async () => {
+        setBusy(true);
+        try {
+          // Read through a setter so concurrent actions can't work off stale state.
+          const current = await new Promise<DB>((resolve) => {
+            setDb((cur) => {
+              resolve(cur);
+              return cur;
+            });
+          });
+
+          const out = await applyAction(current, type, payload);
+          setDb(out.db);
+          if (out.message && !opts.silent) toast(out.message);
+          return {
+            ok: true,
+            message: out.message,
+            eventId: out.eventId,
+            changes: out.changes,
+          };
+        } catch (err) {
+          const msg =
+            err instanceof ActionError
+              ? err.message
+              : err instanceof Error
+                ? `Something went wrong: ${err.message}`
+                : 'Something went wrong';
+          if (!(err instanceof ActionError)) console.error('[action]', type, err);
+          if (!opts.silent) toast(msg, 'err');
+          return { ok: false, error: msg };
+        } finally {
+          setBusy(false);
+        }
+      });
+
+      // A failed action must not wedge the queue behind it.
+      queue.current = run.then(
+        () => undefined,
+        () => undefined,
+      );
+      return run;
     },
     [toast],
   );

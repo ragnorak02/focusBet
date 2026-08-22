@@ -163,7 +163,7 @@ export default function Home() {
         <Panel>
           <Empty
             title="No events yet"
-            body="Import a UFC card from the live feed, or build one by hand."
+            body="Import a UFC or PFL card from the live feed, or build one by hand."
             action={
               <Link href="/events/">
                 <Button variant="primary">Add an event</Button>

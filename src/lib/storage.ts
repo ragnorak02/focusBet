@@ -20,6 +20,7 @@ export function loadDb(): DB {
       events: parsed.events ?? [],
       bets: parsed.bets ?? [],
       cash: parsed.cash ?? [],
+      predictions: parsed.predictions ?? [],
       statsResetAt: parsed.statsResetAt ?? null,
     };
   } catch {

@@ -88,7 +88,7 @@ export function ImportDialog({
   }
 
   return (
-    <Modal open={open} onClose={onClose} title="Import a UFC card" wide>
+    <Modal open={open} onClose={onClose} title="Import a card" wide>
       <p className="mb-3 text-xs text-ink-400">
         Cards come from ESPN&apos;s live MMA feed — fighters, records, weight classes,
         bout order and finishes. Moneylines aren&apos;t in the feed, so you&apos;ll add
@@ -103,7 +103,7 @@ export function ImportDialog({
         </div>
       ) : !rows?.length ? (
         <Empty
-          title="No UFC events in range"
+          title="No events in range"
           body="The feed covers roughly three weeks back to two months ahead."
         />
       ) : (

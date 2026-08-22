@@ -183,6 +183,7 @@ export async function applyAction(
         events: next.events,
         bets: next.bets,
         cash: next.cash ?? [],
+        predictions: next.predictions ?? [],
         statsResetAt: next.statsResetAt ?? null,
       },
       message: 'Backup restored',
@@ -331,6 +332,52 @@ export async function applyAction(
       const amount = money(p.amount, 'Amount');
       bet.cashOut = { at: new Date().toISOString(), amount };
       message = `Cashed out for $${amount.toFixed(2)}`;
+      break;
+    }
+
+    /**
+     * A call on a fight, with no money involved. One per fight, and changeable
+     * right up until the fight starts — after that the answer is already known
+     * to someone, so letting it move would make the record meaningless.
+     */
+    case 'setPrediction': {
+      const ev = requireEvent(db, p.eventId);
+      const fight = requireFight(ev, p.fightId);
+      const pick = p.pick;
+      if (pick !== 'a' && pick !== 'b') bad('Invalid pick');
+      if (fight.result) bad(`${fight.a.name} vs ${fight.b.name} has already finished`);
+      if (fight.status === 'live') bad('That fight is under way — calls are locked');
+
+      db.predictions ??= [];
+      const now = new Date().toISOString();
+      const existing = db.predictions.find(
+        (x) => x.eventId === ev.id && x.fightId === fight.id,
+      );
+      const who = pick === 'a' ? fight.a.name : fight.b.name;
+
+      if (!existing) {
+        db.predictions.push({ eventId: ev.id, fightId: fight.id, pick, at: now });
+        message = `Called ${who}`;
+      } else if (existing.pick === pick) {
+        // Tapping your own pick again takes it back.
+        db.predictions = db.predictions.filter((x) => x !== existing);
+        message = 'Call removed';
+      } else {
+        existing.pick = pick;
+        existing.updatedAt = now;
+        message = `Changed to ${who}`;
+      }
+      break;
+    }
+
+    case 'clearPrediction': {
+      const ev = requireEvent(db, p.eventId);
+      const fight = requireFight(ev, p.fightId);
+      if (fight.result) bad('That fight has already finished');
+      db.predictions = (db.predictions ?? []).filter(
+        (x) => !(x.eventId === ev.id && x.fightId === fight.id),
+      );
+      message = 'Call removed';
       break;
     }
 

@@ -4,8 +4,8 @@ import { Store } from '@/components/Store';
 import { Shell } from '@/components/Shell';
 
 export const metadata: Metadata = {
-  title: 'focusBet — UFC play-money book',
-  description: 'Personal play-money sportsbook for UFC cards.',
+  title: 'focusBet — MMA play-money book',
+  description: 'Personal play-money sportsbook for UFC and PFL cards.',
 };
 
 export const viewport: Viewport = {

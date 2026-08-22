@@ -5,9 +5,11 @@ import type {
   Fight,
   GradedBet,
   GradedLeg,
+  GradedPrediction,
   Leg,
   LegStatus,
   MmaEvent,
+  PredictionStatus,
 } from './types';
 import { parlayDecimal, round2 } from './odds';
 import {
@@ -154,6 +156,115 @@ export function gradeAll(db: DB): GradedBet[] {
   return db.bets
     .map((b) => gradeBet(b, db.events))
     .sort((x, y) => y.placedAt.localeCompare(x.placedAt));
+}
+
+/* ---------- predictions ---------- */
+
+/**
+ * Picks settle on the moneyline and nothing else: the fighter won, or they
+ * didn't. A draw, a no contest, or a fight that has been deleted voids the
+ * call rather than scoring it against you.
+ */
+export function gradePredictions(db: DB, graded: GradedBet[]): GradedPrediction[] {
+  const bettedFights = new Set(
+    graded.flatMap((b) => b.legs.map((l) => `${l.eventId}:${l.fightId}`)),
+  );
+
+  return (db.predictions ?? [])
+    .map((p) => {
+      const found = findFight(db.events, p.eventId, p.fightId);
+      const fight = found?.fight ?? null;
+      const r = fight?.result ?? null;
+
+      let status: PredictionStatus;
+      if (!fight) status = 'void';
+      else if (!r) status = 'open';
+      else if (r.outcome === 'draw' || r.outcome === 'nc') status = 'void';
+      else status = r.outcome === p.pick ? 'correct' : 'wrong';
+
+      const fighter = fight ? (p.pick === 'a' ? fight.a : fight.b) : null;
+      const opponent = fight ? (p.pick === 'a' ? fight.b : fight.a) : null;
+
+      return {
+        ...p,
+        fight,
+        status,
+        eventName: found?.event.name ?? 'Deleted card',
+        fighterName: fighter?.name ?? 'Deleted fight',
+        opponentName: opponent?.name ?? '',
+        odds: fight ? (p.pick === 'a' ? fight.oddsA : fight.oddsB) : null,
+        settledAt: status === 'open' ? null : (r?.gradedAt ?? null),
+        backed: bettedFights.has(`${p.eventId}:${p.fightId}`),
+      };
+    })
+    .sort((x, y) => y.at.localeCompare(x.at));
+}
+
+export interface PredictionStats {
+  total: number;
+  open: number;
+  settled: number;
+  correct: number;
+  wrong: number;
+  void: number;
+  /** Correct as a share of settled calls; draws and no contests don't count. */
+  accuracy: number;
+  /** Split by whether the book had the pick as the favourite. */
+  favorites: { correct: number; total: number };
+  underdogs: { correct: number; total: number };
+  /** Settled calls you also had money on. */
+  backed: number;
+  /** Correct calls you had no money on — the ones that got away. */
+  missedWinners: number;
+  currentStreak: { type: 'W' | 'L' | null; count: number };
+}
+
+export function computePredictionStats(
+  predictions: GradedPrediction[],
+  since: string | null = null,
+): PredictionStats {
+  const inPeriod = (p: GradedPrediction) => !since || (p.settledAt ?? p.at) >= since;
+  const scoped = predictions.filter(inPeriod);
+  const settled = scoped.filter((p) => p.status === 'correct' || p.status === 'wrong');
+
+  const side = (favorite: boolean) => {
+    const set = settled.filter((p) =>
+      p.odds === null ? false : favorite ? p.odds < 0 : p.odds > 0,
+    );
+    return {
+      correct: set.filter((p) => p.status === 'correct').length,
+      total: set.length,
+    };
+  };
+
+  // Newest first, so the streak reads straight off the front of the list.
+  const chrono = [...settled].sort((a, b) =>
+    (b.settledAt ?? b.at).localeCompare(a.settledAt ?? a.at),
+  );
+  let currentStreak: PredictionStats['currentStreak'] = { type: null, count: 0 };
+  for (const p of chrono) {
+    const t = p.status === 'correct' ? 'W' : 'L';
+    if (currentStreak.type === null) currentStreak = { type: t, count: 1 };
+    else if (currentStreak.type === t) currentStreak.count++;
+    else break;
+  }
+
+  const correct = settled.filter((p) => p.status === 'correct');
+
+  return {
+    total: scoped.length,
+    open: scoped.filter((p) => p.status === 'open').length,
+    settled: settled.length,
+    correct: correct.length,
+    wrong: settled.length - correct.length,
+    void: scoped.filter((p) => p.status === 'void').length,
+    accuracy: settled.length ? correct.length / settled.length : 0,
+    favorites: side(true),
+    underdogs: side(false),
+    backed: settled.filter((p) => p.backed).length,
+    missedWinners: correct.filter((p) => !p.backed).length,
+    currentStreak,
+  };
 }
 
 export interface Bankroll {

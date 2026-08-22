@@ -95,6 +95,7 @@ export function seedDb(): DB {
     version: 1,
     events: [ufc330()],
     bets: [],
+    predictions: [],
     statsResetAt: null,
     cash: [
       {
