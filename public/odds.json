@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-22T08:20:23.116Z",
+  "updatedAt": "2026-08-22T10:15:30.439Z",
   "events": [
     {
       "espnId": "600060493",
       "name": "UFC Fight Night: Hernandez vs. Rodrigues",
       "source": "DraftKings app, 21 Aug 2026, over BestFightOdds (FanDuel, BetWay, BetRivers)",
-      "capturedAt": "2026-08-22T08:20:23.116Z",
+      "capturedAt": "2026-08-22T10:15:30.439Z",
       "lines": [
         {
           "fighter": "Anthony Hernandez",
@@ -337,7 +337,7 @@
       "espnId": "600060446",
       "name": "PFL Tampa: Cyborg vs. Vieira",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-08-22T08:20:23.116Z",
+      "capturedAt": "2026-08-22T10:15:30.439Z",
       "lines": [
         {
           "fighter": "Cristiane Justino",
@@ -407,13 +407,13 @@
           "fighter": "Daniel Marcos",
           "moneyline": -162,
           "totalLine": 2.5,
-          "over": -210
+          "over": -225
         },
         {
           "fighter": "Magomed Magomedov",
           "moneyline": 136,
           "totalLine": 2.5,
-          "under": 152
+          "under": 166
         },
         {
           "fighter": "Javid Basharat",
@@ -489,7 +489,7 @@
       "espnId": "600060620",
       "name": "UFC Fight Night: Nurmagomedov vs. Song",
       "source": "BestFightOdds (Caesars, FanDuel, BetRivers, BetWay)",
-      "capturedAt": "2026-08-22T08:20:23.116Z",
+      "capturedAt": "2026-08-22T10:15:30.439Z",
       "lines": [
         {
           "fighter": "Levi Rodrigues Jr",
@@ -609,7 +609,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-22T08:20:23.116Z",
+      "capturedAt": "2026-08-22T10:15:30.439Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
