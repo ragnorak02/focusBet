@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-21T21:35:34.327Z",
+  "updatedAt": "2026-08-22T00:50:02.497Z",
   "events": [
     {
       "espnId": "600060493",
       "name": "UFC Fight Night: Hernandez vs. Rodrigues",
       "source": "DraftKings app, 21 Aug 2026, over BestFightOdds (FanDuel, BetWay, BetRivers)",
-      "capturedAt": "2026-08-21T21:35:34.327Z",
+      "capturedAt": "2026-08-22T00:50:02.497Z",
       "lines": [
         {
           "fighter": "Anthony Hernandez",
@@ -336,9 +336,65 @@
     {
       "espnId": "600060620",
       "name": "UFC Fight Night: Nurmagomedov vs. Song",
-      "source": "BestFightOdds (FanDuel, BetWay, BetRivers)",
-      "capturedAt": "2026-08-21T21:35:34.327Z",
+      "source": "BestFightOdds (Caesars, FanDuel, BetRivers, BetWay)",
+      "capturedAt": "2026-08-22T00:50:02.497Z",
       "lines": [
+        {
+          "fighter": "Levi Rodrigues Jr",
+          "moneyline": 155
+        },
+        {
+          "fighter": "Liu Ce",
+          "moneyline": -185
+        },
+        {
+          "fighter": "Andre Lima",
+          "moneyline": -250
+        },
+        {
+          "fighter": "Namsrai Batbayar",
+          "moneyline": 205
+        },
+        {
+          "fighter": "Julia Polastri",
+          "moneyline": -220
+        },
+        {
+          "fighter": "Xiong Jingnan",
+          "moneyline": 180
+        },
+        {
+          "fighter": "Cameron Nelson",
+          "moneyline": -115
+        },
+        {
+          "fighter": "Ding Meng",
+          "moneyline": -105
+        },
+        {
+          "fighter": "Bilal Hasan",
+          "moneyline": -600
+        },
+        {
+          "fighter": "Nilson Rojas",
+          "moneyline": 430
+        },
+        {
+          "fighter": "Hector Santiago",
+          "moneyline": 260
+        },
+        {
+          "fighter": "Lawrence Lui",
+          "moneyline": -330
+        },
+        {
+          "fighter": "Francesco Nuzzi",
+          "moneyline": 145
+        },
+        {
+          "fighter": "Xiao Long",
+          "moneyline": -175
+        },
         {
           "fighter": "Song Yadong",
           "moneyline": 350
@@ -346,62 +402,6 @@
         {
           "fighter": "Umar Nurmagomedov",
           "moneyline": -520
-        },
-        {
-          "fighter": "Ce Liu",
-          "moneyline": -225
-        },
-        {
-          "fighter": "Levi Rodrigues",
-          "moneyline": 163
-        },
-        {
-          "fighter": "Julia Polastri",
-          "moneyline": -200
-        },
-        {
-          "fighter": "Xiong Jingnan",
-          "moneyline": 163
-        },
-        {
-          "fighter": "Andre Lima",
-          "moneyline": -225
-        },
-        {
-          "fighter": "Namsrai Batbayar",
-          "moneyline": 175
-        },
-        {
-          "fighter": "Francesco Nuzzi",
-          "moneyline": 150
-        },
-        {
-          "fighter": "Xiao Long",
-          "moneyline": -188
-        },
-        {
-          "fighter": "Bilal Hasan",
-          "moneyline": -500
-        },
-        {
-          "fighter": "Nilson Rojas",
-          "moneyline": 350
-        },
-        {
-          "fighter": "Cameron Nelson",
-          "moneyline": -120
-        },
-        {
-          "fighter": "Ding Meng",
-          "moneyline": -110
-        },
-        {
-          "fighter": "Hector Santiago",
-          "moneyline": 250
-        },
-        {
-          "fighter": "Lawrence Lui",
-          "moneyline": -333
         },
         {
           "fighter": "Denise Gomes",
@@ -428,6 +428,14 @@
           "moneyline": -195
         },
         {
+          "fighter": "Ce Liu",
+          "moneyline": -225
+        },
+        {
+          "fighter": "Levi Rodrigues",
+          "moneyline": 163
+        },
+        {
           "fighter": "Jack Jenkins",
           "moneyline": 118
         },
@@ -449,7 +457,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-21T21:35:34.327Z",
+      "capturedAt": "2026-08-22T00:50:02.497Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
