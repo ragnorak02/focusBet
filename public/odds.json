@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-22T02:48:21.421Z",
+  "updatedAt": "2026-08-22T04:25:29.073Z",
   "events": [
     {
       "espnId": "600060493",
       "name": "UFC Fight Night: Hernandez vs. Rodrigues",
       "source": "DraftKings app, 21 Aug 2026, over BestFightOdds (FanDuel, BetWay, BetRivers)",
-      "capturedAt": "2026-08-22T02:48:21.421Z",
+      "capturedAt": "2026-08-22T04:25:29.073Z",
       "lines": [
         {
           "fighter": "Anthony Hernandez",
@@ -336,8 +336,8 @@
     {
       "espnId": "600060446",
       "name": "PFL Tampa: Cyborg vs. Vieira",
-      "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-22T02:48:21.421Z",
+      "source": "BestFightOdds (FanDuel, BetWay)",
+      "capturedAt": "2026-08-22T04:25:29.073Z",
       "lines": [
         {
           "fighter": "Cristiane Justino",
@@ -416,6 +416,14 @@
           "under": 140
         },
         {
+          "fighter": "Florim Zendeli",
+          "moneyline": 110
+        },
+        {
+          "fighter": "Omran Chaaban",
+          "moneyline": -150
+        },
+        {
           "fighter": "Makkasharip Zaynukov",
           "moneyline": -176,
           "totalLine": 2.5,
@@ -429,23 +437,15 @@
         },
         {
           "fighter": "Gino van Steenis",
-          "moneyline": -184,
+          "moneyline": -200,
           "totalLine": 1.5,
           "over": -134
         },
         {
           "fighter": "Robert Watley",
-          "moneyline": 154,
+          "moneyline": 168,
           "totalLine": 1.5,
           "under": 100
-        },
-        {
-          "fighter": "Florim Zendeli",
-          "moneyline": 116
-        },
-        {
-          "fighter": "Omran Chaaban",
-          "moneyline": -136
         },
         {
           "fighter": "Eoin Sheridan",
@@ -465,7 +465,7 @@
       "espnId": "600060620",
       "name": "UFC Fight Night: Nurmagomedov vs. Song",
       "source": "BestFightOdds (Caesars, FanDuel, BetRivers, BetWay)",
-      "capturedAt": "2026-08-22T02:48:21.421Z",
+      "capturedAt": "2026-08-22T04:25:29.073Z",
       "lines": [
         {
           "fighter": "Levi Rodrigues Jr",
@@ -585,7 +585,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-22T02:48:21.421Z",
+      "capturedAt": "2026-08-22T04:25:29.073Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
