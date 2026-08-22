@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-22T00:58:16.381Z",
+  "updatedAt": "2026-08-22T01:02:56.323Z",
   "events": [
     {
       "espnId": "600060493",
       "name": "UFC Fight Night: Hernandez vs. Rodrigues",
       "source": "DraftKings app, 21 Aug 2026, over BestFightOdds (FanDuel, BetWay, BetRivers)",
-      "capturedAt": "2026-08-22T00:58:16.381Z",
+      "capturedAt": "2026-08-22T01:02:56.323Z",
       "lines": [
         {
           "fighter": "Anthony Hernandez",
@@ -337,7 +337,7 @@
       "espnId": "600060446",
       "name": "PFL Tampa: Cyborg vs. Vieira",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-22T00:58:16.381Z",
+      "capturedAt": "2026-08-22T01:02:56.323Z",
       "lines": [
         {
           "fighter": "Cristiane Justino",
@@ -365,11 +365,11 @@
         },
         {
           "fighter": "Luke Trainer",
-          "moneyline": -400
+          "moneyline": -390
         },
         {
           "fighter": "Roland Dunlap",
-          "moneyline": 300
+          "moneyline": 310
         },
         {
           "fighter": "Marcirley Alves",
@@ -417,13 +417,13 @@
         },
         {
           "fighter": "Makkasharip Zaynukov",
-          "moneyline": -168,
+          "moneyline": -172,
           "totalLine": 2.5,
           "over": -260
         },
         {
           "fighter": "Natan Schulte",
-          "moneyline": 142,
+          "moneyline": 144,
           "totalLine": 2.5,
           "under": 188
         },
@@ -465,7 +465,7 @@
       "espnId": "600060620",
       "name": "UFC Fight Night: Nurmagomedov vs. Song",
       "source": "BestFightOdds (Caesars, FanDuel, BetRivers, BetWay)",
-      "capturedAt": "2026-08-22T00:58:16.381Z",
+      "capturedAt": "2026-08-22T01:02:56.323Z",
       "lines": [
         {
           "fighter": "Levi Rodrigues Jr",
@@ -585,7 +585,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-22T00:58:16.381Z",
+      "capturedAt": "2026-08-22T01:02:56.323Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
