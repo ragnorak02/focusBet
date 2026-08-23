@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-23T08:21:04.770Z",
+  "updatedAt": "2026-08-23T10:16:20.426Z",
   "events": [
     {
       "espnId": "600060446",
       "name": "PFL Tampa: Cyborg vs. Vieira",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-08-23T08:21:04.770Z",
+      "capturedAt": "2026-08-23T10:16:20.426Z",
       "lines": [
         {
           "fighter": "Cristiane Justino",
@@ -180,7 +180,7 @@
       "espnId": "600060620",
       "name": "UFC Fight Night: Nurmagomedov vs. Song",
       "source": "BestFightOdds (Caesars, Kalshi, FanDuel, BetRivers)",
-      "capturedAt": "2026-08-23T08:21:04.770Z",
+      "capturedAt": "2026-08-23T10:16:20.426Z",
       "lines": [
         {
           "fighter": "Levi Rodrigues Jr",
@@ -223,28 +223,12 @@
           "moneyline": -430
         },
         {
-          "fighter": "Francesco Nuzzi",
-          "moneyline": 152
-        },
-        {
-          "fighter": "Xiao Long",
-          "moneyline": -196
-        },
-        {
           "fighter": "Alex Perez",
           "moneyline": 180
         },
         {
           "fighter": "Sumudaerji Sumudaerji",
           "moneyline": -235
-        },
-        {
-          "fighter": "Hector Santiago",
-          "moneyline": 240
-        },
-        {
-          "fighter": "Lawrence Lui",
-          "moneyline": -330
         },
         {
           "fighter": "Bilal Hasan",
@@ -279,12 +263,28 @@
           "moneyline": -164
         },
         {
+          "fighter": "Francesco Nuzzi",
+          "moneyline": 152
+        },
+        {
+          "fighter": "Xiao Long",
+          "moneyline": -196
+        },
+        {
           "fighter": "Ce Liu",
           "moneyline": -195
         },
         {
           "fighter": "Levi Rodrigues",
           "moneyline": 155
+        },
+        {
+          "fighter": "Hector Santiago",
+          "moneyline": 240
+        },
+        {
+          "fighter": "Lawrence Lui",
+          "moneyline": -330
         },
         {
           "fighter": "Cameron Nelson",
@@ -308,7 +308,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-23T08:21:04.770Z",
+      "capturedAt": "2026-08-23T10:16:20.426Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
