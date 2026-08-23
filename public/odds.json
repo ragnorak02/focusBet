@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-23T00:54:01.557Z",
+  "updatedAt": "2026-08-23T06:28:43.017Z",
   "events": [
     {
       "espnId": "600060493",
       "name": "UFC Fight Night: Hernandez vs. Rodrigues",
       "source": "DraftKings app, 21 Aug 2026, over BestFightOdds (FanDuel, BetWay, BetRivers)",
-      "capturedAt": "2026-08-23T00:54:01.557Z",
+      "capturedAt": "2026-08-23T06:28:43.017Z",
       "lines": [
         {
           "fighter": "Anthony Hernandez",
@@ -337,7 +337,7 @@
       "espnId": "600060446",
       "name": "PFL Tampa: Cyborg vs. Vieira",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-08-23T00:54:01.557Z",
+      "capturedAt": "2026-08-23T06:28:43.017Z",
       "lines": [
         {
           "fighter": "Cristiane Justino",
@@ -511,8 +511,8 @@
     {
       "espnId": "600060620",
       "name": "UFC Fight Night: Nurmagomedov vs. Song",
-      "source": "BestFightOdds (Caesars, FanDuel, BetRivers)",
-      "capturedAt": "2026-08-23T00:54:01.557Z",
+      "source": "BestFightOdds (Caesars, Kalshi, FanDuel, BetRivers)",
+      "capturedAt": "2026-08-23T06:28:43.017Z",
       "lines": [
         {
           "fighter": "Levi Rodrigues Jr",
@@ -524,11 +524,11 @@
         },
         {
           "fighter": "Julia Polastri",
-          "moneyline": -220
+          "moneyline": -229
         },
         {
           "fighter": "Xiong Jingnan",
-          "moneyline": 180
+          "moneyline": 189
         },
         {
           "fighter": "Song Yadong",
@@ -640,7 +640,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-23T00:54:01.557Z",
+      "capturedAt": "2026-08-23T06:28:43.017Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
