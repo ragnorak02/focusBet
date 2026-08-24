@@ -1,186 +1,11 @@
 {
-  "updatedAt": "2026-08-24T04:37:40.012Z",
+  "updatedAt": "2026-08-24T08:39:21.636Z",
   "events": [
-    {
-      "espnId": "600060446",
-      "name": "PFL Tampa: Cyborg vs. Vieira",
-      "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-08-24T04:37:40.012Z",
-      "lines": [
-        {
-          "fighter": "Cristiane Justino",
-          "moneyline": -500,
-          "totalLine": 3.5,
-          "over": -102,
-          "draw": 5000,
-          "ko": -115,
-          "sub": 2200,
-          "dec": 230,
-          "koSub": -138
-        },
-        {
-          "fighter": "Ketlen Vieira",
-          "moneyline": 385,
-          "totalLine": 3.5,
-          "under": -132,
-          "ko": 1100,
-          "sub": 1100,
-          "dec": 1000,
-          "koSub": 450
-        },
-        {
-          "fighter": "Gadzhi Rabadanov",
-          "moneyline": -3500,
-          "totalLine": 1.5,
-          "over": 124,
-          "draw": 5000,
-          "ko": -165,
-          "sub": 270,
-          "dec": 550,
-          "koSub": -649
-        },
-        {
-          "fighter": "Tracy Reeder",
-          "moneyline": 1400,
-          "totalLine": 1.5,
-          "under": -168,
-          "ko": 4500,
-          "sub": 3500,
-          "dec": 2700
-        },
-        {
-          "fighter": "Sabrinna de Sousa",
-          "moneyline": 126,
-          "totalLine": 2.5,
-          "over": -270,
-          "draw": 5000,
-          "ko": 500,
-          "sub": 2700,
-          "dec": 250,
-          "koSub": 350
-        },
-        {
-          "fighter": "Taila Santos",
-          "moneyline": -148,
-          "totalLine": 2.5,
-          "under": 192,
-          "ko": 460,
-          "sub": 2000,
-          "dec": 135,
-          "koSub": 350
-        },
-        {
-          "fighter": "Luke Trainer",
-          "moneyline": -490,
-          "totalLine": 1.5,
-          "over": 120,
-          "draw": 5000,
-          "ko": 270,
-          "sub": 130,
-          "dec": 440,
-          "koSub": -225
-        },
-        {
-          "fighter": "Roland Dunlap",
-          "moneyline": 380,
-          "totalLine": 1.5,
-          "under": -164,
-          "ko": 750,
-          "sub": 1100,
-          "dec": 1400,
-          "koSub": 450
-        },
-        {
-          "fighter": "Marcirley Alves",
-          "moneyline": -178,
-          "totalLine": 2.5,
-          "over": -225
-        },
-        {
-          "fighter": "Nkosi Ndebele",
-          "moneyline": 150,
-          "totalLine": 2.5,
-          "under": 163
-        },
-        {
-          "fighter": "Daniel Marcos",
-          "moneyline": -154,
-          "totalLine": 2.5,
-          "over": -280
-        },
-        {
-          "fighter": "Magomed Magomedov",
-          "moneyline": 130,
-          "totalLine": 2.5,
-          "under": 198
-        },
-        {
-          "fighter": "Javid Basharat",
-          "moneyline": -240,
-          "totalLine": 2.5,
-          "over": -215
-        },
-        {
-          "fighter": "Movsar Ibragimov",
-          "moneyline": 198,
-          "totalLine": 2.5,
-          "under": 156
-        },
-        {
-          "fighter": "Dakota Bush",
-          "moneyline": -245,
-          "totalLine": 2.5,
-          "over": -110
-        },
-        {
-          "fighter": "Morquez Forest",
-          "moneyline": 200,
-          "totalLine": 2.5,
-          "under": -120
-        },
-        {
-          "fighter": "Makkasharip Zaynukov",
-          "moneyline": -174,
-          "totalLine": 2.5,
-          "over": -320
-        },
-        {
-          "fighter": "Natan Schulte",
-          "moneyline": 146,
-          "totalLine": 2.5,
-          "under": 225
-        },
-        {
-          "fighter": "Gino van Steenis",
-          "moneyline": -180,
-          "totalLine": 2.5,
-          "over": 130
-        },
-        {
-          "fighter": "Robert Watley",
-          "moneyline": 152,
-          "totalLine": 2.5,
-          "under": -175
-        },
-        {
-          "fighter": "Eoin Sheridan",
-          "moneyline": -620,
-          "totalLine": 1.5,
-          "over": 100
-        },
-        {
-          "fighter": "James Vake",
-          "moneyline": 460,
-          "totalLine": 1.5,
-          "under": -134
-        }
-      ]
-    },
     {
       "espnId": "600060620",
       "name": "UFC Fight Night: Nurmagomedov vs. Song",
       "source": "BestFightOdds (Kalshi, FanDuel, BetRivers)",
-      "capturedAt": "2026-08-24T04:37:40.012Z",
+      "capturedAt": "2026-08-24T08:39:21.636Z",
       "lines": [
         {
           "fighter": "Julia Polastri",
@@ -308,7 +133,7 @@
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (BetWay)",
-      "capturedAt": "2026-08-24T04:37:40.012Z",
+      "capturedAt": "2026-08-24T08:39:21.636Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -324,7 +149,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-24T04:37:40.012Z",
+      "capturedAt": "2026-08-24T08:39:21.636Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
