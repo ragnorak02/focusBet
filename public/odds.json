@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-08-24T22:18:42.265Z",
+  "updatedAt": "2026-08-25T00:52:36.506Z",
   "events": [
     {
       "espnId": "600060620",
       "name": "UFC Fight Night: Nurmagomedov vs. Song",
-      "source": "BestFightOdds (Kalshi, FanDuel, BetRivers)",
-      "capturedAt": "2026-08-24T22:18:42.265Z",
+      "source": "BestFightOdds (Kalshi, FanDuel)",
+      "capturedAt": "2026-08-25T00:52:36.506Z",
       "lines": [
         {
           "fighter": "Julia Polastri",
-          "moneyline": -229
+          "moneyline": -240
         },
         {
           "fighter": "Xiong Jingnan",
@@ -97,19 +97,19 @@
         },
         {
           "fighter": "Hector Santiago",
-          "moneyline": 240
+          "moneyline": 230
         },
         {
           "fighter": "Lawrence Lui",
-          "moneyline": -330
+          "moneyline": -310
         },
         {
           "fighter": "Ce Liu",
-          "moneyline": -195
+          "moneyline": -229
         },
         {
           "fighter": "Levi Rodrigues",
-          "moneyline": 155
+          "moneyline": 158
         },
         {
           "fighter": "Cameron Nelson",
@@ -133,7 +133,7 @@
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (BetWay)",
-      "capturedAt": "2026-08-24T22:18:42.265Z",
+      "capturedAt": "2026-08-25T00:52:36.506Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -149,7 +149,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-24T22:18:42.265Z",
+      "capturedAt": "2026-08-25T00:52:36.506Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
