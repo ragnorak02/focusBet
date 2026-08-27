@@ -1,31 +1,12 @@
 {
-  "updatedAt": "2026-08-26T19:39:42.102Z",
+  "updatedAt": "2026-08-27T06:32:49.967Z",
   "events": [
     {
       "espnId": "600060620",
       "name": "UFC Fight Night: Nurmagomedov vs. Song",
-      "source": "BestFightOdds (FanDuel, BetWay, Kalshi, Unibet, BetRivers)",
-      "capturedAt": "2026-08-26T19:39:42.102Z",
+      "source": "BestFightOdds (FanDuel, BetWay, Kalshi, BetRivers, Unibet)",
+      "capturedAt": "2026-08-27T06:32:49.967Z",
       "lines": [
-        {
-          "fighter": "Levi Rodrigues Jr",
-          "moneyline": 164,
-          "totalLine": 1.5,
-          "over": 162,
-          "draw": 5000,
-          "ko": 240,
-          "sub": 1800,
-          "dec": 1300
-        },
-        {
-          "fighter": "Liu Ce",
-          "moneyline": -215,
-          "totalLine": 1.5,
-          "under": -210,
-          "ko": -135,
-          "sub": 2000,
-          "dec": 1000
-        },
         {
           "fighter": "Song Yadong",
           "moneyline": 360,
@@ -69,14 +50,6 @@
           "koSub": 500
         },
         {
-          "fighter": "Julia Polastri",
-          "moneyline": -240
-        },
-        {
-          "fighter": "Xiong Jingnan",
-          "moneyline": 207
-        },
-        {
           "fighter": "Aoriqileng",
           "moneyline": 340,
           "totalLine": 1.5,
@@ -117,6 +90,46 @@
           "sub": 900,
           "dec": 210,
           "koSub": 120
+        },
+        {
+          "fighter": "Levi Rodrigues Jr",
+          "moneyline": 164,
+          "totalLine": 1.5,
+          "over": 162,
+          "draw": 5000,
+          "ko": 240,
+          "sub": 1800,
+          "dec": 1300
+        },
+        {
+          "fighter": "Liu Ce",
+          "moneyline": -215,
+          "totalLine": 1.5,
+          "under": -210,
+          "ko": -135,
+          "sub": 2000,
+          "dec": 1000
+        },
+        {
+          "fighter": "Ce Liu",
+          "moneyline": -200,
+          "totalLine": 1.5,
+          "over": 170,
+          "draw": 4500,
+          "ko": -136,
+          "sub": 1700,
+          "dec": 900,
+          "koSub": -163
+        },
+        {
+          "fighter": "Levi Rodrigues",
+          "moneyline": 165,
+          "totalLine": 1.5,
+          "under": -240,
+          "ko": 255,
+          "sub": 1700,
+          "dec": 1150,
+          "koSub": 200
         },
         {
           "fighter": "Bilal Hasan",
@@ -182,46 +195,33 @@
           "koSub": -143
         },
         {
-          "fighter": "Ce Liu",
-          "moneyline": -200,
-          "totalLine": 1.5,
-          "over": 170,
-          "draw": 4500,
-          "ko": -136,
-          "sub": 1700,
-          "dec": 900,
-          "koSub": -163
+          "fighter": "Julia Polastri",
+          "moneyline": -240
         },
         {
-          "fighter": "Levi Rodrigues",
-          "moneyline": 165,
-          "totalLine": 1.5,
-          "under": -240,
-          "ko": 255,
-          "sub": 1700,
-          "dec": 1150,
-          "koSub": 200
+          "fighter": "Xiong Jingnan",
+          "moneyline": 207
         },
         {
           "fighter": "Jack Jenkins",
           "moneyline": 128,
           "totalLine": 2.5,
-          "over": -205,
+          "over": -210,
           "draw": 4500,
-          "ko": 460,
-          "sub": 1400,
-          "dec": 275,
-          "koSub": 370
+          "ko": 410,
+          "sub": 1300,
+          "dec": 300,
+          "koSub": 330
         },
         {
           "fighter": "Sean Woodson",
           "moneyline": -164,
           "totalLine": 2.5,
-          "under": 148,
-          "ko": 430,
-          "sub": 1000,
-          "dec": 165,
-          "koSub": 300
+          "under": 150,
+          "ko": 475,
+          "sub": 1100,
+          "dec": 155,
+          "koSub": 340
         },
         {
           "fighter": "Francesco Nuzzi",
@@ -299,7 +299,7 @@
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel, BetRivers)",
-      "capturedAt": "2026-08-26T19:39:42.102Z",
+      "capturedAt": "2026-08-27T06:32:49.967Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -419,7 +419,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-26T19:39:42.102Z",
+      "capturedAt": "2026-08-27T06:32:49.967Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
