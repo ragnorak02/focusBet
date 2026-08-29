@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-29T14:52:15.354Z",
+  "updatedAt": "2026-08-29T19:03:30.120Z",
   "events": [
     {
       "espnId": "600060620",
       "name": "UFC Fight Night: Nurmagomedov vs. Song",
       "source": "BestFightOdds (FanDuel, BetWay, Kalshi, BetRivers, Unibet, Caesars)",
-      "capturedAt": "2026-08-29T14:52:15.354Z",
+      "capturedAt": "2026-08-29T19:03:30.120Z",
       "lines": [
         {
           "fighter": "Song Yadong",
@@ -317,7 +317,7 @@
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel, BetRivers)",
-      "capturedAt": "2026-08-29T14:52:15.354Z",
+      "capturedAt": "2026-08-29T19:03:30.120Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -337,11 +337,11 @@
         },
         {
           "fighter": "Michael Page",
-          "moneyline": -194
+          "moneyline": -180
         },
         {
           "fighter": "Nursulton Ruziboev",
-          "moneyline": 156
+          "moneyline": 146
         },
         {
           "fighter": "Daniil Donchenko",
@@ -369,7 +369,7 @@
         },
         {
           "fighter": "Mario Pinto",
-          "moneyline": -265
+          "moneyline": -280
         },
         {
           "fighter": "Ryan Spann",
@@ -377,19 +377,19 @@
         },
         {
           "fighter": "Kurtis Campbell",
-          "moneyline": -355
+          "moneyline": -370
         },
         {
           "fighter": "Trevor Peek",
-          "moneyline": 270
+          "moneyline": 265
         },
         {
           "fighter": "Fabia Sintes",
-          "moneyline": 132
+          "moneyline": 130
         },
         {
           "fighter": "Michael Aljarouj",
-          "moneyline": -162
+          "moneyline": -166
         },
         {
           "fighter": "Modestas Bukauskas",
@@ -397,31 +397,31 @@
         },
         {
           "fighter": "Oumar Sy",
-          "moneyline": -178
+          "moneyline": -186
         },
         {
           "fighter": "Klaudia Sygula",
-          "moneyline": 110
+          "moneyline": 106
         },
         {
           "fighter": "Nora Cornolle",
-          "moneyline": -134
+          "moneyline": -136
         },
         {
           "fighter": "Luis Felipe Dias",
-          "moneyline": -104
+          "moneyline": -106
         },
         {
           "fighter": "Matthieu Duclos",
-          "moneyline": -118
+          "moneyline": -120
         },
         {
           "fighter": "Delphine Benouaich",
-          "moneyline": -158
+          "moneyline": -162
         },
         {
           "fighter": "Sofia Montenegro",
-          "moneyline": 128
+          "moneyline": 126
         },
         {
           "fighter": "Mairon Santos",
@@ -437,7 +437,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-29T14:52:15.354Z",
+      "capturedAt": "2026-08-29T19:03:30.120Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
