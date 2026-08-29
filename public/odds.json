@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-29T19:03:30.120Z",
+  "updatedAt": "2026-08-29T22:09:50.835Z",
   "events": [
     {
       "espnId": "600060620",
       "name": "UFC Fight Night: Nurmagomedov vs. Song",
       "source": "BestFightOdds (FanDuel, BetWay, Kalshi, BetRivers, Unibet, Caesars)",
-      "capturedAt": "2026-08-29T19:03:30.120Z",
+      "capturedAt": "2026-08-29T22:09:50.835Z",
       "lines": [
         {
           "fighter": "Song Yadong",
@@ -317,15 +317,15 @@
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel, BetRivers)",
-      "capturedAt": "2026-08-29T19:03:30.120Z",
+      "capturedAt": "2026-08-29T22:09:50.835Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
-          "moneyline": 350
+          "moneyline": 340
         },
         {
           "fighter": "Salahdine Parnasse",
-          "moneyline": -480
+          "moneyline": -500
         },
         {
           "fighter": "Axel Sola",
@@ -333,35 +333,35 @@
         },
         {
           "fighter": "Fares Ziam",
-          "moneyline": -144
+          "moneyline": -150
         },
         {
           "fighter": "Michael Page",
-          "moneyline": -180
+          "moneyline": -186
         },
         {
           "fighter": "Nursulton Ruziboev",
-          "moneyline": 146
+          "moneyline": 144
         },
         {
           "fighter": "Daniil Donchenko",
-          "moneyline": -215
+          "moneyline": -220
         },
         {
           "fighter": "Punahele Soriano",
-          "moneyline": 172
+          "moneyline": 168
         },
         {
           "fighter": "Felipe Lima",
-          "moneyline": -200
+          "moneyline": -210
         },
         {
           "fighter": "Morgan Charriere",
-          "moneyline": 160
+          "moneyline": 162
         },
         {
           "fighter": "Losene Keita",
-          "moneyline": -280
+          "moneyline": -295
         },
         {
           "fighter": "Muhammad Naimov",
@@ -437,7 +437,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-29T19:03:30.120Z",
+      "capturedAt": "2026-08-29T22:09:50.835Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
