@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-29T00:18:33.643Z",
+  "updatedAt": "2026-08-29T08:29:50.860Z",
   "events": [
     {
       "espnId": "600060620",
       "name": "UFC Fight Night: Nurmagomedov vs. Song",
-      "source": "BestFightOdds (FanDuel, BetWay, Kalshi, BetRivers, Caesars, Unibet)",
-      "capturedAt": "2026-08-29T00:18:33.643Z",
+      "source": "BestFightOdds (FanDuel, BetWay, Kalshi, BetRivers, Unibet, Caesars)",
+      "capturedAt": "2026-08-29T08:29:50.860Z",
       "lines": [
         {
           "fighter": "Song Yadong",
@@ -30,51 +30,51 @@
         },
         {
           "fighter": "Denise Gomes",
-          "moneyline": 130,
+          "moneyline": 128,
           "totalLine": 2.5,
-          "over": -310,
+          "over": -320,
           "draw": 5000,
           "ko": 500,
           "sub": 1500,
-          "dec": 290,
+          "dec": 280,
           "koSub": 300
         },
         {
           "fighter": "Yan Xiaonan",
-          "moneyline": -154,
+          "moneyline": -152,
           "totalLine": 2.5,
-          "under": 220,
-          "ko": 700,
-          "sub": 2500,
+          "under": 230,
+          "ko": 750,
+          "sub": 2700,
           "dec": 100,
           "koSub": 500
         },
         {
           "fighter": "Aoriqileng",
-          "moneyline": 385,
+          "moneyline": 315,
           "totalLine": 1.5,
-          "over": -120,
+          "over": -122,
           "draw": 5000,
-          "ko": 1000,
-          "sub": 2500,
-          "dec": 800,
+          "ko": 900,
+          "sub": 2200,
+          "dec": 700,
           "koSub": 900
         },
         {
           "fighter": "Kai Asakura",
-          "moneyline": -500,
+          "moneyline": -400,
           "totalLine": 1.5,
-          "under": -106,
-          "ko": -175,
-          "sub": 2200,
-          "dec": 380,
+          "under": -104,
+          "ko": -170,
+          "sub": 2700,
+          "dec": 420,
           "koSub": -250
         },
         {
           "fighter": "Alex Perez",
           "moneyline": 180,
           "totalLine": 2.5,
-          "over": -104,
+          "over": -108,
           "draw": 5000,
           "ko": 550,
           "sub": 800,
@@ -85,89 +85,89 @@
           "fighter": "Sumudaerji Sumudaerji",
           "moneyline": -215,
           "totalLine": 2.5,
-          "under": -122,
+          "under": -118,
           "ko": 210,
-          "sub": 900,
-          "dec": 210,
+          "sub": 1000,
+          "dec": 200,
           "koSub": 120
         },
         {
           "fighter": "Levi Rodrigues Jr",
-          "moneyline": 154,
+          "moneyline": 142,
           "totalLine": 1.5,
-          "over": 164,
+          "over": 166,
           "draw": 5000,
-          "ko": 240,
+          "ko": 220,
           "sub": 1500,
           "dec": 1200
         },
         {
           "fighter": "Liu Ce",
-          "moneyline": -184,
+          "moneyline": -168,
           "totalLine": 1.5,
           "under": -215,
-          "ko": -135,
+          "ko": -125,
           "sub": 2000,
           "dec": 1100
         },
         {
           "fighter": "Ce Liu",
-          "moneyline": -176,
+          "moneyline": -161,
           "totalLine": 1.5,
           "over": 155,
           "draw": 4500,
-          "ko": -124,
+          "ko": -120,
           "sub": 1800,
           "dec": 900,
           "koSub": -163
         },
         {
           "fighter": "Levi Rodrigues",
-          "moneyline": 145,
+          "moneyline": 140,
           "totalLine": 1.5,
           "under": -225,
           "ko": 240,
-          "sub": 1700,
-          "dec": 1050,
+          "sub": 1500,
+          "dec": 1000,
           "koSub": 200
         },
         {
           "fighter": "Bilal Hasan",
-          "moneyline": -820,
+          "moneyline": -850,
           "totalLine": 1.5,
-          "over": -164,
+          "over": -168,
           "draw": 5000,
-          "ko": -135,
-          "sub": 1000,
-          "dec": 240,
+          "ko": -150,
+          "sub": 1300,
+          "dec": 250,
           "koSub": -200
         },
         {
           "fighter": "Nilson Rojas",
-          "moneyline": 570,
+          "moneyline": 590,
           "totalLine": 1.5,
-          "under": 128,
+          "under": 132,
           "ko": 1200,
           "sub": 4000,
-          "dec": 1300,
+          "dec": 1400,
           "koSub": 900
         },
         {
           "fighter": "Andre Lima",
           "moneyline": -270,
-          "totalLine": 1.5,
-          "over": -156,
+          "totalLine": 2.5,
+          "over": 118,
           "draw": 5000,
-          "ko": 200,
-          "sub": 380,
-          "dec": 300,
+          "ko": 220,
+          "sub": 400,
+          "dec": 260,
           "koSub": -120
         },
         {
           "fighter": "Namsrai Batbayar",
           "moneyline": 220,
-          "totalLine": 1.5,
-          "under": 124,
+          "totalLine": 2.5,
+          "under": -150,
           "ko": 650,
           "sub": 1000,
           "dec": 700,
@@ -175,23 +175,23 @@
         },
         {
           "fighter": "Kevin Borjas",
-          "moneyline": 610,
+          "moneyline": 560,
           "totalLine": 1.5,
-          "over": -155,
+          "over": -140,
           "draw": 5000,
-          "ko": 1600,
+          "ko": 1300,
           "sub": 6000,
-          "dec": 1100,
+          "dec": 1000,
           "koSub": 700
         },
         {
           "fighter": "Rei Tsuruya",
-          "moneyline": -900,
+          "moneyline": -800,
           "totalLine": 1.5,
-          "under": 112,
-          "ko": 430,
-          "sub": 125,
-          "dec": 200,
+          "under": 110,
+          "ko": 450,
+          "sub": 105,
+          "dec": 250,
           "koSub": -163
         },
         {
@@ -217,49 +217,70 @@
         },
         {
           "fighter": "Francesco Nuzzi",
-          "moneyline": 140,
+          "moneyline": 158,
           "totalLine": 2.5,
-          "over": -148,
+          "over": -144,
           "draw": 5000,
-          "ko": 500,
+          "ko": 550,
           "sub": 1200,
-          "dec": 360,
+          "dec": 420,
           "koSub": 300
         },
         {
           "fighter": "Xiao Long",
-          "moneyline": -166,
+          "moneyline": -188,
           "totalLine": 2.5,
-          "under": 116,
+          "under": 114,
           "ko": 500,
-          "sub": 550,
-          "dec": 185,
+          "sub": 470,
+          "dec": 175,
           "koSub": 200
         },
         {
           "fighter": "Hector Santiago",
-          "moneyline": 275,
+          "moneyline": 295,
           "totalLine": 2.5,
           "over": -104,
           "draw": 5000,
-          "ko": 650,
-          "sub": 2500,
-          "dec": 700,
+          "ko": 550,
+          "sub": 3000,
+          "dec": 850,
           "koSub": 450
         },
         {
           "fighter": "Lawrence Lui",
-          "moneyline": -340,
+          "moneyline": -370,
           "totalLine": 2.5,
           "under": -122,
-          "ko": 230,
-          "sub": 410,
-          "dec": 195,
+          "ko": 270,
+          "sub": 340,
+          "dec": 185,
           "koSub": 105
         },
         {
+          "fighter": "Jingnan Xiong",
+          "moneyline": 205,
+          "totalLine": 2.5,
+          "over": -400,
+          "draw": 5000,
+          "ko": 850,
+          "sub": 2700,
+          "dec": 350,
+          "koSub": 650
+        },
+        {
           "fighter": "Julia Polastri",
-          "moneyline": -240,
+          "moneyline": -250,
+          "totalLine": 2.5,
+          "under": 280,
+          "ko": 1600,
+          "sub": 650,
+          "dec": -135,
+          "koSub": 575
+        },
+        {
+          "fighter": "Julia Polastri",
+          "moneyline": -149,
           "totalLine": 2.5,
           "over": -400,
           "draw": 6000,
@@ -270,7 +291,7 @@
         },
         {
           "fighter": "Xiong Jingnan",
-          "moneyline": 198,
+          "moneyline": 118,
           "totalLine": 2.5,
           "under": 275,
           "ko": 900,
@@ -279,37 +300,16 @@
           "koSub": 700
         },
         {
-          "fighter": "Jingnan Xiong",
-          "moneyline": 188,
-          "totalLine": 2.5,
-          "over": -430,
-          "draw": 5000,
-          "ko": 800,
-          "sub": 2000,
-          "dec": 340,
-          "koSub": 650
-        },
-        {
-          "fighter": "Julia Polastri",
-          "moneyline": -225,
-          "totalLine": 2.5,
-          "under": 300,
-          "ko": 1300,
-          "sub": 1000,
-          "dec": -140,
-          "koSub": 575
-        },
-        {
           "fighter": "Cameron Nelson",
-          "moneyline": 130,
+          "moneyline": 124,
           "draw": 6000
         },
         {
           "fighter": "Ding Meng",
-          "moneyline": -154,
-          "ko": 150,
-          "sub": 2000,
-          "dec": 380
+          "moneyline": -146,
+          "ko": 145,
+          "sub": 2500,
+          "dec": 400
         }
       ]
     },
@@ -317,7 +317,7 @@
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel, BetRivers)",
-      "capturedAt": "2026-08-29T00:18:33.643Z",
+      "capturedAt": "2026-08-29T08:29:50.860Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -409,11 +409,11 @@
         },
         {
           "fighter": "Luis Felipe Dias",
-          "moneyline": -115
+          "moneyline": -104
         },
         {
           "fighter": "Matthieu Duclos",
-          "moneyline": -105
+          "moneyline": -118
         },
         {
           "fighter": "Delphine Benouaich",
@@ -437,7 +437,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-29T00:18:33.643Z",
+      "capturedAt": "2026-08-29T08:29:50.860Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
