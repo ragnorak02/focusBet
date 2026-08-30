@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-30T14:36:15.506Z",
+  "updatedAt": "2026-08-30T18:58:09.253Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
-      "source": "BestFightOdds (FanDuel, BetRivers)",
-      "capturedAt": "2026-08-30T14:36:15.506Z",
+      "source": "BestFightOdds (FanDuel)",
+      "capturedAt": "2026-08-30T18:58:09.253Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -110,14 +110,6 @@
         {
           "fighter": "Sofia Montenegro",
           "moneyline": 126
-        },
-        {
-          "fighter": "Mairon Santos",
-          "moneyline": -134
-        },
-        {
-          "fighter": "Nathaniel Wood",
-          "moneyline": 108
         }
       ]
     },
@@ -125,7 +117,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-30T14:36:15.506Z",
+      "capturedAt": "2026-08-30T18:58:09.253Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
