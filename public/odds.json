@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-30T09:37:50.694Z",
+  "updatedAt": "2026-08-30T14:36:15.506Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel, BetRivers)",
-      "capturedAt": "2026-08-30T09:37:50.694Z",
+      "capturedAt": "2026-08-30T14:36:15.506Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -25,11 +25,11 @@
         },
         {
           "fighter": "Michael Page",
-          "moneyline": -186
+          "moneyline": -184
         },
         {
           "fighter": "Nursulton Ruziboev",
-          "moneyline": 144
+          "moneyline": 142
         },
         {
           "fighter": "Daniil Donchenko",
@@ -49,11 +49,11 @@
         },
         {
           "fighter": "Losene Keita",
-          "moneyline": -295
+          "moneyline": -320
         },
         {
           "fighter": "Muhammad Naimov",
-          "moneyline": 220
+          "moneyline": 235
         },
         {
           "fighter": "Mario Pinto",
@@ -125,7 +125,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-30T09:37:50.694Z",
+      "capturedAt": "2026-08-30T14:36:15.506Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
