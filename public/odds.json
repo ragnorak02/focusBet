@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-30T18:58:09.253Z",
+  "updatedAt": "2026-08-30T22:17:04.944Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-30T18:58:09.253Z",
+      "capturedAt": "2026-08-30T22:17:04.944Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -33,11 +33,11 @@
         },
         {
           "fighter": "Daniil Donchenko",
-          "moneyline": -220
+          "moneyline": -250
         },
         {
           "fighter": "Punahele Soriano",
-          "moneyline": 168
+          "moneyline": 190
         },
         {
           "fighter": "Felipe Lima",
@@ -117,7 +117,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-30T18:58:09.253Z",
+      "capturedAt": "2026-08-30T22:17:04.944Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
