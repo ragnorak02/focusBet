@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-30T22:17:04.944Z",
+  "updatedAt": "2026-08-31T10:20:09.079Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-30T22:17:04.944Z",
+      "capturedAt": "2026-08-31T10:20:09.079Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -81,11 +81,11 @@
         },
         {
           "fighter": "Modestas Bukauskas",
-          "moneyline": 144
+          "moneyline": 158
         },
         {
           "fighter": "Oumar Sy",
-          "moneyline": -186
+          "moneyline": -205
         },
         {
           "fighter": "Klaudia Sygula",
@@ -117,7 +117,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-30T22:17:04.944Z",
+      "capturedAt": "2026-08-31T10:20:09.079Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
