@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-31T10:20:09.079Z",
+  "updatedAt": "2026-08-31T18:33:46.424Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-31T10:20:09.079Z",
+      "capturedAt": "2026-08-31T18:33:46.424Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -49,19 +49,19 @@
         },
         {
           "fighter": "Losene Keita",
-          "moneyline": -320
+          "moneyline": -350
         },
         {
           "fighter": "Muhammad Naimov",
-          "moneyline": 235
+          "moneyline": 255
         },
         {
           "fighter": "Mario Pinto",
-          "moneyline": -280
+          "moneyline": -295
         },
         {
           "fighter": "Ryan Spann",
-          "moneyline": 210
+          "moneyline": 220
         },
         {
           "fighter": "Kurtis Campbell",
@@ -73,19 +73,19 @@
         },
         {
           "fighter": "Fabia Sintes",
-          "moneyline": 130
+          "moneyline": 114
         },
         {
           "fighter": "Michael Aljarouj",
-          "moneyline": -166
+          "moneyline": -148
         },
         {
           "fighter": "Modestas Bukauskas",
-          "moneyline": 158
+          "moneyline": 164
         },
         {
           "fighter": "Oumar Sy",
-          "moneyline": -205
+          "moneyline": -215
         },
         {
           "fighter": "Klaudia Sygula",
@@ -117,7 +117,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-31T10:20:09.079Z",
+      "capturedAt": "2026-08-31T18:33:46.424Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
