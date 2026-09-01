@@ -1,51 +1,103 @@
 {
-  "updatedAt": "2026-08-31T23:32:15.781Z",
+  "updatedAt": "2026-09-01T14:26:31.871Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
-      "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-31T23:32:15.781Z",
+      "source": "BestFightOdds (FanDuel, BetRivers, Unibet)",
+      "capturedAt": "2026-09-01T14:26:31.871Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
-          "moneyline": 400
+          "moneyline": 400,
+          "totalLine": 2.5,
+          "over": 120,
+          "draw": 4500,
+          "ko": 950,
+          "sub": 1300,
+          "dec": 1400,
+          "koSub": 650
         },
         {
           "fighter": "Salahdine Parnasse",
-          "moneyline": -620
+          "moneyline": -620,
+          "totalLine": 2.5,
+          "under": -162,
+          "ko": -127,
+          "sub": 325,
+          "dec": 600,
+          "koSub": -295
         },
         {
           "fighter": "Axel Sola",
-          "moneyline": 126
+          "moneyline": 126,
+          "totalLine": 2.5,
+          "over": -215,
+          "draw": 4500,
+          "ko": 700,
+          "sub": 950,
+          "dec": 265,
+          "koSub": 425
         },
         {
           "fighter": "Fares Ziam",
-          "moneyline": -162
+          "moneyline": -162,
+          "totalLine": 2.5,
+          "under": 155,
+          "ko": 440,
+          "sub": 850,
+          "dec": 165,
+          "koSub": 285
         },
         {
           "fighter": "Michael Page",
-          "moneyline": -184
+          "moneyline": -184,
+          "totalLine": 2.5,
+          "over": -186,
+          "draw": 4500,
+          "ko": 320,
+          "sub": 2000,
+          "dec": 133,
+          "koSub": 295
         },
         {
           "fighter": "Nursulton Ruziboev",
-          "moneyline": 142
+          "moneyline": 142,
+          "totalLine": 2.5,
+          "under": 133,
+          "ko": 750,
+          "sub": 600,
+          "dec": 420,
+          "koSub": 335
         },
         {
           "fighter": "Daniil Donchenko",
-          "moneyline": -250
+          "moneyline": -250,
+          "totalLine": 1.5,
+          "over": -155,
+          "draw": 4500,
+          "ko": 117,
+          "sub": 1100,
+          "dec": 325,
+          "koSub": -103
         },
         {
           "fighter": "Punahele Soriano",
-          "moneyline": 190
+          "moneyline": 190,
+          "totalLine": 1.5,
+          "under": 114,
+          "ko": 450,
+          "sub": 1600,
+          "dec": 575,
+          "koSub": 380
         },
         {
           "fighter": "Felipe Lima",
-          "moneyline": -210
+          "moneyline": -194
         },
         {
           "fighter": "Morgan Charriere",
-          "moneyline": 162
+          "moneyline": 150
         },
         {
           "fighter": "Losene Keita",
@@ -117,7 +169,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-08-31T23:32:15.781Z",
+      "capturedAt": "2026-09-01T14:26:31.871Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
