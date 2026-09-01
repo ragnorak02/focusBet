@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-01T19:06:08.718Z",
+  "updatedAt": "2026-09-01T22:16:11.730Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel, BetRivers, BetWay)",
-      "capturedAt": "2026-09-01T19:06:08.718Z",
+      "capturedAt": "2026-09-01T22:16:11.730Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -195,7 +195,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-01T19:06:08.718Z",
+      "capturedAt": "2026-09-01T22:16:11.730Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -204,14 +204,6 @@
         {
           "fighter": "Joshua van",
           "moneyline": -120
-        },
-        {
-          "fighter": "Gable Steveson",
-          "moneyline": -1800
-        },
-        {
-          "fighter": "Sean Sharaf",
-          "moneyline": 800
         },
         {
           "fighter": "Arman Tsarukyan",
@@ -228,6 +220,14 @@
         {
           "fighter": "Tai Tuivasa",
           "moneyline": 360
+        },
+        {
+          "fighter": "Gable Steveson",
+          "moneyline": -1800
+        },
+        {
+          "fighter": "Sean Sharaf",
+          "moneyline": 800
         }
       ]
     },
