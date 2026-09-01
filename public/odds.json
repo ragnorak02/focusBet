@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-01T14:26:31.871Z",
+  "updatedAt": "2026-09-01T19:06:08.718Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
-      "source": "BestFightOdds (FanDuel, BetRivers, Unibet)",
-      "capturedAt": "2026-09-01T14:26:31.871Z",
+      "source": "BestFightOdds (FanDuel, BetRivers, BetWay)",
+      "capturedAt": "2026-09-01T19:06:08.718Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -16,7 +16,7 @@
           "ko": 950,
           "sub": 1300,
           "dec": 1400,
-          "koSub": 650
+          "koSub": 600
         },
         {
           "fighter": "Salahdine Parnasse",
@@ -26,7 +26,7 @@
           "ko": -127,
           "sub": 325,
           "dec": 600,
-          "koSub": -295
+          "koSub": -350
         },
         {
           "fighter": "Axel Sola",
@@ -37,7 +37,7 @@
           "ko": 700,
           "sub": 950,
           "dec": 265,
-          "koSub": 425
+          "koSub": 400
         },
         {
           "fighter": "Fares Ziam",
@@ -47,7 +47,7 @@
           "ko": 440,
           "sub": 850,
           "dec": 165,
-          "koSub": 285
+          "koSub": 240
         },
         {
           "fighter": "Michael Page",
@@ -58,7 +58,7 @@
           "ko": 320,
           "sub": 2000,
           "dec": 133,
-          "koSub": 295
+          "koSub": 275
         },
         {
           "fighter": "Nursulton Ruziboev",
@@ -68,7 +68,7 @@
           "ko": 750,
           "sub": 600,
           "dec": 420,
-          "koSub": 335
+          "koSub": 240
         },
         {
           "fighter": "Daniil Donchenko",
@@ -79,7 +79,7 @@
           "ko": 117,
           "sub": 1100,
           "dec": 325,
-          "koSub": -103
+          "koSub": -150
         },
         {
           "fighter": "Punahele Soriano",
@@ -89,23 +89,49 @@
           "ko": 450,
           "sub": 1600,
           "dec": 575,
-          "koSub": 380
+          "koSub": 450
         },
         {
           "fighter": "Felipe Lima",
-          "moneyline": -194
+          "moneyline": -194,
+          "totalLine": 2.5,
+          "over": -200,
+          "draw": 4500,
+          "ko": 540,
+          "sub": 540,
+          "dec": 138,
+          "koSub": 240
         },
         {
           "fighter": "Morgan Charriere",
-          "moneyline": 150
+          "moneyline": 150,
+          "totalLine": 2.5,
+          "under": 145,
+          "ko": 450,
+          "sub": 2200,
+          "dec": 390,
+          "koSub": 300
         },
         {
           "fighter": "Losene Keita",
-          "moneyline": -390
+          "moneyline": -390,
+          "totalLine": 2.5,
+          "over": 107,
+          "draw": 4500,
+          "ko": 102,
+          "sub": 1700,
+          "dec": 240,
+          "koSub": -138
         },
         {
           "fighter": "Muhammad Naimov",
-          "moneyline": 280
+          "moneyline": 280,
+          "totalLine": 2.5,
+          "under": -148,
+          "ko": 950,
+          "sub": 1150,
+          "dec": 650,
+          "koSub": 600
         },
         {
           "fighter": "Mario Pinto",
@@ -124,20 +150,20 @@
           "moneyline": 265
         },
         {
-          "fighter": "Fabia Sintes",
-          "moneyline": 114
-        },
-        {
-          "fighter": "Michael Aljarouj",
-          "moneyline": -148
-        },
-        {
           "fighter": "Modestas Bukauskas",
           "moneyline": 164
         },
         {
           "fighter": "Oumar Sy",
           "moneyline": -215
+        },
+        {
+          "fighter": "Fabia Sintes",
+          "moneyline": 114
+        },
+        {
+          "fighter": "Michael Aljarouj",
+          "moneyline": -148
         },
         {
           "fighter": "Klaudia Sygula",
@@ -169,7 +195,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-01T14:26:31.871Z",
+      "capturedAt": "2026-09-01T19:06:08.718Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
