@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-02T13:59:19.976Z",
+  "updatedAt": "2026-09-02T17:45:36.801Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
-      "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-09-02T13:59:19.976Z",
+      "source": "BestFightOdds (FanDuel, BetWay, Unibet)",
+      "capturedAt": "2026-09-02T17:45:36.801Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -48,6 +48,14 @@
           "sub": 850,
           "dec": 170,
           "koSub": 240
+        },
+        {
+          "fighter": "Nathaniel Wood",
+          "moneyline": -370
+        },
+        {
+          "fighter": "Pavel Andrusca",
+          "moneyline": 265
         },
         {
           "fighter": "Michael Page",
@@ -134,28 +142,65 @@
           "koSub": 600
         },
         {
-          "fighter": "Mario Pinto",
-          "moneyline": -295
-        },
-        {
-          "fighter": "Ryan Spann",
-          "moneyline": 220
-        },
-        {
           "fighter": "Kurtis Campbell",
-          "moneyline": -370
+          "moneyline": -410,
+          "totalLine": 2.5,
+          "over": 122,
+          "draw": 5000,
+          "ko": 240,
+          "sub": 260,
+          "dec": 250,
+          "koSub": -114
         },
         {
           "fighter": "Trevor Peek",
-          "moneyline": 265
+          "moneyline": 290,
+          "totalLine": 2.5,
+          "under": -156,
+          "ko": 600,
+          "sub": 3300,
+          "dec": 850,
+          "koSub": 525
+        },
+        {
+          "fighter": "Mario Pinto",
+          "moneyline": -310,
+          "totalLine": 1.5,
+          "over": 110,
+          "draw": 5000,
+          "ko": -110,
+          "sub": 800,
+          "dec": 500,
+          "koSub": -157
+        },
+        {
+          "fighter": "Ryan Spann",
+          "moneyline": 230,
+          "totalLine": 1.5,
+          "under": -138,
+          "ko": 850,
+          "sub": 500,
+          "dec": 1300,
+          "koSub": 300
         },
         {
           "fighter": "Modestas Bukauskas",
-          "moneyline": 164
+          "moneyline": 172,
+          "totalLine": 2.5,
+          "over": -172,
+          "draw": 5000,
+          "ko": 650,
+          "sub": 2200,
+          "dec": 370
         },
         {
           "fighter": "Oumar Sy",
-          "moneyline": -215
+          "moneyline": -225,
+          "totalLine": 2.5,
+          "under": 134,
+          "ko": 550,
+          "sub": 440,
+          "dec": 155
         },
         {
           "fighter": "Fabia Sintes",
@@ -195,7 +240,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-02T13:59:19.976Z",
+      "capturedAt": "2026-09-02T17:45:36.801Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
