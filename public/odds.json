@@ -1,31 +1,31 @@
 {
-  "updatedAt": "2026-09-02T20:22:10.260Z",
+  "updatedAt": "2026-09-02T23:44:37.245Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel, BetWay, Unibet, BetRivers)",
-      "capturedAt": "2026-09-02T20:22:10.260Z",
+      "capturedAt": "2026-09-02T23:44:37.245Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
-          "moneyline": 400,
-          "totalLine": 2.5,
-          "over": 120,
+          "moneyline": 440,
+          "totalLine": 1.5,
+          "over": -166,
           "draw": 5000,
-          "ko": 1000,
-          "sub": 1600,
+          "ko": 1400,
+          "sub": 1400,
           "dec": 1400,
           "koSub": 600
         },
         {
           "fighter": "Salahdine Parnasse",
-          "moneyline": -620,
-          "totalLine": 2.5,
-          "under": -152,
-          "ko": -125,
-          "sub": 340,
-          "dec": 650,
+          "moneyline": -700,
+          "totalLine": 1.5,
+          "under": 130,
+          "ko": -135,
+          "sub": 360,
+          "dec": 600,
           "koSub": -350
         },
         {
@@ -135,11 +135,11 @@
         },
         {
           "fighter": "Nathaniel Wood",
-          "moneyline": -370
+          "moneyline": -330
         },
         {
           "fighter": "Pavel Andrusca",
-          "moneyline": 265
+          "moneyline": 240
         },
         {
           "fighter": "Felipe Lima",
@@ -294,7 +294,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-02T20:22:10.260Z",
+      "capturedAt": "2026-09-02T23:44:37.245Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
