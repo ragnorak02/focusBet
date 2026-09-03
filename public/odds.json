@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-02T23:44:37.245Z",
+  "updatedAt": "2026-09-03T02:25:23.537Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel, BetWay, Unibet, BetRivers)",
-      "capturedAt": "2026-09-02T23:44:37.245Z",
+      "capturedAt": "2026-09-03T02:25:23.537Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -210,9 +210,9 @@
           "totalLine": 2.5,
           "over": -130,
           "draw": 4500,
-          "ko": 1050,
+          "ko": 850,
           "sub": 410,
-          "dec": 300,
+          "dec": 310,
           "koSub": 295
         },
         {
@@ -220,14 +220,14 @@
           "moneyline": -148,
           "totalLine": 2.5,
           "under": -105,
-          "ko": 280,
+          "ko": 295,
           "sub": 1000,
           "dec": 275,
           "koSub": 210
         },
         {
           "fighter": "Klaudia Sygula",
-          "moneyline": 106,
+          "moneyline": 102,
           "totalLine": 2.5,
           "over": -275,
           "draw": 4500,
@@ -238,7 +238,7 @@
         },
         {
           "fighter": "Nora Cornolle",
-          "moneyline": -136,
+          "moneyline": -130,
           "totalLine": 2.5,
           "under": 190,
           "ko": 480,
@@ -294,7 +294,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-02T23:44:37.245Z",
+      "capturedAt": "2026-09-03T02:25:23.537Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
