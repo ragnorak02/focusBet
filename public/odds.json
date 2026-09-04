@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-04T13:54:26.697Z",
+  "updatedAt": "2026-09-04T17:18:47.223Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel, BetRivers, BetWay)",
-      "capturedAt": "2026-09-04T13:54:26.697Z",
+      "capturedAt": "2026-09-04T17:18:47.223Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -231,7 +231,7 @@
         },
         {
           "fighter": "Klaudia Sygula",
-          "moneyline": -110,
+          "moneyline": -108,
           "totalLine": 2.5,
           "over": -250,
           "draw": 5000,
@@ -242,7 +242,7 @@
         },
         {
           "fighter": "Nora Cornolle",
-          "moneyline": -110,
+          "moneyline": -108,
           "totalLine": 2.5,
           "under": 188,
           "ko": 500,
@@ -252,7 +252,7 @@
         },
         {
           "fighter": "Luis Felipe Dias",
-          "moneyline": -105,
+          "moneyline": -102,
           "totalLine": 1.5,
           "over": 110,
           "draw": 4500,
@@ -263,7 +263,7 @@
         },
         {
           "fighter": "Matthieu Duclos",
-          "moneyline": -115,
+          "moneyline": -116,
           "totalLine": 1.5,
           "under": -150,
           "ko": 145,
@@ -273,7 +273,7 @@
         },
         {
           "fighter": "Delphine Benouaich",
-          "moneyline": -154,
+          "moneyline": -152,
           "totalLine": 2.5,
           "over": -260,
           "draw": 5000,
@@ -284,7 +284,7 @@
         },
         {
           "fighter": "Sofia Montenegro",
-          "moneyline": 126,
+          "moneyline": 128,
           "totalLine": 2.5,
           "under": 192,
           "ko": 650,
@@ -298,7 +298,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel, Caesars)",
-      "capturedAt": "2026-09-04T13:54:26.697Z",
+      "capturedAt": "2026-09-04T17:18:47.223Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
