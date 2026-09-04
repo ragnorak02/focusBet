@@ -1,30 +1,30 @@
 {
-  "updatedAt": "2026-09-03T22:06:10.615Z",
+  "updatedAt": "2026-09-04T02:20:51.048Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet)",
-      "capturedAt": "2026-09-03T22:06:10.615Z",
+      "capturedAt": "2026-09-04T02:20:51.048Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
-          "moneyline": 470,
+          "moneyline": 430,
           "totalLine": 1.5,
-          "over": -160,
+          "over": -164,
           "draw": 5000,
-          "ko": 1300,
+          "ko": 1200,
           "sub": 1400,
           "dec": 1500,
           "koSub": 600
         },
         {
           "fighter": "Salahdine Parnasse",
-          "moneyline": -700,
+          "moneyline": -620,
           "totalLine": 1.5,
-          "under": 126,
+          "under": 128,
           "ko": -140,
-          "sub": 360,
+          "sub": 370,
           "dec": 700,
           "koSub": -350
         },
@@ -73,8 +73,8 @@
         {
           "fighter": "Daniil Donchenko",
           "moneyline": -250,
-          "totalLine": 1.5,
-          "over": -160,
+          "totalLine": 2.5,
+          "over": 120,
           "draw": 5000,
           "ko": 105,
           "sub": 1400,
@@ -84,8 +84,8 @@
         {
           "fighter": "Punahele Soriano",
           "moneyline": 198,
-          "totalLine": 1.5,
-          "under": 126,
+          "totalLine": 2.5,
+          "under": -165,
           "ko": 550,
           "sub": 2200,
           "dec": 500,
@@ -93,30 +93,30 @@
         },
         {
           "fighter": "Losene Keita",
-          "moneyline": -370,
+          "moneyline": -385,
           "totalLine": 2.5,
-          "over": 118,
+          "over": 114,
           "draw": 5000,
           "ko": -105,
           "sub": 2000,
-          "dec": 250,
+          "dec": 230,
           "koSub": -138
         },
         {
           "fighter": "Muhammad Naimov",
-          "moneyline": 280,
+          "moneyline": 290,
           "totalLine": 2.5,
-          "under": -150,
-          "ko": 1000,
-          "sub": 1200,
-          "dec": 650,
+          "under": -146,
+          "ko": 1100,
+          "sub": 1300,
+          "dec": 700,
           "koSub": 600
         },
         {
           "fighter": "Kurtis Campbell",
           "moneyline": -400,
           "totalLine": 1.5,
-          "over": -157,
+          "over": -152,
           "draw": 5000,
           "ko": 240,
           "sub": 260,
@@ -127,7 +127,7 @@
           "fighter": "Trevor Peek",
           "moneyline": 290,
           "totalLine": 1.5,
-          "under": 115,
+          "under": 112,
           "ko": 600,
           "sub": 3300,
           "dec": 850,
@@ -227,24 +227,24 @@
         },
         {
           "fighter": "Klaudia Sygula",
-          "moneyline": 100,
+          "moneyline": -106,
           "totalLine": 2.5,
-          "over": -235,
+          "over": -250,
           "draw": 5000,
           "ko": 1500,
           "sub": 1600,
-          "dec": 140,
+          "dec": 130,
           "koSub": 750
         },
         {
           "fighter": "Nora Cornolle",
-          "moneyline": -122,
+          "moneyline": -114,
           "totalLine": 2.5,
-          "under": 180,
+          "under": 190,
           "ko": 490,
-          "sub": 550,
-          "dec": 270,
-          "koSub": 255
+          "sub": 650,
+          "dec": 280,
+          "koSub": 245
         },
         {
           "fighter": "Luis Felipe Dias",
@@ -255,17 +255,17 @@
           "ko": 300,
           "sub": 410,
           "dec": 900,
-          "koSub": 138
+          "koSub": 143
         },
         {
           "fighter": "Matthieu Duclos",
           "moneyline": -115,
           "totalLine": 1.5,
           "under": -150,
-          "ko": 148,
+          "ko": 145,
           "sub": 1700,
           "dec": 700,
-          "koSub": 135
+          "koSub": 130
         },
         {
           "fighter": "Delphine Benouaich",
@@ -286,15 +286,15 @@
           "ko": 700,
           "sub": 1500,
           "dec": 220,
-          "koSub": 525
+          "koSub": 540
         }
       ]
     },
     {
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
-      "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-09-03T22:06:10.615Z",
+      "source": "BestFightOdds (FanDuel, Caesars)",
+      "capturedAt": "2026-09-04T02:20:51.048Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -313,22 +313,6 @@
           "moneyline": 280
         },
         {
-          "fighter": "Charles Jourdain",
-          "moneyline": -250
-        },
-        {
-          "fighter": "Marlon Vera",
-          "moneyline": 200
-        },
-        {
-          "fighter": "Brunno Ferreira",
-          "moneyline": 130
-        },
-        {
-          "fighter": "Edmen Shahbazyan",
-          "moneyline": -163
-        },
-        {
           "fighter": "Robelis Despaigne",
           "moneyline": -530
         },
@@ -345,8 +329,24 @@
           "moneyline": 800
         },
         {
+          "fighter": "Charles Jourdain",
+          "moneyline": -250
+        },
+        {
+          "fighter": "Marlon Vera",
+          "moneyline": 205
+        },
+        {
+          "fighter": "Brunno Ferreira",
+          "moneyline": 130
+        },
+        {
+          "fighter": "Edmen Shahbazyan",
+          "moneyline": -155
+        },
+        {
           "fighter": "Giga Chikadze",
-          "moneyline": 260
+          "moneyline": 275
         },
         {
           "fighter": "Joanderson Brito",
@@ -354,11 +354,11 @@
         },
         {
           "fighter": "Casey O'Neill",
-          "moneyline": -175
+          "moneyline": -180
         },
         {
           "fighter": "Eduarda Moura",
-          "moneyline": 140
+          "moneyline": 150
         }
       ]
     },
