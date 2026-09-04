@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-09-04T20:07:36.156Z",
+  "updatedAt": "2026-09-04T23:36:29.672Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel, BetRivers, BetWay, Unibet)",
-      "capturedAt": "2026-09-04T20:07:36.156Z",
+      "capturedAt": "2026-09-04T23:36:29.672Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
-          "moneyline": 430,
+          "moneyline": 450,
           "totalLine": 2.5,
           "over": 120,
           "draw": 5000,
@@ -20,7 +20,7 @@
         },
         {
           "fighter": "Salahdine Parnasse",
-          "moneyline": -620,
+          "moneyline": -600,
           "totalLine": 2.5,
           "under": -162,
           "ko": -140,
@@ -30,7 +30,7 @@
         },
         {
           "fighter": "Axel Sola",
-          "moneyline": 128,
+          "moneyline": 130,
           "totalLine": 2.5,
           "over": -215,
           "draw": 5000,
@@ -41,7 +41,7 @@
         },
         {
           "fighter": "Fares Ziam",
-          "moneyline": -158,
+          "moneyline": -154,
           "totalLine": 2.5,
           "under": 166,
           "ko": 500,
@@ -51,28 +51,28 @@
         },
         {
           "fighter": "Michael Page",
-          "moneyline": -176,
+          "moneyline": -198,
           "totalLine": 2.5,
           "over": -164,
           "draw": 5000,
-          "ko": 310,
+          "ko": 280,
           "sub": 3300,
-          "dec": 140,
+          "dec": 135,
           "koSub": 275
         },
         {
           "fighter": "Nursulton Ruziboev",
-          "moneyline": 142,
+          "moneyline": 166,
           "totalLine": 2.5,
           "under": 128,
-          "ko": 900,
-          "sub": 500,
-          "dec": 450,
+          "ko": 950,
+          "sub": 550,
+          "dec": 500,
           "koSub": 240
         },
         {
           "fighter": "Daniil Donchenko",
-          "moneyline": -240,
+          "moneyline": -230,
           "totalLine": 2.5,
           "over": 120,
           "draw": 5000,
@@ -134,27 +134,6 @@
           "koSub": 600
         },
         {
-          "fighter": "Nathaniel Wood",
-          "moneyline": -300,
-          "totalLine": 2.5,
-          "over": -182,
-          "draw": 5000,
-          "ko": 400,
-          "sub": 1000,
-          "dec": -110,
-          "koSub": 230
-        },
-        {
-          "fighter": "Pavel Andrusca",
-          "moneyline": 245,
-          "totalLine": 2.5,
-          "under": 142,
-          "ko": 480,
-          "sub": 2200,
-          "dec": 850,
-          "koSub": 460
-        },
-        {
           "fighter": "Mario Pinto",
           "moneyline": -330,
           "totalLine": 1.5,
@@ -177,23 +156,23 @@
         },
         {
           "fighter": "Felipe Lima",
-          "moneyline": -188,
+          "moneyline": -190,
           "totalLine": 2.5,
-          "over": -176,
+          "over": -190,
           "draw": 5000,
           "ko": 550,
-          "sub": 600,
-          "dec": 145,
+          "sub": 650,
+          "dec": 135,
           "koSub": 240
         },
         {
           "fighter": "Morgan Charriere",
-          "moneyline": 158,
+          "moneyline": 160,
           "totalLine": 2.5,
-          "under": 138,
-          "ko": 450,
+          "under": 148,
+          "ko": 460,
           "sub": 3300,
-          "dec": 380,
+          "dec": 370,
           "koSub": 300
         },
         {
@@ -216,6 +195,27 @@
           "sub": 430,
           "dec": 150,
           "koSub": 175
+        },
+        {
+          "fighter": "Nathaniel Wood",
+          "moneyline": -300,
+          "totalLine": 2.5,
+          "over": -182,
+          "draw": 5000,
+          "ko": 400,
+          "sub": 1000,
+          "dec": -110,
+          "koSub": 230
+        },
+        {
+          "fighter": "Pavel Andrusca",
+          "moneyline": 245,
+          "totalLine": 2.5,
+          "under": 142,
+          "ko": 480,
+          "sub": 2200,
+          "dec": 850,
+          "koSub": 460
         },
         {
           "fighter": "Fabia Sintes",
@@ -307,7 +307,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel, Caesars)",
-      "capturedAt": "2026-09-04T20:07:36.156Z",
+      "capturedAt": "2026-09-04T23:36:29.672Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
