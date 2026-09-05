@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-05T02:21:34.690Z",
+  "updatedAt": "2026-09-05T07:57:59.648Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel, BetRivers, BetWay, Unibet)",
-      "capturedAt": "2026-09-05T02:21:34.690Z",
+      "capturedAt": "2026-09-05T07:57:59.648Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -219,41 +219,41 @@
         },
         {
           "fighter": "Fabia Sintes",
-          "moneyline": 100,
+          "moneyline": 108,
           "totalLine": 2.5,
-          "over": -112,
+          "over": -116,
           "draw": 5000,
-          "ko": 750,
+          "ko": 850,
           "sub": 450,
-          "dec": 310,
+          "dec": 330,
           "koSub": 240
         },
         {
           "fighter": "Michael Aljarouj",
-          "moneyline": -118,
+          "moneyline": -126,
           "totalLine": 2.5,
-          "under": -112,
-          "ko": 300,
+          "under": -110,
+          "ko": 290,
           "sub": 1000,
-          "dec": 310,
+          "dec": 280,
           "koSub": 275
         },
         {
           "fighter": "Klaudia Sygula",
-          "moneyline": -108,
+          "moneyline": -112,
           "totalLine": 2.5,
-          "over": -250,
+          "over": -240,
           "draw": 5000,
-          "ko": 1300,
+          "ko": 1100,
           "sub": 1500,
           "dec": 130,
           "koSub": 700
         },
         {
           "fighter": "Nora Cornolle",
-          "moneyline": -108,
+          "moneyline": -104,
           "totalLine": 2.5,
-          "under": 188,
+          "under": 186,
           "ko": 500,
           "sub": 650,
           "dec": 280,
@@ -307,7 +307,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel, Caesars)",
-      "capturedAt": "2026-09-05T02:21:34.690Z",
+      "capturedAt": "2026-09-05T07:57:59.648Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
