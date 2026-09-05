@@ -1,51 +1,51 @@
 {
-  "updatedAt": "2026-09-05T11:41:12.027Z",
+  "updatedAt": "2026-09-05T14:21:14.966Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
-      "source": "BestFightOdds (FanDuel, BetRivers, BetWay, Unibet)",
-      "capturedAt": "2026-09-05T11:41:12.027Z",
+      "source": "BestFightOdds (FanDuel, BetRivers, BetWay)",
+      "capturedAt": "2026-09-05T14:21:14.966Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
-          "moneyline": 410,
+          "moneyline": 385,
           "totalLine": 2.5,
           "over": 117,
           "draw": 5000,
-          "ko": 1000,
+          "ko": 900,
           "sub": 1400,
           "dec": 1400,
           "koSub": 600
         },
         {
           "fighter": "Salahdine Parnasse",
-          "moneyline": -550,
+          "moneyline": -500,
           "totalLine": 2.5,
           "under": -162,
-          "ko": -135,
+          "ko": -125,
           "sub": 360,
           "dec": 700,
           "koSub": -350
         },
         {
           "fighter": "Axel Sola",
-          "moneyline": 132,
+          "moneyline": 134,
           "totalLine": 2.5,
-          "over": -230,
+          "over": -215,
           "draw": 5000,
           "ko": 900,
-          "sub": 1000,
-          "dec": 250,
+          "sub": 850,
+          "dec": 280,
           "koSub": 400
         },
         {
           "fighter": "Fares Ziam",
-          "moneyline": -154,
+          "moneyline": -158,
           "totalLine": 2.5,
-          "under": 176,
+          "under": 164,
           "ko": 500,
-          "sub": 950,
+          "sub": 900,
           "dec": 150,
           "koSub": 240
         },
@@ -116,18 +116,18 @@
           "fighter": "Losene Keita",
           "moneyline": -390,
           "totalLine": 2.5,
-          "over": 116,
+          "over": 108,
           "draw": 5000,
-          "ko": -110,
-          "sub": 2200,
-          "dec": 240,
+          "ko": -105,
+          "sub": 2500,
+          "dec": 220,
           "koSub": -138
         },
         {
           "fighter": "Muhammad Naimov",
           "moneyline": 310,
           "totalLine": 2.5,
-          "under": -148,
+          "under": -136,
           "ko": 1100,
           "sub": 1500,
           "dec": 700,
@@ -202,20 +202,20 @@
           "totalLine": 2.5,
           "over": -182,
           "draw": 5000,
-          "ko": 400,
-          "sub": 1000,
-          "dec": -110,
-          "koSub": 230
+          "ko": 370,
+          "sub": 900,
+          "dec": 100,
+          "koSub": 200
         },
         {
           "fighter": "Pavel Andrusca",
           "moneyline": 245,
           "totalLine": 2.5,
           "under": 142,
-          "ko": 480,
+          "ko": 500,
           "sub": 2200,
-          "dec": 850,
-          "koSub": 460
+          "dec": 750,
+          "koSub": 350
         },
         {
           "fighter": "Fabia Sintes",
@@ -282,21 +282,21 @@
         },
         {
           "fighter": "Delphine Benouaich",
-          "moneyline": -144,
+          "moneyline": -136,
           "totalLine": 2.5,
           "over": -260,
           "draw": 5000,
           "ko": 700,
-          "sub": 800,
-          "dec": 145,
+          "sub": 850,
+          "dec": 150,
           "koSub": 350
         },
         {
           "fighter": "Sofia Montenegro",
-          "moneyline": 122,
+          "moneyline": 116,
           "totalLine": 2.5,
-          "under": 196,
-          "ko": 650,
+          "under": 192,
+          "ko": 600,
           "sub": 1800,
           "dec": 220,
           "koSub": 350
@@ -307,7 +307,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel, Caesars)",
-      "capturedAt": "2026-09-05T11:41:12.027Z",
+      "capturedAt": "2026-09-05T14:21:14.966Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
