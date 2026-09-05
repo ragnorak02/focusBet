@@ -1,26 +1,26 @@
 {
-  "updatedAt": "2026-09-05T07:57:59.648Z",
+  "updatedAt": "2026-09-05T11:41:12.027Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel, BetRivers, BetWay, Unibet)",
-      "capturedAt": "2026-09-05T07:57:59.648Z",
+      "capturedAt": "2026-09-05T11:41:12.027Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
-          "moneyline": 430,
+          "moneyline": 410,
           "totalLine": 2.5,
-          "over": 120,
+          "over": 117,
           "draw": 5000,
           "ko": 1000,
           "sub": 1400,
-          "dec": 1600,
+          "dec": 1400,
           "koSub": 600
         },
         {
           "fighter": "Salahdine Parnasse",
-          "moneyline": -590,
+          "moneyline": -550,
           "totalLine": 2.5,
           "under": -162,
           "ko": -135,
@@ -134,27 +134,6 @@
           "koSub": 600
         },
         {
-          "fighter": "Mario Pinto",
-          "moneyline": -330,
-          "totalLine": 1.5,
-          "over": 108,
-          "draw": 5000,
-          "ko": -120,
-          "sub": 800,
-          "dec": 490,
-          "koSub": -225
-        },
-        {
-          "fighter": "Ryan Spann",
-          "moneyline": 265,
-          "totalLine": 1.5,
-          "under": -138,
-          "ko": 1000,
-          "sub": 550,
-          "dec": 1500,
-          "koSub": 300
-        },
-        {
           "fighter": "Felipe Lima",
           "moneyline": -196,
           "totalLine": 2.5,
@@ -173,6 +152,27 @@
           "ko": 490,
           "sub": 3300,
           "dec": 370,
+          "koSub": 300
+        },
+        {
+          "fighter": "Mario Pinto",
+          "moneyline": -320,
+          "totalLine": 1.5,
+          "over": 108,
+          "draw": 5000,
+          "ko": -120,
+          "sub": 800,
+          "dec": 490,
+          "koSub": -225
+        },
+        {
+          "fighter": "Ryan Spann",
+          "moneyline": 260,
+          "totalLine": 1.5,
+          "under": -136,
+          "ko": 1000,
+          "sub": 550,
+          "dec": 1500,
           "koSub": 300
         },
         {
@@ -307,7 +307,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel, Caesars)",
-      "capturedAt": "2026-09-05T07:57:59.648Z",
+      "capturedAt": "2026-09-05T11:41:12.027Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
