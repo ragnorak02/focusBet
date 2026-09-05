@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-05T21:50:16.873Z",
+  "updatedAt": "2026-09-05T23:28:55.408Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel, BetRivers, BetWay)",
-      "capturedAt": "2026-09-05T21:50:16.873Z",
+      "capturedAt": "2026-09-05T23:28:55.408Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -306,8 +306,8 @@
     {
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
-      "source": "BestFightOdds (FanDuel, Caesars)",
-      "capturedAt": "2026-09-05T21:50:16.873Z",
+      "source": "BestFightOdds (FanDuel, BetRivers)",
+      "capturedAt": "2026-09-05T23:28:55.408Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -347,31 +347,31 @@
         },
         {
           "fighter": "Marlon Vera",
-          "moneyline": 205
+          "moneyline": 195
         },
         {
           "fighter": "Brunno Ferreira",
-          "moneyline": 130
+          "moneyline": 135
         },
         {
           "fighter": "Edmen Shahbazyan",
-          "moneyline": -155
+          "moneyline": -167
         },
         {
           "fighter": "Giga Chikadze",
-          "moneyline": 280
+          "moneyline": 250
         },
         {
           "fighter": "Joanderson Brito",
-          "moneyline": -360
+          "moneyline": -335
         },
         {
           "fighter": "Casey O'Neill",
-          "moneyline": -180
+          "moneyline": -175
         },
         {
           "fighter": "Eduarda Moura",
-          "moneyline": 150
+          "moneyline": 138
         }
       ]
     },
