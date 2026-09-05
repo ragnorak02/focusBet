@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-05T19:46:46.919Z",
+  "updatedAt": "2026-09-05T21:50:16.873Z",
   "events": [
     {
       "espnId": "600059993",
       "name": "UFC Fight Night: Hooker vs. Parnasse",
       "source": "BestFightOdds (FanDuel, BetRivers, BetWay)",
-      "capturedAt": "2026-09-05T19:46:46.919Z",
+      "capturedAt": "2026-09-05T21:50:16.873Z",
       "lines": [
         {
           "fighter": "Dan Hooker",
@@ -23,8 +23,8 @@
           "moneyline": -500,
           "totalLine": 2.5,
           "under": -162,
-          "ko": -125,
-          "sub": 360,
+          "ko": -140,
+          "sub": 430,
           "dec": 700,
           "koSub": -350
         },
@@ -72,22 +72,22 @@
         },
         {
           "fighter": "Daniil Donchenko",
-          "moneyline": -230,
+          "moneyline": -240,
           "totalLine": 2.5,
-          "over": 120,
+          "over": 124,
           "draw": 5000,
-          "ko": 115,
-          "sub": 1600,
-          "dec": 330,
+          "ko": 105,
+          "sub": 1800,
+          "dec": 350,
           "koSub": -150
         },
         {
           "fighter": "Punahele Soriano",
-          "moneyline": 190,
+          "moneyline": 198,
           "totalLine": 2.5,
-          "under": -152,
-          "ko": 500,
-          "sub": 2200,
+          "under": -158,
+          "ko": 550,
+          "sub": 2000,
           "dec": 500,
           "koSub": 450
         },
@@ -307,7 +307,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel, Caesars)",
-      "capturedAt": "2026-09-05T19:46:46.919Z",
+      "capturedAt": "2026-09-05T21:50:16.873Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -359,11 +359,11 @@
         },
         {
           "fighter": "Giga Chikadze",
-          "moneyline": 275
+          "moneyline": 280
         },
         {
           "fighter": "Joanderson Brito",
-          "moneyline": -350
+          "moneyline": -360
         },
         {
           "fighter": "Casey O'Neill",
