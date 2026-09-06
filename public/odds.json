@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-06T16:37:53.413Z",
+  "updatedAt": "2026-09-06T19:50:42.388Z",
   "events": [
     {
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
-      "source": "BestFightOdds (FanDuel, Kalshi)",
-      "capturedAt": "2026-09-06T16:37:53.413Z",
+      "source": "BestFightOdds (FanDuel)",
+      "capturedAt": "2026-09-06T19:50:42.388Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -24,20 +24,20 @@
           "moneyline": 280
         },
         {
-          "fighter": "Robelis Despaigne",
-          "moneyline": -530
-        },
-        {
-          "fighter": "Tai Tuivasa",
-          "moneyline": 360
-        },
-        {
           "fighter": "Gable Steveson",
           "moneyline": -1800
         },
         {
           "fighter": "Sean Sharaf",
           "moneyline": 800
+        },
+        {
+          "fighter": "Robelis Despaigne",
+          "moneyline": -530
+        },
+        {
+          "fighter": "Tai Tuivasa",
+          "moneyline": 360
         },
         {
           "fighter": "Charles Jourdain",
@@ -53,23 +53,23 @@
         },
         {
           "fighter": "Edmen Shahbazyan",
-          "moneyline": -168
-        },
-        {
-          "fighter": "Giga Chikadze",
-          "moneyline": 295
-        },
-        {
-          "fighter": "Joanderson Brito",
-          "moneyline": -341
+          "moneyline": -164
         },
         {
           "fighter": "Casey O'Neill",
-          "moneyline": -176
+          "moneyline": -170
         },
         {
           "fighter": "Eduarda Moura",
-          "moneyline": 145
+          "moneyline": 138
+        },
+        {
+          "fighter": "Giga Chikadze",
+          "moneyline": 270
+        },
+        {
+          "fighter": "Joanderson Brito",
+          "moneyline": -355
         }
       ]
     },
