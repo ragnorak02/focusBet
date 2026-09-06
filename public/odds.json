@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-06T08:15:43.878Z",
+  "updatedAt": "2026-09-06T13:20:44.955Z",
   "events": [
     {
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel, Kalshi)",
-      "capturedAt": "2026-09-06T08:15:43.878Z",
+      "capturedAt": "2026-09-06T13:20:44.955Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -45,7 +45,7 @@
         },
         {
           "fighter": "Marlon Vera",
-          "moneyline": 189
+          "moneyline": 198
         },
         {
           "fighter": "Brunno Ferreira",
@@ -53,7 +53,7 @@
         },
         {
           "fighter": "Edmen Shahbazyan",
-          "moneyline": -168
+          "moneyline": -161
         },
         {
           "fighter": "Giga Chikadze",
@@ -69,7 +69,7 @@
         },
         {
           "fighter": "Eduarda Moura",
-          "moneyline": 134
+          "moneyline": 140
         }
       ]
     },
