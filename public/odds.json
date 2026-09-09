@@ -1,10 +1,11 @@
 {
-  "updatedAt": "2026-09-08T22:14:46.828Z",
+  "updatedAt": "2026-09-09T02:28:50.837Z",
   "events": [
     {
-      "name": "UFC 331",
+      "espnId": "600060963",
+      "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-08T22:14:46.828Z",
+      "capturedAt": "2026-09-09T02:28:50.837Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
