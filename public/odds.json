@@ -1,19 +1,30 @@
 {
-  "updatedAt": "2026-09-09T02:28:50.837Z",
+  "updatedAt": "2026-09-09T14:04:41.810Z",
   "events": [
     {
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-09T02:28:50.837Z",
+      "capturedAt": "2026-09-09T14:04:41.810Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
-          "moneyline": -106
+          "moneyline": -106,
+          "totalLine": 3.5,
+          "over": 108,
+          "draw": 5000,
+          "ko": 1200,
+          "sub": 250,
+          "dec": 430
         },
         {
           "fighter": "Joshua van",
-          "moneyline": -120
+          "moneyline": -120,
+          "totalLine": 3.5,
+          "under": -138,
+          "ko": 190,
+          "sub": 2200,
+          "dec": 420
         },
         {
           "fighter": "Arman Tsarukyan",
