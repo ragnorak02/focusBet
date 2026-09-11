@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-09T22:08:57.983Z",
+  "updatedAt": "2026-09-11T08:27:39.838Z",
   "events": [
     {
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-09T22:08:57.983Z",
+      "capturedAt": "2026-09-11T08:27:39.838Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -81,6 +81,37 @@
         {
           "fighter": "Joanderson Brito",
           "moneyline": -355
+        }
+      ]
+    },
+    {
+      "name": "UFC 331",
+      "source": "BestFightOdds (FanDuel)",
+      "capturedAt": "2026-09-11T08:27:39.838Z",
+      "lines": [
+        {
+          "fighter": "Doo Ho Choi",
+          "moneyline": -250
+        },
+        {
+          "fighter": "Patricio Freire",
+          "moneyline": 198
+        },
+        {
+          "fighter": "Brian Ortega",
+          "moneyline": 168
+        },
+        {
+          "fighter": "Renato Moicano",
+          "moneyline": -210
+        },
+        {
+          "fighter": "Alonzo Menifield",
+          "moneyline": 198
+        },
+        {
+          "fighter": "Iwo Baraniewski",
+          "moneyline": -250
         }
       ]
     },
