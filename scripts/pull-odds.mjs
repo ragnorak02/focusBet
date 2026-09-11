@@ -23,7 +23,7 @@ import { fileURLToPath } from 'node:url';
 import { BFO_ORIGIN, fetchHtml, parseEventIndex, parseEventPage } from './lib/bfo.mjs';
 import { DEFAULT_BOOKS, matchupToLines } from './lib/lines.mjs';
 import { fetchEvents } from './lib/espnFeed.mjs';
-import { boutScore, nameScore } from './lib/names.mjs';
+import { boutScore, nameScore, normalizeName } from './lib/names.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = resolve(ROOT, 'public/odds.json');
@@ -61,17 +61,36 @@ function readJson(path, fallback) {
  */
 function matchEspnEvent(matchups, espnEvents) {
   let best = null;
+  // Fights this page has that ESPN lists on *some* card. A bout only counts
+  // when both corners land, so anything short of that is a fight ESPN has yet
+  // to post rather than a fight belonging elsewhere.
+  const placed = new Set();
+
   for (const ev of espnEvents) {
     let hits = 0;
-    for (const mu of matchups) {
+    for (const [i, mu] of matchups.entries()) {
       const [a, b] = mu.fighters;
       const found = ev.bouts.some((bout) => boutScore(a.name, b.name, bout.a, bout.b).score >= 0.75);
-      if (found) hits++;
+      if (found) {
+        hits++;
+        placed.add(i);
+      }
     }
     if (hits > (best?.hits ?? 0)) best = { ev, hits };
   }
-  // Half the card agreeing rules out two events sharing one crossover fighter.
-  if (!best || best.hits < 3 || best.hits < matchups.length / 2) return null;
+  if (!best || !best.hits) return null;
+
+  // Every fight ESPN can place is on this one card, and the rest are on no
+  // card at all — so the page is that card, however short it is. This is what
+  // BFO's split pages look like: a bout booked at short notice filed under the
+  // venue ("UFC Glendale"), or a page holding only the fights added since the
+  // bill was first posted. Nothing here can be mis-assigned, because a fight
+  // that belonged to another event would have matched that event instead.
+  if (best.hits === placed.size) return best.ev;
+
+  // Mixed pages fall back to the old rule: half the card has to agree, which
+  // rules out two events sharing one crossover fighter.
+  if (best.hits < 3 || best.hits < matchups.length / 2) return null;
   return best.ev;
 }
 
@@ -145,23 +164,49 @@ function isSupported(ev) {
 }
 
 /**
- * BestFightOdds lists a card under more than one page while it is being built
- * (the same event under two dates), and posts far-out cards with a single
- * priced fight. Keep the version with the most lines, and drop the stubs — the
- * app downloads this file on every load, and a card no book has priced yet is
- * nothing to bet on.
+ * BestFightOdds splits one card across more than one page — the same event
+ * under two dates while the bill is being built, and a fight booked on short
+ * notice filed under the venue ("UFC Glendale") apart from the rest of the
+ * card. So two scraped pages are regularly the same event, and the halves have
+ * to be added together: keeping whichever page had more lines is what left the
+ * Noche UFC main event off the board entirely.
+ */
+function mergeCards(a, b) {
+  const out = { ...a, lines: [...a.lines], books: [...new Set([...a.books, ...b.books])] };
+  // The two pages can both carry a fight; the first one in wins, since the
+  // markets on it were already chosen a book at a time.
+  const seen = new Set(a.lines.map((l) => normalizeName(l.fighter)));
+  for (const line of b.lines) {
+    const key = normalizeName(line.fighter);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.lines.push(line);
+  }
+  // A short page is the half likelier to have missed its ESPN match.
+  if (!out.espnId && b.espnId) {
+    out.espnId = b.espnId;
+    out.name = b.name;
+  }
+  return out;
+}
+
+/**
+ * One record per event, and no cards nobody has priced: BFO posts far-out
+ * events with a single line on them, and the app downloads this file on every
+ * load. A page that found its ESPN event is kept however short it is — that is
+ * a real fight on a real card, which is exactly what a late addition looks
+ * like.
  */
 function dedupe(events) {
   const kept = [];
   for (const ev of events) {
-    if (!ev.espnId && ev.lines.length < 6) continue;
     const clash = kept.findIndex(
       (k) => (ev.espnId && k.espnId === ev.espnId) || (!ev.espnId && k.name === ev.name),
     );
     if (clash < 0) kept.push(ev);
-    else if (kept[clash].lines.length < ev.lines.length) kept[clash] = ev;
+    else kept[clash] = mergeCards(kept[clash], ev);
   }
-  return kept;
+  return kept.filter((ev) => ev.espnId || ev.lines.length >= 6);
 }
 
 async function main() {
@@ -207,10 +252,12 @@ async function main() {
     }
 
     const espn = matchEspnEvent(page.matchups, espnEvents);
+    // `books` rather than a finished `source` string: two pages of one card
+    // merge below, and the books they quoted have to merge with them.
     scraped.push({
       espnId: espn?.espnId,
       name: espn?.name ?? entry.name,
-      source: `BestFightOdds (${[...used].join(', ')})`,
+      books: [...used],
       capturedAt,
       lines,
     });
@@ -222,8 +269,17 @@ async function main() {
     );
   }
 
+  // Books turn back into the provenance string once the halves are one card.
+  const merged = dedupe(scraped).map(({ books: used, ...ev }) => ({
+    espnId: ev.espnId,
+    name: ev.name,
+    source: `BestFightOdds (${used.join(', ')})`,
+    capturedAt: ev.capturedAt,
+    lines: ev.lines,
+  }));
+
   const manual = readJson(MANUAL, { events: [] });
-  const { events, overrides } = mergeManual(dedupe(scraped), manual);
+  const { events, overrides } = mergeManual(merged, manual);
   overrides.forEach((o) => console.log(o));
 
   const previous = readJson(OUT, null);

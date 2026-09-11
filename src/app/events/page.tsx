@@ -5,9 +5,9 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useStore } from '@/components/Store';
 import { ImportDialog } from '@/components/ImportDialog';
-import { Badge, Button, Empty, Input, Label, Modal, Panel, PanelHeader } from '@/components/ui';
+import { Button, Empty, Input, Label, Modal, Panel } from '@/components/ui';
 import { formatMoney } from '@/lib/odds';
-import { daysUntil, fmtDate } from '@/lib/format';
+import { daysUntil, fmtDate, splitEventName } from '@/lib/format';
 
 export default function EventsPage() {
   const { state, act, busy } = useStore();
@@ -74,39 +74,53 @@ export default function EventsPage() {
             const days = daysUntil(ev.date);
             const pnl = pnlByEvent.get(ev.id);
 
+            const { series, headliner } = splitEventName(ev.name);
+
             return (
-              <Link key={ev.id} href={`/event/?id=${ev.id}`}>
+              // min-w-0 on the grid item: without it the track sizes to the
+              // title's max-content and the whole row hangs off the side of a
+              // phone, taking the truncate below with it.
+              <Link key={ev.id} href={`/event/?id=${ev.id}`} className="min-w-0">
                 <Panel className="h-full transition-colors hover:border-brand-500/40">
-                  <div className="p-4">
-                    <div className="flex items-start justify-between gap-2">
-                      <div className="min-w-0">
-                        <div className="truncate text-base font-black tracking-tight text-ink-200">
-                          {ev.name}
-                        </div>
-                        <div className="mt-0.5 text-xs text-ink-400">
-                          {fmtDate(ev.date)}
-                          {ev.location ? ` · ${ev.location}` : ''}
-                        </div>
+                  <div className="min-w-0 p-4">
+                    <div className="truncate text-[11px] font-bold uppercase tracking-wider text-brand-500">
+                      {series}
+                    </div>
+                    {headliner ? (
+                      <div className="truncate text-base font-black tracking-tight text-ink-200">
+                        {headliner}
                       </div>
-                      {live ? (
-                        <Badge tone="live">
-                          <span className="live-dot mr-0.5 inline-block h-1.5 w-1.5 rounded-full bg-live-500" />
-                          Live
-                        </Badge>
-                      ) : finals === ev.fights.length && ev.fights.length > 0 ? (
-                        <Badge tone="neutral">Complete</Badge>
-                      ) : days >= 0 ? (
-                        <Badge tone="win">{days === 0 ? 'Today' : `${days}d`}</Badge>
-                      ) : null}
+                    ) : null}
+                    <div className="mt-0.5 truncate text-xs text-ink-400">
+                      {fmtDate(ev.date)}
+                      {ev.location ? ` · ${ev.location}` : ''}
                     </div>
 
-                    <div className="mt-3 flex items-center justify-between border-t border-ink-700/60 pt-3">
-                      <div className="nums text-xs text-ink-500">
+                    <div className="mt-3 flex items-center justify-between gap-2 border-t border-ink-700/60 pt-3">
+                      <div className="nums min-w-0 truncate text-xs text-ink-500">
                         {ev.fights.length} bouts · {finals} final
+                        {/* The Live / Complete / days-away pill used to sit up
+                            beside the title and was the first thing a narrow
+                            screen cut off. Live is the only one of the three
+                            worth keeping, and down here it costs no width. */}
+                        {live ? (
+                          <>
+                            {' · '}
+                            <span className="font-bold text-live-500">
+                              <span className="live-dot mr-1 inline-block h-1.5 w-1.5 rounded-full bg-live-500" />
+                              Live
+                            </span>
+                          </>
+                        ) : days === 0 ? (
+                          <>
+                            {' · '}
+                            <span className="font-bold text-brand-500">Today</span>
+                          </>
+                        ) : null}
                       </div>
                       {pnl ? (
                         <div
-                          className={`nums text-sm font-bold ${
+                          className={`nums shrink-0 text-sm font-bold ${
                             pnl.profit > 0
                               ? 'text-brand-500'
                               : pnl.profit < 0

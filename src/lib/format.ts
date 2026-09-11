@@ -51,6 +51,24 @@ export function surname(name: string): string {
   return parts.length > 1 ? parts.slice(1).join(' ') : name;
 }
 
+/**
+ * "UFC 331: Van vs. Pantoja 2" → { series: 'UFC 331', headliner: 'Van vs.
+ * Pantoja 2' }. One line holding both is far too long for a phone, and it was
+ * the title that would not truncate that pushed the card list off the side of
+ * the screen. Stacked, the numbered card reads first and the headliner sits
+ * under it, which is the order they're spoken in anyway.
+ *
+ * A name with no colon — a hand-built card, usually — has no headliner to
+ * split off and stays on the one line.
+ */
+export function splitEventName(name: string): { series: string; headliner: string | null } {
+  const at = name.indexOf(':');
+  if (at < 0) return { series: name.trim(), headliner: null };
+  const series = name.slice(0, at).trim();
+  const headliner = name.slice(at + 1).trim();
+  return series && headliner ? { series, headliner } : { series: name.trim(), headliner: null };
+}
+
 const WEIGHT_ABBREV: [string, string][] = [
   ['strawweight', 'SW'],
   ['flyweight', 'FLY'],
