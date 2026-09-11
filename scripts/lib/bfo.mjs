@@ -16,12 +16,41 @@ const UA =
 
 export const BFO_ORIGIN = 'https://www.bestfightodds.com';
 
+/**
+ * BFO sits behind Cloudflare, which answers 524 when the origin is too slow —
+ * a couple of times a week, for one scheduled run, and then it is fine again.
+ * Failing the job on that emails a broken build over nothing, so a 5xx or a
+ * dead socket is retried; a 404 or a 403 is real and thrown straight away.
+ *
+ * The timeout is what makes retrying worth anything: a 524 takes Cloudflare
+ * 100 seconds to admit to, and there is no card page that legitimately takes
+ * that long.
+ */
+const ATTEMPTS = 3;
+const TIMEOUT_MS = 45_000;
+const BACKOFF_MS = [5_000, 20_000];
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
 export async function fetchHtml(url) {
-  const res = await fetch(url, {
-    headers: { 'user-agent': UA, accept: 'text/html,application/xhtml+xml' },
-  });
-  if (!res.ok) throw new Error(`${url} returned ${res.status}`);
-  return res.text();
+  for (let attempt = 1; ; attempt++) {
+    try {
+      const res = await fetch(url, {
+        headers: { 'user-agent': UA, accept: 'text/html,application/xhtml+xml' },
+        signal: AbortSignal.timeout(TIMEOUT_MS),
+      });
+      if (res.ok) return res.text();
+      // 4xx is an answer, not an outage — retrying just asks again slower.
+      if (res.status < 500 || attempt === ATTEMPTS) {
+        throw new Error(`${url} returned ${res.status}`);
+      }
+      console.warn(`${url} returned ${res.status} — retry ${attempt} of ${ATTEMPTS - 1}`);
+    } catch (err) {
+      if (attempt === ATTEMPTS || /returned \d+$/.test(err.message)) throw err;
+      console.warn(`${url} failed (${err.message}) — retry ${attempt} of ${ATTEMPTS - 1}`);
+    }
+    await sleep(BACKOFF_MS[attempt - 1]);
+  }
 }
 
 /* ---------- html helpers ---------- */

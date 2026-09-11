@@ -8,6 +8,13 @@ export function normalizeName(s) {
   return s
     .normalize('NFD')
     .toLowerCase()
+    // A hyphen is a word break, and the two sources disagree about writing it:
+    // BestFightOdds has "Waldo Cortes-Acosta" where ESPN has "Waldo Cortes
+    // Acosta". Deleting it welds the surname into one token and the two names
+    // stop matching, so it has to survive as the space it stands for.
+    .replace(/[-‐-―]/g, ' ')
+    // Everything else that isn't a letter goes, which keeps an apostrophe
+    // silent: "O'Malley" and "OMalley" both land on "omalley".
     .replace(/[^a-z\s]/g, '')
     .replace(/\s+/g, ' ')
     .trim();

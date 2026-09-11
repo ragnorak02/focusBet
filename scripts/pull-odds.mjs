@@ -130,8 +130,15 @@ function mergeManual(scraped, manual) {
 
 /* ---------- run ---------- */
 
-/** The promotions ESPN carries results for, which is all the app can grade. */
-const PROMOTIONS = /^(ufc|pfl)\b/i;
+/**
+ * The promotions ESPN carries results for, which is all the app can grade.
+ *
+ * Matched anywhere in the name rather than only at the front: BestFightOdds
+ * files the annual Mexican Independence Day card as "Noche UFC", so anchoring
+ * this dropped a whole UFC card off the board. A stray non-UFC match is cheap —
+ * it costs one page fetch, and then `matchEspnEvent` and `dedupe` throw it out.
+ */
+const PROMOTIONS = /\b(ufc|pfl)\b/i;
 
 function isSupported(ev) {
   return PROMOTIONS.test(ev.name) || PROMOTIONS.test((ev.slug ?? '').replace(/-/g, ' '));
