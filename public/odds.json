@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-11T18:32:36.966Z",
+  "updatedAt": "2026-09-11T20:17:25.951Z",
   "events": [
     {
       "espnId": "600060772",
       "name": "Noche UFC: Silva vs. Delgado",
       "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet)",
-      "capturedAt": "2026-09-11T18:32:36.966Z",
+      "capturedAt": "2026-09-11T20:17:25.951Z",
       "lines": [
         {
           "fighter": "Brandon Moreno",
@@ -44,8 +44,8 @@
           "moneyline": -162,
           "totalLine": 1.5,
           "under": 126,
-          "ko": 280,
-          "sub": 500,
+          "ko": 300,
+          "sub": 460,
           "dec": 340,
           "koSub": 130
         },
@@ -146,7 +146,7 @@
         },
         {
           "fighter": "Muslim Salikhov",
-          "moneyline": 390,
+          "moneyline": 410,
           "totalLine": 1.5,
           "under": 104,
           "ko": 750,
@@ -156,7 +156,7 @@
         },
         {
           "fighter": "Djorden Santos",
-          "moneyline": 570,
+          "moneyline": 590,
           "totalLine": 2.5,
           "over": 116,
           "draw": 5000,
@@ -167,7 +167,7 @@
         },
         {
           "fighter": "Yousri Belgaroui",
-          "moneyline": -900,
+          "moneyline": -850,
           "totalLine": 2.5,
           "under": -148,
           "ko": -140,
@@ -177,7 +177,7 @@
         },
         {
           "fighter": "Drakkar Klose",
-          "moneyline": 350,
+          "moneyline": 360,
           "totalLine": 1.5,
           "over": -150,
           "draw": 4500,
@@ -188,7 +188,7 @@
         },
         {
           "fighter": "Tommy Gantt",
-          "moneyline": -480,
+          "moneyline": -460,
           "totalLine": 1.5,
           "under": 110,
           "ko": 165,
@@ -198,7 +198,7 @@
         },
         {
           "fighter": "Rafa Garcia",
-          "moneyline": 130,
+          "moneyline": 132,
           "totalLine": 2.5,
           "over": -220,
           "draw": 5000,
@@ -209,7 +209,7 @@
         },
         {
           "fighter": "Rongzhu",
-          "moneyline": -160,
+          "moneyline": -156,
           "totalLine": 2.5,
           "under": 170,
           "ko": 410,
@@ -265,7 +265,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-11T18:32:36.966Z",
+      "capturedAt": "2026-09-11T20:17:25.951Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -347,7 +347,7 @@
     {
       "name": "UFC 331",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-11T18:32:36.966Z",
+      "capturedAt": "2026-09-11T20:17:25.951Z",
       "lines": [
         {
           "fighter": "Doo Ho Choi",
