@@ -1,11 +1,271 @@
 {
-  "updatedAt": "2026-09-11T08:27:39.838Z",
+  "updatedAt": "2026-09-11T18:32:36.966Z",
   "events": [
+    {
+      "espnId": "600060772",
+      "name": "Noche UFC: Silva vs. Delgado",
+      "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet)",
+      "capturedAt": "2026-09-11T18:32:36.966Z",
+      "lines": [
+        {
+          "fighter": "Brandon Moreno",
+          "moneyline": -105,
+          "totalLine": 2.5,
+          "over": -360,
+          "draw": 5000,
+          "ko": 900,
+          "sub": 1300,
+          "dec": 165,
+          "koSub": 500
+        },
+        {
+          "fighter": "Joseph Morales",
+          "moneyline": -115,
+          "totalLine": 2.5,
+          "under": 250,
+          "ko": 1300,
+          "sub": 750,
+          "dec": 155,
+          "koSub": 350
+        },
+        {
+          "fighter": "Marwan Rahiki",
+          "moneyline": 132,
+          "totalLine": 1.5,
+          "over": -160,
+          "draw": 5000,
+          "ko": 230,
+          "sub": 2000,
+          "dec": 700,
+          "koSub": 200
+        },
+        {
+          "fighter": "Tommy McMillen",
+          "moneyline": -162,
+          "totalLine": 1.5,
+          "under": 126,
+          "ko": 280,
+          "sub": 500,
+          "dec": 340,
+          "koSub": 130
+        },
+        {
+          "fighter": "Alexa Grasso",
+          "moneyline": 198,
+          "totalLine": 2.5,
+          "over": -450,
+          "draw": 5000,
+          "ko": 1900,
+          "sub": 950,
+          "dec": 350,
+          "koSub": 600
+        },
+        {
+          "fighter": "Manon Fiorot",
+          "moneyline": -250,
+          "totalLine": 2.5,
+          "under": 300,
+          "ko": 650,
+          "sub": 3000,
+          "dec": -150,
+          "koSub": 350
+        },
+        {
+          "fighter": "Curtis Blaydes",
+          "moneyline": 172,
+          "totalLine": 2.5,
+          "over": -142,
+          "draw": 5000,
+          "ko": 650,
+          "sub": 3500,
+          "dec": 320,
+          "koSub": 400
+        },
+        {
+          "fighter": "Waldo Cortes-Acosta",
+          "moneyline": -215,
+          "totalLine": 2.5,
+          "under": 112,
+          "ko": 170,
+          "sub": 2200,
+          "dec": 220,
+          "koSub": 150
+        },
+        {
+          "fighter": "Dan Ige",
+          "moneyline": 350,
+          "totalLine": 2.5,
+          "over": -230,
+          "draw": 5000,
+          "ko": 1100,
+          "sub": 2500,
+          "dec": 700,
+          "koSub": 600
+        },
+        {
+          "fighter": "David Martinez",
+          "moneyline": -480,
+          "totalLine": 2.5,
+          "under": 176,
+          "ko": 240,
+          "sub": 2000,
+          "dec": -125,
+          "koSub": 175
+        },
+        {
+          "fighter": "Edgar Chairez",
+          "moneyline": -220,
+          "totalLine": 2.5,
+          "over": -116,
+          "draw": 5000,
+          "ko": 650,
+          "sub": 220,
+          "dec": 240,
+          "koSub": 120
+        },
+        {
+          "fighter": "Tim Elliott",
+          "moneyline": 176,
+          "totalLine": 2.5,
+          "under": -110,
+          "ko": 2000,
+          "sub": 600,
+          "dec": 400,
+          "koSub": 450
+        },
+        {
+          "fighter": "Ignacio Bahamondes",
+          "moneyline": -550,
+          "totalLine": 1.5,
+          "over": -130,
+          "draw": 5000,
+          "ko": -115,
+          "sub": 550,
+          "dec": 340,
+          "koSub": -225
+        },
+        {
+          "fighter": "Muslim Salikhov",
+          "moneyline": 390,
+          "totalLine": 1.5,
+          "under": 104,
+          "ko": 750,
+          "sub": 3000,
+          "dec": 1200,
+          "koSub": 600
+        },
+        {
+          "fighter": "Djorden Santos",
+          "moneyline": 570,
+          "totalLine": 2.5,
+          "over": 116,
+          "draw": 5000,
+          "ko": 1400,
+          "sub": 2700,
+          "dec": 1400,
+          "koSub": 900
+        },
+        {
+          "fighter": "Yousri Belgaroui",
+          "moneyline": -900,
+          "totalLine": 2.5,
+          "under": -148,
+          "ko": -140,
+          "sub": 2500,
+          "dec": 195,
+          "koSub": -175
+        },
+        {
+          "fighter": "Drakkar Klose",
+          "moneyline": 350,
+          "totalLine": 1.5,
+          "over": -150,
+          "draw": 4500,
+          "ko": 1000,
+          "sub": 3500,
+          "dec": 700,
+          "koSub": 700
+        },
+        {
+          "fighter": "Tommy Gantt",
+          "moneyline": -480,
+          "totalLine": 1.5,
+          "under": 110,
+          "ko": 165,
+          "sub": 235,
+          "dec": 430,
+          "koSub": -180
+        },
+        {
+          "fighter": "Rafa Garcia",
+          "moneyline": 130,
+          "totalLine": 2.5,
+          "over": -220,
+          "draw": 5000,
+          "ko": 1100,
+          "sub": 600,
+          "dec": 300,
+          "koSub": 350
+        },
+        {
+          "fighter": "Rongzhu",
+          "moneyline": -160,
+          "totalLine": 2.5,
+          "under": 170,
+          "ko": 410,
+          "sub": 2700,
+          "dec": 135,
+          "koSub": 350
+        },
+        {
+          "fighter": "Jessie Rosas",
+          "moneyline": 166,
+          "totalLine": 2.5,
+          "over": -102,
+          "draw": 5000,
+          "ko": 850,
+          "sub": 550,
+          "dec": 500,
+          "koSub": 240
+        },
+        {
+          "fighter": "Sean King",
+          "moneyline": -198,
+          "totalLine": 2.5,
+          "under": -124,
+          "ko": 230,
+          "sub": 700,
+          "dec": 230,
+          "koSub": 150
+        },
+        {
+          "fighter": "Jj Aldrich",
+          "moneyline": 235,
+          "totalLine": 2.5,
+          "over": -350,
+          "draw": 5000,
+          "ko": 2200,
+          "sub": 2200,
+          "dec": 310,
+          "koSub": 900
+        },
+        {
+          "fighter": "Regina Tarin",
+          "moneyline": -290,
+          "totalLine": 2.5,
+          "under": 245,
+          "ko": 470,
+          "sub": 1000,
+          "dec": -115,
+          "koSub": 275
+        }
+      ]
+    },
     {
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-11T08:27:39.838Z",
+      "capturedAt": "2026-09-11T18:32:36.966Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -87,7 +347,7 @@
     {
       "name": "UFC 331",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-11T08:27:39.838Z",
+      "capturedAt": "2026-09-11T18:32:36.966Z",
       "lines": [
         {
           "fighter": "Doo Ho Choi",
