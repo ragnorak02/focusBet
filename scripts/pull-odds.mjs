@@ -156,8 +156,14 @@ function mergeManual(scraped, manual) {
  * files the annual Mexican Independence Day card as "Noche UFC", so anchoring
  * this dropped a whole UFC card off the board. A stray non-UFC match is cheap —
  * it costs one page fetch, and then `matchEspnEvent` and `dedupe` throw it out.
+ *
+ * Dana White's Contender Series has to be named outright. ESPN files it under
+ * the `ufc` league, so the app lists it for import and grades its results like
+ * any other card — but BestFightOdds titles those pages "DWCS Week 6 2026",
+ * with no "UFC" anywhere in them, so matching on the promotion alone imported
+ * every Contender Series card with not one fight priced.
  */
-const PROMOTIONS = /\b(ufc|pfl)\b/i;
+const PROMOTIONS = /\b(ufc|pfl|dwcs)\b|contender series/i;
 
 function isSupported(ev) {
   return PROMOTIONS.test(ev.name) || PROMOTIONS.test((ev.slug ?? '').replace(/-/g, ' '));
