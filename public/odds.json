@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-12T23:13:46.939Z",
+  "updatedAt": "2026-09-12T23:50:35.649Z",
   "events": [
     {
       "espnId": "600060772",
       "name": "Noche UFC: Silva vs. Delgado",
       "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet)",
-      "capturedAt": "2026-09-12T23:13:46.939Z",
+      "capturedAt": "2026-09-12T23:50:35.649Z",
       "lines": [
         {
           "fighter": "Jean Silva",
@@ -30,7 +30,7 @@
         },
         {
           "fighter": "Brandon Moreno",
-          "moneyline": -104,
+          "moneyline": -110,
           "totalLine": 2.5,
           "over": -350,
           "draw": 5000,
@@ -41,7 +41,7 @@
         },
         {
           "fighter": "Joseph Morales",
-          "moneyline": -112,
+          "moneyline": -106,
           "totalLine": 2.5,
           "under": 245,
           "ko": 1400,
@@ -286,7 +286,7 @@
       "espnId": "600060737",
       "name": "Dana White's Contender Series: Season 10, Week 6",
       "source": "BestFightOdds (Kalshi)",
-      "capturedAt": "2026-09-12T23:13:46.939Z",
+      "capturedAt": "2026-09-12T23:50:35.649Z",
       "lines": [
         {
           "fighter": "Mayton Perea",
@@ -294,27 +294,27 @@
         },
         {
           "fighter": "Zevan Hunt",
-          "moneyline": -132
+          "moneyline": -143
         },
         {
           "fighter": "Igor Cavalcanti",
-          "moneyline": -341
+          "moneyline": -361
         },
         {
           "fighter": "Oscar Ravello",
-          "moneyline": 295
+          "moneyline": 265
         },
         {
           "fighter": "Akbar Abdullaev",
-          "moneyline": -1240
+          "moneyline": -1433
         },
         {
           "fighter": "Ednilson Santos",
-          "moneyline": 942
+          "moneyline": 1071
         },
         {
           "fighter": "Hugo Guillon",
-          "moneyline": -168
+          "moneyline": -176
         },
         {
           "fighter": "Luis Hernandez",
@@ -322,11 +322,11 @@
         },
         {
           "fighter": "Antonio Monteiro",
-          "moneyline": 265
+          "moneyline": 252
         },
         {
           "fighter": "Tyshawn Williams",
-          "moneyline": -307
+          "moneyline": -323
         }
       ]
     },
@@ -334,7 +334,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-12T23:13:46.939Z",
+      "capturedAt": "2026-09-12T23:50:35.649Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -441,7 +441,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-12T23:13:46.939Z",
+      "capturedAt": "2026-09-12T23:50:35.649Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -465,7 +465,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-12T23:13:46.939Z",
+      "capturedAt": "2026-09-12T23:50:35.649Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
