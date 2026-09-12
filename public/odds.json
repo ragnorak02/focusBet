@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-12T08:16:13.890Z",
+  "updatedAt": "2026-09-12T13:17:15.156Z",
   "events": [
     {
       "espnId": "600060772",
       "name": "Noche UFC: Silva vs. Delgado",
       "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet)",
-      "capturedAt": "2026-09-12T08:16:13.890Z",
+      "capturedAt": "2026-09-12T13:17:15.156Z",
       "lines": [
         {
           "fighter": "Jean Silva",
@@ -53,9 +53,9 @@
           "fighter": "Marwan Rahiki",
           "moneyline": 132,
           "totalLine": 1.5,
-          "over": -150,
+          "over": -148,
           "draw": 5000,
-          "ko": 220,
+          "ko": 210,
           "sub": 2500,
           "dec": 750,
           "koSub": 200
@@ -64,7 +64,7 @@
           "fighter": "Tommy McMillen",
           "moneyline": -156,
           "totalLine": 1.5,
-          "under": 120,
+          "under": 118,
           "ko": 280,
           "sub": 480,
           "dec": 360,
@@ -286,7 +286,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-12T08:16:13.890Z",
+      "capturedAt": "2026-09-12T13:17:15.156Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -393,7 +393,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-12T08:16:13.890Z",
+      "capturedAt": "2026-09-12T13:17:15.156Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -417,7 +417,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-12T08:16:13.890Z",
+      "capturedAt": "2026-09-12T13:17:15.156Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
