@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-14T03:45:38.802Z",
+  "updatedAt": "2026-09-14T09:26:53.774Z",
   "events": [
     {
       "espnId": "600060737",
       "name": "Dana White's Contender Series: Season 10, Week 6",
       "source": "BestFightOdds (Kalshi)",
-      "capturedAt": "2026-09-14T03:45:38.802Z",
+      "capturedAt": "2026-09-14T09:26:53.774Z",
       "lines": [
         {
           "fighter": "Mayton Perea",
@@ -13,7 +13,7 @@
         },
         {
           "fighter": "Zevan Hunt",
-          "moneyline": -112
+          "moneyline": -103
         },
         {
           "fighter": "Igor Cavalcanti",
@@ -29,7 +29,7 @@
         },
         {
           "fighter": "Ednilson Santos",
-          "moneyline": 838
+          "moneyline": 942
         },
         {
           "fighter": "Hugo Guillon",
@@ -53,7 +53,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-14T03:45:38.802Z",
+      "capturedAt": "2026-09-14T09:26:53.774Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -176,7 +176,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-14T03:45:38.802Z",
+      "capturedAt": "2026-09-14T09:26:53.774Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -200,7 +200,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-14T03:45:38.802Z",
+      "capturedAt": "2026-09-14T09:26:53.774Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
