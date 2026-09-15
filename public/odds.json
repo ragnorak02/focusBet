@@ -1,80 +1,145 @@
 {
-  "updatedAt": "2026-09-15T13:02:11.921Z",
+  "updatedAt": "2026-09-15T17:51:51.386Z",
   "events": [
     {
       "espnId": "600060737",
       "name": "Dana White's Contender Series: Season 10, Week 6",
-      "source": "BestFightOdds (FanDuel, Kalshi)",
-      "capturedAt": "2026-09-15T13:02:11.921Z",
+      "source": "BestFightOdds (FanDuel, BetWay, Kalshi, BetRivers)",
+      "capturedAt": "2026-09-15T17:51:51.386Z",
       "lines": [
         {
           "fighter": "Mayton Perea",
-          "moneyline": -120
+          "moneyline": -118,
+          "totalLine": 1.5,
+          "over": 158,
+          "draw": 5000,
+          "ko": 140,
+          "sub": 850,
+          "dec": 1200,
+          "koSub": -105
         },
         {
           "fighter": "Zevan Hunt",
-          "moneyline": 102
+          "moneyline": 100,
+          "totalLine": 1.5,
+          "under": -194,
+          "ko": 420,
+          "sub": 300,
+          "dec": 800,
+          "koSub": 130
         },
         {
           "fighter": "Igor Cavalcanti",
-          "moneyline": -255
+          "moneyline": -225,
+          "totalLine": 1.5,
+          "over": 180,
+          "draw": 5000,
+          "ko": -110,
+          "sub": 600,
+          "dec": 1000,
+          "koSub": -188
         },
         {
           "fighter": "Oscar Ravello",
-          "moneyline": 210
+          "moneyline": 188,
+          "totalLine": 1.5,
+          "under": -225,
+          "ko": 390,
+          "sub": 800,
+          "dec": 1100,
+          "koSub": 240
         },
         {
           "fighter": "Akbar Abdullaev",
-          "moneyline": -1433
+          "moneyline": -1433,
+          "totalLine": 1.5,
+          "over": 275,
+          "draw": 4500,
+          "ko": -530,
+          "sub": 1000,
+          "dec": 1000,
+          "koSub": -800
         },
         {
           "fighter": "Ednilson Santos",
-          "moneyline": 1071
+          "moneyline": 1071,
+          "totalLine": 1.5,
+          "under": -420,
+          "ko": 1900,
+          "sub": 4500,
+          "dec": 4500,
+          "koSub": 1200
         },
         {
           "fighter": "Hugo Guillon",
-          "moneyline": -172
+          "moneyline": -172,
+          "totalLine": 1.5,
+          "over": 164,
+          "draw": 5000,
+          "ko": 240,
+          "sub": 310,
+          "dec": 550,
+          "koSub": 175
         },
         {
           "fighter": "Luis Hernandez",
-          "moneyline": 144
+          "moneyline": 144,
+          "totalLine": 1.5,
+          "under": -205,
+          "ko": 400,
+          "sub": 450,
+          "dec": 1200,
+          "koSub": -110
         },
         {
           "fighter": "Antonio Monteiro",
-          "moneyline": 235
+          "moneyline": 215,
+          "totalLine": 2.5,
+          "over": 104,
+          "draw": 5000,
+          "ko": 750,
+          "sub": 650,
+          "dec": 750,
+          "koSub": 300
         },
         {
           "fighter": "Tyshawn Williams",
-          "moneyline": -290
+          "moneyline": -260,
+          "totalLine": 2.5,
+          "under": -126,
+          "ko": 220,
+          "sub": 700,
+          "dec": 185,
+          "koSub": 140
         }
       ]
     },
     {
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
-      "source": "BestFightOdds (FanDuel, Unibet, Kalshi, BetRivers)",
-      "capturedAt": "2026-09-15T13:02:11.921Z",
+      "source": "BestFightOdds (FanDuel, BetWay, Kalshi, BetRivers, Unibet)",
+      "capturedAt": "2026-09-15T17:51:51.386Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
           "moneyline": 106,
           "totalLine": 3.5,
-          "over": 106,
+          "over": -108,
           "draw": 5000,
           "ko": 1200,
           "sub": 280,
           "dec": 450,
-          "koSub": 205
+          "koSub": 200
         },
         {
           "fighter": "Joshua van",
           "moneyline": -136,
           "totalLine": 3.5,
-          "under": -134,
+          "under": -118,
           "ko": 175,
           "sub": 2000,
           "dec": 400,
-          "koSub": 160
+          "koSub": 140
         },
         {
           "fighter": "Brian Ortega",
@@ -93,7 +158,7 @@
           "ko": 230,
           "sub": 275,
           "dec": 300,
-          "koSub": -114
+          "koSub": -163
         },
         {
           "fighter": "Mauricio Ruffy",
@@ -103,7 +168,7 @@
           "ko": 390,
           "sub": 2500,
           "dec": 900,
-          "koSub": 370
+          "koSub": 350
         },
         {
           "fighter": "Doo Ho Choi",
@@ -114,7 +179,7 @@
           "ko": 160,
           "sub": 950,
           "dec": 210,
-          "koSub": 128
+          "koSub": 110
         },
         {
           "fighter": "Patricio Freire",
@@ -124,15 +189,7 @@
           "ko": 800,
           "sub": 1050,
           "dec": 475,
-          "koSub": 525
-        },
-        {
-          "fighter": "Gable Steveson",
-          "moneyline": -1800
-        },
-        {
-          "fighter": "Sean Sharaf",
-          "moneyline": 800
+          "koSub": 600
         },
         {
           "fighter": "Alonzo Menifield",
@@ -143,7 +200,7 @@
           "ko": 390,
           "sub": 950,
           "dec": 750,
-          "koSub": 275
+          "koSub": 240
         },
         {
           "fighter": "Iwo Baraniewski",
@@ -153,7 +210,23 @@
           "ko": -132,
           "sub": 950,
           "dec": 1050,
-          "koSub": -159
+          "koSub": -175
+        },
+        {
+          "fighter": "Gable Steveson",
+          "moneyline": -1800
+        },
+        {
+          "fighter": "Sean Sharaf",
+          "moneyline": 800
+        },
+        {
+          "fighter": "Charles Jourdain",
+          "moneyline": -230
+        },
+        {
+          "fighter": "Marlon Vera",
+          "moneyline": 176
         },
         {
           "fighter": "Robelis Despaigne",
@@ -177,14 +250,6 @@
           "koSub": 700
         },
         {
-          "fighter": "Charles Jourdain",
-          "moneyline": -230
-        },
-        {
-          "fighter": "Marlon Vera",
-          "moneyline": 176
-        },
-        {
           "fighter": "Joo Sang Yoo",
           "moneyline": -295
         },
@@ -193,20 +258,20 @@
           "moneyline": 220
         },
         {
-          "fighter": "Brunno Ferreira",
-          "moneyline": 132
-        },
-        {
-          "fighter": "Edmen Shahbazyan",
-          "moneyline": -170
-        },
-        {
           "fighter": "Ozzy Diaz",
           "moneyline": 340
         },
         {
           "fighter": "Ryan Gandra",
           "moneyline": -500
+        },
+        {
+          "fighter": "Brunno Ferreira",
+          "moneyline": 132
+        },
+        {
+          "fighter": "Edmen Shahbazyan",
+          "moneyline": -170
         },
         {
           "fighter": "Casey O'Neill",
@@ -230,7 +295,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-15T13:02:11.921Z",
+      "capturedAt": "2026-09-15T17:51:51.386Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -254,7 +319,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-15T13:02:11.921Z",
+      "capturedAt": "2026-09-15T17:51:51.386Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
