@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-15T07:02:01.357Z",
+  "updatedAt": "2026-09-15T13:02:11.921Z",
   "events": [
     {
       "espnId": "600060737",
       "name": "Dana White's Contender Series: Season 10, Week 6",
       "source": "BestFightOdds (FanDuel, Kalshi)",
-      "capturedAt": "2026-09-15T07:02:01.357Z",
+      "capturedAt": "2026-09-15T13:02:11.921Z",
       "lines": [
         {
           "fighter": "Mayton Perea",
@@ -17,19 +17,11 @@
         },
         {
           "fighter": "Igor Cavalcanti",
-          "moneyline": -270
+          "moneyline": -255
         },
         {
           "fighter": "Oscar Ravello",
-          "moneyline": 220
-        },
-        {
-          "fighter": "Hugo Guillon",
-          "moneyline": -172
-        },
-        {
-          "fighter": "Luis Hernandez",
-          "moneyline": 144
+          "moneyline": 210
         },
         {
           "fighter": "Akbar Abdullaev",
@@ -40,12 +32,20 @@
           "moneyline": 1071
         },
         {
+          "fighter": "Hugo Guillon",
+          "moneyline": -172
+        },
+        {
+          "fighter": "Luis Hernandez",
+          "moneyline": 144
+        },
+        {
           "fighter": "Antonio Monteiro",
-          "moneyline": 245
+          "moneyline": 235
         },
         {
           "fighter": "Tyshawn Williams",
-          "moneyline": -300
+          "moneyline": -290
         }
       ]
     },
@@ -53,7 +53,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel, Unibet, Kalshi, BetRivers)",
-      "capturedAt": "2026-09-15T07:02:01.357Z",
+      "capturedAt": "2026-09-15T13:02:11.921Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -107,19 +107,24 @@
         },
         {
           "fighter": "Doo Ho Choi",
-          "moneyline": -265
+          "moneyline": -265,
+          "totalLine": 2.5,
+          "over": -113,
+          "draw": 4500,
+          "ko": 160,
+          "sub": 950,
+          "dec": 210,
+          "koSub": 128
         },
         {
           "fighter": "Patricio Freire",
-          "moneyline": 200
-        },
-        {
-          "fighter": "Alonzo Menifield",
-          "moneyline": 200
-        },
-        {
-          "fighter": "Iwo Baraniewski",
-          "moneyline": -265
+          "moneyline": 200,
+          "totalLine": 2.5,
+          "under": -121,
+          "ko": 800,
+          "sub": 1050,
+          "dec": 475,
+          "koSub": 525
         },
         {
           "fighter": "Gable Steveson",
@@ -130,12 +135,46 @@
           "moneyline": 800
         },
         {
+          "fighter": "Alonzo Menifield",
+          "moneyline": 200,
+          "totalLine": 1.5,
+          "over": 188,
+          "draw": 4500,
+          "ko": 390,
+          "sub": 950,
+          "dec": 750,
+          "koSub": 275
+        },
+        {
+          "fighter": "Iwo Baraniewski",
+          "moneyline": -265,
+          "totalLine": 1.5,
+          "under": -275,
+          "ko": -132,
+          "sub": 950,
+          "dec": 1050,
+          "koSub": -159
+        },
+        {
           "fighter": "Robelis Despaigne",
-          "moneyline": -850
+          "moneyline": -850,
+          "totalLine": 1.5,
+          "over": 195,
+          "draw": 4500,
+          "ko": -560,
+          "sub": 850,
+          "dec": 1000,
+          "koSub": -625
         },
         {
           "fighter": "Tai Tuivasa",
-          "moneyline": 500
+          "moneyline": 500,
+          "totalLine": 1.5,
+          "under": -278,
+          "ko": 750,
+          "sub": 4500,
+          "dec": 1700,
+          "koSub": 700
         },
         {
           "fighter": "Charles Jourdain",
@@ -191,7 +230,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-15T07:02:01.357Z",
+      "capturedAt": "2026-09-15T13:02:11.921Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -215,7 +254,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-15T07:02:01.357Z",
+      "capturedAt": "2026-09-15T13:02:11.921Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
