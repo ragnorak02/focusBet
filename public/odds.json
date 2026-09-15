@@ -1,27 +1,27 @@
 {
-  "updatedAt": "2026-09-15T00:07:19.647Z",
+  "updatedAt": "2026-09-15T07:02:01.357Z",
   "events": [
     {
       "espnId": "600060737",
       "name": "Dana White's Contender Series: Season 10, Week 6",
       "source": "BestFightOdds (FanDuel, Kalshi)",
-      "capturedAt": "2026-09-15T00:07:19.647Z",
+      "capturedAt": "2026-09-15T07:02:01.357Z",
       "lines": [
         {
           "fighter": "Mayton Perea",
-          "moneyline": -122
+          "moneyline": -120
         },
         {
           "fighter": "Zevan Hunt",
-          "moneyline": 100
+          "moneyline": 102
         },
         {
           "fighter": "Igor Cavalcanti",
-          "moneyline": -355
+          "moneyline": -270
         },
         {
           "fighter": "Oscar Ravello",
-          "moneyline": 270
+          "moneyline": 220
         },
         {
           "fighter": "Hugo Guillon",
@@ -37,7 +37,7 @@
         },
         {
           "fighter": "Ednilson Santos",
-          "moneyline": 942
+          "moneyline": 1071
         },
         {
           "fighter": "Antonio Monteiro",
@@ -52,8 +52,8 @@
     {
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
-      "source": "BestFightOdds (FanDuel, Unibet, BetRivers)",
-      "capturedAt": "2026-09-15T00:07:19.647Z",
+      "source": "BestFightOdds (FanDuel, Unibet, Kalshi, BetRivers)",
+      "capturedAt": "2026-09-15T07:02:01.357Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -75,6 +75,14 @@
           "sub": 2000,
           "dec": 400,
           "koSub": 160
+        },
+        {
+          "fighter": "Brian Ortega",
+          "moneyline": 158
+        },
+        {
+          "fighter": "Renato Moicano",
+          "moneyline": -191
         },
         {
           "fighter": "Arman Tsarukyan",
@@ -106,14 +114,6 @@
           "moneyline": 200
         },
         {
-          "fighter": "Brian Ortega",
-          "moneyline": 172
-        },
-        {
-          "fighter": "Renato Moicano",
-          "moneyline": -225
-        },
-        {
           "fighter": "Alonzo Menifield",
           "moneyline": 200
         },
@@ -131,11 +131,11 @@
         },
         {
           "fighter": "Robelis Despaigne",
-          "moneyline": -620
+          "moneyline": -850
         },
         {
           "fighter": "Tai Tuivasa",
-          "moneyline": 400
+          "moneyline": 500
         },
         {
           "fighter": "Charles Jourdain",
@@ -191,7 +191,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-15T00:07:19.647Z",
+      "capturedAt": "2026-09-15T07:02:01.357Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -215,7 +215,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-15T00:07:19.647Z",
+      "capturedAt": "2026-09-15T07:02:01.357Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
