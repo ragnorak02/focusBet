@@ -1,17 +1,17 @@
 {
-  "updatedAt": "2026-09-15T23:52:45.973Z",
+  "updatedAt": "2026-09-16T02:44:43.949Z",
   "events": [
     {
       "espnId": "600060737",
       "name": "Dana White's Contender Series: Season 10, Week 6",
       "source": "BestFightOdds (FanDuel, BetWay, Kalshi, BetRivers)",
-      "capturedAt": "2026-09-15T23:52:45.973Z",
+      "capturedAt": "2026-09-16T02:44:43.949Z",
       "lines": [
         {
           "fighter": "Mayton Perea",
-          "moneyline": -108,
+          "moneyline": 100,
           "totalLine": 1.5,
-          "over": 156,
+          "over": 146,
           "draw": 5000,
           "ko": 150,
           "sub": 950,
@@ -20,38 +20,38 @@
         },
         {
           "fighter": "Zevan Hunt",
-          "moneyline": -108,
+          "moneyline": -125,
           "totalLine": 1.5,
-          "under": -190,
-          "ko": 390,
-          "sub": 280,
-          "dec": 800,
+          "under": -178,
+          "ko": 410,
+          "sub": 250,
+          "dec": 950,
           "koSub": 130
         },
         {
           "fighter": "Igor Cavalcanti",
-          "moneyline": -166,
+          "moneyline": -186,
           "totalLine": 1.5,
-          "over": 160,
+          "over": 170,
           "draw": 5000,
-          "ko": -105,
+          "ko": -115,
           "sub": 850,
           "dec": 1400,
           "koSub": -188
         },
         {
           "fighter": "Oscar Ravello",
-          "moneyline": 140,
+          "moneyline": 156,
           "totalLine": 1.5,
-          "under": -198,
-          "ko": 350,
-          "sub": 650,
-          "dec": 750,
+          "under": -210,
+          "ko": 360,
+          "sub": 750,
+          "dec": 800,
           "koSub": 240
         },
         {
           "fighter": "Akbar Abdullaev",
-          "moneyline": -1689,
+          "moneyline": -1240,
           "totalLine": 1.5,
           "over": 280,
           "draw": 4500,
@@ -62,7 +62,7 @@
         },
         {
           "fighter": "Ednilson Santos",
-          "moneyline": 1238,
+          "moneyline": 942,
           "totalLine": 1.5,
           "under": -420,
           "ko": 2200,
@@ -118,7 +118,7 @@
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet, Kalshi)",
-      "capturedAt": "2026-09-15T23:52:45.973Z",
+      "capturedAt": "2026-09-16T02:44:43.949Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -299,7 +299,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-15T23:52:45.973Z",
+      "capturedAt": "2026-09-16T02:44:43.949Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -323,7 +323,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-15T23:52:45.973Z",
+      "capturedAt": "2026-09-16T02:44:43.949Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
