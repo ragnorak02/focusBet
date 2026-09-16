@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-16T08:58:28.452Z",
+  "updatedAt": "2026-09-16T14:30:32.376Z",
   "events": [
     {
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet, Kalshi)",
-      "capturedAt": "2026-09-16T08:58:28.452Z",
+      "capturedAt": "2026-09-16T14:30:32.376Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -30,86 +30,104 @@
         },
         {
           "fighter": "Arman Tsarukyan",
-          "moneyline": -340,
+          "moneyline": -350,
           "totalLine": 2.5,
-          "over": -114,
-          "draw": 4500,
-          "ko": 230,
-          "sub": 275,
-          "dec": 300,
+          "over": -112,
+          "draw": 5000,
+          "ko": 220,
+          "sub": 230,
+          "dec": 360,
           "koSub": -163
         },
         {
           "fighter": "Mauricio Ruffy",
-          "moneyline": 250,
+          "moneyline": 255,
           "totalLine": 2.5,
-          "under": -118,
+          "under": -112,
           "ko": 390,
-          "sub": 2500,
-          "dec": 900,
+          "sub": 3000,
+          "dec": 1300,
           "koSub": 350
         },
         {
           "fighter": "Doo Ho Choi",
           "moneyline": -265,
           "totalLine": 2.5,
-          "over": -113,
-          "draw": 4500,
-          "ko": 160,
-          "sub": 950,
-          "dec": 210,
+          "over": -102,
+          "draw": 5000,
+          "ko": 175,
+          "sub": 1000,
+          "dec": 220,
           "koSub": 110
         },
         {
           "fighter": "Patricio Freire",
           "moneyline": 200,
           "totalLine": 2.5,
-          "under": -121,
-          "ko": 800,
-          "sub": 1050,
-          "dec": 475,
+          "under": -124,
+          "ko": 750,
+          "sub": 1000,
+          "dec": 500,
           "koSub": 600
         },
         {
           "fighter": "Alonzo Menifield",
           "moneyline": 200,
           "totalLine": 1.5,
-          "over": 195,
-          "draw": 4500,
-          "ko": 410,
-          "sub": 950,
-          "dec": 750,
+          "over": 200,
+          "draw": 5000,
+          "ko": 480,
+          "sub": 1000,
+          "dec": 900,
           "koSub": 240
         },
         {
           "fighter": "Iwo Baraniewski",
           "moneyline": -265,
           "totalLine": 1.5,
-          "under": -278,
-          "ko": -136,
-          "sub": 950,
-          "dec": 1050,
+          "under": -270,
+          "ko": -135,
+          "sub": 850,
+          "dec": 1100,
           "koSub": -175
         },
         {
           "fighter": "Gable Steveson",
-          "moneyline": -1800,
+          "moneyline": -2500,
           "totalLine": 1.5,
-          "over": 300
+          "over": 300,
+          "draw": 5000,
+          "ko": -320,
+          "sub": 470,
+          "dec": 1800
         },
         {
           "fighter": "Sean Sharaf",
-          "moneyline": 800,
+          "moneyline": 900,
           "totalLine": 1.5,
-          "under": -450
+          "under": -450,
+          "ko": 2200,
+          "sub": 3500,
+          "dec": 2700
         },
         {
           "fighter": "Charles Jourdain",
-          "moneyline": -230
+          "moneyline": -235,
+          "totalLine": 2.5,
+          "over": -250,
+          "draw": 5000,
+          "ko": 1300,
+          "sub": 700,
+          "dec": -120
         },
         {
           "fighter": "Marlon Vera",
-          "moneyline": 176
+          "moneyline": 180,
+          "totalLine": 2.5,
+          "under": 186,
+          "ko": 550,
+          "sub": 1100,
+          "dec": 550
         },
         {
           "fighter": "Robelis Despaigne",
@@ -186,7 +204,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-16T08:58:28.452Z",
+      "capturedAt": "2026-09-16T14:30:32.376Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -210,7 +228,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-16T08:58:28.452Z",
+      "capturedAt": "2026-09-16T14:30:32.376Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
