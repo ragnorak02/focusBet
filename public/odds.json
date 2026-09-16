@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-16T19:15:51.046Z",
+  "updatedAt": "2026-09-16T22:31:56.220Z",
   "events": [
     {
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
-      "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet, Kalshi)",
-      "capturedAt": "2026-09-16T19:15:51.046Z",
+      "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet, Caesars, Kalshi)",
+      "capturedAt": "2026-09-16T22:31:56.220Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -177,7 +177,8 @@
         },
         {
           "fighter": "Ozzy Diaz",
-          "moneyline": 340
+          "moneyline": 340,
+          "draw": 6000
         },
         {
           "fighter": "Ryan Gandra",
@@ -260,7 +261,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-16T19:15:51.046Z",
+      "capturedAt": "2026-09-16T22:31:56.220Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -284,7 +285,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-16T19:15:51.046Z",
+      "capturedAt": "2026-09-16T22:31:56.220Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
