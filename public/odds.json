@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-17T19:27:36.856Z",
+  "updatedAt": "2026-09-17T22:34:23.834Z",
   "events": [
     {
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
       "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Kalshi)",
-      "capturedAt": "2026-09-17T19:27:36.856Z",
+      "capturedAt": "2026-09-17T22:34:23.834Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -209,7 +209,7 @@
         },
         {
           "fighter": "Edmen Shahbazyan",
-          "moneyline": -184,
+          "moneyline": -176,
           "totalLine": 1.5,
           "under": 114,
           "ko": 160,
@@ -219,7 +219,7 @@
         },
         {
           "fighter": "Casey O'Neill",
-          "moneyline": -250,
+          "moneyline": -235,
           "totalLine": 2.5,
           "over": -235,
           "draw": 5000,
@@ -230,7 +230,7 @@
         },
         {
           "fighter": "Eduarda Moura",
-          "moneyline": 190,
+          "moneyline": 186,
           "totalLine": 2.5,
           "under": 180,
           "ko": 1700,
@@ -240,7 +240,7 @@
         },
         {
           "fighter": "Giga Chikadze",
-          "moneyline": 300,
+          "moneyline": 310,
           "totalLine": 1.5,
           "over": -156,
           "draw": 5000,
@@ -251,7 +251,7 @@
         },
         {
           "fighter": "Joanderson Brito",
-          "moneyline": -430,
+          "moneyline": -420,
           "totalLine": 1.5,
           "under": 124,
           "ko": 500,
@@ -273,7 +273,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-17T19:27:36.856Z",
+      "capturedAt": "2026-09-17T22:34:23.834Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -297,7 +297,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-17T19:27:36.856Z",
+      "capturedAt": "2026-09-17T22:34:23.834Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
