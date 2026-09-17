@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-17T09:04:29.061Z",
+  "updatedAt": "2026-09-17T14:34:41.791Z",
   "events": [
     {
       "espnId": "600060963",
       "name": "UFC 331: Van vs. Pantoja 2",
-      "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet, Kalshi)",
-      "capturedAt": "2026-09-17T09:04:29.061Z",
+      "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Kalshi)",
+      "capturedAt": "2026-09-17T14:34:41.791Z",
       "lines": [
         {
           "fighter": "Alexandre Pantoja",
@@ -97,10 +97,10 @@
           "totalLine": 1.5,
           "over": 320,
           "draw": 5000,
-          "ko": -340,
+          "ko": -350,
           "sub": 500,
-          "dec": 1800,
-          "koSub": -910
+          "dec": 2000,
+          "koSub": -1408
         },
         {
           "fighter": "Sean Sharaf",
@@ -109,7 +109,7 @@
           "under": -530,
           "ko": 2200,
           "sub": 3500,
-          "dec": 2700,
+          "dec": 3000,
           "koSub": 1400
         },
         {
@@ -121,7 +121,7 @@
           "ko": 1300,
           "sub": 700,
           "dec": -120,
-          "koSub": 410
+          "koSub": 400
         },
         {
           "fighter": "Marlon Vera",
@@ -131,7 +131,7 @@
           "ko": 550,
           "sub": 1100,
           "dec": 550,
-          "koSub": 400
+          "koSub": 350
         },
         {
           "fighter": "Robelis Despaigne",
@@ -142,7 +142,7 @@
           "ko": -360,
           "sub": 1800,
           "dec": 1200,
-          "koSub": -625
+          "koSub": -549
         },
         {
           "fighter": "Tai Tuivasa",
@@ -152,7 +152,7 @@
           "ko": 800,
           "sub": 4500,
           "dec": 1800,
-          "koSub": 700
+          "koSub": 600
         },
         {
           "fighter": "Joo Sang Yoo",
@@ -163,7 +163,7 @@
           "ko": 290,
           "sub": 1600,
           "dec": 115,
-          "koSub": 245
+          "koSub": 200
         },
         {
           "fighter": "Michael Aswell",
@@ -173,7 +173,7 @@
           "ko": 700,
           "sub": 2700,
           "dec": 420,
-          "koSub": 575
+          "koSub": 600
         },
         {
           "fighter": "Ozzy Diaz",
@@ -183,7 +183,8 @@
           "draw": 5000,
           "ko": 750,
           "sub": 2500,
-          "dec": 1500
+          "dec": 1500,
+          "koSub": 450
         },
         {
           "fighter": "Ryan Gandra",
@@ -192,7 +193,8 @@
           "under": -250,
           "ko": -260,
           "sub": 900,
-          "dec": 1300
+          "dec": 1300,
+          "koSub": -400
         },
         {
           "fighter": "Brunno Ferreira",
@@ -213,7 +215,7 @@
           "ko": 160,
           "sub": 900,
           "dec": 400,
-          "koSub": 125
+          "koSub": 120
         },
         {
           "fighter": "Casey O'Neill",
@@ -224,7 +226,7 @@
           "ko": 480,
           "sub": 850,
           "dec": 115,
-          "koSub": 340
+          "koSub": 240
         },
         {
           "fighter": "Eduarda Moura",
@@ -234,7 +236,7 @@
           "ko": 1600,
           "sub": 750,
           "dec": 360,
-          "koSub": 420
+          "koSub": 450
         },
         {
           "fighter": "Giga Chikadze",
@@ -245,7 +247,7 @@
           "ko": 700,
           "sub": 2700,
           "dec": 750,
-          "koSub": 650
+          "koSub": 600
         },
         {
           "fighter": "Joanderson Brito",
@@ -255,7 +257,7 @@
           "ko": 500,
           "sub": 125,
           "dec": 300,
-          "koSub": -137
+          "koSub": -163
         },
         {
           "fighter": "Brian Ortega",
@@ -271,7 +273,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-17T09:04:29.061Z",
+      "capturedAt": "2026-09-17T14:34:41.791Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -295,7 +297,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-17T09:04:29.061Z",
+      "capturedAt": "2026-09-17T14:34:41.791Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
