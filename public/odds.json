@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-21T16:07:34.195Z",
+  "updatedAt": "2026-09-21T21:31:24.750Z",
   "events": [
     {
       "espnId": "600060738",
       "name": "Dana White's Contender Series: Season 10, Week 7",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-21T16:07:34.195Z",
+      "capturedAt": "2026-09-21T21:31:24.750Z",
       "lines": [
         {
           "fighter": "Norbert Novenyi Jr.",
@@ -41,11 +41,11 @@
         },
         {
           "fighter": "Damian Piwowarczyk",
-          "moneyline": -114
+          "moneyline": -128
         },
         {
           "fighter": "Emilio Quissua",
-          "moneyline": -106
+          "moneyline": 104
         }
       ]
     },
@@ -53,7 +53,7 @@
       "espnId": "600061266",
       "name": "UFC Fight Night: Rosas Jr. vs. Barcelos",
       "source": "BestFightOdds (Kalshi, Caesars)",
-      "capturedAt": "2026-09-21T16:07:34.195Z",
+      "capturedAt": "2026-09-21T21:31:24.750Z",
       "lines": [
         {
           "fighter": "Raoni Barcelos",
@@ -61,7 +61,7 @@
         },
         {
           "fighter": "Raul Rosas Jr",
-          "moneyline": -191
+          "moneyline": -200
         },
         {
           "fighter": "Robert Bryczek",
@@ -69,7 +69,7 @@
         },
         {
           "fighter": "Rodolfo Vieira",
-          "moneyline": -143
+          "moneyline": -155
         },
         {
           "fighter": "Brady Hiestand",
@@ -77,7 +77,7 @@
         },
         {
           "fighter": "Rinya Nakamura",
-          "moneyline": -341
+          "moneyline": -361
         },
         {
           "fighter": "Ilimbek Akylbek Uulu",
@@ -85,7 +85,7 @@
         },
         {
           "fighter": "Mehemmedeli Osmanli",
-          "moneyline": -291
+          "moneyline": -277
         },
         {
           "fighter": "Melissa Amaya",
@@ -137,19 +137,19 @@
         },
         {
           "fighter": "Ailin Perez",
-          "moneyline": -137
+          "moneyline": -143
         },
         {
           "fighter": "Norma Dumont",
-          "moneyline": 123
+          "moneyline": 118
         },
         {
           "fighter": "Vanessa Demopoulos",
-          "moneyline": 528
+          "moneyline": 572
         },
         {
           "fighter": "Yazmin Jauregui",
-          "moneyline": -662
+          "moneyline": -721
         }
       ]
     },
@@ -157,7 +157,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-21T16:07:34.195Z",
+      "capturedAt": "2026-09-21T21:31:24.750Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -181,7 +181,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-21T16:07:34.195Z",
+      "capturedAt": "2026-09-21T21:31:24.750Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
