@@ -1,83 +1,128 @@
 {
-  "updatedAt": "2026-09-22T12:59:19.737Z",
+  "updatedAt": "2026-09-22T17:51:21.288Z",
   "events": [
     {
       "espnId": "600060738",
       "name": "Dana White's Contender Series: Season 10, Week 7",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-09-22T12:59:19.737Z",
+      "capturedAt": "2026-09-22T17:51:21.288Z",
       "lines": [
         {
           "fighter": "Norbert Novenyi Jr.",
           "moneyline": -450,
           "totalLine": 1.5,
-          "over": 200
+          "over": 210,
+          "draw": 5000,
+          "ko": -155,
+          "sub": 500,
+          "dec": 950,
+          "koSub": -300
         },
         {
           "fighter": "Theo Haig",
           "moneyline": 350,
           "totalLine": 1.5,
-          "under": -275
+          "under": -270,
+          "ko": 1300,
+          "sub": 550,
+          "dec": 2000,
+          "koSub": 400
         },
         {
           "fighter": "Alvi Dasuyev",
-          "moneyline": -220,
+          "moneyline": -240,
           "totalLine": 1.5,
-          "over": 110
+          "over": 106,
+          "draw": 5000,
+          "ko": 155,
+          "sub": 360,
+          "dec": 550,
+          "koSub": -175
         },
         {
           "fighter": "Jaden Ortega",
-          "moneyline": 184,
+          "moneyline": 198,
           "totalLine": 1.5,
-          "under": -150
+          "under": -128,
+          "ko": 310,
+          "sub": 1600,
+          "dec": 1100,
+          "koSub": 250
         },
         {
           "fighter": "Marcos Degli",
-          "moneyline": -405,
+          "moneyline": -460,
           "totalLine": 1.5,
-          "over": 100
+          "over": 108,
+          "draw": 5000,
+          "ko": -140,
+          "sub": 490,
+          "dec": 650,
+          "koSub": -250
         },
         {
           "fighter": "Paris Moran",
-          "moneyline": 320,
+          "moneyline": 360,
           "totalLine": 1.5,
-          "under": -138
+          "under": -130,
+          "ko": 1000,
+          "sub": 1400,
+          "dec": 750,
+          "koSub": 600
         },
         {
           "fighter": "Callum Connor",
-          "moneyline": 100,
-          "totalLine": 1.5,
-          "over": -188
+          "moneyline": -104,
+          "totalLine": 2.5,
+          "over": 110,
+          "draw": 5000,
+          "ko": 320,
+          "sub": 1400,
+          "dec": 290,
+          "koSub": 225
         },
         {
           "fighter": "Piero Guaylupo",
-          "moneyline": -118,
-          "totalLine": 1.5,
-          "under": 140
+          "moneyline": -112,
+          "totalLine": 2.5,
+          "under": -134,
+          "ko": 180,
+          "sub": 1800,
+          "dec": 490,
+          "koSub": 163
         },
         {
           "fighter": "Damian Piwowarczyk",
-          "moneyline": -126,
+          "moneyline": -134,
           "totalLine": 1.5,
-          "over": -163
+          "over": -138,
+          "draw": 5000,
+          "ko": 240,
+          "sub": 500,
+          "dec": 480,
+          "koSub": 140
         },
         {
           "fighter": "Emilio Quissua",
-          "moneyline": 108,
+          "moneyline": 114,
           "totalLine": 1.5,
-          "under": 120
+          "under": 114,
+          "ko": 250,
+          "sub": 1100,
+          "dec": 500,
+          "koSub": 200
         }
       ]
     },
     {
       "espnId": "600061266",
       "name": "UFC Fight Night: Rosas Jr. vs. Barcelos",
-      "source": "BestFightOdds (Kalshi, BetRivers, Unibet)",
-      "capturedAt": "2026-09-22T12:59:19.737Z",
+      "source": "BestFightOdds (FanDuel, BetRivers, Unibet)",
+      "capturedAt": "2026-09-22T17:51:21.288Z",
       "lines": [
         {
           "fighter": "Raoni Barcelos",
-          "moneyline": 152,
+          "moneyline": 146,
           "totalLine": 4.5,
           "over": -115,
           "draw": 4500,
@@ -88,7 +133,7 @@
         },
         {
           "fighter": "Raul Rosas Jr",
-          "moneyline": -191,
+          "moneyline": -188,
           "totalLine": 4.5,
           "under": -118,
           "ko": 575,
@@ -98,7 +143,7 @@
         },
         {
           "fighter": "Robert Bryczek",
-          "moneyline": 123,
+          "moneyline": 134,
           "totalLine": 1.5,
           "over": -134,
           "draw": 4500,
@@ -109,7 +154,7 @@
         },
         {
           "fighter": "Rodolfo Vieira",
-          "moneyline": -155,
+          "moneyline": -172,
           "totalLine": 1.5,
           "under": -103,
           "ko": 750,
@@ -119,7 +164,7 @@
         },
         {
           "fighter": "Brady Hiestand",
-          "moneyline": 279,
+          "moneyline": 265,
           "totalLine": 2.5,
           "over": 100,
           "draw": 4500,
@@ -130,7 +175,7 @@
         },
         {
           "fighter": "Rinya Nakamura",
-          "moneyline": -361,
+          "moneyline": -370,
           "totalLine": 2.5,
           "under": -136,
           "ko": 160,
@@ -140,11 +185,11 @@
         },
         {
           "fighter": "Ilimbek Akylbek Uulu",
-          "moneyline": 228
+          "moneyline": 230
         },
         {
           "fighter": "Mehemmedeli Osmanli",
-          "moneyline": -277,
+          "moneyline": -310,
           "ko": 285,
           "sub": 380,
           "dec": 195,
@@ -152,7 +197,7 @@
         },
         {
           "fighter": "Melissa Amaya",
-          "moneyline": 173,
+          "moneyline": 172,
           "totalLine": 2.5,
           "over": -375,
           "draw": 4500,
@@ -163,7 +208,7 @@
         },
         {
           "fighter": "Valesca Machado",
-          "moneyline": -219,
+          "moneyline": -225,
           "totalLine": 2.5,
           "under": 240,
           "ko": 540,
@@ -177,55 +222,55 @@
         },
         {
           "fighter": "Josiah Harrell",
-          "moneyline": -132
+          "moneyline": -146
         },
         {
           "fighter": "Christian Edwards",
-          "moneyline": 145
+          "moneyline": 144
         },
         {
           "fighter": "Rodolfo Bellato",
-          "moneyline": -168
+          "moneyline": -186
         },
         {
           "fighter": "Montel Jackson",
-          "moneyline": -209
+          "moneyline": -205
         },
         {
           "fighter": "Ricky Simon",
-          "moneyline": 173
+          "moneyline": 158
         },
         {
           "fighter": "Alatengheili",
-          "moneyline": 239
+          "moneyline": 250
         },
         {
           "fighter": "John Castaneda",
-          "moneyline": -291
+          "moneyline": -340
         },
         {
           "fighter": "Ailin Perez",
-          "moneyline": -143
+          "moneyline": -140
         },
         {
           "fighter": "Norma Dumont",
-          "moneyline": 123
+          "moneyline": 110
         },
         {
           "fighter": "Vanessa Demopoulos",
-          "moneyline": 572
+          "moneyline": 600
         },
         {
           "fighter": "Yazmin Jauregui",
-          "moneyline": -721
+          "moneyline": -1100
         },
         {
           "fighter": "Mickey Gall",
-          "moneyline": -165
+          "moneyline": -174
         },
         {
           "fighter": "Sedriques Dumas",
-          "moneyline": 132
+          "moneyline": 136
         }
       ]
     },
@@ -233,7 +278,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-22T12:59:19.737Z",
+      "capturedAt": "2026-09-22T17:51:21.288Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -257,7 +302,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-22T12:59:19.737Z",
+      "capturedAt": "2026-09-22T17:51:21.288Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
