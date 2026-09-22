@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-22T20:43:29.127Z",
+  "updatedAt": "2026-09-22T23:56:22.784Z",
   "events": [
     {
       "espnId": "600060738",
       "name": "Dana White's Contender Series: Season 10, Week 7",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-09-22T20:43:29.127Z",
+      "capturedAt": "2026-09-22T23:56:22.784Z",
       "lines": [
         {
           "fighter": "Norbert Novenyi Jr.",
           "moneyline": -450,
           "totalLine": 1.5,
-          "over": 210,
+          "over": 225,
           "draw": 5000,
-          "ko": -155,
-          "sub": 500,
-          "dec": 950,
-          "koSub": -300
+          "ko": -180,
+          "sub": 550,
+          "dec": 1100,
+          "koSub": -350
         },
         {
           "fighter": "Theo Haig",
           "moneyline": 350,
           "totalLine": 1.5,
-          "under": -270,
+          "under": -290,
           "ko": 1300,
           "sub": 550,
           "dec": 2000,
@@ -30,83 +30,83 @@
         },
         {
           "fighter": "Alvi Dasuyev",
-          "moneyline": -240,
+          "moneyline": -275,
           "totalLine": 1.5,
-          "over": 106,
+          "over": 112,
           "draw": 5000,
-          "ko": 155,
+          "ko": 135,
           "sub": 360,
           "dec": 550,
           "koSub": -175
         },
         {
           "fighter": "Jaden Ortega",
-          "moneyline": 198,
+          "moneyline": 225,
           "totalLine": 1.5,
-          "under": -128,
-          "ko": 310,
-          "sub": 1600,
-          "dec": 1100,
+          "under": -136,
+          "ko": 350,
+          "sub": 1800,
+          "dec": 1200,
           "koSub": 250
         },
         {
           "fighter": "Marcos Degli",
-          "moneyline": -460,
+          "moneyline": -450,
           "totalLine": 1.5,
-          "over": 108,
+          "over": 102,
           "draw": 5000,
           "ko": -140,
-          "sub": 490,
+          "sub": 550,
           "dec": 650,
           "koSub": -250
         },
         {
           "fighter": "Paris Moran",
-          "moneyline": 360,
+          "moneyline": 350,
           "totalLine": 1.5,
-          "under": -130,
+          "under": -124,
           "ko": 1000,
-          "sub": 1400,
-          "dec": 750,
+          "sub": 1500,
+          "dec": 700,
           "koSub": 600
         },
         {
           "fighter": "Callum Connor",
-          "moneyline": 102,
+          "moneyline": 100,
           "totalLine": 2.5,
-          "over": 110,
+          "over": 108,
           "draw": 5000,
-          "ko": 340,
+          "ko": 330,
           "sub": 1400,
           "dec": 300,
           "koSub": 225
         },
         {
           "fighter": "Piero Guaylupo",
-          "moneyline": -120,
+          "moneyline": -118,
           "totalLine": 2.5,
-          "under": -132,
-          "ko": 170,
+          "under": -130,
+          "ko": 160,
           "sub": 1800,
           "dec": 470,
           "koSub": 163
         },
         {
           "fighter": "Damian Piwowarczyk",
-          "moneyline": -134,
+          "moneyline": -136,
           "totalLine": 1.5,
-          "over": -148,
+          "over": -122,
           "draw": 5000,
-          "ko": 240,
-          "sub": 500,
-          "dec": 470,
+          "ko": 210,
+          "sub": 550,
+          "dec": 500,
           "koSub": 140
         },
         {
           "fighter": "Emilio Quissua",
-          "moneyline": 114,
+          "moneyline": 116,
           "totalLine": 1.5,
-          "under": 122,
+          "under": 100,
           "ko": 290,
           "sub": 1200,
           "dec": 440,
@@ -117,8 +117,8 @@
     {
       "espnId": "600061266",
       "name": "UFC Fight Night: Rosas Jr. vs. Barcelos",
-      "source": "BestFightOdds (FanDuel, BetRivers, Unibet)",
-      "capturedAt": "2026-09-22T20:43:29.127Z",
+      "source": "BestFightOdds (FanDuel, BetRivers, BetWay)",
+      "capturedAt": "2026-09-22T23:56:22.784Z",
       "lines": [
         {
           "fighter": "Raoni Barcelos",
@@ -129,7 +129,7 @@
           "ko": 475,
           "sub": 1200,
           "dec": 390,
-          "koSub": 360
+          "koSub": 350
         },
         {
           "fighter": "Raul Rosas Jr",
@@ -139,7 +139,7 @@
           "ko": 575,
           "sub": 280,
           "dec": 235,
-          "koSub": 163
+          "koSub": 130
         },
         {
           "fighter": "Robert Bryczek",
@@ -150,7 +150,7 @@
           "ko": 215,
           "sub": 2400,
           "dec": 575,
-          "koSub": 205
+          "koSub": 175
         },
         {
           "fighter": "Rodolfo Vieira",
@@ -160,7 +160,28 @@
           "ko": 750,
           "sub": 215,
           "dec": 360,
-          "koSub": 150
+          "koSub": 140
+        },
+        {
+          "fighter": "Ilimbek Akylbek Uulu",
+          "moneyline": 230,
+          "totalLine": 2.5,
+          "over": 105,
+          "draw": 6600,
+          "ko": 1600,
+          "sub": 450,
+          "dec": 600,
+          "koSub": 400
+        },
+        {
+          "fighter": "Mehemmedeli Osmanli",
+          "moneyline": -310,
+          "totalLine": 2.5,
+          "under": -138,
+          "ko": 285,
+          "sub": 380,
+          "dec": 195,
+          "koSub": -120
         },
         {
           "fighter": "Brady Hiestand",
@@ -171,7 +192,7 @@
           "ko": 1050,
           "sub": 800,
           "dec": 650,
-          "koSub": 500
+          "koSub": 350
         },
         {
           "fighter": "Rinya Nakamura",
@@ -184,18 +205,6 @@
           "koSub": 120
         },
         {
-          "fighter": "Ilimbek Akylbek Uulu",
-          "moneyline": 230
-        },
-        {
-          "fighter": "Mehemmedeli Osmanli",
-          "moneyline": -310,
-          "ko": 285,
-          "sub": 380,
-          "dec": 195,
-          "koSub": 130
-        },
-        {
           "fighter": "Melissa Amaya",
           "moneyline": 172,
           "totalLine": 2.5,
@@ -204,7 +213,7 @@
           "ko": 1050,
           "sub": 1500,
           "dec": 275,
-          "koSub": 750
+          "koSub": 300
         },
         {
           "fighter": "Valesca Machado",
@@ -214,7 +223,7 @@
           "ko": 540,
           "sub": 950,
           "dec": -104,
-          "koSub": 360
+          "koSub": 500
         },
         {
           "fighter": "Elves Brener",
@@ -241,14 +250,6 @@
           "moneyline": 158
         },
         {
-          "fighter": "Alatengheili",
-          "moneyline": 250
-        },
-        {
-          "fighter": "John Castaneda",
-          "moneyline": -340
-        },
-        {
           "fighter": "Ailin Perez",
           "moneyline": -140
         },
@@ -257,12 +258,12 @@
           "moneyline": 110
         },
         {
-          "fighter": "Vanessa Demopoulos",
-          "moneyline": 600
+          "fighter": "Alatengheili",
+          "moneyline": 250
         },
         {
-          "fighter": "Yazmin Jauregui",
-          "moneyline": -1100
+          "fighter": "John Castaneda",
+          "moneyline": -340
         },
         {
           "fighter": "Mickey Gall",
@@ -271,6 +272,14 @@
         {
           "fighter": "Sedriques Dumas",
           "moneyline": 136
+        },
+        {
+          "fighter": "Vanessa Demopoulos",
+          "moneyline": 600
+        },
+        {
+          "fighter": "Yazmin Jauregui",
+          "moneyline": -1100
         }
       ]
     },
@@ -278,7 +287,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-22T20:43:29.127Z",
+      "capturedAt": "2026-09-22T23:56:22.784Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -302,7 +311,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-22T20:43:29.127Z",
+      "capturedAt": "2026-09-22T23:56:22.784Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
