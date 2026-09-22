@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-22T17:51:21.288Z",
+  "updatedAt": "2026-09-22T20:43:29.127Z",
   "events": [
     {
       "espnId": "600060738",
       "name": "Dana White's Contender Series: Season 10, Week 7",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-09-22T17:51:21.288Z",
+      "capturedAt": "2026-09-22T20:43:29.127Z",
       "lines": [
         {
           "fighter": "Norbert Novenyi Jr.",
@@ -72,44 +72,44 @@
         },
         {
           "fighter": "Callum Connor",
-          "moneyline": -104,
+          "moneyline": 102,
           "totalLine": 2.5,
           "over": 110,
           "draw": 5000,
-          "ko": 320,
+          "ko": 340,
           "sub": 1400,
-          "dec": 290,
+          "dec": 300,
           "koSub": 225
         },
         {
           "fighter": "Piero Guaylupo",
-          "moneyline": -112,
+          "moneyline": -120,
           "totalLine": 2.5,
-          "under": -134,
-          "ko": 180,
+          "under": -132,
+          "ko": 170,
           "sub": 1800,
-          "dec": 490,
+          "dec": 470,
           "koSub": 163
         },
         {
           "fighter": "Damian Piwowarczyk",
           "moneyline": -134,
           "totalLine": 1.5,
-          "over": -138,
+          "over": -148,
           "draw": 5000,
           "ko": 240,
           "sub": 500,
-          "dec": 480,
+          "dec": 470,
           "koSub": 140
         },
         {
           "fighter": "Emilio Quissua",
           "moneyline": 114,
           "totalLine": 1.5,
-          "under": 114,
-          "ko": 250,
-          "sub": 1100,
-          "dec": 500,
+          "under": 122,
+          "ko": 290,
+          "sub": 1200,
+          "dec": 440,
           "koSub": 200
         }
       ]
@@ -118,7 +118,7 @@
       "espnId": "600061266",
       "name": "UFC Fight Night: Rosas Jr. vs. Barcelos",
       "source": "BestFightOdds (FanDuel, BetRivers, Unibet)",
-      "capturedAt": "2026-09-22T17:51:21.288Z",
+      "capturedAt": "2026-09-22T20:43:29.127Z",
       "lines": [
         {
           "fighter": "Raoni Barcelos",
@@ -278,7 +278,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-22T17:51:21.288Z",
+      "capturedAt": "2026-09-22T20:43:29.127Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -302,7 +302,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-22T17:51:21.288Z",
+      "capturedAt": "2026-09-22T20:43:29.127Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
