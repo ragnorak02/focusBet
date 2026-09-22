@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-22T00:27:55.207Z",
+  "updatedAt": "2026-09-22T07:08:29.227Z",
   "events": [
     {
       "espnId": "600060738",
       "name": "Dana White's Contender Series: Season 10, Week 7",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-22T00:27:55.207Z",
+      "capturedAt": "2026-09-22T07:08:29.227Z",
       "lines": [
         {
           "fighter": "Norbert Novenyi Jr.",
@@ -13,39 +13,39 @@
         },
         {
           "fighter": "Theo Haig",
-          "moneyline": 330
+          "moneyline": 350
         },
         {
           "fighter": "Alvi Dasuyev",
-          "moneyline": -210
+          "moneyline": -220
         },
         {
           "fighter": "Jaden Ortega",
-          "moneyline": 168
+          "moneyline": 184
         },
         {
           "fighter": "Marcos Degli",
-          "moneyline": -335
+          "moneyline": -405
         },
         {
           "fighter": "Paris Moran",
-          "moneyline": 270
+          "moneyline": 320
         },
         {
           "fighter": "Callum Connor",
-          "moneyline": -108
+          "moneyline": 100
         },
         {
           "fighter": "Piero Guaylupo",
-          "moneyline": -108
+          "moneyline": -118
         },
         {
           "fighter": "Damian Piwowarczyk",
-          "moneyline": -124
+          "moneyline": -126
         },
         {
           "fighter": "Emilio Quissua",
-          "moneyline": 106
+          "moneyline": 108
         }
       ]
     },
@@ -53,7 +53,7 @@
       "espnId": "600061266",
       "name": "UFC Fight Night: Rosas Jr. vs. Barcelos",
       "source": "BestFightOdds (Kalshi, Caesars)",
-      "capturedAt": "2026-09-22T00:27:55.207Z",
+      "capturedAt": "2026-09-22T07:08:29.227Z",
       "lines": [
         {
           "fighter": "Raoni Barcelos",
@@ -61,7 +61,7 @@
         },
         {
           "fighter": "Raul Rosas Jr",
-          "moneyline": -200
+          "moneyline": -191
         },
         {
           "fighter": "Robert Bryczek",
@@ -77,7 +77,7 @@
         },
         {
           "fighter": "Rinya Nakamura",
-          "moneyline": -341
+          "moneyline": -361
         },
         {
           "fighter": "Ilimbek Akylbek Uulu",
@@ -89,7 +89,7 @@
         },
         {
           "fighter": "Melissa Amaya",
-          "moneyline": 173
+          "moneyline": 181
         },
         {
           "fighter": "Valesca Machado",
@@ -113,11 +113,11 @@
         },
         {
           "fighter": "Christian Edwards",
-          "moneyline": 152
+          "moneyline": 145
         },
         {
           "fighter": "Rodolfo Bellato",
-          "moneyline": -176
+          "moneyline": -168
         },
         {
           "fighter": "Montel Jackson",
@@ -157,7 +157,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-22T00:27:55.207Z",
+      "capturedAt": "2026-09-22T07:08:29.227Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -181,7 +181,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-22T00:27:55.207Z",
+      "capturedAt": "2026-09-22T07:08:29.227Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
