@@ -1,31 +1,31 @@
 {
-  "updatedAt": "2026-09-23T19:22:32.722Z",
+  "updatedAt": "2026-09-23T22:35:55.412Z",
   "events": [
     {
       "espnId": "600061266",
       "name": "UFC Fight Night: Rosas Jr. vs. Barcelos",
       "source": "BestFightOdds (FanDuel, BetWay, Caesars, Unibet)",
-      "capturedAt": "2026-09-23T19:22:32.722Z",
+      "capturedAt": "2026-09-23T22:35:55.412Z",
       "lines": [
         {
           "fighter": "Raoni Barcelos",
-          "moneyline": 146,
+          "moneyline": 134,
           "totalLine": 4.5,
-          "over": -116,
+          "over": -128,
           "draw": 5000,
           "ko": 500,
           "sub": 1500,
-          "dec": 360,
+          "dec": 300,
           "koSub": 350
         },
         {
           "fighter": "Raul Rosas Jr",
-          "moneyline": -192,
+          "moneyline": -172,
           "totalLine": 4.5,
-          "under": -106,
-          "ko": 550,
-          "sub": 320,
-          "dec": 220,
+          "under": 104,
+          "ko": 600,
+          "sub": 330,
+          "dec": 230,
           "koSub": 130
         },
         {
@@ -264,7 +264,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-23T19:22:32.722Z",
+      "capturedAt": "2026-09-23T22:35:55.412Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -288,7 +288,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-23T19:22:32.722Z",
+      "capturedAt": "2026-09-23T22:35:55.412Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
