@@ -1,31 +1,31 @@
 {
-  "updatedAt": "2026-09-23T08:58:35.332Z",
+  "updatedAt": "2026-09-23T14:35:22.044Z",
   "events": [
     {
       "espnId": "600061266",
       "name": "UFC Fight Night: Rosas Jr. vs. Barcelos",
-      "source": "BestFightOdds (FanDuel, BetRivers, BetWay)",
-      "capturedAt": "2026-09-23T08:58:35.332Z",
+      "source": "BestFightOdds (FanDuel, BetWay, BetRivers)",
+      "capturedAt": "2026-09-23T14:35:22.044Z",
       "lines": [
         {
           "fighter": "Raoni Barcelos",
           "moneyline": 146,
           "totalLine": 4.5,
-          "over": -115,
-          "draw": 4500,
-          "ko": 475,
-          "sub": 1200,
-          "dec": 390,
+          "over": -116,
+          "draw": 5000,
+          "ko": 500,
+          "sub": 1500,
+          "dec": 360,
           "koSub": 350
         },
         {
           "fighter": "Raul Rosas Jr",
-          "moneyline": -188,
+          "moneyline": -192,
           "totalLine": 4.5,
-          "under": -118,
-          "ko": 575,
-          "sub": 280,
-          "dec": 235,
+          "under": -106,
+          "ko": 550,
+          "sub": 320,
+          "dec": 220,
           "koSub": 130
         },
         {
@@ -34,7 +34,7 @@
           "totalLine": 1.5,
           "over": -134,
           "draw": 4500,
-          "ko": 215,
+          "ko": 220,
           "sub": 2400,
           "dec": 575,
           "koSub": 175
@@ -45,8 +45,8 @@
           "totalLine": 1.5,
           "under": -103,
           "ko": 750,
-          "sub": 215,
-          "dec": 360,
+          "sub": 210,
+          "dec": 350,
           "koSub": 140
         },
         {
@@ -174,7 +174,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-23T08:58:35.332Z",
+      "capturedAt": "2026-09-23T14:35:22.044Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -198,7 +198,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-23T08:58:35.332Z",
+      "capturedAt": "2026-09-23T14:35:22.044Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
