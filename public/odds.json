@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-22T23:56:22.784Z",
+  "updatedAt": "2026-09-23T03:07:04.991Z",
   "events": [
     {
       "espnId": "600060738",
       "name": "Dana White's Contender Series: Season 10, Week 7",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-09-22T23:56:22.784Z",
+      "capturedAt": "2026-09-23T03:07:04.991Z",
       "lines": [
         {
           "fighter": "Norbert Novenyi Jr.",
@@ -13,8 +13,8 @@
           "totalLine": 1.5,
           "over": 225,
           "draw": 5000,
-          "ko": -180,
-          "sub": 550,
+          "ko": -170,
+          "sub": 500,
           "dec": 1100,
           "koSub": -350
         },
@@ -25,7 +25,7 @@
           "under": -290,
           "ko": 1300,
           "sub": 550,
-          "dec": 2000,
+          "dec": 2200,
           "koSub": 400
         },
         {
@@ -35,7 +35,7 @@
           "over": 112,
           "draw": 5000,
           "ko": 135,
-          "sub": 360,
+          "sub": 350,
           "dec": 550,
           "koSub": -175
         },
@@ -53,9 +53,9 @@
           "fighter": "Marcos Degli",
           "moneyline": -450,
           "totalLine": 1.5,
-          "over": 102,
+          "over": 100,
           "draw": 5000,
-          "ko": -140,
+          "ko": -145,
           "sub": 550,
           "dec": 650,
           "koSub": -250
@@ -64,7 +64,7 @@
           "fighter": "Paris Moran",
           "moneyline": 350,
           "totalLine": 1.5,
-          "under": -124,
+          "under": -122,
           "ko": 1000,
           "sub": 1500,
           "dec": 700,
@@ -118,7 +118,7 @@
       "espnId": "600061266",
       "name": "UFC Fight Night: Rosas Jr. vs. Barcelos",
       "source": "BestFightOdds (FanDuel, BetRivers, BetWay)",
-      "capturedAt": "2026-09-22T23:56:22.784Z",
+      "capturedAt": "2026-09-23T03:07:04.991Z",
       "lines": [
         {
           "fighter": "Raoni Barcelos",
@@ -287,7 +287,7 @@
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-22T23:56:22.784Z",
+      "capturedAt": "2026-09-23T03:07:04.991Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -311,7 +311,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-22T23:56:22.784Z",
+      "capturedAt": "2026-09-23T03:07:04.991Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
