@@ -1,51 +1,19 @@
 {
-  "updatedAt": "2026-09-28T02:56:41.286Z",
+  "updatedAt": "2026-09-28T10:22:15.649Z",
   "events": [
     {
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-28T02:56:41.286Z",
+      "capturedAt": "2026-09-28T10:22:15.649Z",
       "lines": [
         {
-          "fighter": "Natalia Silva",
-          "moneyline": -210
+          "fighter": "Anthony Wint",
+          "moneyline": -390
         },
         {
-          "fighter": "Wang Cong",
-          "moneyline": 162
-        },
-        {
-          "fighter": "Deiveson Figueiredo",
-          "moneyline": 430
-        },
-        {
-          "fighter": "Payton Talbott",
-          "moneyline": -670
-        },
-        {
-          "fighter": "Esteban Ribovics",
-          "moneyline": -260
-        },
-        {
-          "fighter": "King Green",
-          "moneyline": 196
-        },
-        {
-          "fighter": "Khaos Williams",
-          "moneyline": 250
-        },
-        {
-          "fighter": "Roberto Soldic",
-          "moneyline": -340
-        },
-        {
-          "fighter": "Ateba Gautier",
-          "moneyline": -205
-        },
-        {
-          "fighter": "Roman Kopylov",
-          "moneyline": 158
+          "fighter": "Lucas Armand",
+          "moneyline": 280
         },
         {
           "fighter": "Alden Coria",
@@ -102,6 +70,46 @@
         {
           "fighter": "Eric Nolan",
           "moneyline": -265
+        },
+        {
+          "fighter": "Natalia Silva",
+          "moneyline": -210
+        },
+        {
+          "fighter": "Wang Cong",
+          "moneyline": 162
+        },
+        {
+          "fighter": "Deiveson Figueiredo",
+          "moneyline": 430
+        },
+        {
+          "fighter": "Payton Talbott",
+          "moneyline": -670
+        },
+        {
+          "fighter": "Esteban Ribovics",
+          "moneyline": -260
+        },
+        {
+          "fighter": "King Green",
+          "moneyline": 196
+        },
+        {
+          "fighter": "Khaos Williams",
+          "moneyline": 250
+        },
+        {
+          "fighter": "Roberto Soldic",
+          "moneyline": -340
+        },
+        {
+          "fighter": "Ateba Gautier",
+          "moneyline": -205
+        },
+        {
+          "fighter": "Roman Kopylov",
+          "moneyline": 158
         }
       ]
     },
@@ -109,7 +117,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-28T02:56:41.286Z",
+      "capturedAt": "2026-09-28T10:22:15.649Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
