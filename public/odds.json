@@ -1,12 +1,108 @@
 {
-  "updatedAt": "2026-09-28T10:22:15.649Z",
+  "updatedAt": "2026-09-28T19:03:42.700Z",
   "events": [
     {
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
-      "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-28T10:22:15.649Z",
+      "source": "BestFightOdds (FanDuel, BetWay)",
+      "capturedAt": "2026-09-28T19:03:42.700Z",
       "lines": [
+        {
+          "fighter": "Bruce Whitehead",
+          "moneyline": 560,
+          "totalLine": 1.5,
+          "over": 200
+        },
+        {
+          "fighter": "Jacobe Smith",
+          "moneyline": -1000,
+          "totalLine": 1.5,
+          "under": -275
+        },
+        {
+          "fighter": "Alden Coria",
+          "moneyline": 134,
+          "totalLine": 2.5,
+          "over": -150
+        },
+        {
+          "fighter": "Imanol Rodriguez",
+          "moneyline": -172,
+          "totalLine": 2.5,
+          "under": 110
+        },
+        {
+          "fighter": "Andrey Pulyaev",
+          "moneyline": 350,
+          "totalLine": 1.5,
+          "over": -105
+        },
+        {
+          "fighter": "Damian Pinas",
+          "moneyline": -520,
+          "totalLine": 1.5,
+          "under": -125
+        },
+        {
+          "fighter": "Benardo Sopaj",
+          "moneyline": 118,
+          "totalLine": 2.5,
+          "over": -200
+        },
+        {
+          "fighter": "Marcus McGhee",
+          "moneyline": -150,
+          "totalLine": 2.5,
+          "under": 150
+        },
+        {
+          "fighter": "Johnny Walker",
+          "moneyline": -150,
+          "totalLine": 1.5,
+          "over": -200
+        },
+        {
+          "fighter": "Mick Parkin",
+          "moneyline": 118,
+          "totalLine": 1.5,
+          "under": 150
+        },
+        {
+          "fighter": "Alexander Hernandez",
+          "moneyline": -265,
+          "totalLine": 2.5,
+          "over": -120
+        },
+        {
+          "fighter": "Rafael Dos Anjos",
+          "moneyline": 200,
+          "totalLine": 2.5,
+          "under": -110
+        },
+        {
+          "fighter": "Ismail Naurdiev",
+          "moneyline": -130,
+          "totalLine": 2.5,
+          "over": -200
+        },
+        {
+          "fighter": "Marvin Vettori",
+          "moneyline": 102,
+          "totalLine": 2.5,
+          "under": 150
+        },
+        {
+          "fighter": "Court McGee",
+          "moneyline": 200,
+          "totalLine": 2.5,
+          "over": -110
+        },
+        {
+          "fighter": "Eric Nolan",
+          "moneyline": -265,
+          "totalLine": 2.5,
+          "under": -120
+        },
         {
           "fighter": "Anthony Wint",
           "moneyline": -390
@@ -16,100 +112,64 @@
           "moneyline": 280
         },
         {
-          "fighter": "Alden Coria",
-          "moneyline": 134
-        },
-        {
-          "fighter": "Imanol Rodriguez",
-          "moneyline": -172
-        },
-        {
-          "fighter": "Andrey Pulyaev",
-          "moneyline": 350
-        },
-        {
-          "fighter": "Damian Pinas",
-          "moneyline": -520
-        },
-        {
-          "fighter": "Benardo Sopaj",
-          "moneyline": 118
-        },
-        {
-          "fighter": "Marcus McGhee",
-          "moneyline": -150
-        },
-        {
-          "fighter": "Johnny Walker",
-          "moneyline": -150
-        },
-        {
-          "fighter": "Mick Parkin",
-          "moneyline": 118
-        },
-        {
-          "fighter": "Alexander Hernandez",
-          "moneyline": -265
-        },
-        {
-          "fighter": "Rafael Dos Anjos",
-          "moneyline": 200
-        },
-        {
-          "fighter": "Ismail Naurdiev",
-          "moneyline": -130
-        },
-        {
-          "fighter": "Marvin Vettori",
-          "moneyline": 102
-        },
-        {
-          "fighter": "Court McGee",
-          "moneyline": 200
-        },
-        {
-          "fighter": "Eric Nolan",
-          "moneyline": -265
-        },
-        {
           "fighter": "Natalia Silva",
-          "moneyline": -210
+          "moneyline": -210,
+          "totalLine": 4.5,
+          "over": -275
         },
         {
           "fighter": "Wang Cong",
-          "moneyline": 162
+          "moneyline": 162,
+          "totalLine": 4.5,
+          "under": 200
         },
         {
           "fighter": "Deiveson Figueiredo",
-          "moneyline": 430
+          "moneyline": 430,
+          "totalLine": 2.5,
+          "over": -110
         },
         {
           "fighter": "Payton Talbott",
-          "moneyline": -670
+          "moneyline": -670,
+          "totalLine": 2.5,
+          "under": -120
         },
         {
           "fighter": "Esteban Ribovics",
-          "moneyline": -260
+          "moneyline": -260,
+          "totalLine": 1.5,
+          "over": -175
         },
         {
           "fighter": "King Green",
-          "moneyline": 196
+          "moneyline": 196,
+          "totalLine": 1.5,
+          "under": 130
         },
         {
           "fighter": "Khaos Williams",
-          "moneyline": 250
+          "moneyline": 250,
+          "totalLine": 1.5,
+          "over": -110
         },
         {
           "fighter": "Roberto Soldic",
-          "moneyline": -340
+          "moneyline": -340,
+          "totalLine": 1.5,
+          "under": -120
         },
         {
           "fighter": "Ateba Gautier",
-          "moneyline": -205
+          "moneyline": -205,
+          "totalLine": 1.5,
+          "over": -150
         },
         {
           "fighter": "Roman Kopylov",
-          "moneyline": 158
+          "moneyline": 158,
+          "totalLine": 1.5,
+          "under": 110
         }
       ]
     },
@@ -117,7 +177,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-28T10:22:15.649Z",
+      "capturedAt": "2026-09-28T19:03:42.700Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
