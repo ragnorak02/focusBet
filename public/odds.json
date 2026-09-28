@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-27T13:27:11.774Z",
+  "updatedAt": "2026-09-28T02:56:41.286Z",
   "events": [
     {
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-27T13:27:11.774Z",
+      "capturedAt": "2026-09-28T02:56:41.286Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -25,11 +25,11 @@
         },
         {
           "fighter": "Esteban Ribovics",
-          "moneyline": -290
+          "moneyline": -260
         },
         {
           "fighter": "King Green",
-          "moneyline": 215
+          "moneyline": 196
         },
         {
           "fighter": "Khaos Williams",
@@ -41,11 +41,11 @@
         },
         {
           "fighter": "Ateba Gautier",
-          "moneyline": -188
+          "moneyline": -205
         },
         {
           "fighter": "Roman Kopylov",
-          "moneyline": 146
+          "moneyline": 158
         },
         {
           "fighter": "Alden Coria",
@@ -109,7 +109,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-27T13:27:11.774Z",
+      "capturedAt": "2026-09-28T02:56:41.286Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
