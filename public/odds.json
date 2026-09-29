@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-29T14:30:09.871Z",
+  "updatedAt": "2026-09-29T20:22:21.234Z",
   "events": [
     {
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
-      "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet)",
-      "capturedAt": "2026-09-29T14:30:09.871Z",
+      "source": "BestFightOdds (FanDuel, BetWay, BetRivers)",
+      "capturedAt": "2026-09-29T20:22:21.234Z",
       "lines": [
         {
           "fighter": "Alden Coria",
@@ -32,14 +32,6 @@
           "under": -125
         },
         {
-          "fighter": "Anthony Wint",
-          "moneyline": -460
-        },
-        {
-          "fighter": "Lucas Armand",
-          "moneyline": 320
-        },
-        {
           "fighter": "Benardo Sopaj",
           "moneyline": 118,
           "totalLine": 2.5,
@@ -50,6 +42,14 @@
           "moneyline": -150,
           "totalLine": 2.5,
           "under": 150
+        },
+        {
+          "fighter": "Anthony Wint",
+          "moneyline": -460
+        },
+        {
+          "fighter": "Lucas Armand",
+          "moneyline": 320
         },
         {
           "fighter": "Johnny Walker",
@@ -77,13 +77,13 @@
         },
         {
           "fighter": "Ismail Naurdiev",
-          "moneyline": -130,
+          "moneyline": -140,
           "totalLine": 2.5,
           "over": -200
         },
         {
           "fighter": "Marvin Vettori",
-          "moneyline": 102,
+          "moneyline": 110,
           "totalLine": 2.5,
           "under": 150
         },
@@ -117,20 +117,20 @@
           "totalLine": 4.5,
           "over": -305,
           "draw": 4500,
-          "ko": 575,
-          "sub": 1000,
-          "dec": 104,
-          "koSub": 380
+          "ko": 600,
+          "sub": 1050,
+          "dec": 100,
+          "koSub": 275
         },
         {
           "fighter": "Wang Cong",
           "moneyline": 162,
           "totalLine": 4.5,
           "under": 210,
-          "ko": 700,
-          "sub": 1800,
-          "dec": 295,
-          "koSub": 575
+          "ko": 650,
+          "sub": 1700,
+          "dec": 310,
+          "koSub": 600
         },
         {
           "fighter": "Deiveson Figueiredo",
@@ -141,7 +141,7 @@
           "ko": 1600,
           "sub": 1600,
           "dec": 950,
-          "koSub": 1050
+          "koSub": 900
         },
         {
           "fighter": "Payton Talbott",
@@ -151,7 +151,7 @@
           "ko": 120,
           "sub": 850,
           "dec": 160,
-          "koSub": -109
+          "koSub": -138
         },
         {
           "fighter": "Esteban Ribovics",
@@ -162,7 +162,7 @@
           "ko": 120,
           "sub": 1000,
           "dec": 340,
-          "koSub": -104
+          "koSub": -138
         },
         {
           "fighter": "King Green",
@@ -172,7 +172,7 @@
           "ko": 700,
           "sub": 950,
           "dec": 500,
-          "koSub": 440
+          "koSub": 500
         },
         {
           "fighter": "Khaos Williams",
@@ -183,7 +183,7 @@
           "ko": 400,
           "sub": 2200,
           "dec": 950,
-          "koSub": 370
+          "koSub": 400
         },
         {
           "fighter": "Roberto Soldic",
@@ -193,7 +193,7 @@
           "ko": -134,
           "sub": 1150,
           "dec": 525,
-          "koSub": -159
+          "koSub": -225
         },
         {
           "fighter": "Ateba Gautier",
@@ -204,7 +204,7 @@
           "ko": 107,
           "sub": 1800,
           "dec": 400,
-          "koSub": -103
+          "koSub": -110
         },
         {
           "fighter": "Roman Kopylov",
@@ -214,7 +214,7 @@
           "ko": 475,
           "sub": 2200,
           "dec": 410,
-          "koSub": 430
+          "koSub": 300
         }
       ]
     },
@@ -222,7 +222,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-29T14:30:09.871Z",
+      "capturedAt": "2026-09-29T20:22:21.234Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
