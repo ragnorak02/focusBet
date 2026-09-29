@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-28T19:03:42.700Z",
+  "updatedAt": "2026-09-29T00:06:12.195Z",
   "events": [
     {
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
-      "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-09-28T19:03:42.700Z",
+      "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet)",
+      "capturedAt": "2026-09-29T00:06:12.195Z",
       "lines": [
         {
           "fighter": "Bruce Whitehead",
@@ -42,6 +42,14 @@
           "moneyline": -520,
           "totalLine": 1.5,
           "under": -125
+        },
+        {
+          "fighter": "Anthony Wint",
+          "moneyline": -390
+        },
+        {
+          "fighter": "Lucas Armand",
+          "moneyline": 280
         },
         {
           "fighter": "Benardo Sopaj",
@@ -104,24 +112,25 @@
           "under": -120
         },
         {
-          "fighter": "Anthony Wint",
-          "moneyline": -390
-        },
-        {
-          "fighter": "Lucas Armand",
-          "moneyline": 280
-        },
-        {
           "fighter": "Natalia Silva",
           "moneyline": -210,
           "totalLine": 4.5,
-          "over": -275
+          "over": -305,
+          "draw": 4500,
+          "ko": 575,
+          "sub": 1000,
+          "dec": 104,
+          "koSub": 380
         },
         {
           "fighter": "Wang Cong",
           "moneyline": 162,
           "totalLine": 4.5,
-          "under": 200
+          "under": 210,
+          "ko": 700,
+          "sub": 1800,
+          "dec": 295,
+          "koSub": 575
         },
         {
           "fighter": "Deiveson Figueiredo",
@@ -177,7 +186,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-28T19:03:42.700Z",
+      "capturedAt": "2026-09-29T00:06:12.195Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
