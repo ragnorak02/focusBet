@@ -1,24 +1,12 @@
 {
-  "updatedAt": "2026-09-29T00:06:12.195Z",
+  "updatedAt": "2026-09-29T14:30:09.871Z",
   "events": [
     {
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet)",
-      "capturedAt": "2026-09-29T00:06:12.195Z",
+      "capturedAt": "2026-09-29T14:30:09.871Z",
       "lines": [
-        {
-          "fighter": "Bruce Whitehead",
-          "moneyline": 560,
-          "totalLine": 1.5,
-          "over": 200
-        },
-        {
-          "fighter": "Jacobe Smith",
-          "moneyline": -1000,
-          "totalLine": 1.5,
-          "under": -275
-        },
         {
           "fighter": "Alden Coria",
           "moneyline": 134,
@@ -45,11 +33,11 @@
         },
         {
           "fighter": "Anthony Wint",
-          "moneyline": -390
+          "moneyline": -460
         },
         {
           "fighter": "Lucas Armand",
-          "moneyline": 280
+          "moneyline": 320
         },
         {
           "fighter": "Benardo Sopaj",
@@ -100,6 +88,18 @@
           "under": 150
         },
         {
+          "fighter": "Bruce Whitehead",
+          "moneyline": 560,
+          "totalLine": 1.5,
+          "over": 200
+        },
+        {
+          "fighter": "Jacobe Smith",
+          "moneyline": -1000,
+          "totalLine": 1.5,
+          "under": -275
+        },
+        {
           "fighter": "Court McGee",
           "moneyline": 200,
           "totalLine": 2.5,
@@ -136,49 +136,85 @@
           "fighter": "Deiveson Figueiredo",
           "moneyline": 430,
           "totalLine": 2.5,
-          "over": -110
+          "over": -117,
+          "draw": 4500,
+          "ko": 1600,
+          "sub": 1600,
+          "dec": 950,
+          "koSub": 1050
         },
         {
           "fighter": "Payton Talbott",
           "moneyline": -670,
           "totalLine": 2.5,
-          "under": -120
+          "under": -117,
+          "ko": 120,
+          "sub": 850,
+          "dec": 160,
+          "koSub": -109
         },
         {
           "fighter": "Esteban Ribovics",
           "moneyline": -260,
-          "totalLine": 1.5,
-          "over": -175
+          "totalLine": 2.5,
+          "over": 112,
+          "draw": 4500,
+          "ko": 120,
+          "sub": 1000,
+          "dec": 340,
+          "koSub": -104
         },
         {
           "fighter": "King Green",
           "moneyline": 196,
-          "totalLine": 1.5,
-          "under": 130
+          "totalLine": 2.5,
+          "under": -155,
+          "ko": 700,
+          "sub": 950,
+          "dec": 500,
+          "koSub": 440
         },
         {
           "fighter": "Khaos Williams",
           "moneyline": 250,
           "totalLine": 1.5,
-          "over": -110
+          "over": -107,
+          "draw": 4500,
+          "ko": 400,
+          "sub": 2200,
+          "dec": 950,
+          "koSub": 370
         },
         {
           "fighter": "Roberto Soldic",
           "moneyline": -340,
           "totalLine": 1.5,
-          "under": -120
+          "under": -129,
+          "ko": -134,
+          "sub": 1150,
+          "dec": 525,
+          "koSub": -159
         },
         {
           "fighter": "Ateba Gautier",
           "moneyline": -205,
           "totalLine": 1.5,
-          "over": -150
+          "over": -159,
+          "draw": 4500,
+          "ko": 107,
+          "sub": 1800,
+          "dec": 400,
+          "koSub": -103
         },
         {
           "fighter": "Roman Kopylov",
           "moneyline": 158,
           "totalLine": 1.5,
-          "under": 110
+          "under": 117,
+          "ko": 475,
+          "sub": 2200,
+          "dec": 410,
+          "koSub": 430
         }
       ]
     },
@@ -186,7 +222,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-29T00:06:12.195Z",
+      "capturedAt": "2026-09-29T14:30:09.871Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
