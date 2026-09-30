@@ -1,11 +1,82 @@
 {
-  "updatedAt": "2026-09-29T20:22:21.234Z",
+  "updatedAt": "2026-09-30T00:56:09.654Z",
   "events": [
+    {
+      "name": "PFL Mena",
+      "source": "BestFightOdds (BetWay)",
+      "capturedAt": "2026-09-30T00:56:09.654Z",
+      "lines": [
+        {
+          "fighter": "Elias Boudegzdame",
+          "moneyline": -333
+        },
+        {
+          "fighter": "Hamza Kooheji",
+          "moneyline": 225
+        },
+        {
+          "fighter": "Mostafa Rashed Neda",
+          "moneyline": -275
+        },
+        {
+          "fighter": "Osama Elsaidy",
+          "moneyline": 200
+        },
+        {
+          "fighter": "Basel Shalaan",
+          "moneyline": 350
+        },
+        {
+          "fighter": "Ylies Djiroun",
+          "moneyline": -549
+        },
+        {
+          "fighter": "Ahmed El Sisy",
+          "moneyline": 120
+        },
+        {
+          "fighter": "Mohammad Fahmi",
+          "moneyline": -163
+        },
+        {
+          "fighter": "Abdelkrim Zouad",
+          "moneyline": -225
+        },
+        {
+          "fighter": "Omar Hussein",
+          "moneyline": 163
+        },
+        {
+          "fighter": "Badreddine Diani",
+          "moneyline": -138
+        },
+        {
+          "fighter": "Hazem Kayyali",
+          "moneyline": 105
+        },
+        {
+          "fighter": "Mehdi Saadi",
+          "moneyline": -110
+        },
+        {
+          "fighter": "Shadi Kabbani",
+          "moneyline": -120
+        },
+        {
+          "fighter": "Assem Ghanem",
+          "moneyline": -110
+        },
+        {
+          "fighter": "Hassan Shaaban",
+          "moneyline": -120
+        }
+      ]
+    },
     {
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel, BetWay, BetRivers)",
-      "capturedAt": "2026-09-29T20:22:21.234Z",
+      "capturedAt": "2026-09-30T00:56:09.654Z",
       "lines": [
         {
           "fighter": "Alden Coria",
@@ -222,7 +293,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-09-29T20:22:21.234Z",
+      "capturedAt": "2026-09-30T00:56:09.654Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
@@ -239,6 +310,30 @@
         {
           "fighter": "Petr Yan",
           "moneyline": -172
+        }
+      ]
+    },
+    {
+      "espnId": "600061400",
+      "name": "UFC 334: Gane vs. Hokit",
+      "source": "BestFightOdds (FanDuel)",
+      "capturedAt": "2026-09-30T00:56:09.654Z",
+      "lines": [
+        {
+          "fighter": "Ciryl Gane",
+          "moneyline": -265
+        },
+        {
+          "fighter": "Josh Hokit",
+          "moneyline": 200
+        },
+        {
+          "fighter": "Amanda Nunes",
+          "moneyline": 162
+        },
+        {
+          "fighter": "Kayla Harrison",
+          "moneyline": -210
         }
       ]
     },
