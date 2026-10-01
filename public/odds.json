@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-01T00:58:21.610Z",
+  "updatedAt": "2026-10-01T08:07:05.886Z",
   "events": [
     {
       "name": "PFL Mena",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-10-01T00:58:21.610Z",
+      "capturedAt": "2026-10-01T08:07:05.886Z",
       "lines": [
         {
           "fighter": "Elias Boudegzdame",
@@ -48,19 +48,19 @@
         },
         {
           "fighter": "Assem Ghanem",
-          "moneyline": -110
+          "moneyline": 104
         },
         {
           "fighter": "Hassan Shaaban",
-          "moneyline": -110
+          "moneyline": -128
         },
         {
           "fighter": "Mehdi Saadi",
-          "moneyline": 106
+          "moneyline": -105
         },
         {
           "fighter": "Shadi Kabbani",
-          "moneyline": -130
+          "moneyline": -115
         },
         {
           "fighter": "Ahmed El Sisy",
@@ -91,8 +91,8 @@
     {
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
-      "source": "BestFightOdds (FanDuel, Unibet, BetWay, BetRivers, Kalshi)",
-      "capturedAt": "2026-10-01T00:58:21.610Z",
+      "source": "BestFightOdds (FanDuel, Unibet, BetWay, BetRivers)",
+      "capturedAt": "2026-10-01T08:07:05.886Z",
       "lines": [
         {
           "fighter": "Alden Coria",
@@ -170,6 +170,14 @@
           "koSub": 600
         },
         {
+          "fighter": "Anthony Romero",
+          "moneyline": 330
+        },
+        {
+          "fighter": "Marcus McGhee",
+          "moneyline": -480
+        },
+        {
           "fighter": "Johnny Walker",
           "moneyline": -150,
           "totalLine": 2.5,
@@ -217,20 +225,20 @@
           "totalLine": 2.5,
           "over": -230,
           "draw": 4500,
-          "ko": 350,
+          "ko": 330,
           "sub": 1900,
-          "dec": 188,
-          "koSub": 310
+          "dec": 180,
+          "koSub": 295
         },
         {
           "fighter": "Marvin Vettori",
           "moneyline": 110,
           "totalLine": 2.5,
           "under": 165,
-          "ko": 850,
-          "sub": 800,
-          "dec": 210,
-          "koSub": 440
+          "ko": 900,
+          "sub": 850,
+          "dec": 225,
+          "koSub": 460
         },
         {
           "fighter": "Bruce Whitehead",
@@ -264,14 +272,6 @@
           "sub": 1800,
           "dec": 260,
           "koSub": 112
-        },
-        {
-          "fighter": "Anthony Romero",
-          "moneyline": 330
-        },
-        {
-          "fighter": "Marcus McGhee",
-          "moneyline": -491
         },
         {
           "fighter": "Natalia Silva",
@@ -384,7 +384,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-01T00:58:21.610Z",
+      "capturedAt": "2026-10-01T08:07:05.886Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
@@ -408,7 +408,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-01T00:58:21.610Z",
+      "capturedAt": "2026-10-01T08:07:05.886Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
