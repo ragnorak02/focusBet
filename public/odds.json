@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-03T00:51:45.181Z",
+  "updatedAt": "2026-10-03T07:23:59.363Z",
   "events": [
     {
       "name": "PFL Mena",
       "source": "BestFightOdds (FanDuel, Caesars, BetWay)",
-      "capturedAt": "2026-10-03T00:51:45.181Z",
+      "capturedAt": "2026-10-03T07:23:59.363Z",
       "lines": [
         {
           "fighter": "Mostafa Rashed Neda",
@@ -99,11 +99,11 @@
     {
       "name": "UFC",
       "source": "BestFightOdds (FanDuel, BetWay, Unibet, BetRivers, Kalshi)",
-      "capturedAt": "2026-10-03T00:51:45.181Z",
+      "capturedAt": "2026-10-03T07:23:59.363Z",
       "lines": [
         {
           "fighter": "Alden Coria",
-          "moneyline": 126,
+          "moneyline": 124,
           "totalLine": 2.5,
           "over": -162,
           "draw": 5000,
@@ -114,9 +114,9 @@
         },
         {
           "fighter": "Imanol Rodriguez",
-          "moneyline": -148,
+          "moneyline": -146,
           "totalLine": 2.5,
-          "under": 134,
+          "under": 132,
           "ko": 250,
           "sub": 1100,
           "dec": 250,
@@ -170,8 +170,8 @@
           "totalLine": 1.5,
           "over": 180,
           "draw": 5000,
-          "ko": 110,
-          "sub": 230,
+          "ko": 105,
+          "sub": 250,
           "dec": 650,
           "koSub": -333
         },
@@ -187,44 +187,44 @@
         },
         {
           "fighter": "Johnny Walker",
-          "moneyline": -118,
+          "moneyline": -108,
           "totalLine": 2.5,
           "over": 106,
           "draw": 5000,
-          "ko": 220,
+          "ko": 240,
           "sub": 1800,
           "dec": 350,
           "koSub": 175
         },
         {
           "fighter": "Mick Parkin",
-          "moneyline": 100,
+          "moneyline": -108,
           "totalLine": 2.5,
-          "under": -128,
-          "ko": 320,
-          "sub": 900,
-          "dec": 360,
+          "under": -130,
+          "ko": 300,
+          "sub": 850,
+          "dec": 370,
           "koSub": 175
         },
         {
           "fighter": "Bruce Whitehead",
-          "moneyline": 640,
+          "moneyline": 750,
           "totalLine": 1.5,
           "over": 235,
           "draw": 5000,
-          "ko": 1300,
-          "sub": 1800,
-          "dec": 1900,
+          "ko": 1500,
+          "sub": 2200,
+          "dec": 2000,
           "koSub": 700
         },
         {
           "fighter": "Jacobe Smith",
-          "moneyline": -950,
+          "moneyline": -1200,
           "totalLine": 1.5,
           "under": -345,
-          "ko": -270,
-          "sub": 550,
-          "dec": 1200,
+          "ko": -290,
+          "sub": 500,
+          "dec": 1100,
           "koSub": -800
         },
         {
@@ -302,12 +302,12 @@
     },
     {
       "name": "UFC 332",
-      "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-10-03T00:51:45.181Z",
+      "source": "BestFightOdds (FanDuel, BetWay, Caesars)",
+      "capturedAt": "2026-10-03T07:23:59.363Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
-          "moneyline": -215,
+          "moneyline": -210,
           "totalLine": 4.5,
           "over": -320,
           "draw": 5000,
@@ -318,7 +318,7 @@
         },
         {
           "fighter": "Wang Cong",
-          "moneyline": 172,
+          "moneyline": 176,
           "totalLine": 4.5,
           "under": 230,
           "ko": 850,
@@ -328,9 +328,9 @@
         },
         {
           "fighter": "Deiveson Figueiredo",
-          "moneyline": 490,
+          "moneyline": 530,
           "totalLine": 2.5,
-          "over": -116,
+          "over": -112,
           "draw": 5000,
           "ko": 2200,
           "sub": 1800,
@@ -341,15 +341,15 @@
           "fighter": "Payton Talbott",
           "moneyline": -750,
           "totalLine": 2.5,
-          "under": -110,
+          "under": -112,
           "ko": 115,
-          "sub": 850,
-          "dec": 160,
+          "sub": 900,
+          "dec": 165,
           "koSub": -138
         },
         {
           "fighter": "Esteban Ribovics",
-          "moneyline": -205,
+          "moneyline": -198,
           "totalLine": 2.5,
           "over": 114,
           "draw": 5000,
@@ -360,7 +360,7 @@
         },
         {
           "fighter": "King Green",
-          "moneyline": 164,
+          "moneyline": 166,
           "totalLine": 2.5,
           "under": -138,
           "ko": 750,
@@ -419,14 +419,6 @@
           "moneyline": 118
         },
         {
-          "fighter": "Brendson Ribeiro",
-          "moneyline": 250
-        },
-        {
-          "fighter": "Felipe Franco",
-          "moneyline": -340
-        },
-        {
           "fighter": "Jai Herbert",
           "moneyline": 148
         },
@@ -459,14 +451,6 @@
           "moneyline": -265
         },
         {
-          "fighter": "Ernesta Kareckaite",
-          "moneyline": 136
-        },
-        {
-          "fighter": "Melissa Gatto",
-          "moneyline": -174
-        },
-        {
           "fighter": "Malcolm Wellmaker",
           "moneyline": -215
         },
@@ -483,6 +467,14 @@
           "moneyline": -128
         },
         {
+          "fighter": "Brendson Ribeiro",
+          "moneyline": 250
+        },
+        {
+          "fighter": "Felipe Franco",
+          "moneyline": -340
+        },
+        {
           "fighter": "Allen Frye Jr.",
           "moneyline": 180
         },
@@ -497,6 +489,22 @@
         {
           "fighter": "Darya Zheleznyakova",
           "moneyline": 108
+        },
+        {
+          "fighter": "Leon Shahbazyan",
+          "moneyline": -150
+        },
+        {
+          "fighter": "Niko Price",
+          "moneyline": 125
+        },
+        {
+          "fighter": "Ernesta Kareckaite",
+          "moneyline": 136
+        },
+        {
+          "fighter": "Melissa Gatto",
+          "moneyline": -174
         }
       ]
     },
