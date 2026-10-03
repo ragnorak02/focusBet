@@ -1,105 +1,10 @@
 {
-  "updatedAt": "2026-10-03T07:23:59.363Z",
+  "updatedAt": "2026-10-03T12:55:35.145Z",
   "events": [
-    {
-      "name": "PFL Mena",
-      "source": "BestFightOdds (FanDuel, Caesars, BetWay)",
-      "capturedAt": "2026-10-03T07:23:59.363Z",
-      "lines": [
-        {
-          "fighter": "Mostafa Rashed Neda",
-          "moneyline": -210
-        },
-        {
-          "fighter": "Osama Elsaidy",
-          "moneyline": 176
-        },
-        {
-          "fighter": "Badreddine Diani",
-          "moneyline": -174
-        },
-        {
-          "fighter": "Hazem Kayyali",
-          "moneyline": 146
-        },
-        {
-          "fighter": "Assem Ghanem",
-          "moneyline": 275
-        },
-        {
-          "fighter": "Ylies Djiroun",
-          "moneyline": -350
-        },
-        {
-          "fighter": "Mehdi Saadi",
-          "moneyline": -164
-        },
-        {
-          "fighter": "Shadi Kabbani",
-          "moneyline": 138
-        },
-        {
-          "fighter": "Abdelkrim Zouad",
-          "moneyline": -340
-        },
-        {
-          "fighter": "Omar Hussein",
-          "moneyline": 275
-        },
-        {
-          "fighter": "Basel Shalaan",
-          "moneyline": 980
-        },
-        {
-          "fighter": "Ylies Djiroun",
-          "moneyline": -1800
-        },
-        {
-          "fighter": "Elias Boudegzdame",
-          "moneyline": -355
-        },
-        {
-          "fighter": "Islam Youssef",
-          "moneyline": 285
-        },
-        {
-          "fighter": "Ahmed El Sisy",
-          "moneyline": -112
-        },
-        {
-          "fighter": "Mohammad Fahmi",
-          "moneyline": -104
-        },
-        {
-          "fighter": "Assem Ghanem",
-          "moneyline": 114
-        },
-        {
-          "fighter": "Hassan Shaaban",
-          "moneyline": -134
-        },
-        {
-          "fighter": "Aya Lounes",
-          "moneyline": 240
-        },
-        {
-          "fighter": "Fatima Al Ammari",
-          "moneyline": -295
-        },
-        {
-          "fighter": "Elias Boudegzdame",
-          "moneyline": -333
-        },
-        {
-          "fighter": "Hamza Kooheji",
-          "moneyline": 225
-        }
-      ]
-    },
     {
       "name": "UFC",
       "source": "BestFightOdds (FanDuel, BetWay, Unibet, BetRivers, Kalshi)",
-      "capturedAt": "2026-10-03T07:23:59.363Z",
+      "capturedAt": "2026-10-03T12:55:35.145Z",
       "lines": [
         {
           "fighter": "Alden Coria",
@@ -303,7 +208,7 @@
     {
       "name": "UFC 332",
       "source": "BestFightOdds (FanDuel, BetWay, Caesars)",
-      "capturedAt": "2026-10-03T07:23:59.363Z",
+      "capturedAt": "2026-10-03T12:55:35.145Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
