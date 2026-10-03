@@ -1,10 +1,11 @@
 {
-  "updatedAt": "2026-10-03T12:55:35.145Z",
+  "updatedAt": "2026-10-03T17:42:22.767Z",
   "events": [
     {
-      "name": "UFC",
-      "source": "BestFightOdds (FanDuel, BetWay, Unibet, BetRivers, Kalshi)",
-      "capturedAt": "2026-10-03T12:55:35.145Z",
+      "espnId": "600061182",
+      "name": "UFC 332: Silva vs. Wang",
+      "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Kalshi)",
+      "capturedAt": "2026-10-03T17:42:22.767Z",
       "lines": [
         {
           "fighter": "Alden Coria",
@@ -50,65 +51,65 @@
         },
         {
           "fighter": "Anthony Romero",
-          "moneyline": 420,
+          "moneyline": 400,
           "totalLine": 2.5,
-          "over": -112,
+          "over": -116,
           "draw": 5000,
-          "ko": 1100,
-          "sub": 1600,
-          "dec": 950,
-          "koSub": 750
+          "ko": 1000,
+          "sub": 1500,
+          "dec": 900,
+          "koSub": 550
         },
         {
           "fighter": "Marcus McGhee",
-          "moneyline": -560,
+          "moneyline": -520,
           "totalLine": 2.5,
-          "under": -108,
-          "ko": 155,
+          "under": -106,
+          "ko": 160,
           "sub": 750,
-          "dec": 155,
-          "koSub": -112
+          "dec": 150,
+          "koSub": 110
         },
         {
           "fighter": "Anthony Wint",
-          "moneyline": -550,
+          "moneyline": -590,
           "totalLine": 1.5,
-          "over": 180,
+          "over": 182,
           "draw": 5000,
-          "ko": 105,
-          "sub": 250,
+          "ko": -110,
+          "sub": 280,
           "dec": 650,
           "koSub": -333
         },
         {
           "fighter": "Lucas Armand",
-          "moneyline": 410,
+          "moneyline": 430,
           "totalLine": 1.5,
           "under": -225,
-          "ko": 650,
+          "ko": 700,
           "sub": 2700,
           "dec": 1300,
           "koSub": 500
         },
         {
           "fighter": "Johnny Walker",
-          "moneyline": -108,
+          "moneyline": -112,
           "totalLine": 2.5,
           "over": 106,
           "draw": 5000,
-          "ko": 240,
+          "ko": 230,
           "sub": 1800,
           "dec": 350,
           "koSub": 175
         },
         {
           "fighter": "Mick Parkin",
-          "moneyline": -108,
+          "moneyline": -104,
           "totalLine": 2.5,
-          "under": -130,
-          "ko": 300,
+          "under": -128,
+          "ko": 310,
           "sub": 850,
-          "dec": 370,
+          "dec": 360,
           "koSub": 175
         },
         {
@@ -155,44 +156,44 @@
         },
         {
           "fighter": "Ismail Naurdiev",
-          "moneyline": -134,
+          "moneyline": -142,
           "totalLine": 2.5,
-          "over": -215,
+          "over": -210,
           "draw": 5000,
-          "ko": 330,
-          "sub": 2000,
-          "dec": 190,
+          "ko": 320,
+          "sub": 1800,
+          "dec": 185,
           "koSub": 240
         },
         {
           "fighter": "Marvin Vettori",
-          "moneyline": 114,
+          "moneyline": 120,
           "totalLine": 2.5,
-          "under": 174,
+          "under": 172,
           "ko": 1000,
-          "sub": 800,
-          "dec": 210,
+          "sub": 850,
+          "dec": 220,
           "koSub": 450
         },
         {
           "fighter": "Court McGee",
-          "moneyline": 198,
+          "moneyline": 190,
           "totalLine": 2.5,
-          "over": -110,
+          "over": -106,
           "draw": 5000,
           "ko": 1500,
-          "sub": 750,
+          "sub": 700,
           "dec": 370,
           "koSub": 600
         },
         {
           "fighter": "Eric Nolan",
-          "moneyline": -240,
+          "moneyline": -230,
           "totalLine": 2.5,
-          "under": -110,
+          "under": -116,
           "ko": 135,
-          "sub": 1400,
-          "dec": 270,
+          "sub": 1500,
+          "dec": 280,
           "koSub": -105
         },
         {
@@ -202,17 +203,10 @@
         {
           "fighter": "Marcus McGhee",
           "moneyline": -126
-        }
-      ]
-    },
-    {
-      "name": "UFC 332",
-      "source": "BestFightOdds (FanDuel, BetWay, Caesars)",
-      "capturedAt": "2026-10-03T12:55:35.145Z",
-      "lines": [
+        },
         {
           "fighter": "Natalia Silva",
-          "moneyline": -210,
+          "moneyline": -198,
           "totalLine": 4.5,
           "over": -320,
           "draw": 5000,
@@ -223,7 +217,7 @@
         },
         {
           "fighter": "Wang Cong",
-          "moneyline": 176,
+          "moneyline": 166,
           "totalLine": 4.5,
           "under": 230,
           "ko": 850,
@@ -275,21 +269,21 @@
         },
         {
           "fighter": "Khaos Williams",
-          "moneyline": 188,
+          "moneyline": 180,
           "totalLine": 1.5,
-          "over": -102,
+          "over": 100,
           "draw": 5000,
-          "ko": 330,
+          "ko": 290,
           "sub": 2000,
-          "dec": 650,
+          "dec": 750,
           "koSub": 400
         },
         {
           "fighter": "Roberto Soldic",
-          "moneyline": -225,
+          "moneyline": -215,
           "totalLine": 1.5,
-          "under": -118,
-          "ko": -120,
+          "under": -122,
+          "ko": -115,
           "sub": 1300,
           "dec": 650,
           "koSub": -188
@@ -314,7 +308,15 @@
           "sub": 2700,
           "dec": 480,
           "koSub": 300
-        },
+        }
+      ]
+    },
+    {
+      "espnId": "600061541",
+      "name": "UFC Fight Night: Allen vs. Duncan",
+      "source": "BestFightOdds (FanDuel, BetRivers)",
+      "capturedAt": "2026-10-03T17:42:22.767Z",
+      "lines": [
         {
           "fighter": "Brendan Allen",
           "moneyline": -150
@@ -340,20 +342,20 @@
           "moneyline": -225
         },
         {
-          "fighter": "Andre Fili",
-          "moneyline": -164
-        },
-        {
-          "fighter": "Kai Kamaka III",
-          "moneyline": 128
-        },
-        {
           "fighter": "Gerald Meerschaert",
           "moneyline": 200
         },
         {
           "fighter": "Julius Walker",
           "moneyline": -265
+        },
+        {
+          "fighter": "Andre Fili",
+          "moneyline": -156
+        },
+        {
+          "fighter": "Kai Kamaka III",
+          "moneyline": 122
         },
         {
           "fighter": "Malcolm Wellmaker",
@@ -397,11 +399,11 @@
         },
         {
           "fighter": "Leon Shahbazyan",
-          "moneyline": -150
+          "moneyline": -165
         },
         {
           "fighter": "Niko Price",
-          "moneyline": 125
+          "moneyline": 132
         },
         {
           "fighter": "Ernesta Kareckaite",
@@ -410,6 +412,54 @@
         {
           "fighter": "Melissa Gatto",
           "moneyline": -174
+        }
+      ]
+    },
+    {
+      "espnId": "600061267",
+      "name": "UFC 333: Volkanovski vs. Evloev",
+      "source": "BestFightOdds (FanDuel)",
+      "capturedAt": "2026-10-03T17:42:22.767Z",
+      "lines": [
+        {
+          "fighter": "Alexander Volkanovski",
+          "moneyline": -113
+        },
+        {
+          "fighter": "Movsar Evloev",
+          "moneyline": -113
+        },
+        {
+          "fighter": "Merab Dvalishvili",
+          "moneyline": 140
+        },
+        {
+          "fighter": "Petr Yan",
+          "moneyline": -172
+        }
+      ]
+    },
+    {
+      "espnId": "600061400",
+      "name": "UFC 334: Gane vs. Hokit",
+      "source": "BestFightOdds (FanDuel)",
+      "capturedAt": "2026-10-03T17:42:22.767Z",
+      "lines": [
+        {
+          "fighter": "Ciryl Gane",
+          "moneyline": -265
+        },
+        {
+          "fighter": "Josh Hokit",
+          "moneyline": 200
+        },
+        {
+          "fighter": "Amanda Nunes",
+          "moneyline": 162
+        },
+        {
+          "fighter": "Kayla Harrison",
+          "moneyline": -210
         }
       ]
     },
