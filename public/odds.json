@@ -1,31 +1,31 @@
 {
-  "updatedAt": "2026-10-03T17:42:22.767Z",
+  "updatedAt": "2026-10-03T20:26:03.509Z",
   "events": [
     {
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Kalshi)",
-      "capturedAt": "2026-10-03T17:42:22.767Z",
+      "capturedAt": "2026-10-03T20:26:03.509Z",
       "lines": [
         {
           "fighter": "Alden Coria",
-          "moneyline": 124,
+          "moneyline": 120,
           "totalLine": 2.5,
           "over": -162,
           "draw": 5000,
           "ko": 750,
           "sub": 1200,
-          "dec": 230,
+          "dec": 220,
           "koSub": 450
         },
         {
           "fighter": "Imanol Rodriguez",
-          "moneyline": -146,
+          "moneyline": -142,
           "totalLine": 2.5,
           "under": 132,
           "ko": 250,
           "sub": 1100,
-          "dec": 250,
+          "dec": 260,
           "koSub": 163
         },
         {
@@ -53,7 +53,7 @@
           "fighter": "Anthony Romero",
           "moneyline": 400,
           "totalLine": 2.5,
-          "over": -116,
+          "over": -108,
           "draw": 5000,
           "ko": 1000,
           "sub": 1500,
@@ -64,10 +64,10 @@
           "fighter": "Marcus McGhee",
           "moneyline": -520,
           "totalLine": 2.5,
-          "under": -106,
-          "ko": 160,
+          "under": -112,
+          "ko": 145,
           "sub": 750,
-          "dec": 150,
+          "dec": 160,
           "koSub": 110
         },
         {
@@ -93,23 +93,23 @@
         },
         {
           "fighter": "Johnny Walker",
-          "moneyline": -112,
+          "moneyline": -116,
           "totalLine": 2.5,
-          "over": 106,
+          "over": 100,
           "draw": 5000,
-          "ko": 230,
-          "sub": 1800,
-          "dec": 350,
+          "ko": 240,
+          "sub": 1900,
+          "dec": 330,
           "koSub": 175
         },
         {
           "fighter": "Mick Parkin",
-          "moneyline": -104,
+          "moneyline": -102,
           "totalLine": 2.5,
-          "under": -128,
-          "ko": 310,
+          "under": -120,
+          "ko": 320,
           "sub": 850,
-          "dec": 360,
+          "dec": 350,
           "koSub": 175
         },
         {
@@ -135,44 +135,44 @@
         },
         {
           "fighter": "Alexander Hernandez",
-          "moneyline": -260,
+          "moneyline": -270,
           "totalLine": 2.5,
-          "over": -140,
+          "over": -162,
           "draw": 5000,
-          "ko": 155,
+          "ko": 170,
           "sub": 1800,
-          "dec": 200,
+          "dec": 180,
           "koSub": 110
         },
         {
           "fighter": "Rafael Dos Anjos",
-          "moneyline": 215,
+          "moneyline": 220,
           "totalLine": 2.5,
-          "under": 116,
-          "ko": 1400,
-          "sub": 950,
-          "dec": 390,
+          "under": 134,
+          "ko": 1500,
+          "sub": 1000,
+          "dec": 370,
           "koSub": 600
         },
         {
           "fighter": "Ismail Naurdiev",
-          "moneyline": -142,
+          "moneyline": -126,
           "totalLine": 2.5,
-          "over": -210,
+          "over": -215,
           "draw": 5000,
-          "ko": 320,
+          "ko": 330,
           "sub": 1800,
-          "dec": 185,
+          "dec": 210,
           "koSub": 240
         },
         {
           "fighter": "Marvin Vettori",
-          "moneyline": 120,
+          "moneyline": 108,
           "totalLine": 2.5,
-          "under": 172,
+          "under": 174,
           "ko": 1000,
           "sub": 850,
-          "dec": 220,
+          "dec": 195,
           "koSub": 450
         },
         {
@@ -315,7 +315,7 @@
       "espnId": "600061541",
       "name": "UFC Fight Night: Allen vs. Duncan",
       "source": "BestFightOdds (FanDuel, BetRivers)",
-      "capturedAt": "2026-10-03T17:42:22.767Z",
+      "capturedAt": "2026-10-03T20:26:03.509Z",
       "lines": [
         {
           "fighter": "Brendan Allen",
@@ -419,7 +419,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-03T17:42:22.767Z",
+      "capturedAt": "2026-10-03T20:26:03.509Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
@@ -443,7 +443,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-03T17:42:22.767Z",
+      "capturedAt": "2026-10-03T20:26:03.509Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
