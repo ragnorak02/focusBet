@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-04T17:55:59.274Z",
+  "updatedAt": "2026-10-04T20:48:14.664Z",
   "events": [
     {
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-10-04T17:55:59.274Z",
+      "capturedAt": "2026-10-04T20:48:14.664Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -118,7 +118,7 @@
       "espnId": "600061541",
       "name": "UFC Fight Night: Allen vs. Duncan",
       "source": "BestFightOdds (FanDuel, BetRivers)",
-      "capturedAt": "2026-10-04T17:55:59.274Z",
+      "capturedAt": "2026-10-04T20:48:14.664Z",
       "lines": [
         {
           "fighter": "Brendan Allen",
@@ -210,11 +210,11 @@
         },
         {
           "fighter": "Ernesta Kareckaite",
-          "moneyline": 126
+          "moneyline": 120
         },
         {
           "fighter": "Melissa Gatto",
-          "moneyline": -162
+          "moneyline": -154
         }
       ]
     },
@@ -222,7 +222,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-04T17:55:59.274Z",
+      "capturedAt": "2026-10-04T20:48:14.664Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
@@ -246,7 +246,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-04T17:55:59.274Z",
+      "capturedAt": "2026-10-04T20:48:14.664Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -269,7 +269,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-04T17:55:59.274Z",
+      "capturedAt": "2026-10-04T20:48:14.664Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
@@ -281,11 +281,11 @@
         },
         {
           "fighter": "Charles Oliveira",
-          "moneyline": -175
+          "moneyline": -165
         },
         {
           "fighter": "Diego Lopes",
-          "moneyline": 138
+          "moneyline": 132
         },
         {
           "fighter": "Alex Pereira",
