@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-04T13:35:51.110Z",
+  "updatedAt": "2026-10-04T17:55:59.274Z",
   "events": [
     {
       "espnId": "600061182",
       "name": "UFC 332: Silva vs. Wang",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-10-04T13:35:51.110Z",
+      "capturedAt": "2026-10-04T17:55:59.274Z",
       "lines": [
         {
           "fighter": "Natalia Silva",
@@ -118,7 +118,7 @@
       "espnId": "600061541",
       "name": "UFC Fight Night: Allen vs. Duncan",
       "source": "BestFightOdds (FanDuel, BetRivers)",
-      "capturedAt": "2026-10-04T13:35:51.110Z",
+      "capturedAt": "2026-10-04T17:55:59.274Z",
       "lines": [
         {
           "fighter": "Brendan Allen",
@@ -138,11 +138,11 @@
         },
         {
           "fighter": "Ketlen Souza",
-          "moneyline": 172
+          "moneyline": 190
         },
         {
           "fighter": "Loopy Godinez",
-          "moneyline": -225
+          "moneyline": -250
         },
         {
           "fighter": "Gerald Meerschaert",
@@ -202,11 +202,11 @@
         },
         {
           "fighter": "Leon Shahbazyan",
-          "moneyline": -165
+          "moneyline": -157
         },
         {
           "fighter": "Niko Price",
-          "moneyline": 132
+          "moneyline": 125
         },
         {
           "fighter": "Ernesta Kareckaite",
@@ -222,7 +222,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-04T13:35:51.110Z",
+      "capturedAt": "2026-10-04T17:55:59.274Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
@@ -246,7 +246,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-04T13:35:51.110Z",
+      "capturedAt": "2026-10-04T17:55:59.274Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -263,6 +263,37 @@
         {
           "fighter": "Kayla Harrison",
           "moneyline": -210
+        }
+      ]
+    },
+    {
+      "name": "UFC 335",
+      "source": "BestFightOdds (BetRivers)",
+      "capturedAt": "2026-10-04T17:55:59.274Z",
+      "lines": [
+        {
+          "fighter": "Bo Nickal",
+          "moneyline": 112
+        },
+        {
+          "fighter": "Joe Pyfer",
+          "moneyline": -137
+        },
+        {
+          "fighter": "Charles Oliveira",
+          "moneyline": -175
+        },
+        {
+          "fighter": "Diego Lopes",
+          "moneyline": 138
+        },
+        {
+          "fighter": "Alex Pereira",
+          "moneyline": 138
+        },
+        {
+          "fighter": "Sergei Pavlovich",
+          "moneyline": -175
         }
       ]
     },
