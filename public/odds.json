@@ -1,124 +1,11 @@
 {
-  "updatedAt": "2026-10-04T20:48:14.664Z",
+  "updatedAt": "2026-10-05T08:03:08.907Z",
   "events": [
-    {
-      "espnId": "600061182",
-      "name": "UFC 332: Silva vs. Wang",
-      "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-10-04T20:48:14.664Z",
-      "lines": [
-        {
-          "fighter": "Natalia Silva",
-          "moneyline": -198,
-          "totalLine": 4.5,
-          "over": -280,
-          "draw": 5000,
-          "ko": 650,
-          "sub": 850,
-          "dec": 105,
-          "koSub": 275
-        },
-        {
-          "fighter": "Wang Cong",
-          "moneyline": 166,
-          "totalLine": 4.5,
-          "under": 205,
-          "ko": 750,
-          "sub": 2500,
-          "dec": 290,
-          "koSub": 600
-        },
-        {
-          "fighter": "Deiveson Figueiredo",
-          "moneyline": 490,
-          "totalLine": 2.5,
-          "over": -102,
-          "draw": 5000,
-          "ko": 2200,
-          "sub": 1800,
-          "dec": 1100,
-          "koSub": 900
-        },
-        {
-          "fighter": "Payton Talbott",
-          "moneyline": -670,
-          "totalLine": 2.5,
-          "under": -124,
-          "ko": 110,
-          "sub": 750,
-          "dec": 180,
-          "koSub": -138
-        },
-        {
-          "fighter": "Esteban Ribovics",
-          "moneyline": -190,
-          "totalLine": 2.5,
-          "over": 120,
-          "draw": 5000,
-          "ko": 120,
-          "sub": 1000,
-          "dec": 380,
-          "koSub": -138
-        },
-        {
-          "fighter": "King Green",
-          "moneyline": 160,
-          "totalLine": 2.5,
-          "under": -146,
-          "ko": 750,
-          "sub": 1100,
-          "dec": 410,
-          "koSub": 500
-        },
-        {
-          "fighter": "Khaos Williams",
-          "moneyline": 184,
-          "totalLine": 1.5,
-          "over": -106,
-          "draw": 5000,
-          "ko": 290,
-          "sub": 2000,
-          "dec": 750,
-          "koSub": 400
-        },
-        {
-          "fighter": "Roberto Soldic",
-          "moneyline": -220,
-          "totalLine": 1.5,
-          "under": -116,
-          "ko": -120,
-          "sub": 1300,
-          "dec": 650,
-          "koSub": -188
-        },
-        {
-          "fighter": "Ateba Gautier",
-          "moneyline": -230,
-          "totalLine": 2.5,
-          "over": 122,
-          "draw": 5000,
-          "ko": 105,
-          "sub": 1800,
-          "dec": 350,
-          "koSub": -110
-        },
-        {
-          "fighter": "Roman Kopylov",
-          "moneyline": 190,
-          "totalLine": 2.5,
-          "under": -146,
-          "ko": 470,
-          "sub": 2700,
-          "dec": 480,
-          "koSub": 300
-        }
-      ]
-    },
     {
       "espnId": "600061541",
       "name": "UFC Fight Night: Allen vs. Duncan",
-      "source": "BestFightOdds (FanDuel, BetRivers)",
-      "capturedAt": "2026-10-04T20:48:14.664Z",
+      "source": "BestFightOdds (FanDuel)",
+      "capturedAt": "2026-10-05T08:03:08.907Z",
       "lines": [
         {
           "fighter": "Brendan Allen",
@@ -162,11 +49,11 @@
         },
         {
           "fighter": "Malcolm Wellmaker",
-          "moneyline": -215
+          "moneyline": -235
         },
         {
           "fighter": "Otari Tanzilovi",
-          "moneyline": 164
+          "moneyline": 180
         },
         {
           "fighter": "Francisco Prado",
@@ -175,6 +62,14 @@
         {
           "fighter": "Ismael Bonfim",
           "moneyline": -128
+        },
+        {
+          "fighter": "Leon Shahbazyan",
+          "moneyline": -170
+        },
+        {
+          "fighter": "Niko Price",
+          "moneyline": 132
         },
         {
           "fighter": "Brendson Ribeiro",
@@ -201,20 +96,12 @@
           "moneyline": 108
         },
         {
-          "fighter": "Leon Shahbazyan",
-          "moneyline": -157
-        },
-        {
-          "fighter": "Niko Price",
-          "moneyline": 125
-        },
-        {
           "fighter": "Ernesta Kareckaite",
-          "moneyline": 120
+          "moneyline": 106
         },
         {
           "fighter": "Melissa Gatto",
-          "moneyline": -154
+          "moneyline": -136
         }
       ]
     },
@@ -222,7 +109,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-04T20:48:14.664Z",
+      "capturedAt": "2026-10-05T08:03:08.907Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
@@ -246,7 +133,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-04T20:48:14.664Z",
+      "capturedAt": "2026-10-05T08:03:08.907Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -269,7 +156,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-04T20:48:14.664Z",
+      "capturedAt": "2026-10-05T08:03:08.907Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
