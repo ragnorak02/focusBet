@@ -1,51 +1,51 @@
 {
-  "updatedAt": "2026-10-05T08:03:08.907Z",
+  "updatedAt": "2026-10-05T18:59:43.977Z",
   "events": [
     {
       "espnId": "600061541",
       "name": "UFC Fight Night: Allen vs. Duncan",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-05T08:03:08.907Z",
+      "capturedAt": "2026-10-05T18:59:43.977Z",
       "lines": [
         {
           "fighter": "Brendan Allen",
-          "moneyline": -150
+          "moneyline": -146
         },
         {
           "fighter": "Christian Leroy Duncan",
-          "moneyline": 118
+          "moneyline": 114
         },
         {
           "fighter": "Jai Herbert",
-          "moneyline": 148
+          "moneyline": 158
         },
         {
           "fighter": "Matheus Camilo",
-          "moneyline": -192
+          "moneyline": -205
         },
         {
           "fighter": "Ketlen Souza",
-          "moneyline": 190
+          "moneyline": 186
         },
         {
           "fighter": "Loopy Godinez",
-          "moneyline": -250
+          "moneyline": -245
         },
         {
           "fighter": "Gerald Meerschaert",
-          "moneyline": 200
+          "moneyline": 220
         },
         {
           "fighter": "Julius Walker",
-          "moneyline": -265
+          "moneyline": -295
         },
         {
           "fighter": "Andre Fili",
-          "moneyline": -156
+          "moneyline": -150
         },
         {
           "fighter": "Kai Kamaka III",
-          "moneyline": 122
+          "moneyline": 118
         },
         {
           "fighter": "Malcolm Wellmaker",
@@ -57,51 +57,51 @@
         },
         {
           "fighter": "Francisco Prado",
-          "moneyline": 100
+          "moneyline": -106
         },
         {
           "fighter": "Ismael Bonfim",
-          "moneyline": -128
+          "moneyline": -120
         },
         {
           "fighter": "Leon Shahbazyan",
-          "moneyline": -170
+          "moneyline": -164
         },
         {
           "fighter": "Niko Price",
-          "moneyline": 132
+          "moneyline": 128
         },
         {
           "fighter": "Brendson Ribeiro",
-          "moneyline": 250
+          "moneyline": 265
         },
         {
           "fighter": "Felipe Franco",
-          "moneyline": -340
+          "moneyline": -370
         },
         {
           "fighter": "Allen Frye Jr.",
-          "moneyline": 196
+          "moneyline": 215
         },
         {
           "fighter": "Rj Harris",
-          "moneyline": -260
+          "moneyline": -290
         },
         {
           "fighter": "Alice Pereira",
-          "moneyline": -138
+          "moneyline": -148
         },
         {
           "fighter": "Darya Zheleznyakova",
-          "moneyline": 108
+          "moneyline": 114
         },
         {
           "fighter": "Ernesta Kareckaite",
-          "moneyline": 106
+          "moneyline": 102
         },
         {
           "fighter": "Melissa Gatto",
-          "moneyline": -136
+          "moneyline": -130
         }
       ]
     },
@@ -109,7 +109,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-05T08:03:08.907Z",
+      "capturedAt": "2026-10-05T18:59:43.977Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
@@ -133,7 +133,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-05T08:03:08.907Z",
+      "capturedAt": "2026-10-05T18:59:43.977Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -156,23 +156,23 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-05T08:03:08.907Z",
+      "capturedAt": "2026-10-05T18:59:43.977Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
-          "moneyline": 112
+          "moneyline": 125
         },
         {
           "fighter": "Joe Pyfer",
-          "moneyline": -137
+          "moneyline": -157
         },
         {
           "fighter": "Charles Oliveira",
-          "moneyline": -165
+          "moneyline": -155
         },
         {
           "fighter": "Diego Lopes",
-          "moneyline": 132
+          "moneyline": 123
         },
         {
           "fighter": "Alex Pereira",
