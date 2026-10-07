@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-07T18:14:21.598Z",
+  "updatedAt": "2026-10-07T23:57:41.239Z",
   "events": [
     {
       "espnId": "600061541",
       "name": "UFC Fight Night: Allen vs. Duncan",
-      "source": "BestFightOdds (FanDuel, BetWay, Unibet, BetRivers)",
-      "capturedAt": "2026-10-07T18:14:21.598Z",
+      "source": "BestFightOdds (FanDuel, BetWay, Unibet)",
+      "capturedAt": "2026-10-07T23:57:41.239Z",
       "lines": [
         {
           "fighter": "Brendan Allen",
@@ -220,42 +220,42 @@
           "fighter": "Alice Pereira",
           "moneyline": -150,
           "totalLine": 2.5,
-          "over": -265,
-          "draw": 4500,
-          "ko": 430,
-          "sub": 2000,
-          "dec": 140,
+          "over": -230,
+          "draw": 5000,
+          "ko": 390,
+          "sub": 1800,
+          "dec": 165,
           "koSub": 380
         },
         {
           "fighter": "Darya Zheleznyakova",
           "moneyline": 118,
           "totalLine": 2.5,
-          "under": 185,
-          "ko": 475,
-          "sub": 1600,
-          "dec": 265,
+          "under": 184,
+          "ko": 550,
+          "sub": 2200,
+          "dec": 230,
           "koSub": 400
         },
         {
           "fighter": "Ernesta Kareckaite",
-          "moneyline": 102,
+          "moneyline": -106,
           "totalLine": 2.5,
-          "over": -480,
-          "draw": 4500,
-          "ko": 600,
-          "sub": 2200,
-          "dec": 148,
+          "over": -380,
+          "draw": 5000,
+          "ko": 750,
+          "sub": 3300,
+          "dec": 145,
           "koSub": 550
         },
         {
           "fighter": "Melissa Gatto",
-          "moneyline": -130,
+          "moneyline": -120,
           "totalLine": 2.5,
           "under": 290,
-          "ko": 1600,
-          "sub": 700,
-          "dec": 148,
+          "ko": 1500,
+          "sub": 550,
+          "dec": 165,
           "koSub": 550
         }
       ]
@@ -264,7 +264,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-07T18:14:21.598Z",
+      "capturedAt": "2026-10-07T23:57:41.239Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
@@ -310,7 +310,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-07T18:14:21.598Z",
+      "capturedAt": "2026-10-07T23:57:41.239Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -333,7 +333,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-07T18:14:21.598Z",
+      "capturedAt": "2026-10-07T23:57:41.239Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
