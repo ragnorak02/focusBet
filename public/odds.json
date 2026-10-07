@@ -1,31 +1,31 @@
 {
-  "updatedAt": "2026-10-07T03:39:59.802Z",
+  "updatedAt": "2026-10-07T10:45:11.378Z",
   "events": [
     {
       "espnId": "600061541",
       "name": "UFC Fight Night: Allen vs. Duncan",
-      "source": "BestFightOdds (FanDuel, BetRivers, BetWay, Unibet)",
-      "capturedAt": "2026-10-07T03:39:59.802Z",
+      "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet)",
+      "capturedAt": "2026-10-07T10:45:11.378Z",
       "lines": [
         {
           "fighter": "Brendan Allen",
-          "moneyline": -146,
+          "moneyline": -154,
           "totalLine": 3.5,
-          "over": -136,
-          "draw": 4500,
-          "ko": 900,
-          "sub": 285,
-          "dec": 275,
+          "over": -120,
+          "draw": 5000,
+          "ko": 850,
+          "sub": 300,
+          "dec": 250,
           "koSub": 175
         },
         {
           "fighter": "Christian Leroy Duncan",
-          "moneyline": 114,
+          "moneyline": 120,
           "totalLine": 3.5,
-          "under": 100,
-          "ko": 225,
-          "sub": 1800,
-          "dec": 510,
+          "under": -102,
+          "ko": 240,
+          "sub": 2500,
+          "dec": 500,
           "koSub": 175
         },
         {
@@ -55,9 +55,9 @@
           "totalLine": 2.5,
           "over": -385,
           "draw": 4500,
-          "ko": 800,
+          "ko": 850,
           "sub": 1600,
-          "dec": 320,
+          "dec": 340,
           "koSub": 500
         },
         {
@@ -66,8 +66,8 @@
           "totalLine": 2.5,
           "under": 250,
           "ko": 1700,
-          "sub": 510,
-          "dec": -117,
+          "sub": 500,
+          "dec": -124,
           "koSub": 300
         },
         {
@@ -187,7 +187,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-07T03:39:59.802Z",
+      "capturedAt": "2026-10-07T10:45:11.378Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
@@ -233,7 +233,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-07T03:39:59.802Z",
+      "capturedAt": "2026-10-07T10:45:11.378Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -256,7 +256,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-07T03:39:59.802Z",
+      "capturedAt": "2026-10-07T10:45:11.378Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
