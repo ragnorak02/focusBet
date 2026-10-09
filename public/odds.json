@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-09T08:16:25.905Z",
+  "updatedAt": "2026-10-09T16:44:32.707Z",
   "events": [
     {
       "name": "PFL Africa",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-09T08:16:25.905Z",
+      "capturedAt": "2026-10-09T16:44:32.707Z",
       "lines": [
         {
           "fighter": "Abdoulaye Kane",
@@ -16,11 +16,11 @@
         },
         {
           "fighter": "Taha Bendaoud",
-          "moneyline": 180
+          "moneyline": 198
         },
         {
           "fighter": "Yanis Ghemmouri",
-          "moneyline": -225
+          "moneyline": -250
         },
         {
           "fighter": "Peace Nguphane",
@@ -32,11 +32,11 @@
         },
         {
           "fighter": "Cornel Thompson",
-          "moneyline": 194
+          "moneyline": 184
         },
         {
           "fighter": "Patrick Ocheme",
-          "moneyline": -245
+          "moneyline": -230
         },
         {
           "fighter": "David Samuel",
@@ -80,27 +80,27 @@
         },
         {
           "fighter": "Boule Godogo",
-          "moneyline": 116
+          "moneyline": 104
         },
         {
           "fighter": "Dwight Joseph",
-          "moneyline": -142
+          "moneyline": -128
         },
         {
           "fighter": "Jane Osigwe",
-          "moneyline": -122
+          "moneyline": 114
         },
         {
           "fighter": "Sanaa Mandar",
-          "moneyline": 100
+          "moneyline": -140
         },
         {
           "fighter": "Abderrahman Errachidy",
-          "moneyline": -194
+          "moneyline": -215
         },
         {
           "fighter": "Oussama El Idrissi",
-          "moneyline": 156
+          "moneyline": 172
         }
       ]
     },
@@ -108,7 +108,7 @@
       "espnId": "600061541",
       "name": "UFC Fight Night: Allen vs. Duncan",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-10-09T08:16:25.905Z",
+      "capturedAt": "2026-10-09T16:44:32.707Z",
       "lines": [
         {
           "fighter": "Brendan Allen",
@@ -368,7 +368,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-09T08:16:25.905Z",
+      "capturedAt": "2026-10-09T16:44:32.707Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
@@ -414,7 +414,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-09T08:16:25.905Z",
+      "capturedAt": "2026-10-09T16:44:32.707Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -437,7 +437,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-09T08:16:25.905Z",
+      "capturedAt": "2026-10-09T16:44:32.707Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
