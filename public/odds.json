@@ -1,142 +1,142 @@
 {
-  "updatedAt": "2026-10-10T16:44:01.175Z",
+  "updatedAt": "2026-10-10T20:58:33.924Z",
   "events": [
     {
       "name": "PFL Africa",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-10T16:44:01.175Z",
+      "capturedAt": "2026-10-10T20:58:33.924Z",
       "lines": [
         {
           "fighter": "Abdoulaye Kane",
-          "moneyline": -390,
+          "moneyline": -550,
           "totalLine": 1.5,
           "over": 180
         },
         {
           "fighter": "Badr Medkouri",
-          "moneyline": 310,
+          "moneyline": 410,
           "totalLine": 1.5,
           "under": -250
         },
         {
           "fighter": "Taha Bendaoud",
-          "moneyline": 200,
+          "moneyline": 220,
           "totalLine": 1.5,
           "over": -280
         },
         {
           "fighter": "Yanis Ghemmouri",
-          "moneyline": -245,
+          "moneyline": -270,
           "totalLine": 1.5,
           "under": 198
         },
         {
           "fighter": "Peace Nguphane",
-          "moneyline": 106,
+          "moneyline": 110,
           "totalLine": 1.5,
           "over": -110
         },
         {
           "fighter": "Shido Boris Esperanca",
-          "moneyline": -124,
+          "moneyline": -130,
           "totalLine": 1.5,
           "under": -120
         },
         {
           "fighter": "Cornel Thompson",
-          "moneyline": 168,
+          "moneyline": 205,
           "totalLine": 1.5,
           "over": -192
         },
         {
           "fighter": "Patrick Ocheme",
-          "moneyline": -200,
+          "moneyline": -245,
           "totalLine": 1.5,
           "under": 142
         },
         {
           "fighter": "David Samuel",
-          "moneyline": -550,
+          "moneyline": -1500,
           "totalLine": 1.5,
-          "over": -134
+          "over": -166
         },
         {
           "fighter": "Rivaldo Pereira",
-          "moneyline": 410,
+          "moneyline": 870,
           "totalLine": 1.5,
-          "under": 100
+          "under": 122
         },
         {
           "fighter": "Mouhamed Ba",
-          "moneyline": 116,
+          "moneyline": 126,
           "totalLine": 1.5,
           "over": -215
         },
         {
           "fighter": "Yabna Ntchala",
-          "moneyline": -136,
+          "moneyline": -148,
           "totalLine": 1.5,
           "under": 156
         },
         {
           "fighter": "Reda Abdellaoui",
-          "moneyline": -1500,
+          "moneyline": -2200,
           "totalLine": 1.5,
           "over": 225
         },
         {
           "fighter": "Salim Mhamdi",
-          "moneyline": 870,
+          "moneyline": 1100,
           "totalLine": 1.5,
           "under": -320
         },
         {
           "fighter": "Boule Godogo",
-          "moneyline": 108,
+          "moneyline": -116,
           "totalLine": 2.5,
-          "over": -182
+          "over": -200
         },
         {
           "fighter": "Dwight Joseph",
-          "moneyline": -126,
+          "moneyline": -116,
           "totalLine": 2.5,
-          "under": 134
+          "under": 146
         },
         {
           "fighter": "Demba Seck",
-          "moneyline": 140,
+          "moneyline": 136,
           "totalLine": 1.5,
-          "over": -122
+          "over": -104
         },
         {
           "fighter": "Hussain Al Kurdi",
-          "moneyline": -166,
+          "moneyline": -162,
           "totalLine": 1.5,
-          "under": -110
+          "under": -128
         },
         {
           "fighter": "Jane Osigwe",
-          "moneyline": 144,
+          "moneyline": 180,
           "totalLine": 2.5,
           "over": -350
         },
         {
           "fighter": "Sanaa Mandar",
-          "moneyline": -172,
+          "moneyline": -215,
           "totalLine": 2.5,
           "under": 245
         },
         {
           "fighter": "Abderrahman Errachidy",
-          "moneyline": -210,
+          "moneyline": -250,
           "totalLine": 1.5,
-          "over": 106
+          "over": 118
         },
         {
           "fighter": "Oussama El Idrissi",
-          "moneyline": 176,
+          "moneyline": 188,
           "totalLine": 1.5,
-          "under": -138
+          "under": -158
         },
         {
           "fighter": "Alain Majorique",
@@ -156,26 +156,26 @@
       "espnId": "600061541",
       "name": "UFC Fight Night: Allen vs. Duncan",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-10-10T16:44:01.175Z",
+      "capturedAt": "2026-10-10T20:58:33.924Z",
       "lines": [
         {
           "fighter": "Brendan Allen",
-          "moneyline": -122,
+          "moneyline": -116,
           "totalLine": 3.5,
-          "over": -122,
+          "over": -118,
           "draw": 5000,
-          "ko": 900,
+          "ko": 1000,
           "sub": 330,
-          "dec": 270,
+          "dec": 280,
           "koSub": 175
         },
         {
           "fighter": "Christian Leroy Duncan",
-          "moneyline": 104,
+          "moneyline": -102,
           "totalLine": 3.5,
-          "under": 100,
-          "ko": 210,
-          "sub": 2200,
+          "under": -104,
+          "ko": 200,
+          "sub": 2000,
           "dec": 460,
           "koSub": 175
         },
@@ -286,22 +286,22 @@
         },
         {
           "fighter": "Francisco Prado",
-          "moneyline": -142,
+          "moneyline": -164,
           "totalLine": 2.5,
           "over": -106,
           "draw": 5000,
-          "ko": 175,
+          "ko": 170,
           "sub": 650,
-          "dec": 500,
+          "dec": 480,
           "koSub": 110
         },
         {
           "fighter": "Ismael Bonfim",
-          "moneyline": 120,
+          "moneyline": 138,
           "totalLine": 2.5,
           "under": -116,
-          "ko": 750,
-          "sub": 1300,
+          "ko": 850,
+          "sub": 1400,
           "dec": 230,
           "koSub": 400
         },
@@ -370,30 +370,30 @@
         },
         {
           "fighter": "Alice Pereira",
-          "moneyline": -130,
+          "moneyline": -138,
           "totalLine": 2.5,
-          "over": -240,
+          "over": -230,
           "draw": 5000,
-          "ko": 400,
+          "ko": 370,
           "sub": 2000,
           "dec": 170,
           "koSub": 275
         },
         {
           "fighter": "Darya Zheleznyakova",
-          "moneyline": 110,
+          "moneyline": 118,
           "totalLine": 2.5,
-          "under": 192,
+          "under": 182,
           "ko": 550,
           "sub": 2200,
-          "dec": 200,
+          "dec": 220,
           "koSub": 400
         },
         {
           "fighter": "Ernesta Kareckaite",
-          "moneyline": 100,
+          "moneyline": 102,
           "totalLine": 2.5,
-          "over": -380,
+          "over": -370,
           "draw": 5000,
           "ko": 750,
           "sub": 3300,
@@ -402,12 +402,12 @@
         },
         {
           "fighter": "Melissa Gatto",
-          "moneyline": -118,
+          "moneyline": -120,
           "totalLine": 2.5,
-          "under": 280,
-          "ko": 1500,
-          "sub": 550,
-          "dec": 160,
+          "under": 270,
+          "ko": 1700,
+          "sub": 500,
+          "dec": 165,
           "koSub": 350
         }
       ]
@@ -416,7 +416,7 @@
       "espnId": "600060773",
       "name": "UFC Fight Night: Buckley vs. Malott",
       "source": "BestFightOdds (BetRivers, Caesars)",
-      "capturedAt": "2026-10-10T16:44:01.175Z",
+      "capturedAt": "2026-10-10T20:58:33.924Z",
       "lines": [
         {
           "fighter": "Cristian Perez",
@@ -467,20 +467,20 @@
           "moneyline": 107
         },
         {
-          "fighter": "Chelsea Chandler",
-          "moneyline": 190
-        },
-        {
-          "fighter": "Melissa Croden",
-          "moneyline": -245
-        },
-        {
           "fighter": "Cody Chovancek",
           "moneyline": -150
         },
         {
           "fighter": "Suyoung You",
           "moneyline": 120
+        },
+        {
+          "fighter": "Chelsea Chandler",
+          "moneyline": 190
+        },
+        {
+          "fighter": "Melissa Croden",
+          "moneyline": -245
         },
         {
           "fighter": "Joaquin Buckley",
@@ -528,7 +528,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel, Unibet)",
-      "capturedAt": "2026-10-10T16:44:01.175Z",
+      "capturedAt": "2026-10-10T20:58:33.924Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
@@ -578,7 +578,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-10T16:44:01.175Z",
+      "capturedAt": "2026-10-10T20:58:33.924Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -601,7 +601,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-10T16:44:01.175Z",
+      "capturedAt": "2026-10-10T20:58:33.924Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
