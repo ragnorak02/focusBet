@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-11T16:05:09.954Z",
+  "updatedAt": "2026-10-11T21:19:49.456Z",
   "events": [
     {
       "espnId": "600061541",
       "name": "UFC Fight Night: Allen vs. Duncan",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-10-11T16:05:09.954Z",
+      "capturedAt": "2026-10-11T21:19:49.456Z",
       "lines": [
         {
           "fighter": "Brendan Allen",
@@ -262,18 +262,58 @@
       ]
     },
     {
+      "espnId": "600060741",
+      "name": "Dana White's Contender Series: Season 10, Week 10",
+      "source": "BestFightOdds (Kalshi)",
+      "capturedAt": "2026-10-11T21:19:49.456Z",
+      "lines": [
+        {
+          "fighter": "Erick Visconde",
+          "moneyline": -132
+        },
+        {
+          "fighter": "Ilias Bulaid",
+          "moneyline": -137
+        },
+        {
+          "fighter": "Aline Pereira",
+          "moneyline": 330
+        },
+        {
+          "fighter": "Smilla Sundell",
+          "moneyline": -431
+        },
+        {
+          "fighter": "Davi Cabral",
+          "moneyline": 165
+        },
+        {
+          "fighter": "Douglas da Lapa",
+          "moneyline": -229
+        },
+        {
+          "fighter": "Greg Foster",
+          "moneyline": 165
+        },
+        {
+          "fighter": "Jason Asher",
+          "moneyline": -229
+        }
+      ]
+    },
+    {
       "espnId": "600060773",
       "name": "UFC Fight Night: Buckley vs. Malott",
-      "source": "BestFightOdds (BetRivers, Caesars)",
-      "capturedAt": "2026-10-11T16:05:09.954Z",
+      "source": "BestFightOdds (Kalshi, Caesars, BetRivers)",
+      "capturedAt": "2026-10-11T21:19:49.456Z",
       "lines": [
         {
           "fighter": "Cristian Perez",
-          "moneyline": -286
+          "moneyline": -291
         },
         {
           "fighter": "Kyle Nelson",
-          "moneyline": 220
+          "moneyline": 217
         },
         {
           "fighter": "Katlyn Cerminara",
@@ -285,19 +325,19 @@
         },
         {
           "fighter": "Jhonata Diniz",
-          "moneyline": -250
+          "moneyline": -251
         },
         {
           "fighter": "Tanner Boser",
-          "moneyline": 195
+          "moneyline": 189
         },
         {
           "fighter": "Julien Leblanc",
-          "moneyline": 400
+          "moneyline": 424
         },
         {
           "fighter": "Nick Galanti",
-          "moneyline": -590
+          "moneyline": -491
         },
         {
           "fighter": "Javad Mahjoub",
@@ -317,11 +357,11 @@
         },
         {
           "fighter": "Chelsea Chandler",
-          "moneyline": 210
+          "moneyline": 207
         },
         {
           "fighter": "Melissa Croden",
-          "moneyline": -275
+          "moneyline": -277
         },
         {
           "fighter": "Cody Chovancek",
@@ -333,43 +373,43 @@
         },
         {
           "fighter": "Joaquin Buckley",
-          "moneyline": 123
+          "moneyline": 109
         },
         {
           "fighter": "Mike Malott",
-          "moneyline": -152
+          "moneyline": -149
         },
         {
           "fighter": "Erin Blanchfield",
-          "moneyline": -295
+          "moneyline": -323
         },
         {
           "fighter": "Jasmine Jasudavicius",
-          "moneyline": 225
+          "moneyline": 228
         },
         {
           "fighter": "Kyle Daukaus",
-          "moneyline": -230
+          "moneyline": -251
         },
         {
           "fighter": "Marc-Andre Barriault",
-          "moneyline": 180
+          "moneyline": 181
         },
         {
           "fighter": "Louis Jourdain",
-          "moneyline": -175
+          "moneyline": -195
         },
         {
           "fighter": "Timmy Cuamba",
-          "moneyline": 138
+          "moneyline": 155
         },
         {
           "fighter": "Mandel Nallo",
-          "moneyline": -286
+          "moneyline": -291
         },
         {
           "fighter": "Nate Landwehr",
-          "moneyline": 220
+          "moneyline": 217
         }
       ]
     },
@@ -377,7 +417,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel, Unibet)",
-      "capturedAt": "2026-10-11T16:05:09.954Z",
+      "capturedAt": "2026-10-11T21:19:49.456Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
@@ -427,7 +467,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-11T16:05:09.954Z",
+      "capturedAt": "2026-10-11T21:19:49.456Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -450,7 +490,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-11T16:05:09.954Z",
+      "capturedAt": "2026-10-11T21:19:49.456Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
