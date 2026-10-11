@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-10T20:58:33.924Z",
+  "updatedAt": "2026-10-11T00:36:55.976Z",
   "events": [
     {
       "name": "PFL Africa",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-10T20:58:33.924Z",
+      "capturedAt": "2026-10-11T00:36:55.976Z",
       "lines": [
         {
           "fighter": "Abdoulaye Kane",
@@ -32,25 +32,25 @@
         },
         {
           "fighter": "Peace Nguphane",
-          "moneyline": 110,
+          "moneyline": 108,
           "totalLine": 1.5,
-          "over": -110
+          "over": -104
         },
         {
           "fighter": "Shido Boris Esperanca",
-          "moneyline": -130,
+          "moneyline": -126,
           "totalLine": 1.5,
-          "under": -120
+          "under": -128
         },
         {
           "fighter": "Cornel Thompson",
-          "moneyline": 205,
+          "moneyline": 225,
           "totalLine": 1.5,
           "over": -192
         },
         {
           "fighter": "Patrick Ocheme",
-          "moneyline": -245,
+          "moneyline": -275,
           "totalLine": 1.5,
           "under": 142
         },
@@ -156,7 +156,7 @@
       "espnId": "600061541",
       "name": "UFC Fight Night: Allen vs. Duncan",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-10-10T20:58:33.924Z",
+      "capturedAt": "2026-10-11T00:36:55.976Z",
       "lines": [
         {
           "fighter": "Brendan Allen",
@@ -223,51 +223,51 @@
         },
         {
           "fighter": "Andre Fili",
-          "moneyline": -152,
+          "moneyline": -142,
           "totalLine": 2.5,
-          "over": -188,
+          "over": -260,
           "draw": 5000,
           "ko": 250,
           "sub": 2500,
-          "dec": 210,
+          "dec": 230,
           "koSub": 175
         },
         {
           "fighter": "Kai Kamaka III",
-          "moneyline": 128,
+          "moneyline": 120,
           "totalLine": 2.5,
-          "under": 154,
+          "under": 205,
           "ko": 600,
-          "sub": 2000,
-          "dec": 230,
+          "sub": 2200,
+          "dec": 200,
           "koSub": 500
         },
         {
           "fighter": "Malcolm Wellmaker",
-          "moneyline": -210,
+          "moneyline": -198,
           "totalLine": 2.5,
           "over": -106,
           "draw": 5000,
           "ko": 130,
-          "sub": 1800,
-          "dec": 310,
+          "sub": 2000,
+          "dec": 330,
           "koSub": 105
         },
         {
           "fighter": "Otari Tanzilovi",
-          "moneyline": 176,
+          "moneyline": 166,
           "totalLine": 2.5,
-          "under": -114,
+          "under": -116,
           "ko": 750,
           "sub": 1600,
-          "dec": 320,
+          "dec": 300,
           "koSub": 500
         },
         {
           "fighter": "Gerald Meerschaert",
           "moneyline": 250,
           "totalLine": 1.5,
-          "over": 102,
+          "over": -106,
           "draw": 5000,
           "ko": 1400,
           "sub": 480,
@@ -278,7 +278,7 @@
           "fighter": "Julius Walker",
           "moneyline": -310,
           "totalLine": 1.5,
-          "under": -124,
+          "under": -116,
           "ko": -120,
           "sub": 550,
           "dec": 750,
@@ -288,10 +288,10 @@
           "fighter": "Francisco Prado",
           "moneyline": -164,
           "totalLine": 2.5,
-          "over": -106,
+          "over": -108,
           "draw": 5000,
           "ko": 170,
-          "sub": 650,
+          "sub": 600,
           "dec": 480,
           "koSub": 110
         },
@@ -299,7 +299,7 @@
           "fighter": "Ismael Bonfim",
           "moneyline": 138,
           "totalLine": 2.5,
-          "under": -116,
+          "under": -114,
           "ko": 850,
           "sub": 1400,
           "dec": 230,
@@ -307,30 +307,30 @@
         },
         {
           "fighter": "Leon Shahbazyan",
-          "moneyline": -144,
+          "moneyline": -136,
           "totalLine": 1.5,
-          "over": 170,
+          "over": 188,
           "draw": 5000,
-          "ko": 470,
-          "sub": 160,
-          "dec": 1100,
+          "ko": 500,
+          "sub": 150,
+          "dec": 1200,
           "koSub": -138
         },
         {
           "fighter": "Niko Price",
-          "moneyline": 122,
+          "moneyline": 116,
           "totalLine": 1.5,
-          "under": -210,
-          "ko": 250,
+          "under": -235,
+          "ko": 230,
           "sub": 900,
           "dec": 750,
           "koSub": 175
         },
         {
           "fighter": "Brendson Ribeiro",
-          "moneyline": 295,
+          "moneyline": 310,
           "totalLine": 1.5,
-          "over": 132,
+          "over": 146,
           "draw": 5000,
           "ko": 600,
           "sub": 1200,
@@ -339,11 +339,11 @@
         },
         {
           "fighter": "Felipe Franco",
-          "moneyline": -370,
+          "moneyline": -390,
           "totalLine": 1.5,
-          "under": -162,
-          "ko": 180,
-          "sub": 180,
+          "under": -178,
+          "ko": 160,
+          "sub": 195,
           "dec": 650,
           "koSub": -225
         },
@@ -416,7 +416,7 @@
       "espnId": "600060773",
       "name": "UFC Fight Night: Buckley vs. Malott",
       "source": "BestFightOdds (BetRivers, Caesars)",
-      "capturedAt": "2026-10-10T20:58:33.924Z",
+      "capturedAt": "2026-10-11T00:36:55.976Z",
       "lines": [
         {
           "fighter": "Cristian Perez",
@@ -528,7 +528,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel, Unibet)",
-      "capturedAt": "2026-10-10T20:58:33.924Z",
+      "capturedAt": "2026-10-11T00:36:55.976Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
@@ -578,7 +578,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-10T20:58:33.924Z",
+      "capturedAt": "2026-10-11T00:36:55.976Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -601,7 +601,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-10T20:58:33.924Z",
+      "capturedAt": "2026-10-11T00:36:55.976Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
