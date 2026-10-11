@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-11T08:06:02.200Z",
+  "updatedAt": "2026-10-11T16:05:09.954Z",
   "events": [
     {
       "espnId": "600061541",
       "name": "UFC Fight Night: Allen vs. Duncan",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-10-11T08:06:02.200Z",
+      "capturedAt": "2026-10-11T16:05:09.954Z",
       "lines": [
         {
           "fighter": "Brendan Allen",
@@ -265,7 +265,7 @@
       "espnId": "600060773",
       "name": "UFC Fight Night: Buckley vs. Malott",
       "source": "BestFightOdds (BetRivers, Caesars)",
-      "capturedAt": "2026-10-11T08:06:02.200Z",
+      "capturedAt": "2026-10-11T16:05:09.954Z",
       "lines": [
         {
           "fighter": "Cristian Perez",
@@ -316,20 +316,20 @@
           "moneyline": 107
         },
         {
+          "fighter": "Chelsea Chandler",
+          "moneyline": 210
+        },
+        {
+          "fighter": "Melissa Croden",
+          "moneyline": -275
+        },
+        {
           "fighter": "Cody Chovancek",
           "moneyline": -150
         },
         {
           "fighter": "Suyoung You",
           "moneyline": 120
-        },
-        {
-          "fighter": "Chelsea Chandler",
-          "moneyline": 190
-        },
-        {
-          "fighter": "Melissa Croden",
-          "moneyline": -245
         },
         {
           "fighter": "Joaquin Buckley",
@@ -377,7 +377,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel, Unibet)",
-      "capturedAt": "2026-10-11T08:06:02.200Z",
+      "capturedAt": "2026-10-11T16:05:09.954Z",
       "lines": [
         {
           "fighter": "Alexander Volkanovski",
@@ -427,7 +427,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-11T08:06:02.200Z",
+      "capturedAt": "2026-10-11T16:05:09.954Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -450,7 +450,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-11T08:06:02.200Z",
+      "capturedAt": "2026-10-11T16:05:09.954Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
