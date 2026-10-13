@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-13T01:45:00.064Z",
+  "updatedAt": "2026-10-13T08:48:05.021Z",
   "events": [
     {
       "espnId": "600060741",
       "name": "Dana White's Contender Series: Season 10, Week 10",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-13T01:45:00.064Z",
+      "capturedAt": "2026-10-13T08:48:05.021Z",
       "lines": [
         {
           "fighter": "Erick Visconde",
@@ -33,11 +33,11 @@
         },
         {
           "fighter": "Davi Cabral",
-          "moneyline": 164
+          "moneyline": 162
         },
         {
           "fighter": "Douglas da Lapa",
-          "moneyline": -196
+          "moneyline": -194
         },
         {
           "fighter": "Greg Foster",
@@ -53,7 +53,7 @@
       "espnId": "600060773",
       "name": "UFC Fight Night: Buckley vs. Malott",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-13T01:45:00.064Z",
+      "capturedAt": "2026-10-13T08:48:05.021Z",
       "lines": [
         {
           "fighter": "Cristian Perez",
@@ -165,7 +165,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel, Unibet)",
-      "capturedAt": "2026-10-13T01:45:00.064Z",
+      "capturedAt": "2026-10-13T08:48:05.021Z",
       "lines": [
         {
           "fighter": "Merab Dvalishvili",
@@ -215,7 +215,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-13T01:45:00.064Z",
+      "capturedAt": "2026-10-13T08:48:05.021Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -238,7 +238,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-13T01:45:00.064Z",
+      "capturedAt": "2026-10-13T08:48:05.021Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
