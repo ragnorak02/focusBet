@@ -1,59 +1,124 @@
 {
-  "updatedAt": "2026-10-13T08:48:05.021Z",
+  "updatedAt": "2026-10-13T17:16:47.971Z",
   "events": [
     {
       "espnId": "600060741",
       "name": "Dana White's Contender Series: Season 10, Week 10",
-      "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-13T08:48:05.021Z",
+      "source": "BestFightOdds (FanDuel, BetWay, BetRivers)",
+      "capturedAt": "2026-10-13T17:16:47.971Z",
       "lines": [
         {
           "fighter": "Erick Visconde",
-          "moneyline": 128
+          "moneyline": 120,
+          "totalLine": 2.5,
+          "over": 102,
+          "draw": 5000,
+          "ko": 550,
+          "sub": 600,
+          "dec": 370,
+          "koSub": 275
         },
         {
           "fighter": "Ilias Bulaid",
-          "moneyline": -152
+          "moneyline": -142,
+          "totalLine": 2.5,
+          "under": -124,
+          "ko": 200,
+          "sub": 1400,
+          "dec": 310,
+          "koSub": 150
         },
         {
           "fighter": "Aline Pereira",
-          "moneyline": 520
+          "moneyline": 370,
+          "totalLine": 2.5,
+          "over": -106,
+          "draw": 5000,
+          "ko": 900,
+          "sub": 2200,
+          "dec": 700,
+          "koSub": 700
         },
         {
           "fighter": "Smilla Sundell",
-          "moneyline": -720
+          "moneyline": -480,
+          "totalLine": 2.5,
+          "under": -116,
+          "ko": 125,
+          "sub": 1000,
+          "dec": 185,
+          "koSub": -125
         },
         {
           "fighter": "Luis Francischinelli",
-          "moneyline": -255
+          "moneyline": -270,
+          "totalLine": 1.5,
+          "over": 250,
+          "draw": 4500,
+          "ko": -170,
+          "sub": 1000,
+          "dec": 1500,
+          "koSub": -225
         },
         {
           "fighter": "Will Rentz",
-          "moneyline": 210
+          "moneyline": 220,
+          "totalLine": 1.5,
+          "under": -375,
+          "ko": 390,
+          "sub": 1000,
+          "dec": 1900,
+          "koSub": 240
         },
         {
           "fighter": "Davi Cabral",
-          "moneyline": 162
+          "moneyline": 144,
+          "totalLine": 1.5,
+          "over": 120,
+          "draw": 5000,
+          "ko": 490,
+          "sub": 450,
+          "dec": 800,
+          "koSub": 200
         },
         {
           "fighter": "Douglas da Lapa",
-          "moneyline": -194
+          "moneyline": -172,
+          "totalLine": 1.5,
+          "under": -144,
+          "ko": -105,
+          "sub": 1400,
+          "dec": 800,
+          "koSub": -138
         },
         {
           "fighter": "Greg Foster",
-          "moneyline": 172
+          "moneyline": 168,
+          "totalLine": 1.5,
+          "over": -102,
+          "draw": 5000,
+          "ko": 550,
+          "sub": 650,
+          "dec": 650,
+          "koSub": 275
         },
         {
           "fighter": "Jason Asher",
-          "moneyline": -205
+          "moneyline": -200,
+          "totalLine": 1.5,
+          "under": -118,
+          "ko": 145,
+          "sub": 460,
+          "dec": 600,
+          "koSub": -138
         }
       ]
     },
     {
       "espnId": "600060773",
       "name": "UFC Fight Night: Buckley vs. Malott",
-      "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-13T08:48:05.021Z",
+      "source": "BestFightOdds (FanDuel, BetRivers, BetWay, Unibet)",
+      "capturedAt": "2026-10-13T17:16:47.971Z",
       "lines": [
         {
           "fighter": "Cristian Perez",
@@ -61,7 +126,11 @@
         },
         {
           "fighter": "Kyle Nelson",
-          "moneyline": 250
+          "moneyline": 250,
+          "ko": 410,
+          "sub": 1900,
+          "dec": 1300,
+          "koSub": 350
         },
         {
           "fighter": "Jhonata Diniz",
@@ -105,11 +174,24 @@
         },
         {
           "fighter": "Chelsea Chandler",
-          "moneyline": 220
+          "moneyline": 220,
+          "totalLine": 2.5,
+          "over": -167,
+          "draw": 4500,
+          "ko": 800,
+          "sub": 1200,
+          "dec": 475,
+          "koSub": 550
         },
         {
           "fighter": "Melissa Croden",
-          "moneyline": -295
+          "moneyline": -295,
+          "totalLine": 2.5,
+          "under": 123,
+          "ko": 335,
+          "sub": 525,
+          "dec": 143,
+          "koSub": 180
         },
         {
           "fighter": "Cody Chovancek",
@@ -121,43 +203,108 @@
         },
         {
           "fighter": "Joaquin Buckley",
-          "moneyline": -102
+          "moneyline": -102,
+          "totalLine": 3.5,
+          "over": -134,
+          "draw": 4500,
+          "ko": 200,
+          "sub": 2000,
+          "dec": 540,
+          "koSub": 163
         },
         {
           "fighter": "Mike Malott",
-          "moneyline": -125
+          "moneyline": -125,
+          "totalLine": 3.5,
+          "under": -103,
+          "ko": 360,
+          "sub": 550,
+          "dec": 295,
+          "koSub": 175
         },
         {
           "fighter": "Erin Blanchfield",
-          "moneyline": -340
+          "moneyline": -340,
+          "totalLine": 2.5,
+          "over": -500,
+          "draw": 4500,
+          "ko": 1050,
+          "sub": 575,
+          "dec": -148,
+          "koSub": 300
         },
         {
           "fighter": "Jasmine Jasudavicius",
-          "moneyline": 250
+          "moneyline": 250,
+          "totalLine": 2.5,
+          "under": 295,
+          "ko": 2500,
+          "sub": 1300,
+          "dec": 350,
+          "koSub": 900
         },
         {
           "fighter": "Kyle Daukaus",
-          "moneyline": -235
+          "moneyline": -235,
+          "totalLine": 1.5,
+          "over": -139,
+          "draw": 4500,
+          "ko": 280,
+          "sub": 280,
+          "dec": 400,
+          "koSub": -120
         },
         {
           "fighter": "Marc-Andre Barriault",
-          "moneyline": 180
+          "moneyline": 180,
+          "totalLine": 1.5,
+          "under": 102,
+          "ko": 420,
+          "sub": 1800,
+          "dec": 460,
+          "koSub": 350
         },
         {
           "fighter": "Louis Jourdain",
-          "moneyline": -210
+          "moneyline": -210,
+          "totalLine": 2.5,
+          "over": -148,
+          "draw": 4500,
+          "ko": 255,
+          "sub": 650,
+          "dec": 210,
+          "koSub": 163
         },
         {
           "fighter": "Timmy Cuamba",
-          "moneyline": 162
+          "moneyline": 162,
+          "totalLine": 2.5,
+          "under": 108,
+          "ko": 600,
+          "sub": 1700,
+          "dec": 340,
+          "koSub": 510
         },
         {
           "fighter": "Mandel Nallo",
-          "moneyline": -310
+          "moneyline": -310,
+          "totalLine": 1.5,
+          "over": 190,
+          "draw": 4500,
+          "ko": -139,
+          "sub": 575,
+          "dec": 1200,
+          "koSub": -215
         },
         {
           "fighter": "Nate Landwehr",
-          "moneyline": 230
+          "moneyline": 230,
+          "totalLine": 1.5,
+          "under": -275,
+          "ko": 500,
+          "sub": 750,
+          "dec": 1300,
+          "koSub": 295
         }
       ]
     },
@@ -165,7 +312,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel, Unibet)",
-      "capturedAt": "2026-10-13T08:48:05.021Z",
+      "capturedAt": "2026-10-13T17:16:47.971Z",
       "lines": [
         {
           "fighter": "Merab Dvalishvili",
@@ -215,7 +362,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-13T08:48:05.021Z",
+      "capturedAt": "2026-10-13T17:16:47.971Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -238,7 +385,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-13T08:48:05.021Z",
+      "capturedAt": "2026-10-13T17:16:47.971Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
