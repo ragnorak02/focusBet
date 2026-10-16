@@ -1,35 +1,27 @@
 {
-  "updatedAt": "2026-10-16T02:35:41.488Z",
+  "updatedAt": "2026-10-16T08:39:42.712Z",
   "events": [
     {
       "espnId": "600061331",
       "name": "PFL Chicago: Carmouche vs. Bishop 2",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-16T02:35:41.488Z",
+      "capturedAt": "2026-10-16T08:39:42.712Z",
       "lines": [
         {
           "fighter": "Jena Bishop",
-          "moneyline": 260
+          "moneyline": 265
         },
         {
           "fighter": "Liz Carmouche",
-          "moneyline": -340
-        },
-        {
-          "fighter": "Gabriel Braga",
-          "moneyline": 310
-        },
-        {
-          "fighter": "Timur Khizriev",
-          "moneyline": -420
+          "moneyline": -330
         },
         {
           "fighter": "Rafael Do Nascimento",
-          "moneyline": 285
+          "moneyline": 290
         },
         {
           "fighter": "Sarvarjon Kahmidov",
-          "moneyline": -375
+          "moneyline": -360
         },
         {
           "fighter": "Jp Saint Louis",
@@ -37,23 +29,39 @@
         },
         {
           "fighter": "Oualy Tandia",
-          "moneyline": -250
+          "moneyline": -240
+        },
+        {
+          "fighter": "Gabriel Braga",
+          "moneyline": 320
+        },
+        {
+          "fighter": "Timur Khizriev",
+          "moneyline": -405
         },
         {
           "fighter": "Abraham Bably",
-          "moneyline": -250
+          "moneyline": -205
         },
         {
           "fighter": "Emiliano Sordi",
-          "moneyline": 198
+          "moneyline": 172
+        },
+        {
+          "fighter": "Gamid Khizriev",
+          "moneyline": -3500
+        },
+        {
+          "fighter": "Michael Boylan",
+          "moneyline": 1400
         },
         {
           "fighter": "Eliezer Kubanza",
-          "moneyline": -152
+          "moneyline": -136
         },
         {
           "fighter": "Trey Waters",
-          "moneyline": 128
+          "moneyline": 116
         },
         {
           "fighter": "Cassio Barao",
@@ -72,14 +80,6 @@
           "moneyline": -520
         },
         {
-          "fighter": "Gamid Khizriev",
-          "moneyline": -3500
-        },
-        {
-          "fighter": "Michael Boylan",
-          "moneyline": 1400
-        },
-        {
           "fighter": "Cobey Fehr",
           "moneyline": -480
         },
@@ -88,36 +88,36 @@
           "moneyline": 370
         },
         {
-          "fighter": "Chelsea Hackett",
-          "moneyline": 330
-        },
-        {
-          "fighter": "Paulina Wisniewska",
-          "moneyline": -420
-        },
-        {
           "fighter": "Brock Hamer",
-          "moneyline": 750
+          "moneyline": 700
         },
         {
           "fighter": "Levan Khabalaev",
-          "moneyline": -1200
+          "moneyline": -1100
+        },
+        {
+          "fighter": "Chelsea Hackett",
+          "moneyline": 315
+        },
+        {
+          "fighter": "Paulina Wisniewska",
+          "moneyline": -405
         },
         {
           "fighter": "Caden Cox",
-          "moneyline": 142
+          "moneyline": 150
         },
         {
           "fighter": "Noah Hermosillo",
-          "moneyline": -168
+          "moneyline": -178
         },
         {
           "fighter": "Benita van Rooij",
-          "moneyline": 120
+          "moneyline": 126
         },
         {
           "fighter": "Giulliany Perea",
-          "moneyline": -142
+          "moneyline": -148
         }
       ]
     },
@@ -125,7 +125,7 @@
       "espnId": "600060773",
       "name": "UFC Fight Night: Buckley vs. Malott",
       "source": "BestFightOdds (FanDuel, BetWay, Unibet)",
-      "capturedAt": "2026-10-16T02:35:41.488Z",
+      "capturedAt": "2026-10-16T08:39:42.712Z",
       "lines": [
         {
           "fighter": "Cristian Perez",
@@ -382,10 +382,10 @@
           "fighter": "Mandel Nallo",
           "moneyline": -290,
           "totalLine": 1.5,
-          "over": 192,
+          "over": 200,
           "draw": 5000,
-          "ko": -130,
-          "sub": 550,
+          "ko": -135,
+          "sub": 600,
           "dec": 1200,
           "koSub": -225
         },
@@ -393,7 +393,7 @@
           "fighter": "Nate Landwehr",
           "moneyline": 225,
           "totalLine": 1.5,
-          "under": -240,
+          "under": -250,
           "ko": 500,
           "sub": 700,
           "dec": 1500,
@@ -405,7 +405,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel, Unibet, Kalshi)",
-      "capturedAt": "2026-10-16T02:35:41.488Z",
+      "capturedAt": "2026-10-16T08:39:42.712Z",
       "lines": [
         {
           "fighter": "Merab Dvalishvili",
@@ -471,11 +471,11 @@
         },
         {
           "fighter": "Rizvan Kuniev",
-          "moneyline": 101
+          "moneyline": -103
         },
         {
           "fighter": "Azamat Murzakanov",
-          "moneyline": -229
+          "moneyline": -219
         },
         {
           "fighter": "Dominick Reyes",
@@ -495,7 +495,7 @@
         },
         {
           "fighter": "Cam Rowston",
-          "moneyline": -117
+          "moneyline": -112
         },
         {
           "fighter": "Grant Dawson",
@@ -511,7 +511,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-16T02:35:41.488Z",
+      "capturedAt": "2026-10-16T08:39:42.712Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -534,7 +534,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-16T02:35:41.488Z",
+      "capturedAt": "2026-10-16T08:39:42.712Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
