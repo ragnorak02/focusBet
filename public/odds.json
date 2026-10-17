@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-17T08:10:45.136Z",
+  "updatedAt": "2026-10-17T13:23:47.635Z",
   "events": [
     {
       "espnId": "600060773",
       "name": "UFC Fight Night: Buckley vs. Malott",
       "source": "BestFightOdds (FanDuel, BetWay, Unibet)",
-      "capturedAt": "2026-10-17T08:10:45.136Z",
+      "capturedAt": "2026-10-17T13:23:47.635Z",
       "lines": [
         {
           "fighter": "Cristian Perez",
@@ -73,7 +73,7 @@
           "fighter": "Javad Mahjoub",
           "moneyline": 114,
           "totalLine": 1.5,
-          "over": -110,
+          "over": -118,
           "draw": 5000,
           "ko": 420,
           "sub": 460,
@@ -84,7 +84,7 @@
           "fighter": "Joel Faglier",
           "moneyline": -134,
           "totalLine": 1.5,
-          "under": -110,
+          "under": -104,
           "ko": 400,
           "sub": 250,
           "dec": 600,
@@ -113,23 +113,23 @@
         },
         {
           "fighter": "Chad Anheliger",
-          "moneyline": 142,
+          "moneyline": 140,
           "totalLine": 2.5,
-          "over": 118,
+          "over": 124,
           "draw": 5000,
           "ko": 550,
           "sub": 1300,
-          "dec": 320,
+          "dec": 310,
           "koSub": 240
         },
         {
           "fighter": "Steven Koslow",
-          "moneyline": -168,
+          "moneyline": -166,
           "totalLine": 2.5,
-          "under": -144,
-          "ko": 850,
-          "sub": 150,
-          "dec": 470,
+          "under": -150,
+          "ko": 900,
+          "sub": 140,
+          "dec": 500,
           "koSub": 120
         },
         {
@@ -241,21 +241,21 @@
           "fighter": "Louis Jourdain",
           "moneyline": -180,
           "totalLine": 2.5,
-          "over": -140,
+          "over": -138,
           "draw": 5000,
-          "ko": 260,
-          "sub": 750,
-          "dec": 220,
+          "ko": 280,
+          "sub": 650,
+          "dec": 230,
           "koSub": 150
         },
         {
           "fighter": "Timmy Cuamba",
           "moneyline": 152,
           "totalLine": 2.5,
-          "under": 116,
+          "under": 114,
           "ko": 600,
           "sub": 1300,
-          "dec": 330,
+          "dec": 320,
           "koSub": 450
         },
         {
@@ -285,7 +285,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel, Unibet, Kalshi)",
-      "capturedAt": "2026-10-17T08:10:45.136Z",
+      "capturedAt": "2026-10-17T13:23:47.635Z",
       "lines": [
         {
           "fighter": "Merab Dvalishvili",
@@ -335,7 +335,7 @@
         },
         {
           "fighter": "Ramazan Temirov",
-          "moneyline": -112
+          "moneyline": -117
         },
         {
           "fighter": "Aaron Pico",
@@ -363,7 +363,7 @@
         },
         {
           "fighter": "Abdul Rakhman Yakhyaev",
-          "moneyline": -431
+          "moneyline": -405
         },
         {
           "fighter": "Nikita Krylov",
@@ -391,7 +391,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-17T08:10:45.136Z",
+      "capturedAt": "2026-10-17T13:23:47.635Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -414,7 +414,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-17T08:10:45.136Z",
+      "capturedAt": "2026-10-17T13:23:47.635Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
