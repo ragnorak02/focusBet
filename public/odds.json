@@ -1,27 +1,27 @@
 {
-  "updatedAt": "2026-10-17T16:46:01.760Z",
+  "updatedAt": "2026-10-17T19:56:15.435Z",
   "events": [
     {
       "espnId": "600060773",
       "name": "UFC Fight Night: Buckley vs. Malott",
       "source": "BestFightOdds (FanDuel, BetWay, Unibet)",
-      "capturedAt": "2026-10-17T16:46:01.760Z",
+      "capturedAt": "2026-10-17T19:56:15.435Z",
       "lines": [
         {
           "fighter": "Cristian Perez",
           "moneyline": -340,
           "totalLine": 1.5,
-          "over": 108,
+          "over": 112,
           "draw": 5000,
-          "ko": 105,
-          "sub": 380,
-          "dec": 600
+          "ko": 100,
+          "sub": 400,
+          "dec": 650
         },
         {
           "fighter": "Kyle Nelson",
           "moneyline": 275,
           "totalLine": 1.5,
-          "under": -132,
+          "under": -136,
           "ko": 470,
           "sub": 1900,
           "dec": 1100,
@@ -218,23 +218,23 @@
         },
         {
           "fighter": "Kyle Daukaus",
-          "moneyline": -196,
+          "moneyline": -200,
           "totalLine": 1.5,
-          "over": -140,
+          "over": -150,
           "draw": 5000,
           "ko": 280,
           "sub": 270,
-          "dec": 440,
+          "dec": 420,
           "koSub": -120
         },
         {
           "fighter": "Marc-Andre Barriault",
-          "moneyline": 164,
+          "moneyline": 168,
           "totalLine": 1.5,
-          "under": 116,
-          "ko": 400,
-          "sub": 1800,
-          "dec": 470,
+          "under": 124,
+          "ko": 390,
+          "sub": 2000,
+          "dec": 490,
           "koSub": 350
         },
         {
@@ -285,7 +285,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel, Unibet, Kalshi)",
-      "capturedAt": "2026-10-17T16:46:01.760Z",
+      "capturedAt": "2026-10-17T19:56:15.435Z",
       "lines": [
         {
           "fighter": "Merab Dvalishvili",
@@ -300,7 +300,7 @@
         },
         {
           "fighter": "Petr Yan",
-          "moneyline": -176,
+          "moneyline": -184,
           "totalLine": 4.5,
           "under": 270,
           "ko": 550,
@@ -391,15 +391,15 @@
         },
         {
           "fighter": "Colby Thicknesse",
-          "moneyline": 312
+          "moneyline": 330
         },
         {
           "fighter": "Abubakar Vagaev",
-          "moneyline": -209
+          "moneyline": -183
         },
         {
           "fighter": "Jacob Malkoun",
-          "moneyline": 140
+          "moneyline": 105
         }
       ]
     },
@@ -407,7 +407,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-17T16:46:01.760Z",
+      "capturedAt": "2026-10-17T19:56:15.435Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -430,7 +430,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-17T16:46:01.760Z",
+      "capturedAt": "2026-10-17T19:56:15.435Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
