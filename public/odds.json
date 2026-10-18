@@ -1,27 +1,27 @@
 {
-  "updatedAt": "2026-10-17T23:44:11.232Z",
+  "updatedAt": "2026-10-18T02:28:36.717Z",
   "events": [
     {
       "espnId": "600060773",
       "name": "UFC Fight Night: Buckley vs. Malott",
       "source": "BestFightOdds (FanDuel, BetWay, Unibet)",
-      "capturedAt": "2026-10-17T23:44:11.232Z",
+      "capturedAt": "2026-10-18T02:28:36.717Z",
       "lines": [
         {
           "fighter": "Cristian Perez",
           "moneyline": -340,
           "totalLine": 1.5,
-          "over": 100,
+          "over": 104,
           "draw": 5000,
-          "ko": 100,
-          "sub": 400,
+          "ko": -110,
+          "sub": 440,
           "dec": 650
         },
         {
           "fighter": "Kyle Nelson",
           "moneyline": 275,
           "totalLine": 1.5,
-          "under": -122,
+          "under": -126,
           "ko": 470,
           "sub": 1800,
           "dec": 1100,
@@ -176,21 +176,21 @@
         },
         {
           "fighter": "Joaquin Buckley",
-          "moneyline": 108,
+          "moneyline": 112,
           "totalLine": 3.5,
-          "over": -110,
+          "over": -104,
           "draw": 5000,
-          "ko": 210,
-          "sub": 1800,
-          "dec": 500,
+          "ko": 200,
+          "sub": 2200,
+          "dec": 600,
           "koSub": 163
         },
         {
           "fighter": "Mike Malott",
-          "moneyline": -126,
+          "moneyline": -132,
           "totalLine": 3.5,
-          "under": -110,
-          "ko": 380,
+          "under": -118,
+          "ko": 370,
           "sub": 600,
           "dec": 280,
           "koSub": 175
@@ -199,18 +199,18 @@
           "fighter": "Erin Blanchfield",
           "moneyline": -330,
           "totalLine": 2.5,
-          "over": -390,
+          "over": -350,
           "draw": 5000,
-          "ko": 1000,
-          "sub": 550,
-          "dec": -140,
+          "ko": 950,
+          "sub": 500,
+          "dec": -135,
           "koSub": 300
         },
         {
           "fighter": "Jasmine Jasudavicius",
           "moneyline": 265,
           "totalLine": 2.5,
-          "under": 290,
+          "under": 270,
           "ko": 2200,
           "sub": 1300,
           "dec": 390,
@@ -241,18 +241,18 @@
           "fighter": "Louis Jourdain",
           "moneyline": -166,
           "totalLine": 2.5,
-          "over": -136,
+          "over": -132,
           "draw": 5000,
-          "ko": 310,
-          "sub": 650,
-          "dec": 230,
+          "ko": 270,
+          "sub": 700,
+          "dec": 240,
           "koSub": 150
         },
         {
           "fighter": "Timmy Cuamba",
           "moneyline": 140,
           "totalLine": 2.5,
-          "under": 112,
+          "under": 108,
           "ko": 600,
           "sub": 1000,
           "dec": 320,
@@ -285,7 +285,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel, Unibet, Kalshi)",
-      "capturedAt": "2026-10-17T23:44:11.232Z",
+      "capturedAt": "2026-10-18T02:28:36.717Z",
       "lines": [
         {
           "fighter": "Merab Dvalishvili",
@@ -387,15 +387,15 @@
         },
         {
           "fighter": "Asaf Chopurov",
-          "moneyline": -459
+          "moneyline": -405
         },
         {
           "fighter": "Colby Thicknesse",
-          "moneyline": 330
+          "moneyline": 295
         },
         {
           "fighter": "Abubakar Vagaev",
-          "moneyline": -183
+          "moneyline": -191
         },
         {
           "fighter": "Jacob Malkoun",
@@ -407,7 +407,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-17T23:44:11.232Z",
+      "capturedAt": "2026-10-18T02:28:36.717Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -430,7 +430,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-17T23:44:11.232Z",
+      "capturedAt": "2026-10-18T02:28:36.717Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
