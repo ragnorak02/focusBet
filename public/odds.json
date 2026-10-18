@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-18T19:56:15.483Z",
+  "updatedAt": "2026-10-18T22:11:43.938Z",
   "events": [
     {
       "espnId": "600060773",
       "name": "UFC Fight Night: Buckley vs. Malott",
       "source": "BestFightOdds (FanDuel, BetWay, Unibet)",
-      "capturedAt": "2026-10-18T19:56:15.483Z",
+      "capturedAt": "2026-10-18T22:11:43.938Z",
       "lines": [
         {
           "fighter": "Joaquin Buckley",
@@ -118,7 +118,7 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel, Unibet, Kalshi, Caesars)",
-      "capturedAt": "2026-10-18T19:56:15.483Z",
+      "capturedAt": "2026-10-18T22:11:43.938Z",
       "lines": [
         {
           "fighter": "Merab Dvalishvili",
@@ -200,7 +200,7 @@
         },
         {
           "fighter": "Jacob Malkoun",
-          "moneyline": 165
+          "moneyline": 158
         },
         {
           "fighter": "Bolaji Oki",
@@ -264,7 +264,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-18T19:56:15.483Z",
+      "capturedAt": "2026-10-18T22:11:43.938Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -287,7 +287,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-18T19:56:15.483Z",
+      "capturedAt": "2026-10-18T22:11:43.938Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
