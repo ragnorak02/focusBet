@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-18T08:27:38.395Z",
+  "updatedAt": "2026-10-18T13:42:23.376Z",
   "events": [
     {
       "espnId": "600060773",
       "name": "UFC Fight Night: Buckley vs. Malott",
       "source": "BestFightOdds (FanDuel, BetWay, Unibet)",
-      "capturedAt": "2026-10-18T08:27:38.395Z",
+      "capturedAt": "2026-10-18T13:42:23.376Z",
       "lines": [
         {
           "fighter": "Joaquin Buckley",
@@ -118,13 +118,13 @@
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel, Unibet, Kalshi, Caesars)",
-      "capturedAt": "2026-10-18T08:27:38.395Z",
+      "capturedAt": "2026-10-18T13:42:23.376Z",
       "lines": [
         {
           "fighter": "Merab Dvalishvili",
           "moneyline": 142,
           "totalLine": 4.5,
-          "over": -380,
+          "over": -310,
           "draw": 5000,
           "ko": 1600,
           "sub": 1400,
@@ -135,7 +135,7 @@
           "fighter": "Petr Yan",
           "moneyline": -184,
           "totalLine": 4.5,
-          "under": 270,
+          "under": 225,
           "ko": 550,
           "sub": 2200,
           "dec": 105,
@@ -196,11 +196,11 @@
         },
         {
           "fighter": "Abubakar Vagaev",
-          "moneyline": -183
+          "moneyline": -191
         },
         {
           "fighter": "Jacob Malkoun",
-          "moneyline": 152
+          "moneyline": 158
         },
         {
           "fighter": "Bolaji Oki",
@@ -264,7 +264,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-18T08:27:38.395Z",
+      "capturedAt": "2026-10-18T13:42:23.376Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -287,7 +287,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-10-18T08:27:38.395Z",
+      "capturedAt": "2026-10-18T13:42:23.376Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
