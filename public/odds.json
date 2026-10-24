@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-24T20:02:22.579Z",
+  "updatedAt": "2026-10-24T23:54:32.076Z",
   "events": [
     {
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-10-24T20:02:22.579Z",
+      "capturedAt": "2026-10-24T23:54:32.076Z",
       "lines": [
         {
           "fighter": "Cody Durden",
@@ -258,8 +258,8 @@
     {
       "espnId": "600061420",
       "name": "UFC Fight Night: Moicano vs. Nolan",
-      "source": "BestFightOdds (FanDuel, Caesars, Polymarket)",
-      "capturedAt": "2026-10-24T20:02:22.579Z",
+      "source": "BestFightOdds (FanDuel, BetRivers, Polymarket)",
+      "capturedAt": "2026-10-24T23:54:32.076Z",
       "lines": [
         {
           "fighter": "Dakota Hope",
@@ -286,20 +286,20 @@
           "moneyline": 240
         },
         {
-          "fighter": "Jeongyeong Lee",
-          "moneyline": -185
-        },
-        {
-          "fighter": "Julian Erosa",
-          "moneyline": 155
-        },
-        {
           "fighter": "Piera Rodriguez",
           "moneyline": -290
         },
         {
           "fighter": "Talita Alencar",
           "moneyline": 215
+        },
+        {
+          "fighter": "Jeongyeong Lee",
+          "moneyline": -180
+        },
+        {
+          "fighter": "Julian Erosa",
+          "moneyline": 143
         },
         {
           "fighter": "Lucia Szabova",
@@ -335,11 +335,11 @@
         },
         {
           "fighter": "Andre Petroski",
-          "moneyline": 223
+          "moneyline": 233
         },
         {
           "fighter": "Azamat Bekoev",
-          "moneyline": -400
+          "moneyline": -426
         }
       ]
     },
@@ -347,7 +347,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-24T20:02:22.579Z",
+      "capturedAt": "2026-10-24T23:54:32.076Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -370,7 +370,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers, FanDuel)",
-      "capturedAt": "2026-10-24T20:02:22.579Z",
+      "capturedAt": "2026-10-24T23:54:32.076Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
