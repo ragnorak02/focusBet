@@ -1,6 +1,403 @@
 {
-  "updatedAt": "2026-10-19T02:42:33.996Z",
+  "updatedAt": "2026-10-24T18:38:40.133Z",
   "events": [
+    {
+      "espnId": "600061267",
+      "name": "UFC 333: Volkanovski vs. Evloev",
+      "source": "BestFightOdds (FanDuel, BetWay)",
+      "capturedAt": "2026-10-24T18:38:40.133Z",
+      "lines": [
+        {
+          "fighter": "Cody Durden",
+          "moneyline": 108
+        },
+        {
+          "fighter": "Ode Osbourne",
+          "moneyline": -126
+        },
+        {
+          "fighter": "Alexander Volkanovski",
+          "moneyline": -112,
+          "draw": 5000,
+          "ko": 410,
+          "sub": 2200,
+          "dec": 200,
+          "koSub": 400
+        },
+        {
+          "fighter": "Movsar Evloev",
+          "moneyline": -104,
+          "ko": 1000,
+          "sub": 1400,
+          "dec": 150,
+          "koSub": 350
+        },
+        {
+          "fighter": "Merab Dvalishvili",
+          "moneyline": 122,
+          "draw": 5000,
+          "ko": 1600,
+          "sub": 1300,
+          "dec": 175,
+          "koSub": 500
+        },
+        {
+          "fighter": "Petr Yan",
+          "moneyline": -144,
+          "ko": 430,
+          "sub": 3000,
+          "dec": 140,
+          "koSub": 300
+        },
+        {
+          "fighter": "Loneer Kavanagh",
+          "moneyline": -110,
+          "draw": 5000,
+          "ko": 400,
+          "sub": 1600,
+          "dec": 210,
+          "koSub": 240
+        },
+        {
+          "fighter": "Ramazan Temirov",
+          "moneyline": -106,
+          "ko": 200,
+          "sub": 2000,
+          "dec": 430,
+          "koSub": 150
+        },
+        {
+          "fighter": "Alexander Volkov",
+          "moneyline": -144,
+          "draw": 5000,
+          "ko": 380,
+          "sub": 2000,
+          "dec": 170,
+          "koSub": 350
+        },
+        {
+          "fighter": "Rizvan Kuniev",
+          "moneyline": 122,
+          "ko": 550,
+          "sub": 1700,
+          "dec": 220,
+          "koSub": 350
+        },
+        {
+          "fighter": "Aaron Pico",
+          "moneyline": -148,
+          "draw": 5000,
+          "ko": 220,
+          "sub": 900,
+          "dec": 310,
+          "koSub": 225
+        },
+        {
+          "fighter": "Losene Keita",
+          "moneyline": 126,
+          "ko": 220,
+          "sub": 2700,
+          "dec": 600,
+          "koSub": 130
+        },
+        {
+          "fighter": "Azamat Murzakanov",
+          "moneyline": -225,
+          "draw": 5000,
+          "ko": -130,
+          "sub": 2700,
+          "dec": 600,
+          "koSub": -150
+        },
+        {
+          "fighter": "Dominick Reyes",
+          "moneyline": 188,
+          "ko": 320,
+          "sub": 1700,
+          "dec": 750,
+          "koSub": 275
+        },
+        {
+          "fighter": "Abdul Rakhman Yakhyaev",
+          "moneyline": -590,
+          "draw": 5000,
+          "ko": -135,
+          "sub": 280,
+          "dec": 1200,
+          "koSub": -400
+        },
+        {
+          "fighter": "Nikita Krylov",
+          "moneyline": 430,
+          "ko": 800,
+          "sub": 1300,
+          "dec": 1700,
+          "koSub": 450
+        },
+        {
+          "fighter": "Abus Magomedov",
+          "moneyline": -120,
+          "draw": 5000,
+          "ko": 370,
+          "sub": 500,
+          "dec": 350,
+          "koSub": 175
+        },
+        {
+          "fighter": "Cam Rowston",
+          "moneyline": 102,
+          "ko": 400,
+          "sub": 600,
+          "dec": 400,
+          "koSub": 163
+        },
+        {
+          "fighter": "Grant Dawson",
+          "moneyline": -108,
+          "draw": 5000,
+          "ko": 1100,
+          "sub": 500,
+          "dec": 200,
+          "koSub": 240
+        },
+        {
+          "fighter": "Nurullo Aliev",
+          "moneyline": -108,
+          "ko": 420,
+          "sub": 2200,
+          "dec": 200,
+          "koSub": 400
+        },
+        {
+          "fighter": "Asaf Chopurov",
+          "moneyline": -590,
+          "draw": 5000,
+          "ko": 165,
+          "sub": 300,
+          "dec": 250,
+          "koSub": -200
+        },
+        {
+          "fighter": "Colby Thicknesse",
+          "moneyline": 430,
+          "ko": 1500,
+          "sub": 1100,
+          "dec": 950,
+          "koSub": 900
+        },
+        {
+          "fighter": "Abubakar Vagaev",
+          "moneyline": -158,
+          "draw": 5000,
+          "ko": 600,
+          "sub": 2200,
+          "dec": 110,
+          "koSub": 400
+        },
+        {
+          "fighter": "Jacob Malkoun",
+          "moneyline": 134,
+          "ko": 650,
+          "sub": 2000,
+          "dec": 240,
+          "koSub": 400
+        },
+        {
+          "fighter": "Bolaji Oki",
+          "moneyline": -108,
+          "draw": 5000,
+          "ko": 195,
+          "sub": 1800,
+          "dec": 460,
+          "koSub": 240
+        },
+        {
+          "fighter": "Daniel Santos",
+          "moneyline": -108,
+          "ko": 380,
+          "sub": 490,
+          "dec": 420,
+          "koSub": 130
+        },
+        {
+          "fighter": "Kody Steele",
+          "moneyline": -164,
+          "draw": 5000,
+          "ko": 340,
+          "sub": 280,
+          "dec": 440,
+          "koSub": 110
+        },
+        {
+          "fighter": "Noah Gugnon",
+          "moneyline": 138,
+          "ko": 460,
+          "sub": 800,
+          "dec": 460,
+          "koSub": 240
+        },
+        {
+          "fighter": "Lasmin Lucindo",
+          "moneyline": -420,
+          "draw": 5000,
+          "ko": 500,
+          "sub": 700,
+          "dec": -140,
+          "koSub": 240
+        },
+        {
+          "fighter": "Nicolle Caliari",
+          "moneyline": 330,
+          "ko": 1700,
+          "sub": 1300,
+          "dec": 550,
+          "koSub": 700
+        }
+      ]
+    },
+    {
+      "espnId": "600061420",
+      "name": "UFC Fight Night: Moicano vs. Nolan",
+      "source": "BestFightOdds (FanDuel, Caesars, Polymarket)",
+      "capturedAt": "2026-10-24T18:38:40.133Z",
+      "lines": [
+        {
+          "fighter": "Dakota Hope",
+          "moneyline": 215
+        },
+        {
+          "fighter": "Francis Marshall",
+          "moneyline": -290
+        },
+        {
+          "fighter": "Rodrigo Sezinando",
+          "moneyline": -188
+        },
+        {
+          "fighter": "Theodor Berggren",
+          "moneyline": 146
+        },
+        {
+          "fighter": "Joseph Kropschot",
+          "moneyline": -330
+        },
+        {
+          "fighter": "Nick Klein",
+          "moneyline": 240
+        },
+        {
+          "fighter": "Jeongyeong Lee",
+          "moneyline": -185
+        },
+        {
+          "fighter": "Julian Erosa",
+          "moneyline": 155
+        },
+        {
+          "fighter": "Piera Rodriguez",
+          "moneyline": -290
+        },
+        {
+          "fighter": "Talita Alencar",
+          "moneyline": 215
+        },
+        {
+          "fighter": "Lucia Szabova",
+          "moneyline": -620
+        },
+        {
+          "fighter": "Tainara Lisboa",
+          "moneyline": 400
+        },
+        {
+          "fighter": "Renato Moicano",
+          "moneyline": 102
+        },
+        {
+          "fighter": "Tom Nolan",
+          "moneyline": -120
+        },
+        {
+          "fighter": "Luana Santos",
+          "moneyline": -220
+        },
+        {
+          "fighter": "Yana Santos",
+          "moneyline": 184
+        },
+        {
+          "fighter": "Farman Hasanov",
+          "moneyline": 200
+        },
+        {
+          "fighter": "Jean Paul Lebosnoyani",
+          "moneyline": -245
+        },
+        {
+          "fighter": "Andre Petroski",
+          "moneyline": 257
+        },
+        {
+          "fighter": "Azamat Bekoev",
+          "moneyline": -285
+        }
+      ]
+    },
+    {
+      "espnId": "600061400",
+      "name": "UFC 334: Gane vs. Hokit",
+      "source": "BestFightOdds (FanDuel)",
+      "capturedAt": "2026-10-24T18:38:40.133Z",
+      "lines": [
+        {
+          "fighter": "Ciryl Gane",
+          "moneyline": -265
+        },
+        {
+          "fighter": "Josh Hokit",
+          "moneyline": 200
+        },
+        {
+          "fighter": "Amanda Nunes",
+          "moneyline": 162
+        },
+        {
+          "fighter": "Kayla Harrison",
+          "moneyline": -210
+        }
+      ]
+    },
+    {
+      "name": "UFC 335",
+      "source": "BestFightOdds (BetRivers, FanDuel)",
+      "capturedAt": "2026-10-24T18:38:40.133Z",
+      "lines": [
+        {
+          "fighter": "Bo Nickal",
+          "moneyline": 160
+        },
+        {
+          "fighter": "Joe Pyfer",
+          "moneyline": -200
+        },
+        {
+          "fighter": "Charles Oliveira",
+          "moneyline": -162
+        },
+        {
+          "fighter": "Diego Lopes",
+          "moneyline": 126
+        },
+        {
+          "fighter": "Alex Pereira",
+          "moneyline": 158
+        },
+        {
+          "fighter": "Sergei Pavlovich",
+          "moneyline": -205
+        }
+      ]
+    },
     {
       "espnId": "600060493",
       "name": "UFC Fight Night: Hernandez vs. Rodrigues",

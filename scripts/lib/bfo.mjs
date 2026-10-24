@@ -145,7 +145,9 @@ function parseRows(tbody, books) {
   let m;
   while ((m = rowRe.exec(tbody))) {
     const inner = m[2];
-    const thMatch = /<th scope="row">([\s\S]*?)<\/th>/.exec(inner);
+    // The first corner of each fight carries extra attributes
+    // (`data-admin-matchup`), so the tag can't be matched literally.
+    const thMatch = /<th scope="row"[^>]*>([\s\S]*?)<\/th>/.exec(inner);
     if (!thMatch) continue;
 
     // The edit link is admin-only chrome that renders as a bare matchup number.
