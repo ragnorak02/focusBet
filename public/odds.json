@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-24T23:54:32.076Z",
+  "updatedAt": "2026-10-25T02:38:50.587Z",
   "events": [
     {
       "espnId": "600061267",
       "name": "UFC 333: Volkanovski vs. Evloev",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-10-24T23:54:32.076Z",
+      "capturedAt": "2026-10-25T02:38:50.587Z",
       "lines": [
         {
           "fighter": "Cody Durden",
@@ -259,7 +259,7 @@
       "espnId": "600061420",
       "name": "UFC Fight Night: Moicano vs. Nolan",
       "source": "BestFightOdds (FanDuel, BetRivers, Polymarket)",
-      "capturedAt": "2026-10-24T23:54:32.076Z",
+      "capturedAt": "2026-10-25T02:38:50.587Z",
       "lines": [
         {
           "fighter": "Dakota Hope",
@@ -335,11 +335,11 @@
         },
         {
           "fighter": "Andre Petroski",
-          "moneyline": 233
+          "moneyline": 245
         },
         {
           "fighter": "Azamat Bekoev",
-          "moneyline": -426
+          "moneyline": -456
         }
       ]
     },
@@ -347,7 +347,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-24T23:54:32.076Z",
+      "capturedAt": "2026-10-25T02:38:50.587Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -370,7 +370,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers, FanDuel)",
-      "capturedAt": "2026-10-24T23:54:32.076Z",
+      "capturedAt": "2026-10-25T02:38:50.587Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
