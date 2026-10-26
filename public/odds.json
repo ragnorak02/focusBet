@@ -1,43 +1,27 @@
 {
-  "updatedAt": "2026-10-25T22:12:47.758Z",
+  "updatedAt": "2026-10-26T02:37:10.930Z",
   "events": [
     {
       "espnId": "600061420",
       "name": "UFC Fight Night: Moicano vs. Nolan",
-      "source": "BestFightOdds (Polymarket, FanDuel, BetRivers)",
-      "capturedAt": "2026-10-25T22:12:47.758Z",
+      "source": "BestFightOdds (FanDuel, Caesars, BetRivers, Polymarket)",
+      "capturedAt": "2026-10-26T02:37:10.930Z",
       "lines": [
         {
-          "fighter": "Jacobe Smith",
-          "moneyline": -257
-        },
-        {
-          "fighter": "Randy Brown",
-          "moneyline": 245
-        },
-        {
-          "fighter": "Mickey Gall",
-          "moneyline": 245
-        },
-        {
-          "fighter": "Zach Reese",
-          "moneyline": -257
-        },
-        {
           "fighter": "Renato Moicano",
-          "moneyline": 106
+          "moneyline": -104
         },
         {
           "fighter": "Tom Nolan",
-          "moneyline": -136
+          "moneyline": -122
         },
         {
           "fighter": "Luana Santos",
-          "moneyline": -235
+          "moneyline": -280
         },
         {
           "fighter": "Yana Santos",
-          "moneyline": 180
+          "moneyline": 210
         },
         {
           "fighter": "Farman Hasanov",
@@ -70,6 +54,22 @@
         {
           "fighter": "Theodor Berggren",
           "moneyline": 146
+        },
+        {
+          "fighter": "Mickey Gall",
+          "moneyline": 220
+        },
+        {
+          "fighter": "Zach Reese",
+          "moneyline": -270
+        },
+        {
+          "fighter": "Jacobe Smith",
+          "moneyline": -250
+        },
+        {
+          "fighter": "Randy Brown",
+          "moneyline": 205
         },
         {
           "fighter": "Joseph Kropschot",
@@ -105,11 +105,11 @@
         },
         {
           "fighter": "Andre Petroski",
-          "moneyline": 150
+          "moneyline": 223
         },
         {
           "fighter": "Azamat Bekoev",
-          "moneyline": -335
+          "moneyline": -300
         }
       ]
     },
@@ -117,7 +117,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-25T22:12:47.758Z",
+      "capturedAt": "2026-10-26T02:37:10.930Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -140,7 +140,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers, FanDuel)",
-      "capturedAt": "2026-10-25T22:12:47.758Z",
+      "capturedAt": "2026-10-26T02:37:10.930Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
