@@ -1,12 +1,28 @@
 {
-  "updatedAt": "2026-10-26T02:37:10.930Z",
+  "updatedAt": "2026-10-26T09:32:59.651Z",
   "events": [
     {
       "espnId": "600061420",
       "name": "UFC Fight Night: Moicano vs. Nolan",
-      "source": "BestFightOdds (FanDuel, Caesars, BetRivers, Polymarket)",
-      "capturedAt": "2026-10-26T02:37:10.930Z",
+      "source": "BestFightOdds (Polymarket, FanDuel, BetRivers)",
+      "capturedAt": "2026-10-26T09:32:59.651Z",
       "lines": [
+        {
+          "fighter": "Jacobe Smith",
+          "moneyline": -257
+        },
+        {
+          "fighter": "Randy Brown",
+          "moneyline": 245
+        },
+        {
+          "fighter": "Mickey Gall",
+          "moneyline": 233
+        },
+        {
+          "fighter": "Zach Reese",
+          "moneyline": -245
+        },
         {
           "fighter": "Renato Moicano",
           "moneyline": -104
@@ -56,22 +72,6 @@
           "moneyline": 146
         },
         {
-          "fighter": "Mickey Gall",
-          "moneyline": 220
-        },
-        {
-          "fighter": "Zach Reese",
-          "moneyline": -270
-        },
-        {
-          "fighter": "Jacobe Smith",
-          "moneyline": -250
-        },
-        {
-          "fighter": "Randy Brown",
-          "moneyline": 205
-        },
-        {
           "fighter": "Joseph Kropschot",
           "moneyline": -330
         },
@@ -105,11 +105,11 @@
         },
         {
           "fighter": "Andre Petroski",
-          "moneyline": 223
+          "moneyline": 150
         },
         {
           "fighter": "Azamat Bekoev",
-          "moneyline": -300
+          "moneyline": -170
         }
       ]
     },
@@ -117,7 +117,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-26T02:37:10.930Z",
+      "capturedAt": "2026-10-26T09:32:59.651Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -140,7 +140,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers, FanDuel)",
-      "capturedAt": "2026-10-26T02:37:10.930Z",
+      "capturedAt": "2026-10-26T09:32:59.651Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
