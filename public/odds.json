@@ -1,35 +1,27 @@
 {
-  "updatedAt": "2026-10-26T09:32:59.651Z",
+  "updatedAt": "2026-10-26T16:23:54.998Z",
   "events": [
     {
       "espnId": "600061420",
       "name": "UFC Fight Night: Moicano vs. Nolan",
-      "source": "BestFightOdds (Polymarket, FanDuel, BetRivers)",
-      "capturedAt": "2026-10-26T09:32:59.651Z",
+      "source": "BestFightOdds (FanDuel, BetRivers, Polymarket)",
+      "capturedAt": "2026-10-26T16:23:54.998Z",
       "lines": [
         {
           "fighter": "Jacobe Smith",
-          "moneyline": -257
+          "moneyline": -265
         },
         {
           "fighter": "Randy Brown",
-          "moneyline": 245
-        },
-        {
-          "fighter": "Mickey Gall",
-          "moneyline": 233
-        },
-        {
-          "fighter": "Zach Reese",
-          "moneyline": -245
+          "moneyline": 200
         },
         {
           "fighter": "Renato Moicano",
-          "moneyline": -104
+          "moneyline": -108
         },
         {
           "fighter": "Tom Nolan",
-          "moneyline": -122
+          "moneyline": -118
         },
         {
           "fighter": "Luana Santos",
@@ -40,20 +32,20 @@
           "moneyline": 210
         },
         {
+          "fighter": "Cody Durden",
+          "moneyline": -102
+        },
+        {
+          "fighter": "Ode Osbourne",
+          "moneyline": -125
+        },
+        {
           "fighter": "Farman Hasanov",
           "moneyline": 200
         },
         {
           "fighter": "Jean Paul Lebosnoyani",
           "moneyline": -265
-        },
-        {
-          "fighter": "Cody Durden",
-          "moneyline": 102
-        },
-        {
-          "fighter": "Ode Osbourne",
-          "moneyline": -130
         },
         {
           "fighter": "Dakota Hope",
@@ -80,20 +72,20 @@
           "moneyline": 240
         },
         {
-          "fighter": "Piera Rodriguez",
-          "moneyline": -290
-        },
-        {
-          "fighter": "Talita Alencar",
-          "moneyline": 215
-        },
-        {
           "fighter": "Jeongyeong Lee",
           "moneyline": -180
         },
         {
           "fighter": "Julian Erosa",
           "moneyline": 143
+        },
+        {
+          "fighter": "Piera Rodriguez",
+          "moneyline": -290
+        },
+        {
+          "fighter": "Talita Alencar",
+          "moneyline": 215
         },
         {
           "fighter": "Lucia Szabova",
@@ -104,12 +96,20 @@
           "moneyline": 400
         },
         {
+          "fighter": "Mickey Gall",
+          "moneyline": 220
+        },
+        {
+          "fighter": "Zach Reese",
+          "moneyline": -295
+        },
+        {
           "fighter": "Andre Petroski",
-          "moneyline": 150
+          "moneyline": 245
         },
         {
           "fighter": "Azamat Bekoev",
-          "moneyline": -170
+          "moneyline": -270
         }
       ]
     },
@@ -117,7 +117,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-26T09:32:59.651Z",
+      "capturedAt": "2026-10-26T16:23:54.998Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -140,7 +140,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers, FanDuel)",
-      "capturedAt": "2026-10-26T09:32:59.651Z",
+      "capturedAt": "2026-10-26T16:23:54.998Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
