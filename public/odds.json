@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-27T15:38:59.310Z",
+  "updatedAt": "2026-10-27T20:21:06.177Z",
   "events": [
     {
       "espnId": "600061420",
       "name": "UFC Fight Night: Moicano vs. Nolan",
-      "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Kalshi)",
-      "capturedAt": "2026-10-27T15:38:59.310Z",
+      "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet, Kalshi)",
+      "capturedAt": "2026-10-27T20:21:06.177Z",
       "lines": [
         {
           "fighter": "Renato Moicano",
@@ -27,78 +27,87 @@
         {
           "fighter": "Jacobe Smith",
           "moneyline": -265,
-          "draw": 6600,
-          "ko": 140,
-          "sub": 350,
-          "dec": 450,
+          "draw": 4500,
+          "ko": 143,
+          "sub": 370,
+          "dec": 510,
           "koSub": -138
         },
         {
           "fighter": "Randy Brown",
           "moneyline": 200,
           "ko": 400,
-          "sub": 1200,
-          "dec": 600,
+          "sub": 2200,
+          "dec": 750,
           "koSub": 240
         },
         {
           "fighter": "Luana Santos",
           "moneyline": -280,
-          "draw": 5000,
-          "ko": 1800,
-          "sub": 350,
-          "dec": -120,
+          "draw": 4500,
+          "ko": 2200,
+          "sub": 375,
+          "dec": -121,
           "koSub": 300
         },
         {
           "fighter": "Yana Santos",
           "moneyline": 210,
-          "ko": 1800,
-          "sub": 350,
-          "dec": -120,
+          "ko": 2200,
+          "sub": 375,
+          "dec": -121,
           "koSub": 300
         },
         {
           "fighter": "Cody Durden",
           "moneyline": -113,
-          "draw": 6600,
-          "ko": 900,
-          "sub": 400,
-          "dec": 225,
+          "draw": 4500,
+          "ko": 800,
+          "sub": 390,
+          "dec": 255,
           "koSub": 275
         },
         {
           "fighter": "Ode Osbourne",
           "moneyline": -113,
-          "ko": 175,
-          "sub": 900,
-          "dec": 500,
+          "ko": 190,
+          "sub": 1500,
+          "dec": 575,
           "koSub": 120
         },
         {
           "fighter": "Farman Hasanov",
           "moneyline": 215,
-          "draw": 6600,
-          "ko": 700,
-          "sub": 1200,
-          "dec": 500,
+          "draw": 4500,
+          "ko": 600,
+          "sub": 2200,
+          "dec": 550,
           "koSub": 500
         },
         {
           "fighter": "Jean Paul Lebosnoyani",
           "moneyline": -290,
-          "ko": 350,
-          "sub": 175,
-          "dec": 240,
+          "ko": 380,
+          "sub": 185,
+          "dec": 290,
           "koSub": -125
         },
         {
           "fighter": "Mickey Gall",
-          "moneyline": 220
+          "moneyline": 220,
+          "draw": 4500,
+          "ko": 2500,
+          "sub": 475,
+          "dec": 900,
+          "koSub": 450
         },
         {
           "fighter": "Zach Reese",
-          "moneyline": -295
+          "moneyline": -295,
+          "ko": -112,
+          "sub": 460,
+          "dec": 650,
+          "koSub": -200
         },
         {
           "fighter": "Dakota Hope",
@@ -150,11 +159,11 @@
         },
         {
           "fighter": "Andre Petroski",
-          "moneyline": -112
+          "moneyline": 114
         },
         {
           "fighter": "Azamat Bekoev",
-          "moneyline": -161
+          "moneyline": -168
         }
       ]
     },
@@ -162,7 +171,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-27T15:38:59.310Z",
+      "capturedAt": "2026-10-27T20:21:06.177Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -185,7 +194,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers, FanDuel)",
-      "capturedAt": "2026-10-27T15:38:59.310Z",
+      "capturedAt": "2026-10-27T20:21:06.177Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
