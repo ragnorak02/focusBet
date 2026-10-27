@@ -1,27 +1,96 @@
 {
-  "updatedAt": "2026-10-27T09:29:52.290Z",
+  "updatedAt": "2026-10-27T15:38:59.310Z",
   "events": [
     {
       "espnId": "600061420",
       "name": "UFC Fight Night: Moicano vs. Nolan",
-      "source": "BestFightOdds (FanDuel, BetRivers, Kalshi)",
-      "capturedAt": "2026-10-27T09:29:52.290Z",
+      "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Kalshi)",
+      "capturedAt": "2026-10-27T15:38:59.310Z",
       "lines": [
         {
-          "fighter": "Jacobe Smith",
-          "moneyline": -265
-        },
-        {
-          "fighter": "Randy Brown",
-          "moneyline": 200
-        },
-        {
           "fighter": "Renato Moicano",
-          "moneyline": -115
+          "moneyline": -122,
+          "draw": 5000,
+          "ko": 750,
+          "sub": 200,
+          "dec": 550,
+          "koSub": 140
         },
         {
           "fighter": "Tom Nolan",
-          "moneyline": -111
+          "moneyline": -104,
+          "ko": 230,
+          "sub": 900,
+          "dec": 550,
+          "koSub": 140
+        },
+        {
+          "fighter": "Jacobe Smith",
+          "moneyline": -265,
+          "draw": 6600,
+          "ko": 140,
+          "sub": 350,
+          "dec": 450,
+          "koSub": -138
+        },
+        {
+          "fighter": "Randy Brown",
+          "moneyline": 200,
+          "ko": 400,
+          "sub": 1200,
+          "dec": 600,
+          "koSub": 240
+        },
+        {
+          "fighter": "Luana Santos",
+          "moneyline": -280,
+          "draw": 5000,
+          "ko": 1800,
+          "sub": 350,
+          "dec": -120,
+          "koSub": 300
+        },
+        {
+          "fighter": "Yana Santos",
+          "moneyline": 210,
+          "ko": 1800,
+          "sub": 350,
+          "dec": -120,
+          "koSub": 300
+        },
+        {
+          "fighter": "Cody Durden",
+          "moneyline": -113,
+          "draw": 6600,
+          "ko": 900,
+          "sub": 400,
+          "dec": 225,
+          "koSub": 275
+        },
+        {
+          "fighter": "Ode Osbourne",
+          "moneyline": -113,
+          "ko": 175,
+          "sub": 900,
+          "dec": 500,
+          "koSub": 120
+        },
+        {
+          "fighter": "Farman Hasanov",
+          "moneyline": 215,
+          "draw": 6600,
+          "ko": 700,
+          "sub": 1200,
+          "dec": 500,
+          "koSub": 500
+        },
+        {
+          "fighter": "Jean Paul Lebosnoyani",
+          "moneyline": -290,
+          "ko": 350,
+          "sub": 175,
+          "dec": 240,
+          "koSub": -125
         },
         {
           "fighter": "Mickey Gall",
@@ -32,44 +101,28 @@
           "moneyline": -295
         },
         {
-          "fighter": "Luana Santos",
-          "moneyline": -280
-        },
-        {
-          "fighter": "Yana Santos",
-          "moneyline": 210
-        },
-        {
-          "fighter": "Cody Durden",
-          "moneyline": -106
-        },
-        {
-          "fighter": "Ode Osbourne",
-          "moneyline": -120
-        },
-        {
-          "fighter": "Farman Hasanov",
-          "moneyline": 215
-        },
-        {
-          "fighter": "Jean Paul Lebosnoyani",
-          "moneyline": -290
-        },
-        {
           "fighter": "Dakota Hope",
-          "moneyline": 215
+          "moneyline": 196
         },
         {
           "fighter": "Francis Marshall",
-          "moneyline": -290
+          "moneyline": -260
         },
         {
           "fighter": "Rodrigo Sezinando",
-          "moneyline": -188
+          "moneyline": -178
         },
         {
           "fighter": "Theodor Berggren",
-          "moneyline": 146
+          "moneyline": 138
+        },
+        {
+          "fighter": "Jeongyeong Lee",
+          "moneyline": -175
+        },
+        {
+          "fighter": "Julian Erosa",
+          "moneyline": 138
         },
         {
           "fighter": "Joseph Kropschot",
@@ -78,14 +131,6 @@
         {
           "fighter": "Nick Klein",
           "moneyline": 240
-        },
-        {
-          "fighter": "Jeongyeong Lee",
-          "moneyline": -180
-        },
-        {
-          "fighter": "Julian Erosa",
-          "moneyline": 143
         },
         {
           "fighter": "Piera Rodriguez",
@@ -105,11 +150,11 @@
         },
         {
           "fighter": "Andre Petroski",
-          "moneyline": -108
+          "moneyline": -112
         },
         {
           "fighter": "Azamat Bekoev",
-          "moneyline": -155
+          "moneyline": -161
         }
       ]
     },
@@ -117,7 +162,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-27T09:29:52.290Z",
+      "capturedAt": "2026-10-27T15:38:59.310Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -140,7 +185,7 @@
     {
       "name": "UFC 335",
       "source": "BestFightOdds (BetRivers, FanDuel)",
-      "capturedAt": "2026-10-27T09:29:52.290Z",
+      "capturedAt": "2026-10-27T15:38:59.310Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
