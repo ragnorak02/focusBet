@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-27T20:21:06.177Z",
+  "updatedAt": "2026-10-28T00:51:21.554Z",
   "events": [
     {
       "espnId": "600061420",
       "name": "UFC Fight Night: Moicano vs. Nolan",
       "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet, Kalshi)",
-      "capturedAt": "2026-10-27T20:21:06.177Z",
+      "capturedAt": "2026-10-28T00:51:21.554Z",
       "lines": [
         {
           "fighter": "Renato Moicano",
@@ -23,23 +23,6 @@
           "sub": 900,
           "dec": 550,
           "koSub": 140
-        },
-        {
-          "fighter": "Jacobe Smith",
-          "moneyline": -265,
-          "draw": 4500,
-          "ko": 143,
-          "sub": 370,
-          "dec": 510,
-          "koSub": -138
-        },
-        {
-          "fighter": "Randy Brown",
-          "moneyline": 200,
-          "ko": 400,
-          "sub": 2200,
-          "dec": 750,
-          "koSub": 240
         },
         {
           "fighter": "Luana Santos",
@@ -93,6 +76,22 @@
           "koSub": -125
         },
         {
+          "fighter": "Dakota Hope",
+          "moneyline": 196
+        },
+        {
+          "fighter": "Francis Marshall",
+          "moneyline": -260
+        },
+        {
+          "fighter": "Rodrigo Sezinando",
+          "moneyline": -178
+        },
+        {
+          "fighter": "Theodor Berggren",
+          "moneyline": 138
+        },
+        {
           "fighter": "Mickey Gall",
           "moneyline": 220,
           "draw": 4500,
@@ -110,22 +109,6 @@
           "koSub": -200
         },
         {
-          "fighter": "Dakota Hope",
-          "moneyline": 196
-        },
-        {
-          "fighter": "Francis Marshall",
-          "moneyline": -260
-        },
-        {
-          "fighter": "Rodrigo Sezinando",
-          "moneyline": -178
-        },
-        {
-          "fighter": "Theodor Berggren",
-          "moneyline": 138
-        },
-        {
           "fighter": "Jeongyeong Lee",
           "moneyline": -175
         },
@@ -140,6 +123,23 @@
         {
           "fighter": "Nick Klein",
           "moneyline": 240
+        },
+        {
+          "fighter": "Jacobe Smith",
+          "moneyline": -265,
+          "draw": 4500,
+          "ko": 143,
+          "sub": 370,
+          "dec": 510,
+          "koSub": -138
+        },
+        {
+          "fighter": "Randy Brown",
+          "moneyline": 200,
+          "ko": 400,
+          "sub": 2200,
+          "dec": 750,
+          "koSub": 240
         },
         {
           "fighter": "Piera Rodriguez",
@@ -159,11 +159,11 @@
         },
         {
           "fighter": "Andre Petroski",
-          "moneyline": 114
+          "moneyline": -121
         },
         {
           "fighter": "Azamat Bekoev",
-          "moneyline": -168
+          "moneyline": -209
         }
       ]
     },
@@ -171,7 +171,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-27T20:21:06.177Z",
+      "capturedAt": "2026-10-28T00:51:21.554Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -192,9 +192,10 @@
       ]
     },
     {
-      "name": "UFC 335",
+      "espnId": "600061401",
+      "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (BetRivers, FanDuel)",
-      "capturedAt": "2026-10-27T20:21:06.177Z",
+      "capturedAt": "2026-10-28T00:51:21.554Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
