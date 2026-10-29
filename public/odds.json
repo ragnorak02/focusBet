@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-29T14:51:43.505Z",
+  "updatedAt": "2026-10-29T20:46:23.381Z",
   "events": [
     {
       "espnId": "600061420",
       "name": "UFC Fight Night: Moicano vs. Nolan",
-      "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet, Kalshi)",
-      "capturedAt": "2026-10-29T14:51:43.505Z",
+      "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Kalshi)",
+      "capturedAt": "2026-10-29T20:46:23.381Z",
       "lines": [
         {
           "fighter": "Renato Moicano",
@@ -201,7 +201,7 @@
           "ko": 340,
           "sub": 170,
           "dec": 200,
-          "koSub": -127
+          "koSub": -150
         },
         {
           "fighter": "Tainara Lisboa",
@@ -213,27 +213,35 @@
         },
         {
           "fighter": "Andre Petroski",
-          "moneyline": 101
+          "moneyline": -108
         },
         {
           "fighter": "Azamat Bekoev",
-          "moneyline": -161
+          "moneyline": -126
         }
       ]
     },
     {
       "espnId": "600061268",
       "name": "UFC Fight Night: Bonfim vs. Brady",
-      "source": "BestFightOdds (BetWay, Polymarket)",
-      "capturedAt": "2026-10-29T14:51:43.505Z",
+      "source": "BestFightOdds (BetRivers, BetWay, Polymarket)",
+      "capturedAt": "2026-10-29T20:46:23.381Z",
       "lines": [
         {
           "fighter": "Keiichiro Nakamura",
-          "moneyline": -350
+          "moneyline": -345
         },
         {
           "fighter": "Ollie Schmid",
-          "moneyline": 260
+          "moneyline": 255
+        },
+        {
+          "fighter": "Nina Milosevic",
+          "moneyline": -480
+        },
+        {
+          "fighter": "Priscila Cachoeira",
+          "moneyline": 335
         },
         {
           "fighter": "Gabriel Lorenco",
@@ -244,22 +252,6 @@
           "moneyline": -175
         },
         {
-          "fighter": "Nina Milosevic",
-          "moneyline": -500
-        },
-        {
-          "fighter": "Priscila Cachoeira",
-          "moneyline": 350
-        },
-        {
-          "fighter": "Marcos Degli",
-          "moneyline": -250
-        },
-        {
-          "fighter": "Mitch Raposo",
-          "moneyline": 200
-        },
-        {
           "fighter": "Jonny Parsons",
           "moneyline": 150
         },
@@ -268,16 +260,8 @@
           "moneyline": -188
         },
         {
-          "fighter": "Gabriel Bonfim",
-          "moneyline": -125
-        },
-        {
-          "fighter": "Sean Brady",
-          "moneyline": 100
-        },
-        {
           "fighter": "Tatiana Suarez",
-          "moneyline": -200
+          "moneyline": -205
         },
         {
           "fighter": "Virna Jandiroba",
@@ -285,27 +269,27 @@
         },
         {
           "fighter": "Seokhyeon Ko",
-          "moneyline": -549
+          "moneyline": -590
         },
         {
           "fighter": "Wellington Turman",
-          "moneyline": 400
+          "moneyline": 410
         },
         {
           "fighter": "Billy Elekana",
-          "moneyline": 200
+          "moneyline": 205
         },
         {
           "fighter": "Lucas Fernando",
-          "moneyline": -250
+          "moneyline": -265
         },
         {
           "fighter": "Jose Souza",
-          "moneyline": -1150
+          "moneyline": -400
         },
         {
           "fighter": "Gabriella Fernandes",
-          "moneyline": 140
+          "moneyline": 138
         },
         {
           "fighter": "Karine Silva",
@@ -313,35 +297,43 @@
         },
         {
           "fighter": "Jose Delano",
-          "moneyline": -125
+          "moneyline": -129
         },
         {
           "fighter": "Murtazali Magomedov",
-          "moneyline": 100
+          "moneyline": 104
+        },
+        {
+          "fighter": "Marcos Degli",
+          "moneyline": -250
+        },
+        {
+          "fighter": "Mitch Raposo",
+          "moneyline": 195
+        },
+        {
+          "fighter": "Gabriel Bonfim",
+          "moneyline": -117
+        },
+        {
+          "fighter": "Sean Brady",
+          "moneyline": 113
         }
       ]
     },
     {
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
-      "source": "BestFightOdds (BetWay, FanDuel)",
-      "capturedAt": "2026-10-29T14:51:43.505Z",
+      "source": "BestFightOdds (BetRivers, FanDuel, Unibet)",
+      "capturedAt": "2026-10-29T20:46:23.381Z",
       "lines": [
         {
-          "fighter": "Caio Borralho",
-          "moneyline": -138
+          "fighter": "Bilal Hasan",
+          "moneyline": -910
         },
         {
-          "fighter": "Yousri Belgaroui",
-          "moneyline": 110
-        },
-        {
-          "fighter": "Kevin Holland",
-          "moneyline": 130
-        },
-        {
-          "fighter": "Uros Medic",
-          "moneyline": -163
+          "fighter": "Luis Gurule",
+          "moneyline": 575
         },
         {
           "fighter": "Ciryl Gane",
@@ -349,22 +341,16 @@
           "draw": 5000,
           "ko": 145,
           "sub": 900,
-          "dec": 280
+          "dec": 280,
+          "koSub": 102
         },
         {
           "fighter": "Josh Hokit",
           "moneyline": 200,
           "ko": 500,
           "sub": 1000,
-          "dec": 650
-        },
-        {
-          "fighter": "Bilal Hasan",
-          "moneyline": -1000
-        },
-        {
-          "fighter": "Luis Gurule",
-          "moneyline": 600
+          "dec": 650,
+          "koSub": 390
         },
         {
           "fighter": "Amanda Nunes",
@@ -372,14 +358,32 @@
           "draw": 5000,
           "ko": 340,
           "sub": 2500,
-          "dec": 500
+          "dec": 500,
+          "koSub": 310
         },
         {
           "fighter": "Kayla Harrison",
           "moneyline": -210,
           "ko": 800,
           "sub": 190,
-          "dec": 280
+          "dec": 280,
+          "koSub": 133
+        },
+        {
+          "fighter": "Caio Borralho",
+          "moneyline": -137
+        },
+        {
+          "fighter": "Yousri Belgaroui",
+          "moneyline": 112
+        },
+        {
+          "fighter": "Kevin Holland",
+          "moneyline": 130
+        },
+        {
+          "fighter": "Uros Medic",
+          "moneyline": -162
         }
       ]
     },
@@ -387,7 +391,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (BetRivers, FanDuel)",
-      "capturedAt": "2026-10-29T14:51:43.505Z",
+      "capturedAt": "2026-10-29T20:46:23.381Z",
       "lines": [
         {
           "fighter": "Bo Nickal",
