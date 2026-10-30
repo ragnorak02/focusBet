@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-29T20:46:23.381Z",
+  "updatedAt": "2026-10-30T01:29:10.339Z",
   "events": [
     {
       "espnId": "600061420",
       "name": "UFC Fight Night: Moicano vs. Nolan",
       "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Kalshi)",
-      "capturedAt": "2026-10-29T20:46:23.381Z",
+      "capturedAt": "2026-10-30T01:29:10.339Z",
       "lines": [
         {
           "fighter": "Renato Moicano",
@@ -26,7 +26,7 @@
         },
         {
           "fighter": "Cody Durden",
-          "moneyline": -120,
+          "moneyline": -115,
           "draw": 5000,
           "ko": 750,
           "sub": 420,
@@ -35,7 +35,7 @@
         },
         {
           "fighter": "Ode Osbourne",
-          "moneyline": -106,
+          "moneyline": -105,
           "ko": 200,
           "sub": 1000,
           "dec": 550,
@@ -43,7 +43,7 @@
         },
         {
           "fighter": "Luana Santos",
-          "moneyline": -295,
+          "moneyline": -290,
           "draw": 5000,
           "ko": 1400,
           "sub": 410,
@@ -52,7 +52,7 @@
         },
         {
           "fighter": "Yana Santos",
-          "moneyline": 220,
+          "moneyline": 225,
           "ko": 1400,
           "sub": 410,
           "dec": -110,
@@ -69,7 +69,7 @@
         },
         {
           "fighter": "Jean Paul Lebosnoyani",
-          "moneyline": -330,
+          "moneyline": -300,
           "ko": 420,
           "sub": 175,
           "dec": 310,
@@ -77,7 +77,7 @@
         },
         {
           "fighter": "Mickey Gall",
-          "moneyline": 260,
+          "moneyline": 265,
           "draw": 4500,
           "ko": 1600,
           "sub": 480,
@@ -86,7 +86,7 @@
         },
         {
           "fighter": "Zach Reese",
-          "moneyline": -360,
+          "moneyline": -350,
           "ko": -113,
           "sub": 460,
           "dec": 700,
@@ -120,7 +120,7 @@
         },
         {
           "fighter": "Francis Marshall",
-          "moneyline": -245,
+          "moneyline": -235,
           "ko": 550,
           "sub": 440,
           "dec": 140,
@@ -128,7 +128,7 @@
         },
         {
           "fighter": "Rodrigo Sezinando",
-          "moneyline": -184,
+          "moneyline": -176,
           "draw": 5000,
           "ko": 230,
           "sub": 400,
@@ -162,7 +162,7 @@
         },
         {
           "fighter": "Joseph Kropschot",
-          "moneyline": -350,
+          "moneyline": -325,
           "draw": 5000,
           "ko": 400,
           "sub": 125,
@@ -171,7 +171,7 @@
         },
         {
           "fighter": "Nick Klein",
-          "moneyline": 255,
+          "moneyline": 250,
           "ko": 950,
           "sub": 600,
           "dec": 1000,
@@ -179,7 +179,7 @@
         },
         {
           "fighter": "Piera Rodriguez",
-          "moneyline": -310,
+          "moneyline": -300,
           "draw": 5000,
           "ko": 420,
           "sub": 1800,
@@ -188,7 +188,7 @@
         },
         {
           "fighter": "Talita Alencar",
-          "moneyline": 230,
+          "moneyline": 235,
           "ko": 2200,
           "sub": 700,
           "dec": 460,
@@ -196,7 +196,7 @@
         },
         {
           "fighter": "Lucia Szabova",
-          "moneyline": -750,
+          "moneyline": -700,
           "draw": 5000,
           "ko": 340,
           "sub": 170,
@@ -205,7 +205,7 @@
         },
         {
           "fighter": "Tainara Lisboa",
-          "moneyline": 460,
+          "moneyline": 470,
           "ko": 1200,
           "sub": 2200,
           "dec": 1000,
@@ -213,11 +213,11 @@
         },
         {
           "fighter": "Andre Petroski",
-          "moneyline": -108
+          "moneyline": 101
         },
         {
           "fighter": "Azamat Bekoev",
-          "moneyline": -126
+          "moneyline": -143
         }
       ]
     },
@@ -225,7 +225,7 @@
       "espnId": "600061268",
       "name": "UFC Fight Night: Bonfim vs. Brady",
       "source": "BestFightOdds (BetRivers, BetWay, Polymarket)",
-      "capturedAt": "2026-10-29T20:46:23.381Z",
+      "capturedAt": "2026-10-30T01:29:10.339Z",
       "lines": [
         {
           "fighter": "Keiichiro Nakamura",
@@ -313,11 +313,11 @@
         },
         {
           "fighter": "Gabriel Bonfim",
-          "moneyline": -117
+          "moneyline": -113
         },
         {
           "fighter": "Sean Brady",
-          "moneyline": 113
+          "moneyline": 108
         }
       ]
     },
@@ -325,7 +325,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (BetRivers, FanDuel, Unibet)",
-      "capturedAt": "2026-10-29T20:46:23.381Z",
+      "capturedAt": "2026-10-30T01:29:10.339Z",
       "lines": [
         {
           "fighter": "Bilal Hasan",
@@ -390,16 +390,16 @@
     {
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
-      "source": "BestFightOdds (BetRivers, FanDuel)",
-      "capturedAt": "2026-10-29T20:46:23.381Z",
+      "source": "BestFightOdds (FanDuel)",
+      "capturedAt": "2026-10-30T01:29:10.339Z",
       "lines": [
         {
-          "fighter": "Bo Nickal",
-          "moneyline": 160
+          "fighter": "Alex Pereira",
+          "moneyline": 158
         },
         {
-          "fighter": "Joe Pyfer",
-          "moneyline": -200
+          "fighter": "Sergei Pavlovich",
+          "moneyline": -205
         },
         {
           "fighter": "Charles Oliveira",
@@ -408,14 +408,6 @@
         {
           "fighter": "Diego Lopes",
           "moneyline": 126
-        },
-        {
-          "fighter": "Alex Pereira",
-          "moneyline": 158
-        },
-        {
-          "fighter": "Sergei Pavlovich",
-          "moneyline": -205
         }
       ]
     },
