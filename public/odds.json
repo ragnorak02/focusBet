@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-10-31T07:50:41.703Z",
+  "updatedAt": "2026-10-31T14:09:25.298Z",
   "events": [
     {
       "espnId": "600061420",
       "name": "UFC Fight Night: Moicano vs. Nolan",
       "source": "BestFightOdds (FanDuel, BetWay, BetRivers)",
-      "capturedAt": "2026-10-31T07:50:41.703Z",
+      "capturedAt": "2026-10-31T14:09:25.298Z",
       "lines": [
         {
           "fighter": "Renato Moicano",
-          "moneyline": -120,
+          "moneyline": -126,
           "draw": 5000,
           "ko": 750,
           "sub": 190,
@@ -18,7 +18,7 @@
         },
         {
           "fighter": "Tom Nolan",
-          "moneyline": 102,
+          "moneyline": 108,
           "ko": 230,
           "sub": 950,
           "dec": 550,
@@ -217,7 +217,7 @@
       "espnId": "600061268",
       "name": "UFC Fight Night: Cortes Acosta vs. Walker",
       "source": "BestFightOdds (BetWay, BetRivers, Caesars, Polymarket)",
-      "capturedAt": "2026-10-31T07:50:41.703Z",
+      "capturedAt": "2026-10-31T14:09:25.298Z",
       "lines": [
         {
           "fighter": "Gabriel Lorenco",
@@ -258,6 +258,30 @@
         {
           "fighter": "Jose Henrique",
           "moneyline": -188
+        },
+        {
+          "fighter": "Andre Petroski",
+          "moneyline": 223
+        },
+        {
+          "fighter": "Mantas Kondratavicius",
+          "moneyline": -233
+        },
+        {
+          "fighter": "Johnny Walker",
+          "moneyline": 170
+        },
+        {
+          "fighter": "Waldo Cortes-Acosta",
+          "moneyline": -178
+        },
+        {
+          "fighter": "Davey Grant",
+          "moneyline": 233
+        },
+        {
+          "fighter": "Elijah Smith",
+          "moneyline": -245
         },
         {
           "fighter": "Tatiana Suarez",
@@ -309,11 +333,11 @@
         },
         {
           "fighter": "Gabriel Bonfim",
-          "moneyline": -113
+          "moneyline": 3233
         },
         {
           "fighter": "Sean Brady",
-          "moneyline": 104
+          "moneyline": -3233
         }
       ]
     },
@@ -321,7 +345,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (BetRivers, FanDuel, Unibet)",
-      "capturedAt": "2026-10-31T07:50:41.703Z",
+      "capturedAt": "2026-10-31T14:09:25.298Z",
       "lines": [
         {
           "fighter": "Bilal Hasan",
@@ -387,7 +411,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-31T07:50:41.703Z",
+      "capturedAt": "2026-10-31T14:09:25.298Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
