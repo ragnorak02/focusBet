@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-10-31T22:57:20.345Z",
+  "updatedAt": "2026-11-01T03:41:20.868Z",
   "events": [
     {
       "espnId": "600061420",
       "name": "UFC Fight Night: Moicano vs. Nolan",
       "source": "BestFightOdds (FanDuel, BetWay, BetRivers)",
-      "capturedAt": "2026-10-31T22:57:20.345Z",
+      "capturedAt": "2026-11-01T03:41:20.868Z",
       "lines": [
         {
           "fighter": "Renato Moicano",
-          "moneyline": -120,
+          "moneyline": -136,
           "draw": 5000,
           "ko": 800,
           "sub": 195,
@@ -18,7 +18,7 @@
         },
         {
           "fighter": "Tom Nolan",
-          "moneyline": 102,
+          "moneyline": 116,
           "ko": 230,
           "sub": 950,
           "dec": 500,
@@ -28,16 +28,16 @@
           "fighter": "Jacobe Smith",
           "moneyline": -280,
           "draw": 5000,
-          "ko": 135,
-          "sub": 370,
+          "ko": 130,
+          "sub": 390,
           "dec": 550,
           "koSub": -138
         },
         {
           "fighter": "Randy Brown",
           "moneyline": 230,
-          "ko": 420,
-          "sub": 1700,
+          "ko": 440,
+          "sub": 1500,
           "dec": 850,
           "koSub": 240
         },
@@ -217,7 +217,7 @@
       "espnId": "600061268",
       "name": "UFC Fight Night: Cortes Acosta vs. Walker",
       "source": "BestFightOdds (BetRivers, BetWay)",
-      "capturedAt": "2026-10-31T22:57:20.345Z",
+      "capturedAt": "2026-11-01T03:41:20.868Z",
       "lines": [
         {
           "fighter": "Gabriella Fernandes",
@@ -337,7 +337,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (BetRivers, FanDuel, Unibet)",
-      "capturedAt": "2026-10-31T22:57:20.345Z",
+      "capturedAt": "2026-11-01T03:41:20.868Z",
       "lines": [
         {
           "fighter": "Kevin Holland",
@@ -403,7 +403,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-10-31T22:57:20.345Z",
+      "capturedAt": "2026-11-01T03:41:20.868Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
