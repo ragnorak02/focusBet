@@ -1,231 +1,19 @@
 {
-  "updatedAt": "2026-11-02T01:09:59.120Z",
+  "updatedAt": "2026-11-02T09:07:51.301Z",
   "events": [
-    {
-      "espnId": "600061420",
-      "name": "UFC Fight Night: Moicano vs. Nolan",
-      "source": "BestFightOdds (FanDuel, BetWay, BetRivers)",
-      "capturedAt": "2026-11-02T01:09:59.120Z",
-      "lines": [
-        {
-          "fighter": "Renato Moicano",
-          "moneyline": -136,
-          "draw": 5000,
-          "ko": 800,
-          "sub": 195,
-          "dec": 600,
-          "koSub": 140
-        },
-        {
-          "fighter": "Tom Nolan",
-          "moneyline": 116,
-          "ko": 230,
-          "sub": 950,
-          "dec": 500,
-          "koSub": 140
-        },
-        {
-          "fighter": "Jacobe Smith",
-          "moneyline": -280,
-          "draw": 5000,
-          "ko": 130,
-          "sub": 390,
-          "dec": 550,
-          "koSub": -138
-        },
-        {
-          "fighter": "Randy Brown",
-          "moneyline": 230,
-          "ko": 440,
-          "sub": 1500,
-          "dec": 850,
-          "koSub": 240
-        },
-        {
-          "fighter": "Cody Durden",
-          "moneyline": -118,
-          "draw": 5000,
-          "ko": 750,
-          "sub": 400,
-          "dec": 270,
-          "koSub": 275
-        },
-        {
-          "fighter": "Ode Osbourne",
-          "moneyline": 100,
-          "ko": 200,
-          "sub": 1000,
-          "dec": 600,
-          "koSub": 120
-        },
-        {
-          "fighter": "Luana Santos",
-          "moneyline": -340,
-          "draw": 5000,
-          "ko": 1600,
-          "sub": 370,
-          "dec": -125,
-          "koSub": 300
-        },
-        {
-          "fighter": "Yana Santos",
-          "moneyline": 275,
-          "ko": 1600,
-          "sub": 370,
-          "dec": -125,
-          "koSub": 300
-        },
-        {
-          "fighter": "Farman Hasanov",
-          "moneyline": 240,
-          "draw": 5000,
-          "ko": 600,
-          "sub": 1800,
-          "dec": 550,
-          "koSub": 500
-        },
-        {
-          "fighter": "Jean Paul Lebosnoyani",
-          "moneyline": -295,
-          "ko": 380,
-          "sub": 175,
-          "dec": 320,
-          "koSub": -125
-        },
-        {
-          "fighter": "Dakota Hope",
-          "moneyline": 176,
-          "draw": 5000,
-          "ko": 500,
-          "sub": 2000,
-          "dec": 400,
-          "koSub": 400
-        },
-        {
-          "fighter": "Francis Marshall",
-          "moneyline": -210,
-          "ko": 600,
-          "sub": 420,
-          "dec": 150,
-          "koSub": 200
-        },
-        {
-          "fighter": "Rodrigo Sezinando",
-          "moneyline": -178,
-          "draw": 5000,
-          "ko": 230,
-          "sub": 380,
-          "dec": 440,
-          "koSub": 105
-        },
-        {
-          "fighter": "Theodor Berggren",
-          "moneyline": 150,
-          "ko": 330,
-          "sub": 950,
-          "dec": 700,
-          "koSub": 200
-        },
-        {
-          "fighter": "Jeongyeong Lee",
-          "moneyline": -148,
-          "draw": 4500,
-          "ko": 133,
-          "sub": 900,
-          "dec": 750,
-          "koSub": -120
-        },
-        {
-          "fighter": "Julian Erosa",
-          "moneyline": 120,
-          "ko": 650,
-          "sub": 310,
-          "dec": 700,
-          "koSub": 200
-        },
-        {
-          "fighter": "Mickey Gall",
-          "moneyline": 320,
-          "draw": 4500,
-          "ko": 2200,
-          "sub": 500,
-          "dec": 1300,
-          "koSub": 350
-        },
-        {
-          "fighter": "Zach Reese",
-          "moneyline": -405,
-          "ko": -120,
-          "sub": 440,
-          "dec": 650,
-          "koSub": -200
-        },
-        {
-          "fighter": "Joseph Kropschot",
-          "moneyline": -340,
-          "draw": 5000,
-          "ko": 330,
-          "sub": 130,
-          "dec": 500,
-          "koSub": -175
-        },
-        {
-          "fighter": "Nick Klein",
-          "moneyline": 275,
-          "ko": 1000,
-          "sub": 600,
-          "dec": 1000,
-          "koSub": 400
-        },
-        {
-          "fighter": "Piera Rodriguez",
-          "moneyline": -295,
-          "draw": 5000,
-          "ko": 430,
-          "sub": 2000,
-          "dec": -130,
-          "koSub": 300
-        },
-        {
-          "fighter": "Talita Alencar",
-          "moneyline": 240,
-          "ko": 2200,
-          "sub": 700,
-          "dec": 480,
-          "koSub": 600
-        },
-        {
-          "fighter": "Lucia Szabova",
-          "moneyline": -670,
-          "draw": 5000,
-          "ko": 290,
-          "sub": 175,
-          "dec": 230,
-          "koSub": -150
-        },
-        {
-          "fighter": "Tainara Lisboa",
-          "moneyline": 490,
-          "ko": 1100,
-          "sub": 2200,
-          "dec": 1000,
-          "koSub": 900
-        }
-      ]
-    },
     {
       "espnId": "600061268",
       "name": "UFC Fight Night: Cortes Acosta vs. Walker",
       "source": "BestFightOdds (BetRivers, BetWay)",
-      "capturedAt": "2026-11-02T01:09:59.120Z",
+      "capturedAt": "2026-11-02T09:07:51.301Z",
       "lines": [
         {
           "fighter": "Gabriella Fernandes",
-          "moneyline": 143
+          "moneyline": 170
         },
         {
           "fighter": "Karine Silva",
-          "moneyline": -180
+          "moneyline": -220
         },
         {
           "fighter": "Jose Delano",
@@ -336,12 +124,12 @@
     {
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
-      "source": "BestFightOdds (Kalshi, FanDuel, Unibet)",
-      "capturedAt": "2026-11-02T01:09:59.120Z",
+      "source": "BestFightOdds (Kalshi, FanDuel, Unibet, Polymarket)",
+      "capturedAt": "2026-11-02T09:07:51.301Z",
       "lines": [
         {
           "fighter": "Kevin Holland",
-          "moneyline": 128
+          "moneyline": 134
         },
         {
           "fighter": "Uros Medic",
@@ -353,7 +141,7 @@
         },
         {
           "fighter": "Luis Gurule",
-          "moneyline": 489
+          "moneyline": 623
         },
         {
           "fighter": "Ciryl Gane",
@@ -391,11 +179,67 @@
         },
         {
           "fighter": "Caio Borralho",
-          "moneyline": -168
+          "moneyline": -161
         },
         {
           "fighter": "Yousri Belgaroui",
+          "moneyline": 123
+        },
+        {
+          "fighter": "Charles Radtke",
+          "moneyline": -103
+        },
+        {
+          "fighter": "Stephen Thompson",
+          "moneyline": -132
+        },
+        {
+          "fighter": "Chris Duncan",
+          "moneyline": -155
+        },
+        {
+          "fighter": "Drew Dober",
           "moneyline": 114
+        },
+        {
+          "fighter": "Jim Miller",
+          "moneyline": 158
+        },
+        {
+          "fighter": "Terrance McKinney",
+          "moneyline": -209
+        },
+        {
+          "fighter": "Cesar Almeida",
+          "moneyline": 144
+        },
+        {
+          "fighter": "Donte Johnson",
+          "moneyline": -150
+        },
+        {
+          "fighter": "Bia Mesquita",
+          "moneyline": -291
+        },
+        {
+          "fighter": "Macy Chiasson",
+          "moneyline": 152
+        },
+        {
+          "fighter": "Jared Gordon",
+          "moneyline": 233
+        },
+        {
+          "fighter": "Melquizael Costa",
+          "moneyline": -245
+        },
+        {
+          "fighter": "Evan Elder",
+          "moneyline": -100
+        },
+        {
+          "fighter": "Samuel Sanches",
+          "moneyline": -104
         }
       ]
     },
@@ -403,7 +247,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-02T01:09:59.120Z",
+      "capturedAt": "2026-11-02T09:07:51.301Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
