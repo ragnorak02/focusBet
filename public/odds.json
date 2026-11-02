@@ -1,51 +1,51 @@
 {
-  "updatedAt": "2026-11-02T09:07:51.301Z",
+  "updatedAt": "2026-11-02T19:55:13.363Z",
   "events": [
     {
       "espnId": "600061268",
       "name": "UFC Fight Night: Cortes Acosta vs. Walker",
-      "source": "BestFightOdds (BetRivers, BetWay)",
-      "capturedAt": "2026-11-02T09:07:51.301Z",
+      "source": "BestFightOdds (Kalshi, BetWay, BetRivers)",
+      "capturedAt": "2026-11-02T19:55:13.363Z",
       "lines": [
         {
           "fighter": "Gabriella Fernandes",
-          "moneyline": 170
+          "moneyline": 181
         },
         {
           "fighter": "Karine Silva",
-          "moneyline": -220
+          "moneyline": -219
         },
         {
           "fighter": "Jose Delano",
-          "moneyline": -109
+          "moneyline": -126
         },
         {
           "fighter": "Murtazali Magomedov",
-          "moneyline": -114
+          "moneyline": -132
         },
         {
           "fighter": "Keiichiro Nakamura",
-          "moneyline": -360
+          "moneyline": -361
         },
         {
           "fighter": "Ollie Schmid",
-          "moneyline": 270
+          "moneyline": 295
         },
         {
           "fighter": "Nina Milosevic",
-          "moneyline": -480
+          "moneyline": -526
         },
         {
           "fighter": "Priscila Cachoeira",
-          "moneyline": 335
+          "moneyline": 350
         },
         {
           "fighter": "Jonny Parsons",
-          "moneyline": 165
+          "moneyline": -191
         },
         {
           "fighter": "Jose Souza",
-          "moneyline": -230
+          "moneyline": -341
         },
         {
           "fighter": "Jonny Parsons",
@@ -57,27 +57,27 @@
         },
         {
           "fighter": "Davey Grant",
-          "moneyline": 175
+          "moneyline": 217
         },
         {
           "fighter": "Elijah Smith",
-          "moneyline": -240
+          "moneyline": -277
         },
         {
           "fighter": "Johnny Walker",
-          "moneyline": 160
+          "moneyline": 145
         },
         {
           "fighter": "Waldo Cortes-Acosta",
-          "moneyline": -220
+          "moneyline": -209
         },
         {
           "fighter": "Tatiana Suarez",
-          "moneyline": -205
+          "moneyline": -209
         },
         {
           "fighter": "Virna Jandiroba",
-          "moneyline": 163
+          "moneyline": 158
         },
         {
           "fighter": "Seokhyeon Ko",
@@ -89,35 +89,35 @@
         },
         {
           "fighter": "Billy Elekana",
-          "moneyline": 205
+          "moneyline": 239
         },
         {
           "fighter": "Lucas Fernando",
-          "moneyline": -265
+          "moneyline": -323
         },
         {
           "fighter": "Andre Petroski",
-          "moneyline": 220
+          "moneyline": 239
         },
         {
           "fighter": "Mantas Kondratavicius",
-          "moneyline": -286
+          "moneyline": -323
         },
         {
           "fighter": "Gabriel Lorenco",
-          "moneyline": 138
+          "moneyline": 140
         },
         {
           "fighter": "Thomas Petersen",
-          "moneyline": -175
+          "moneyline": -176
         },
         {
           "fighter": "Marcos Degli",
-          "moneyline": -250
+          "moneyline": -229
         },
         {
           "fighter": "Mitch Raposo",
-          "moneyline": 195
+          "moneyline": 181
         }
       ]
     },
@@ -125,7 +125,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (Kalshi, FanDuel, Unibet, Polymarket)",
-      "capturedAt": "2026-11-02T09:07:51.301Z",
+      "capturedAt": "2026-11-02T19:55:13.363Z",
       "lines": [
         {
           "fighter": "Kevin Holland",
@@ -141,7 +141,7 @@
         },
         {
           "fighter": "Luis Gurule",
-          "moneyline": 623
+          "moneyline": 572
         },
         {
           "fighter": "Ciryl Gane",
@@ -183,15 +183,15 @@
         },
         {
           "fighter": "Yousri Belgaroui",
-          "moneyline": 123
+          "moneyline": 114
         },
         {
           "fighter": "Charles Radtke",
-          "moneyline": -103
+          "moneyline": 101
         },
         {
           "fighter": "Stephen Thompson",
-          "moneyline": -132
+          "moneyline": -137
         },
         {
           "fighter": "Chris Duncan",
@@ -199,7 +199,7 @@
         },
         {
           "fighter": "Drew Dober",
-          "moneyline": 114
+          "moneyline": 105
         },
         {
           "fighter": "Jim Miller",
@@ -219,7 +219,7 @@
         },
         {
           "fighter": "Bia Mesquita",
-          "moneyline": -291
+          "moneyline": -229
         },
         {
           "fighter": "Macy Chiasson",
@@ -227,19 +227,19 @@
         },
         {
           "fighter": "Jared Gordon",
-          "moneyline": 233
+          "moneyline": 335
         },
         {
           "fighter": "Melquizael Costa",
-          "moneyline": -245
+          "moneyline": -355
         },
         {
           "fighter": "Evan Elder",
-          "moneyline": -100
+          "moneyline": 104
         },
         {
           "fighter": "Samuel Sanches",
-          "moneyline": -104
+          "moneyline": -108
         }
       ]
     },
@@ -247,7 +247,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-02T09:07:51.301Z",
+      "capturedAt": "2026-11-02T19:55:13.363Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
