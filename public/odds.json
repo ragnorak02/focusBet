@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-03T01:56:24.795Z",
+  "updatedAt": "2026-11-03T08:57:48.788Z",
   "events": [
     {
       "espnId": "600061268",
       "name": "UFC Fight Night: Cortes Acosta vs. Walker",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-11-03T01:56:24.795Z",
+      "capturedAt": "2026-11-03T08:57:48.788Z",
       "lines": [
         {
           "fighter": "Gabriella Fernandes",
@@ -125,11 +125,11 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (Kalshi, Caesars, FanDuel, Unibet)",
-      "capturedAt": "2026-11-03T01:56:24.795Z",
+      "capturedAt": "2026-11-03T08:57:48.788Z",
       "lines": [
         {
           "fighter": "Charles Radtke",
-          "moneyline": -108
+          "moneyline": -103
         },
         {
           "fighter": "Stephen Thompson",
@@ -137,19 +137,19 @@
         },
         {
           "fighter": "Chris Duncan",
-          "moneyline": -176
+          "moneyline": -143
         },
         {
           "fighter": "Drew Dober",
-          "moneyline": 109
+          "moneyline": 105
         },
         {
           "fighter": "Jim Miller",
-          "moneyline": 158
+          "moneyline": 152
         },
         {
           "fighter": "Terrance McKinney",
-          "moneyline": -229
+          "moneyline": -219
         },
         {
           "fighter": "Cesar Almeida",
@@ -161,11 +161,11 @@
         },
         {
           "fighter": "Bia Mesquita",
-          "moneyline": -264
+          "moneyline": -251
         },
         {
           "fighter": "Macy Chiasson",
-          "moneyline": 158
+          "moneyline": 152
         },
         {
           "fighter": "Jared Gordon",
@@ -202,19 +202,19 @@
         },
         {
           "fighter": "Amanda Nunes",
-          "moneyline": 162,
+          "moneyline": 146,
           "draw": 5000,
-          "ko": 340,
+          "ko": 300,
           "sub": 2500,
           "dec": 500,
           "koSub": 310
         },
         {
           "fighter": "Kayla Harrison",
-          "moneyline": -210,
+          "moneyline": -188,
           "ko": 800,
-          "sub": 190,
-          "dec": 280,
+          "sub": 195,
+          "dec": 300,
           "koSub": 133
         },
         {
@@ -227,7 +227,7 @@
         },
         {
           "fighter": "Bilal Hasan",
-          "moneyline": -872
+          "moneyline": -791
         },
         {
           "fighter": "Luis Gurule",
@@ -235,7 +235,7 @@
         },
         {
           "fighter": "Caio Borralho",
-          "moneyline": -161
+          "moneyline": -155
         },
         {
           "fighter": "Yousri Belgaroui",
@@ -247,7 +247,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-03T01:56:24.795Z",
+      "capturedAt": "2026-11-03T08:57:48.788Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
