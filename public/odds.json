@@ -1,27 +1,27 @@
 {
-  "updatedAt": "2026-11-07T16:00:24.213Z",
+  "updatedAt": "2026-11-07T21:16:47.798Z",
   "events": [
     {
       "espnId": "600061268",
       "name": "UFC Fight Night: Cortes Acosta vs. Walker",
       "source": "BestFightOdds (FanDuel, BetWay, Unibet)",
-      "capturedAt": "2026-11-07T16:00:24.213Z",
+      "capturedAt": "2026-11-07T21:16:47.798Z",
       "lines": [
         {
           "fighter": "Nina Milosevic",
-          "moneyline": -590,
+          "moneyline": -500,
           "draw": 5000,
-          "ko": 165,
+          "ko": 175,
           "sub": 165,
           "dec": 500,
           "koSub": -225
         },
         {
           "fighter": "Priscila Cachoeira",
-          "moneyline": 430,
-          "ko": 600,
+          "moneyline": 380,
+          "ko": 650,
           "sub": 2700,
-          "dec": 1500,
+          "dec": 1000,
           "koSub": 500
         },
         {
@@ -31,7 +31,7 @@
           "ko": -140,
           "sub": 1200,
           "dec": 480,
-          "koSub": -175
+          "koSub": -200
         },
         {
           "fighter": "Ollie Schmid",
@@ -39,7 +39,7 @@
           "ko": 700,
           "sub": 2700,
           "dec": 600,
-          "koSub": 550
+          "koSub": 575
         },
         {
           "fighter": "Gabriella Fernandes",
@@ -47,15 +47,15 @@
           "draw": 5000,
           "ko": 1200,
           "sub": 1200,
-          "dec": 310,
+          "dec": 300,
           "koSub": 500
         },
         {
           "fighter": "Karine Silva",
           "moneyline": -220,
-          "ko": 750,
-          "sub": 280,
-          "dec": 175,
+          "ko": 850,
+          "sub": 290,
+          "dec": 165,
           "koSub": 175
         },
         {
@@ -74,6 +74,23 @@
           "sub": 360,
           "dec": 460,
           "koSub": 163
+        },
+        {
+          "fighter": "Austin Bashi",
+          "moneyline": -590,
+          "draw": 5000,
+          "ko": 450,
+          "sub": 100,
+          "dec": 330,
+          "koSub": -188
+        },
+        {
+          "fighter": "Carlos Calderon",
+          "moneyline": 440,
+          "ko": 1500,
+          "sub": 1300,
+          "dec": 900,
+          "koSub": 600
         },
         {
           "fighter": "Andre Petroski",
@@ -110,30 +127,13 @@
           "koSub": 700
         },
         {
-          "fighter": "Austin Bashi",
-          "moneyline": -590,
-          "draw": 5000,
-          "ko": 450,
-          "sub": 100,
-          "dec": 330,
-          "koSub": -188
-        },
-        {
-          "fighter": "Carlos Calderon",
-          "moneyline": 440,
-          "ko": 1500,
-          "sub": 1300,
-          "dec": 900,
-          "koSub": 600
-        },
-        {
           "fighter": "Jonny Parsons",
           "moneyline": 188,
           "draw": 5000,
           "ko": 460,
           "sub": 2500,
           "dec": 470,
-          "koSub": 390
+          "koSub": 370
         },
         {
           "fighter": "Jose Souza",
@@ -195,18 +195,18 @@
         },
         {
           "fighter": "Davey Grant",
-          "moneyline": 240,
+          "moneyline": 265,
           "draw": 5000,
-          "ko": 700,
-          "sub": 1700,
+          "ko": 800,
+          "sub": 1800,
           "dec": 500,
           "koSub": 400
         },
         {
           "fighter": "Elijah Smith",
-          "moneyline": -295,
-          "ko": 200,
-          "sub": 470,
+          "moneyline": -330,
+          "ko": 190,
+          "sub": 440,
           "dec": 240,
           "koSub": -105
         },
@@ -267,7 +267,7 @@
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel, Kalshi, Caesars, Unibet)",
-      "capturedAt": "2026-11-07T16:00:24.213Z",
+      "capturedAt": "2026-11-07T21:16:47.798Z",
       "lines": [
         {
           "fighter": "Charles Radtke",
@@ -279,19 +279,19 @@
         },
         {
           "fighter": "Chris Duncan",
-          "moneyline": -191
+          "moneyline": -176
         },
         {
           "fighter": "Drew Dober",
-          "moneyline": 128
+          "moneyline": 123
         },
         {
           "fighter": "Jim Miller",
-          "moneyline": 165
+          "moneyline": 173
         },
         {
           "fighter": "Terrance McKinney",
-          "moneyline": -229
+          "moneyline": -219
         },
         {
           "fighter": "Cesar Almeida",
@@ -303,7 +303,7 @@
         },
         {
           "fighter": "Bia Mesquita",
-          "moneyline": -264
+          "moneyline": -251
         },
         {
           "fighter": "Macy Chiasson",
@@ -319,7 +319,7 @@
         },
         {
           "fighter": "Evan Elder",
-          "moneyline": -103
+          "moneyline": -132
         },
         {
           "fighter": "Samuel Sanches",
@@ -389,7 +389,7 @@
       "espnId": "600061665",
       "name": "UFC Fight Night: Procházka vs. Stirling",
       "source": "BestFightOdds (BetWay)",
-      "capturedAt": "2026-11-07T16:00:24.213Z",
+      "capturedAt": "2026-11-07T21:16:47.798Z",
       "lines": [
         {
           "fighter": "Jiri Prochazka",
@@ -405,7 +405,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-07T16:00:24.213Z",
+      "capturedAt": "2026-11-07T21:16:47.798Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
