@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-08T08:25:18.981Z",
+  "updatedAt": "2026-11-08T16:28:02.614Z",
   "events": [
     {
       "espnId": "600061268",
       "name": "UFC Fight Night: Cortes Acosta vs. Walker",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-11-08T08:25:18.981Z",
+      "capturedAt": "2026-11-08T16:28:02.614Z",
       "lines": [
         {
           "fighter": "Johnny Walker",
@@ -114,44 +114,44 @@
     {
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
-      "source": "BestFightOdds (FanDuel, Kalshi, Caesars, Unibet)",
-      "capturedAt": "2026-11-08T08:25:18.981Z",
+      "source": "BestFightOdds (FanDuel, Kalshi, BetRivers, Unibet)",
+      "capturedAt": "2026-11-08T16:28:02.614Z",
       "lines": [
         {
           "fighter": "Charles Radtke",
-          "moneyline": 102
+          "moneyline": 124
         },
         {
           "fighter": "Stephen Thompson",
-          "moneyline": -130
+          "moneyline": -158
         },
         {
           "fighter": "Chris Duncan",
-          "moneyline": -168
+          "moneyline": -176
         },
         {
           "fighter": "Drew Dober",
-          "moneyline": 128
+          "moneyline": 145
         },
         {
           "fighter": "Jim Miller",
-          "moneyline": 181
+          "moneyline": 173
         },
         {
           "fighter": "Terrance McKinney",
-          "moneyline": -219
+          "moneyline": -209
         },
         {
           "fighter": "Cesar Almeida",
-          "moneyline": 150
+          "moneyline": 145
         },
         {
           "fighter": "Donte Johnson",
-          "moneyline": -180
+          "moneyline": -191
         },
         {
           "fighter": "Bia Mesquita",
-          "moneyline": -240
+          "moneyline": -229
         },
         {
           "fighter": "Macy Chiasson",
@@ -159,19 +159,19 @@
         },
         {
           "fighter": "Jared Gordon",
-          "moneyline": 300
+          "moneyline": 280
         },
         {
           "fighter": "Melquizael Costa",
-          "moneyline": -380
+          "moneyline": -385
         },
         {
           "fighter": "Evan Elder",
-          "moneyline": -121
+          "moneyline": -132
         },
         {
           "fighter": "Samuel Sanches",
-          "moneyline": 101
+          "moneyline": 105
         },
         {
           "fighter": "Ciryl Gane",
@@ -237,7 +237,7 @@
       "espnId": "600061665",
       "name": "UFC Fight Night: Procházka vs. Stirling",
       "source": "BestFightOdds (Caesars, Polymarket)",
-      "capturedAt": "2026-11-08T08:25:18.981Z",
+      "capturedAt": "2026-11-08T16:28:02.614Z",
       "lines": [
         {
           "fighter": "Jiri Prochazka",
@@ -249,11 +249,11 @@
         },
         {
           "fighter": "Aljamain Sterling",
-          "moneyline": -108
+          "moneyline": 117
         },
         {
           "fighter": "Kevin Vallejos",
-          "moneyline": 104
+          "moneyline": -122
         }
       ]
     },
@@ -261,7 +261,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-08T08:25:18.981Z",
+      "capturedAt": "2026-11-08T16:28:02.614Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
