@@ -1,121 +1,11 @@
 {
-  "updatedAt": "2026-11-09T01:20:30.034Z",
+  "updatedAt": "2026-11-09T08:55:28.174Z",
   "events": [
-    {
-      "espnId": "600061268",
-      "name": "UFC Fight Night: Cortes Acosta vs. Walker",
-      "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-11-09T01:20:30.034Z",
-      "lines": [
-        {
-          "fighter": "Johnny Walker",
-          "moneyline": 172,
-          "draw": 5000,
-          "ko": 330,
-          "sub": 1200,
-          "dec": 1000,
-          "koSub": 200
-        },
-        {
-          "fighter": "Waldo Cortes-Acosta",
-          "moneyline": -225,
-          "ko": -115,
-          "sub": 1700,
-          "dec": 500,
-          "koSub": -120
-        },
-        {
-          "fighter": "Tatiana Suarez",
-          "moneyline": -200,
-          "draw": 5000,
-          "ko": 1200,
-          "sub": 750,
-          "dec": -120,
-          "koSub": 350
-        },
-        {
-          "fighter": "Virna Jandiroba",
-          "moneyline": 168,
-          "ko": 2700,
-          "sub": 750,
-          "dec": 280,
-          "koSub": 500
-        },
-        {
-          "fighter": "Davey Grant",
-          "moneyline": 285,
-          "draw": 5000,
-          "ko": 850,
-          "sub": 1800,
-          "dec": 550,
-          "koSub": 400
-        },
-        {
-          "fighter": "Elijah Smith",
-          "moneyline": -350,
-          "ko": 190,
-          "sub": 430,
-          "dec": 220,
-          "koSub": -105
-        },
-        {
-          "fighter": "Billy Elekana",
-          "moneyline": 275,
-          "draw": 5000,
-          "ko": 1100,
-          "sub": 800,
-          "dec": 700,
-          "koSub": 350
-        },
-        {
-          "fighter": "Lucas Fernando",
-          "moneyline": -340,
-          "ko": 155,
-          "sub": 700,
-          "dec": 220,
-          "koSub": 110
-        },
-        {
-          "fighter": "Marcos Degli",
-          "moneyline": -240,
-          "draw": 5000,
-          "ko": 300,
-          "sub": 460,
-          "dec": 200,
-          "koSub": 150
-        },
-        {
-          "fighter": "Mitch Raposo",
-          "moneyline": 198,
-          "ko": 650,
-          "sub": 1200,
-          "dec": 470,
-          "koSub": 400
-        },
-        {
-          "fighter": "Gabriel Lorenco",
-          "moneyline": 136,
-          "draw": 5000,
-          "ko": 240,
-          "sub": 2000,
-          "dec": 650,
-          "koSub": 175
-        },
-        {
-          "fighter": "Thomas Petersen",
-          "moneyline": -158,
-          "ko": 270,
-          "sub": 700,
-          "dec": 260,
-          "koSub": 163
-        }
-      ]
-    },
     {
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel, Kalshi, BetRivers, Unibet)",
-      "capturedAt": "2026-11-09T01:20:30.034Z",
+      "capturedAt": "2026-11-09T08:55:28.174Z",
       "lines": [
         {
           "fighter": "Charles Radtke",
@@ -127,11 +17,11 @@
         },
         {
           "fighter": "Chris Duncan",
-          "moneyline": -168
+          "moneyline": -161
         },
         {
           "fighter": "Drew Dober",
-          "moneyline": 140
+          "moneyline": 134
         },
         {
           "fighter": "Jim Miller",
@@ -147,15 +37,15 @@
         },
         {
           "fighter": "Donte Johnson",
-          "moneyline": -183
+          "moneyline": -191
         },
         {
           "fighter": "Bia Mesquita",
-          "moneyline": -240
+          "moneyline": -264
         },
         {
           "fighter": "Macy Chiasson",
-          "moneyline": 198
+          "moneyline": 217
         },
         {
           "fighter": "Jared Gordon",
@@ -237,7 +127,7 @@
       "espnId": "600061665",
       "name": "UFC Fight Night: Procházka vs. Stirling",
       "source": "BestFightOdds (Caesars, Polymarket)",
-      "capturedAt": "2026-11-09T01:20:30.034Z",
+      "capturedAt": "2026-11-09T08:55:28.174Z",
       "lines": [
         {
           "fighter": "Jiri Prochazka",
@@ -261,7 +151,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-09T01:20:30.034Z",
+      "capturedAt": "2026-11-09T08:55:28.174Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
