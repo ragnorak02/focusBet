@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-09T20:19:36.797Z",
+  "updatedAt": "2026-11-10T03:55:20.943Z",
   "events": [
     {
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel, Unibet)",
-      "capturedAt": "2026-11-09T20:19:36.797Z",
+      "capturedAt": "2026-11-10T03:55:20.943Z",
       "lines": [
         {
           "fighter": "Charles Radtke",
@@ -33,11 +33,11 @@
         },
         {
           "fighter": "Cesar Almeida",
-          "moneyline": 144
+          "moneyline": 136
         },
         {
           "fighter": "Donte Johnson",
-          "moneyline": -186
+          "moneyline": -174
         },
         {
           "fighter": "Jared Gordon",
@@ -65,17 +65,17 @@
         },
         {
           "fighter": "Ciryl Gane",
-          "moneyline": -245,
+          "moneyline": -230,
           "draw": 5000,
           "ko": 135,
           "sub": 900,
-          "dec": 310,
+          "dec": 340,
           "koSub": 110
         },
         {
           "fighter": "Josh Hokit",
-          "moneyline": 186,
-          "ko": 500,
+          "moneyline": 176,
+          "ko": 460,
           "sub": 950,
           "dec": 650,
           "koSub": 340
@@ -127,7 +127,7 @@
       "espnId": "600061665",
       "name": "UFC Fight Night: Procházka vs. Stirling",
       "source": "BestFightOdds (Caesars, Polymarket)",
-      "capturedAt": "2026-11-09T20:19:36.797Z",
+      "capturedAt": "2026-11-10T03:55:20.943Z",
       "lines": [
         {
           "fighter": "Jiri Prochazka",
@@ -151,7 +151,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-09T20:19:36.797Z",
+      "capturedAt": "2026-11-10T03:55:20.943Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
