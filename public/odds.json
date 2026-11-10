@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-10T03:55:20.943Z",
+  "updatedAt": "2026-11-10T11:59:38.605Z",
   "events": [
     {
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel, Unibet)",
-      "capturedAt": "2026-11-10T03:55:20.943Z",
+      "capturedAt": "2026-11-10T11:59:38.605Z",
       "lines": [
         {
           "fighter": "Charles Radtke",
@@ -126,8 +126,8 @@
     {
       "espnId": "600061665",
       "name": "UFC Fight Night: Procházka vs. Stirling",
-      "source": "BestFightOdds (Caesars, Polymarket)",
-      "capturedAt": "2026-11-10T03:55:20.943Z",
+      "source": "BestFightOdds (Caesars, BetWay)",
+      "capturedAt": "2026-11-10T11:59:38.605Z",
       "lines": [
         {
           "fighter": "Jiri Prochazka",
@@ -139,11 +139,35 @@
         },
         {
           "fighter": "Aljamain Sterling",
-          "moneyline": 113
+          "moneyline": 100
         },
         {
           "fighter": "Kevin Vallejos",
-          "moneyline": -117
+          "moneyline": -125
+        }
+      ]
+    },
+    {
+      "espnId": "600062700",
+      "name": "UFC Fight Night: Adesanya vs Magomedov",
+      "source": "BestFightOdds (BetWay)",
+      "capturedAt": "2026-11-10T11:59:38.605Z",
+      "lines": [
+        {
+          "fighter": "Israel Adesanya",
+          "moneyline": -163
+        },
+        {
+          "fighter": "Shara Magomedov",
+          "moneyline": 130
+        },
+        {
+          "fighter": "Ian Machado Garry",
+          "moneyline": -175
+        },
+        {
+          "fighter": "Yaroslav Amosov",
+          "moneyline": 140
         }
       ]
     },
@@ -151,7 +175,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-10T03:55:20.943Z",
+      "capturedAt": "2026-11-10T11:59:38.605Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
