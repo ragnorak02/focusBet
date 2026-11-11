@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-11T00:21:31.618Z",
+  "updatedAt": "2026-11-11T08:41:57.918Z",
   "events": [
     {
       "espnId": "600061421",
       "name": "PFL Dubai: Nemkov vs. Bilostenniy",
       "source": "BestFightOdds (BetWay)",
-      "capturedAt": "2026-11-11T00:21:31.618Z",
+      "capturedAt": "2026-11-11T08:41:57.918Z",
       "lines": [
         {
           "fighter": "Aleksandra Savicheva",
@@ -108,25 +108,25 @@
     {
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
-      "source": "BestFightOdds (FanDuel, BetRivers, Unibet, Polymarket, BetWay)",
-      "capturedAt": "2026-11-11T00:21:31.618Z",
+      "source": "BestFightOdds (FanDuel, BetRivers, Unibet, Caesars, BetWay)",
+      "capturedAt": "2026-11-11T08:41:57.918Z",
       "lines": [
         {
           "fighter": "Charles Radtke",
           "moneyline": 124,
           "draw": 4500,
-          "ko": 475,
-          "sub": 700,
-          "dec": 375,
-          "koSub": 275
+          "ko": 500,
+          "sub": 750,
+          "dec": 420,
+          "koSub": 295
         },
         {
           "fighter": "Stephen Thompson",
           "moneyline": -158,
-          "ko": 420,
-          "sub": 2400,
-          "dec": 143,
-          "koSub": 390
+          "ko": 390,
+          "sub": 2200,
+          "dec": 132,
+          "koSub": 360
         },
         {
           "fighter": "Chris Duncan",
@@ -166,18 +166,18 @@
           "fighter": "Cesar Almeida",
           "moneyline": 136,
           "draw": 4500,
-          "ko": 250,
+          "ko": 240,
           "sub": 2000,
-          "dec": 750,
-          "koSub": 225
+          "dec": 700,
+          "koSub": 220
         },
         {
           "fighter": "Donte Johnson",
           "moneyline": -174,
-          "ko": 140,
+          "ko": 143,
           "sub": 1500,
-          "dec": 375,
-          "koSub": 123
+          "dec": 380,
+          "koSub": 128
         },
         {
           "fighter": "Jared Gordon",
@@ -232,11 +232,11 @@
         },
         {
           "fighter": "Alatengheili",
-          "moneyline": 300
+          "moneyline": 275
         },
         {
           "fighter": "Juan Diaz",
-          "moneyline": -317
+          "moneyline": -350
         },
         {
           "fighter": "Ciryl Gane",
@@ -329,7 +329,7 @@
       "espnId": "600061665",
       "name": "UFC Fight Night: Procházka vs. Stirling",
       "source": "BestFightOdds (Caesars, BetWay)",
-      "capturedAt": "2026-11-11T00:21:31.618Z",
+      "capturedAt": "2026-11-11T08:41:57.918Z",
       "lines": [
         {
           "fighter": "Jiri Prochazka",
@@ -353,7 +353,7 @@
       "espnId": "600062700",
       "name": "UFC Fight Night: Adesanya vs Magomedov",
       "source": "BestFightOdds (BetWay)",
-      "capturedAt": "2026-11-11T00:21:31.618Z",
+      "capturedAt": "2026-11-11T08:41:57.918Z",
       "lines": [
         {
           "fighter": "Israel Adesanya",
@@ -377,7 +377,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-11T00:21:31.618Z",
+      "capturedAt": "2026-11-11T08:41:57.918Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
