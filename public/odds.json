@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-10T19:30:31.660Z",
+  "updatedAt": "2026-11-11T00:21:31.618Z",
   "events": [
     {
       "espnId": "600061421",
       "name": "PFL Dubai: Nemkov vs. Bilostenniy",
       "source": "BestFightOdds (BetWay)",
-      "capturedAt": "2026-11-10T19:30:31.660Z",
+      "capturedAt": "2026-11-11T00:21:31.618Z",
       "lines": [
         {
           "fighter": "Aleksandra Savicheva",
@@ -108,8 +108,8 @@
     {
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
-      "source": "BestFightOdds (FanDuel, BetRivers, Unibet, BetWay)",
-      "capturedAt": "2026-11-10T19:30:31.660Z",
+      "source": "BestFightOdds (FanDuel, BetRivers, Unibet, Polymarket, BetWay)",
+      "capturedAt": "2026-11-11T00:21:31.618Z",
       "lines": [
         {
           "fighter": "Charles Radtke",
@@ -231,6 +231,14 @@
           "koSub": 165
         },
         {
+          "fighter": "Alatengheili",
+          "moneyline": 300
+        },
+        {
+          "fighter": "Juan Diaz",
+          "moneyline": -317
+        },
+        {
           "fighter": "Ciryl Gane",
           "moneyline": -210,
           "draw": 5000,
@@ -321,7 +329,7 @@
       "espnId": "600061665",
       "name": "UFC Fight Night: Procházka vs. Stirling",
       "source": "BestFightOdds (Caesars, BetWay)",
-      "capturedAt": "2026-11-10T19:30:31.660Z",
+      "capturedAt": "2026-11-11T00:21:31.618Z",
       "lines": [
         {
           "fighter": "Jiri Prochazka",
@@ -345,7 +353,7 @@
       "espnId": "600062700",
       "name": "UFC Fight Night: Adesanya vs Magomedov",
       "source": "BestFightOdds (BetWay)",
-      "capturedAt": "2026-11-10T19:30:31.660Z",
+      "capturedAt": "2026-11-11T00:21:31.618Z",
       "lines": [
         {
           "fighter": "Israel Adesanya",
@@ -369,7 +377,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-10T19:30:31.660Z",
+      "capturedAt": "2026-11-11T00:21:31.618Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
