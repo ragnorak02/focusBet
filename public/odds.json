@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-11T23:55:03.909Z",
+  "updatedAt": "2026-11-12T05:13:55.073Z",
   "events": [
     {
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel, Unibet, BetWay)",
-      "capturedAt": "2026-11-11T23:55:03.909Z",
+      "capturedAt": "2026-11-12T05:13:55.073Z",
       "lines": [
         {
           "fighter": "Charles Radtke",
@@ -225,7 +225,7 @@
       "espnId": "600061421",
       "name": "PFL Dubai: Nemkov vs. Bilostenniy",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-11T23:55:03.909Z",
+      "capturedAt": "2026-11-12T05:13:55.073Z",
       "lines": [
         {
           "fighter": "Sergey Billostenniy",
@@ -301,11 +301,11 @@
         },
         {
           "fighter": "Ernesto Rodriguez",
-          "moneyline": -102
+          "moneyline": -115
         },
         {
           "fighter": "Rhys McKee",
-          "moneyline": -125
+          "moneyline": -111
         },
         {
           "fighter": "Khabib Nabiev",
@@ -329,7 +329,7 @@
       "espnId": "600061665",
       "name": "UFC Fight Night: Procházka vs. Stirling",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-11-11T23:55:03.909Z",
+      "capturedAt": "2026-11-12T05:13:55.073Z",
       "lines": [
         {
           "fighter": "Jiri Prochazka",
@@ -353,7 +353,7 @@
       "espnId": "600062700",
       "name": "UFC Fight Night: Adesanya vs Magomedov",
       "source": "BestFightOdds (BetRivers)",
-      "capturedAt": "2026-11-11T23:55:03.909Z",
+      "capturedAt": "2026-11-12T05:13:55.073Z",
       "lines": [
         {
           "fighter": "Israel Adesanya",
@@ -377,7 +377,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-11T23:55:03.909Z",
+      "capturedAt": "2026-11-12T05:13:55.073Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
