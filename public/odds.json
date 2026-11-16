@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-15T22:21:41.716Z",
+  "updatedAt": "2026-11-16T04:10:32.665Z",
   "events": [
     {
       "espnId": "600061400",
       "name": "UFC 334: Gane vs. Hokit",
       "source": "BestFightOdds (FanDuel, BetWay)",
-      "capturedAt": "2026-11-15T22:21:41.716Z",
+      "capturedAt": "2026-11-16T04:10:32.665Z",
       "lines": [
         {
           "fighter": "Ciryl Gane",
@@ -98,7 +98,7 @@
       "espnId": "600061665",
       "name": "UFC Fight Night: Procházka vs. Stirling",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-15T22:21:41.716Z",
+      "capturedAt": "2026-11-16T04:10:32.665Z",
       "lines": [
         {
           "fighter": "Jiri Prochazka",
@@ -174,19 +174,19 @@
         },
         {
           "fighter": "Alessandro Costa",
-          "moneyline": -146
+          "moneyline": -130
         },
         {
           "fighter": "Amir Albazi",
-          "moneyline": 114
+          "moneyline": 102
         },
         {
           "fighter": "Jake Matthews",
-          "moneyline": -196
+          "moneyline": -245
         },
         {
           "fighter": "Tahir Abdullayev",
-          "moneyline": 152
+          "moneyline": 186
         }
       ]
     },
@@ -194,7 +194,7 @@
       "espnId": "600062700",
       "name": "UFC Fight Night: Adesanya vs Magomedov",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-15T22:21:41.716Z",
+      "capturedAt": "2026-11-16T04:10:32.665Z",
       "lines": [
         {
           "fighter": "Israel Adesanya",
@@ -218,7 +218,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-15T22:21:41.716Z",
+      "capturedAt": "2026-11-16T04:10:32.665Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
