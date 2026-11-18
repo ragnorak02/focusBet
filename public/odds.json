@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-17T17:15:57.556Z",
+  "updatedAt": "2026-11-18T00:19:35.397Z",
   "events": [
     {
       "espnId": "600061665",
       "name": "UFC Fight Night: Procházka vs. Stirling",
       "source": "BestFightOdds (FanDuel, BetRivers, BetWay)",
-      "capturedAt": "2026-11-17T17:15:57.556Z",
+      "capturedAt": "2026-11-18T00:19:35.397Z",
       "lines": [
         {
           "fighter": "Jiri Prochazka",
@@ -77,7 +77,7 @@
         },
         {
           "fighter": "Ikram Aliskerov",
-          "moneyline": -400,
+          "moneyline": -350,
           "draw": 4500,
           "ko": 195,
           "sub": 700,
@@ -86,7 +86,7 @@
         },
         {
           "fighter": "Jared Cannonier",
-          "moneyline": 285,
+          "moneyline": 255,
           "ko": 460,
           "sub": 2200,
           "dec": 700,
@@ -163,18 +163,18 @@
         {
           "fighter": "Dom Mar Fan",
           "moneyline": -160,
-          "draw": 6600,
-          "ko": 400,
-          "sub": 450,
-          "dec": 200,
+          "draw": 4500,
+          "ko": 420,
+          "sub": 420,
+          "dec": 255,
           "koSub": 200
         },
         {
           "fighter": "Nikolas Motta",
           "moneyline": 124,
-          "ko": 200,
-          "sub": 2500,
-          "dec": 500,
+          "ko": 270,
+          "sub": 2000,
+          "dec": 475,
           "koSub": 175
         },
         {
@@ -191,7 +191,7 @@
       "espnId": "600062700",
       "name": "UFC Fight Night: Adesanya vs Magomedov",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-17T17:15:57.556Z",
+      "capturedAt": "2026-11-18T00:19:35.397Z",
       "lines": [
         {
           "fighter": "Israel Adesanya",
@@ -215,7 +215,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-17T17:15:57.556Z",
+      "capturedAt": "2026-11-18T00:19:35.397Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
