@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-19T18:45:40.632Z",
+  "updatedAt": "2026-11-20T01:35:09.918Z",
   "events": [
     {
       "espnId": "600061665",
       "name": "UFC Fight Night: Procházka vs. Stirling",
       "source": "BestFightOdds (FanDuel, BetWay, Unibet)",
-      "capturedAt": "2026-11-19T18:45:40.632Z",
+      "capturedAt": "2026-11-20T01:35:09.918Z",
       "lines": [
         {
           "fighter": "Jiri Prochazka",
@@ -18,7 +18,7 @@
         },
         {
           "fighter": "Navajo Stirling",
-          "moneyline": -180,
+          "moneyline": -172,
           "ko": -110,
           "sub": 2000,
           "dec": 800,
@@ -26,7 +26,7 @@
         },
         {
           "fighter": "Aljamain Sterling",
-          "moneyline": 108,
+          "moneyline": 110,
           "draw": 5000,
           "ko": 2000,
           "sub": 650,
@@ -35,7 +35,7 @@
         },
         {
           "fighter": "Kevin Vallejos",
-          "moneyline": -138,
+          "moneyline": -134,
           "ko": 200,
           "sub": 2000,
           "dec": 310,
@@ -52,7 +52,7 @@
         },
         {
           "fighter": "Dan Hooker",
-          "moneyline": -200,
+          "moneyline": -192,
           "ko": 220,
           "sub": 1600,
           "dec": 195,
@@ -60,7 +60,7 @@
         },
         {
           "fighter": "Asu Almabayev",
-          "moneyline": 148,
+          "moneyline": 152,
           "draw": 5000,
           "ko": 1100,
           "sub": 1000,
@@ -69,7 +69,7 @@
         },
         {
           "fighter": "Kyoji Horiguchi",
-          "moneyline": -192,
+          "moneyline": -188,
           "ko": 490,
           "sub": 900,
           "dec": 130,
@@ -96,7 +96,7 @@
           "fighter": "Aleksandre Topuria",
           "moneyline": -290,
           "draw": 5000,
-          "ko": 410,
+          "ko": 390,
           "sub": 500,
           "dec": 130,
           "koSub": 200
@@ -192,7 +192,7 @@
           "ko": 270,
           "sub": 2200,
           "dec": 1500,
-          "koSub": 260
+          "koSub": 265
         },
         {
           "fighter": "Diyar Nurgozhay",
@@ -200,7 +200,7 @@
           "ko": -130,
           "sub": 900,
           "dec": 850,
-          "koSub": -175
+          "koSub": -167
         }
       ]
     },
@@ -208,7 +208,7 @@
       "espnId": "600062700",
       "name": "UFC Fight Night: Adesanya vs Magomedov",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-19T18:45:40.632Z",
+      "capturedAt": "2026-11-20T01:35:09.918Z",
       "lines": [
         {
           "fighter": "Israel Adesanya",
@@ -232,7 +232,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-19T18:45:40.632Z",
+      "capturedAt": "2026-11-20T01:35:09.918Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
