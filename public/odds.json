@@ -1,32 +1,32 @@
 {
-  "updatedAt": "2026-11-20T18:12:05.342Z",
+  "updatedAt": "2026-11-21T01:00:04.675Z",
   "events": [
     {
       "espnId": "600061665",
       "name": "UFC Fight Night: Procházka vs. Stirling",
-      "source": "BestFightOdds (FanDuel, BetWay, BetRivers, Unibet)",
-      "capturedAt": "2026-11-20T18:12:05.342Z",
+      "source": "BestFightOdds (FanDuel, BetWay, Unibet)",
+      "capturedAt": "2026-11-21T01:00:04.675Z",
       "lines": [
         {
           "fighter": "Jiri Prochazka",
-          "moneyline": 140,
+          "moneyline": 150,
           "draw": 5000,
-          "ko": 200,
+          "ko": 210,
           "sub": 2000,
-          "dec": 1200,
+          "dec": 1100,
           "koSub": 140
         },
         {
           "fighter": "Navajo Stirling",
-          "moneyline": -172,
-          "ko": -110,
+          "moneyline": -178,
+          "ko": -115,
           "sub": 2000,
           "dec": 800,
           "koSub": -125
         },
         {
           "fighter": "Aljamain Sterling",
-          "moneyline": 110,
+          "moneyline": 112,
           "draw": 5000,
           "ko": 2000,
           "sub": 650,
@@ -35,7 +35,7 @@
         },
         {
           "fighter": "Kevin Vallejos",
-          "moneyline": -134,
+          "moneyline": -132,
           "ko": 200,
           "sub": 2000,
           "dec": 310,
@@ -43,7 +43,7 @@
         },
         {
           "fighter": "Brian Ortega",
-          "moneyline": 154,
+          "moneyline": 158,
           "draw": 5000,
           "ko": 1200,
           "sub": 480,
@@ -52,7 +52,7 @@
         },
         {
           "fighter": "Dan Hooker",
-          "moneyline": -192,
+          "moneyline": -188,
           "ko": 220,
           "sub": 1600,
           "dec": 195,
@@ -69,7 +69,7 @@
         },
         {
           "fighter": "Kyoji Horiguchi",
-          "moneyline": -188,
+          "moneyline": -180,
           "ko": 500,
           "sub": 1000,
           "dec": 125,
@@ -77,7 +77,7 @@
         },
         {
           "fighter": "Ikram Aliskerov",
-          "moneyline": -300,
+          "moneyline": -295,
           "draw": 5000,
           "ko": 210,
           "sub": 700,
@@ -86,7 +86,7 @@
         },
         {
           "fighter": "Jared Cannonier",
-          "moneyline": 235,
+          "moneyline": 240,
           "ko": 440,
           "sub": 2500,
           "dec": 750,
@@ -180,35 +180,35 @@
         {
           "fighter": "John Mitchell",
           "moneyline": -142,
-          "draw": 4500,
-          "ko": 360,
-          "sub": 1600,
-          "dec": 185,
+          "draw": 5000,
+          "ko": 380,
+          "sub": 1400,
+          "dec": 175,
           "koSub": 310
         },
         {
           "fighter": "Shoaib Yousaf",
           "moneyline": 120,
-          "ko": 320,
-          "sub": 1600,
-          "dec": 330,
+          "ko": 340,
+          "sub": 1400,
+          "dec": 370,
           "koSub": 275
         },
         {
           "fighter": "Alik Lorenz",
-          "moneyline": 205,
+          "moneyline": 215,
           "draw": 5000,
-          "ko": 270,
+          "ko": 290,
           "sub": 2200,
           "dec": 1500,
           "koSub": 240
         },
         {
           "fighter": "Diyar Nurgozhay",
-          "moneyline": -250,
+          "moneyline": -260,
           "ko": -130,
           "sub": 900,
-          "dec": 850,
+          "dec": 750,
           "koSub": -188
         }
       ]
@@ -217,7 +217,7 @@
       "espnId": "600062700",
       "name": "UFC Fight Night: Adesanya vs Magomedov",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-20T18:12:05.342Z",
+      "capturedAt": "2026-11-21T01:00:04.675Z",
       "lines": [
         {
           "fighter": "Israel Adesanya",
@@ -241,7 +241,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-20T18:12:05.342Z",
+      "capturedAt": "2026-11-21T01:00:04.675Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
