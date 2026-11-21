@@ -1,27 +1,27 @@
 {
-  "updatedAt": "2026-11-21T17:01:44.946Z",
+  "updatedAt": "2026-11-21T22:39:19.750Z",
   "events": [
     {
       "espnId": "600061665",
       "name": "UFC Fight Night: Procházka vs. Stirling",
       "source": "BestFightOdds (FanDuel, BetWay, Unibet)",
-      "capturedAt": "2026-11-21T17:01:44.946Z",
+      "capturedAt": "2026-11-21T22:39:19.750Z",
       "lines": [
         {
           "fighter": "Jiri Prochazka",
-          "moneyline": 148,
+          "moneyline": 180,
           "draw": 5000,
-          "ko": 210,
+          "ko": 250,
           "sub": 2000,
-          "dec": 1100,
+          "dec": 1300,
           "koSub": 140
         },
         {
           "fighter": "Navajo Stirling",
-          "moneyline": -176,
-          "ko": -115,
-          "sub": 2000,
-          "dec": 800,
+          "moneyline": -215,
+          "ko": -135,
+          "sub": 1900,
+          "dec": 750,
           "koSub": -125
         },
         {
@@ -77,18 +77,18 @@
         },
         {
           "fighter": "Ikram Aliskerov",
-          "moneyline": -295,
+          "moneyline": -300,
           "draw": 5000,
-          "ko": 220,
+          "ko": 240,
           "sub": 700,
-          "dec": 170,
+          "dec": 160,
           "koSub": 130
         },
         {
           "fighter": "Jared Cannonier",
-          "moneyline": 240,
-          "ko": 470,
-          "sub": 2500,
+          "moneyline": 245,
+          "ko": 480,
+          "sub": 2700,
           "dec": 700,
           "koSub": 300
         },
@@ -217,7 +217,7 @@
       "espnId": "600062700",
       "name": "UFC Fight Night: Adesanya vs Magomedov",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-21T17:01:44.946Z",
+      "capturedAt": "2026-11-21T22:39:19.750Z",
       "lines": [
         {
           "fighter": "Israel Adesanya",
@@ -241,7 +241,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-21T17:01:44.946Z",
+      "capturedAt": "2026-11-21T22:39:19.750Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
