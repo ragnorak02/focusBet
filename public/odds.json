@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-11-22T20:31:53.986Z",
+  "updatedAt": "2026-11-23T02:06:13.788Z",
   "events": [
     {
       "espnId": "600062700",
       "name": "UFC Fight Night: Adesanya vs Magomedov",
-      "source": "BestFightOdds (FanDuel, Polymarket)",
-      "capturedAt": "2026-11-22T20:31:53.986Z",
+      "source": "BestFightOdds (FanDuel, Caesars, Polymarket)",
+      "capturedAt": "2026-11-23T02:06:13.788Z",
       "lines": [
         {
           "fighter": "Israel Adesanya",
-          "moneyline": -164
+          "moneyline": -196
         },
         {
           "fighter": "Shara Magomedov",
-          "moneyline": 128
+          "moneyline": 152
         },
         {
           "fighter": "Ian Machado Garry",
@@ -25,19 +25,59 @@
         },
         {
           "fighter": "Mario Pinto",
-          "moneyline": -270
+          "moneyline": -350
         },
         {
           "fighter": "Serghei Spivac",
-          "moneyline": 257
+          "moneyline": 250
         },
         {
           "fighter": "Islam Dulatov",
-          "moneyline": -376
+          "moneyline": -275
         },
         {
           "fighter": "Levan Chokheli",
-          "moneyline": 376
+          "moneyline": 200
+        },
+        {
+          "fighter": "Akbar Abdullaev",
+          "moneyline": -275
+        },
+        {
+          "fighter": "Mairon Santos",
+          "moneyline": 200
+        },
+        {
+          "fighter": "Bruno Silva",
+          "moneyline": 120
+        },
+        {
+          "fighter": "Jafel Filho",
+          "moneyline": -150
+        },
+        {
+          "fighter": "Junyong Park",
+          "moneyline": 140
+        },
+        {
+          "fighter": "Marco Tulio",
+          "moneyline": -180
+        },
+        {
+          "fighter": "Mahammadali Osmanli",
+          "moneyline": 100
+        },
+        {
+          "fighter": "Pavel Andrusca",
+          "moneyline": -130
+        },
+        {
+          "fighter": "Matthieu Duclos",
+          "moneyline": -150
+        },
+        {
+          "fighter": "Modestino Rodrigues",
+          "moneyline": 120
         },
         {
           "fighter": "Abdul Hussein",
@@ -45,31 +85,23 @@
         },
         {
           "fighter": "Hecher Sosa",
-          "moneyline": 163
+          "moneyline": 130
+        },
+        {
+          "fighter": "Gabriel Santos",
+          "moneyline": 100
+        },
+        {
+          "fighter": "Luke Riley",
+          "moneyline": -130
         },
         {
           "fighter": "Ion Cutelaba",
-          "moneyline": -133
+          "moneyline": -100
         },
         {
           "fighter": "Magomed Tuchalov",
-          "moneyline": 133
-        },
-        {
-          "fighter": "Bruno Silva",
-          "moneyline": 133
-        },
-        {
-          "fighter": "Jafel Filho",
-          "moneyline": -138
-        },
-        {
-          "fighter": "Akbar Abdullaev",
-          "moneyline": -186
-        },
-        {
-          "fighter": "Mairon Santos",
-          "moneyline": 178
+          "moneyline": -100
         },
         {
           "fighter": "Ivan Gnizditskiy",
@@ -78,14 +110,6 @@
         {
           "fighter": "Uran Satybaldiev",
           "moneyline": 117
-        },
-        {
-          "fighter": "Junyong Park",
-          "moneyline": 186
-        },
-        {
-          "fighter": "Marco Tulio",
-          "moneyline": -194
         }
       ]
     },
@@ -93,7 +117,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-22T20:31:53.986Z",
+      "capturedAt": "2026-11-23T02:06:13.788Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
