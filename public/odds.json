@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-11-23T13:55:25.655Z",
+  "updatedAt": "2026-11-24T01:26:39.879Z",
   "events": [
     {
       "espnId": "600062700",
       "name": "UFC Fight Night: Adesanya vs Magomedov",
       "source": "BestFightOdds (FanDuel, Caesars)",
-      "capturedAt": "2026-11-23T13:55:25.655Z",
+      "capturedAt": "2026-11-24T01:26:39.879Z",
       "lines": [
         {
           "fighter": "Israel Adesanya",
-          "moneyline": -196
+          "moneyline": -184
         },
         {
           "fighter": "Shara Magomedov",
-          "moneyline": 152
+          "moneyline": 142
         },
         {
           "fighter": "Ian Machado Garry",
@@ -117,7 +117,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-23T13:55:25.655Z",
+      "capturedAt": "2026-11-24T01:26:39.879Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
