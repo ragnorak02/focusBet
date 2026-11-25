@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-24T21:48:04.130Z",
+  "updatedAt": "2026-11-25T16:36:23.959Z",
   "events": [
     {
       "espnId": "600062700",
       "name": "UFC Fight Night: Adesanya vs Magomedov",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-24T21:48:04.130Z",
+      "capturedAt": "2026-11-25T16:36:23.959Z",
       "lines": [
         {
           "fighter": "Israel Adesanya",
@@ -33,11 +33,11 @@
         },
         {
           "fighter": "Islam Dulatov",
-          "moneyline": -225
+          "moneyline": -215
         },
         {
           "fighter": "Levan Chokheli",
-          "moneyline": 172
+          "moneyline": 164
         },
         {
           "fighter": "Akbar Abdullaev",
@@ -56,20 +56,20 @@
           "moneyline": -188
         },
         {
-          "fighter": "Bruno Silva",
-          "moneyline": 126
-        },
-        {
-          "fighter": "Jafel Filho",
-          "moneyline": -162
-        },
-        {
           "fighter": "Gabriel Santos",
           "moneyline": 124
         },
         {
           "fighter": "Luke Riley",
           "moneyline": -160
+        },
+        {
+          "fighter": "Bruno Silva",
+          "moneyline": 126
+        },
+        {
+          "fighter": "Jafel Filho",
+          "moneyline": -162
         },
         {
           "fighter": "Junyong Park",
@@ -81,11 +81,11 @@
         },
         {
           "fighter": "Mahammadali Osmanli",
-          "moneyline": 114
+          "moneyline": 104
         },
         {
           "fighter": "Pavel Andrusca",
-          "moneyline": -146
+          "moneyline": -132
         },
         {
           "fighter": "Matthieu Duclos",
@@ -105,11 +105,11 @@
         },
         {
           "fighter": "Ivan Gnizditskiy",
-          "moneyline": -113
+          "moneyline": -104
         },
         {
           "fighter": "Uran Satybaldiev",
-          "moneyline": -113
+          "moneyline": -120
         },
         {
           "fighter": "Elves Brener",
@@ -125,7 +125,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-24T21:48:04.130Z",
+      "capturedAt": "2026-11-25T16:36:23.959Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
