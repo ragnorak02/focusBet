@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-25T16:36:23.959Z",
+  "updatedAt": "2026-11-26T01:24:22.186Z",
   "events": [
     {
       "espnId": "600062700",
       "name": "UFC Fight Night: Adesanya vs Magomedov",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-25T16:36:23.959Z",
+      "capturedAt": "2026-11-26T01:24:22.186Z",
       "lines": [
         {
           "fighter": "Israel Adesanya",
@@ -65,11 +65,11 @@
         },
         {
           "fighter": "Bruno Silva",
-          "moneyline": 126
+          "moneyline": 118
         },
         {
           "fighter": "Jafel Filho",
-          "moneyline": -162
+          "moneyline": -150
         },
         {
           "fighter": "Junyong Park",
@@ -97,11 +97,11 @@
         },
         {
           "fighter": "Abdul Hussein",
-          "moneyline": -156
+          "moneyline": -166
         },
         {
           "fighter": "Hecher Sosa",
-          "moneyline": 122
+          "moneyline": 130
         },
         {
           "fighter": "Ivan Gnizditskiy",
@@ -125,7 +125,7 @@
       "espnId": "600061401",
       "name": "UFC 335: Oliveira vs. Lopes",
       "source": "BestFightOdds (FanDuel)",
-      "capturedAt": "2026-11-25T16:36:23.959Z",
+      "capturedAt": "2026-11-26T01:24:22.186Z",
       "lines": [
         {
           "fighter": "Alex Pereira",
